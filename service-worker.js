@@ -1,5 +1,4 @@
 self.addEventListener('install', (event) => {
-    if (!('caches' in self)) return;
     event.waitUntil(
       caches.open('version1').then((cache) => {
         return cache.addAll(
@@ -8,8 +7,9 @@ self.addEventListener('install', (event) => {
             '/index_gyn.html'
           ]);
       })
-    );
+    ); 
   });
+
 
 /*self.addEventListener('install', (event) => {
     self.skipWaiting();
