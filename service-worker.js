@@ -41,7 +41,7 @@ self.addEventListener('install', event => {
       caches.open('mysite-static-v3').then(function(cache) {
         return cache.addAll([
           
-          '/index_gyn.html'
+          'index_gyn.html'
           // etc
         ]);
       })
