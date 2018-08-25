@@ -26,7 +26,7 @@ self.addEventListener('install', (event) => {
   
           [
   
-            
+            'OBGYNref/index_gyn.html'
   
           ]);
   
