@@ -1,5 +1,4 @@
 self.addEventListener('install', (event) => {
-    self.skipWaiting();
     if (!('caches' in self)) return;
     event.waitUntil(
       caches.open('version1').then((cache) => {
@@ -17,9 +16,9 @@ self.addEventListener('install', (event) => {
     console.log('updated service worker installed', event);
   });*/
   
-  self.addEventListener('activate', (event) => {
+  /*self.addEventListener('activate', (event) => {
     console.log('updated service worker activated', event);
-  });
+  });*/
 
   /*self.addEventListener('fetch', (event) => {
     event.respondWith(new Response('arrrgh!'));
