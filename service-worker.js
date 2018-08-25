@@ -17,6 +17,7 @@ self.addEventListener('install', event => {
 });*/
 
 self.addEventListener('install', event => {
+    if(!('caches' in self)) return;
     event.waitUntil(
       caches.open('v1').then(function(cache) {
         return cache.addAll([
