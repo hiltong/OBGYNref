@@ -7,6 +7,6 @@ self.addEventListener('install', (event) => {
     console.log('updated service worker activated', event);
   });
 
-  self.addEventListener('fetch', (event) => {
+  /*self.addEventListener('fetch', (event) => {
     event.respondWith(new Response('arrrgh!'));
-  });
+  });*/
