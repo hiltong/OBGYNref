@@ -4,7 +4,7 @@
   });*/
 
   
-var cacheName = 'app-shell-cache-v1';
+/*var cacheName = 'app-shell-cache-v1';
 var filesToCache = ['/', '/index_ob.html'];
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -14,9 +14,27 @@ self.addEventListener('install', event => {
       return self.skipWaiting();
     })
   );
-});
+});*/
 
+self.addEventListener('install', (event) => {
 
+    event.waitUntil(
+  
+      caches.open('version1').then((cache) => {
+  
+        return cache.addAll(
+  
+          [
+  
+            
+  
+          ]);
+  
+      })
+  
+    );
+  
+  });
 
 
 
