@@ -16,29 +16,23 @@ self.addEventListener('install', event => {
   );
 });*/
 
-/*self.addEventListener('install', (event) => {
-
+self.addEventListener('install', event => {
     event.waitUntil(
-  
-      caches.open('version1').then((cache) => {
-  
-        return cache.addAll(
-  
-          [
-  
-            'OBGYNref/index_gyn.html'
-  
-          ]);
-  
+      caches.open('v1').then(function(cache) {
+        return cache.addAll([
+          'index_ob.html',
+          'index_gyn.html'
+          // etc
+        ]).then(() =>{return self.skipWaiting()}
+        );
       })
-  
     );
-  
-  });*/
+  });
 
-  self.addEventListener('install', function(event) {
+
+ /* self.addEventListener('install', function(event) {
     event.waitUntil(
-      caches.open('mysite-static-v3').then(function(cache) {
+      caches.open('v1').then(function(cache) {
         return cache.addAll([
           'index_ob.html',
           'index_gyn.html'
@@ -46,7 +40,9 @@ self.addEventListener('install', event => {
         ]);
       })
     );
-  });
+  });*/
+
+ 
 
 
   /*self.addEventListener('activate', (event) => {
