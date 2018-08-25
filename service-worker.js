@@ -4,27 +4,18 @@
   });*/
 
   
-  self.addEventListener('install', (event) => {
+var cacheName = 'app-shell-cache-v1';
+var filesToCache = ['/', '/index_ob.html'];
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(cacheName).then(cache => {
+        return cache.addAll(filesToCache);
+    }).then(() => {
+      return self.skipWaiting();
+    })
+  );
+});
 
-    event.waitUntil(
-  
-      caches.open('version1').then((cache) => {
-  
-        return cache.addAll(
-  
-          [
-  
-            '/index_ob.html'
-  
-
-  
-          ]);
-  
-      })
-  
-    );
-  
-  });
 
 
 
