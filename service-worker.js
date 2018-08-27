@@ -26,6 +26,6 @@ self.addEventListener('install', event => {
     event.respondWith(
       caches.match(event.request)
     );
-  });8?
+  });*/
 
 
