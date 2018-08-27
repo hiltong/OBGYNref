@@ -3,8 +3,9 @@ self.addEventListener('install', event => {
     event.waitUntil(
       caches.open('v1').then(function(cache) {
         return cache.addAll([
-          'index_ob.html',
-          'index_gyn.html'
+            'index.html',
+            'index_ob.html',
+            'index_gyn.html'
           // etc
         ]).then(() =>{return self.skipWaiting()}
         );
