@@ -14,12 +14,24 @@ self.addEventListener('install', event => {
 
 
  
-  self.addEventListener('fetch', function(event) {
+  /*self.addEventListener('fetch', function(event) {
     event.respondWith(
       caches.match(event.request).then(function(response) {
         return response || fetch(event.request);
       })
     );
+  });*/
+
+  self.addEventListener('fetch', (event) => {
+    event.respondWith(
+      caches.match(event.request).then((response) => {
+        return response || fetch(event.request).then((response) => {
+          console.log('fetched from network this time!');
+          return caches.open('v1').then((cache) => {
+            cache.put(event.request, response.clone());
+            return response;
+          });
+        });
+      })
+    );
   });
-
-
