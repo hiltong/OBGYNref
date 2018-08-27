@@ -1,4 +1,4 @@
-/*(() => {
+(() => {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
     navigator.serviceWorker.register('service-worker.js').then((registration) => {
@@ -10,4 +10,4 @@
   } else {
     alert('No service worker support in this browser');
   }
-})();*/
+})();
