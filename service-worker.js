@@ -1,10 +1,12 @@
-self.addEventListener('install', event => {
+self.addEventListener('install', (event) => {
     if(!('caches' in self)) return;
     event.waitUntil(
       caches.open('v1').then(function(cache) {
         return cache.addAll([
+            'index.html',
             'index_ob.html',
-            'index_gyn.html'
+            'index_gyn.html',
+            'index_re.html'
           // etc
         ]).then(() =>{return self.skipWaiting()}
         );
