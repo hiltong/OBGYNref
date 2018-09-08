@@ -24,7 +24,7 @@ self.addEventListener('install', (event) => {
     );
   });*/
 
-  self.addEventListener('fetch', (event) => {
+ /*  self.addEventListener('fetch', (event) => {
     event.respondWith(
       caches.match(event.request).then((response) => {
         return response || fetch(event.request).then((response) => {
@@ -34,6 +34,22 @@ self.addEventListener('install', (event) => {
             return response;
           });
         });
+      })
+    );
+  }); */
+
+  self.addEventListener('fetch', (event) => {
+    const version = 'version1';
+    event.respondWith(
+     caches.open(version).then(cache => {
+        return cache.match(event.request).then((response) => {
+          let fetchPromise = fetch(event.request).then(networkResponse => {
+            cache.put(event.request, networkResponse.clone());
+            return networkResponse;
+          });
+          event.waitUntil(fetchPromise);
+          return response;
+        })
       })
     );
   });
