@@ -39,7 +39,7 @@ self.addEventListener('install', (event) => {
   }); */
 
   self.addEventListener('fetch', (event) => {
-    const version = 'version1';
+    const version = 'v1';
     event.respondWith(
      caches.open(version).then(cache => {
         return cache.match(event.request).then((response) => {
