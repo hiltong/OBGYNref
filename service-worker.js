@@ -15,7 +15,7 @@ self.addEventListener('install', (event) => {
   });
 
 
- 
+//  Fetch from network if not in catch
   /*self.addEventListener('fetch', function(event) {
     event.respondWith(
       caches.match(event.request).then(function(response) {
@@ -24,7 +24,8 @@ self.addEventListener('install', (event) => {
     );
   });*/
 
- /*  self.addEventListener('fetch', (event) => {
+  // Fetch from network if not in cach and add to cache
+  self.addEventListener('fetch', (event) => {
     event.respondWith(
       caches.match(event.request).then((response) => {
         return response || fetch(event.request).then((response) => {
@@ -36,9 +37,11 @@ self.addEventListener('install', (event) => {
         });
       })
     );
-  }); */
+  });
 
-  self.addEventListener('fetch', (event) => {
+
+  // stale-while-revalidate
+  /* self.addEventListener('fetch', (event) => {
     const version = 'v1';
     event.respondWith(
      caches.open(version).then(cache => {
@@ -52,4 +55,4 @@ self.addEventListener('install', (event) => {
         })
       })
     );
-  });
+  }); */
