@@ -1,7 +1,13 @@
+var CURRENT_CACHE = '2018-09-09-1830'
+
 self.addEventListener('install', (event) => {
-    if(!('caches' in self)) return;
+    // if(!('caches' in self)) return;
+    if (!'caches' in window) { 
+      alert ('This browser does not support service worker caching!'); 
+      return; 
+    } 
     event.waitUntil(
-      caches.open('v1').then(function(cache) {
+      caches.open(CURRENT_CACHE).then(function(cache) {
         return cache.addAll([
             'index.html',
             'index_ob.html',
@@ -13,6 +19,27 @@ self.addEventListener('install', (event) => {
       })
     );
   });
+
+// Update cache
+  self.addEventListener('activate', (event) => { 
+    // let CURRENT_CACHE = 'version2'; 
+    event.waitUntil( 
+      caches.keys().then((cacheKeys) => { 
+        return Promise.all( 
+          cacheKeys.map((cacheKey) => { 
+            if (cacheKey !== CURRENT_CACHE) { 
+              console.log('Deleting cache: ' + cacheKey); 
+              return caches.delete(cacheKey); 
+            } 
+          }) 
+        )  
+      })   
+    );  
+  }); 
+  
+  
+   
+   
 
 
 //  Fetch from network if not in catch
