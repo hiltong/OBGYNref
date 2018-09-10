@@ -1,5 +1,6 @@
-var CURRENT_CACHE = '2018-09-09-1830'
+var CURRENT_CACHE = '2018-09-09-2005'
 
+// INSTALL
 self.addEventListener('install', (event) => {
     // if(!('caches' in self)) return;
     if (!'caches' in self) { 
@@ -12,7 +13,8 @@ self.addEventListener('install', (event) => {
             'index.html',
             'index_ob.html',
             'index_gyn.html',
-            'index_re.html'
+            'index_re.html',
+            'manifest.json'
           // etc
         ]).then(() =>{return self.skipWaiting()}
         );
@@ -20,7 +22,8 @@ self.addEventListener('install', (event) => {
     );
   });
 
-// Update cache
+// ACYIVATE
+// Replace cache
   self.addEventListener('activate', (event) => { 
     // let CURRENT_CACHE = 'version2'; 
     event.waitUntil( 
@@ -40,7 +43,7 @@ self.addEventListener('install', (event) => {
   
    
    
-
+// FETCH
 
 //  Fetch from network if not in catch
   /*self.addEventListener('fetch', function(event) {
@@ -51,21 +54,8 @@ self.addEventListener('install', (event) => {
     );
   });*/
 
-  // Fetch from network if not in cach and add to cache
- /*  self.addEventListener('fetch', (event) => {
-    event.respondWith(
-      caches.match(event.request).then((response) => {
-        return response || fetch(event.request).then((response) => {
-          console.log('fetched from network this time!');
-          return caches.open(CURRENT_CACHE).then((cache) => {
-            cache.put(event.request, response.clone());
-            return response;
-          });
-        });
-      })
-    );
-  }); */
 
+  // Fetch from network if not in cach and add to cache
   self.addEventListener('fetch', function(event) {
     event.respondWith(
       caches.open(CURRENT_CACHE).then(function(cache) {
