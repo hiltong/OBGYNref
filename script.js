@@ -13,7 +13,7 @@
 })();
 
 
-function MyFunction(document){
+/* function MyFunction(document){
 // alert('Hit!');
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -29,4 +29,4 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
-}
+} */
