@@ -1,4 +1,4 @@
-var CURRENT_CACHE = '2018-09-15-0900'
+var CURRENT_CACHE = '2018-09-15-0930'
 
 // INSTALL
 self.addEventListener('install', (event) => {
@@ -16,7 +16,8 @@ self.addEventListener('install', (event) => {
             'index_re.html',
             'manifest.json',
             'script.js',
-            'styles.css'
+            'styles.css',
+            '/ob/hiv_ob.html'
           // etc
         ]).then(() =>{return self.skipWaiting()}
         );
