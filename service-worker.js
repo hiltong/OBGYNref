@@ -17,7 +17,7 @@ self.addEventListener('install', (event) => {
             'manifest.json',
             'script.js',
             'styles.css',
-            '/ob/hiv_ob.html'
+            'ob/hiv_ob.html'
           // etc
         ]).then(() =>{return self.skipWaiting()}
         );
