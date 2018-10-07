@@ -11,3 +11,4 @@
     alert('No service worker support in this browser');
   }
 })();
+

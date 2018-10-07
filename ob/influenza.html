@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<title>Ob: Influenza</title>
+<meta name="description" content="Influenza in obstetrics referenced bullets.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="manifest" href="../manifest.json">
+<script src="../script.js"></script>
+<script src="../script-aux.js"></script>
+<link rel="stylesheet" href="../css/w3-theme-black.css">
+<link rel="stylesheet" href="../css/w3.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<style>
+  /* ul{color:red;} */
+
+</style>
+
+    <body>
+        <!-- Navbar -->
+        <div class="w3-top">
+          <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="SideBarOpen(document)">☰</a>   
+            <span class="w3-bar-item"><b>Ob/Gyn-Referenced</b></span>
+            <a href="../index.html"class="w3-bar-item w3-button  w3-hide-large w3-hide-small w3-hover-white">Home</a>
+            <a href="../references.html" class="w3-bar-item w3-button w3-hide-large w3-hide-small w3-hover-white">References</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-large w3-hide-small w3-hover-white">About</a>
+          </div>
+        </div>  
+
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+         <!--  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            X
+          </a> -->
+          <h4 class="w3-bar-item"><b>Menu</b></h4>
+          <a class="w3-bar-item w3-button w3-hover-black" href="../index.html">Home</a>
+          <a class="w3-bar-item w3-button w3-hover-black" href="../references.html">References</a>
+          <a class="w3-bar-item w3-button w3-hover-black" href="../about.html">About</a>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="SideBarClose(document)" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+        
+        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+        <div class="w3-main" style="margin-left:250px">
+        
+          <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+              <h1 class="w3-text-teal">Ob: Influenza</h1>
+                <div class="w3-bar-block ">
+                    <button onclick="AccWork(document,'Demo1')" class="w3-btn w3-block w3-black w3-left-align hg-acc">Antivirals {3}:</button>
+                    <div id="Demo1" class="w3-container w3-hide">
+                        <ul>
+                          <li>Oseltamivir
+                            <ul>
+                              <li>Treatment: 75 mg orally twice daily for 5 days (co753).</li>
+                              <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
+                            </ul>
+                          </li>
+                          <li>Zanamivir</li>
+                          <li>Peramivir</li>
+                        </ul>
+                    </div>
+                    <button onclick="AccWork('Demo2')" class="w3-btn w3-block w3-black w3-left-align">Postexposure Chemoprophylaxis</button>
+                    <div id="Demo2" class="w3-container w3-hide">
+                      <h4>Section 1</h4>
+                      <p>Some text..</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="w3-third w3-container">
+              <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+              <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+            </div>
+          </div>
+         
+          <!-- <footer id="myFooter" class="w3-bottom">
+            <div class="w3-container w3-theme-l2 w3-padding-32">
+              <h4>Footer</h4>
+            </div>
+          </footer> -->
+        
+        <!-- END MAIN -->
+        </div>
+      
+      
+
+    </body>
+</html>
+        
+ 
