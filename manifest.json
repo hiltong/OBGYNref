@@ -3,7 +3,7 @@
   "short_name": "OBGYNRef",
   "start_url": "index.html",
   "display": "standalone",
-  "theme_color": "#ffff00",
+  "theme_color": "#000",
   "background_color": "#000",
   "description": "The best pirate app on the high seas! Arrrgh!",
   "icons": [{
