@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
-<head>
-    <meta charset="utf-8">
-    <title>Ob/Gyn Referenced</title>
-    <!--<link rel="stylesheet" href="mainstyles.css">/*-->
-    <link rel="manifest" href="manifest.json">
-</head>
+<meta charset="utf-8">
+<title>Reproductive Endocrinology</title>
+<meta name="description" content="Reproductive Endocrinology index for the web app 'Ob/Gyn-Referenced'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3-theme-black.css">
+<link rel="stylesheet" href="css/w3.css">
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family:  Arial, Helvetica, sans-serif;}
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+</style>
 
 <body>
 <h1>Reproductive Endocrinology Index</h1>
@@ -17,7 +30,31 @@
 
 
 
+<script defer src="script.js"></script> 
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+    
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+    
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+    
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+  </script>  
 
 </body>
-
 </html>
