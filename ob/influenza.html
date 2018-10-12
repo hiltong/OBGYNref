@@ -19,6 +19,7 @@
     bottom: 0;
     height: inherit;
   }
+  button{word-wrap: break-word;}
   </style>
 
 
@@ -55,12 +56,12 @@
             <div class="w3-twothird w3-container">
               <h1 class="w3-text-teal">Ob: Influenza</h1>
                 <div class="w3-bar-block ">
-                    <button onclick="AccWork('Demo1')" class="w3-btn w3-block w3-black w3-left-align hg-acc">Antivirals {3}:</button>
+                    <button onclick="AccWork('Demo1')" class="hg-acc w3-btn w3-block w3-black w3-left-align" >Antivirals: <sup class="w3-text-red">3</sup></button>
                     <div id="Demo1" class="w3-container w3-hide">
                         <ul>
                           <li>Oseltamivir
                             <ul>
-                              <li>Treatment: 75 mg orally twice daily for 5 days (co753).</li>
+                              <li>Treatment: 75 mg orally twice daily for 5 days <sup>(co753)</sup>.</li>
                               <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
                             </ul>
                           </li>
@@ -68,10 +69,40 @@
                           <li>Peramivir</li>
                         </ul>
                     </div>
-                    <button onclick="AccWork('Demo2')" class="w3-btn w3-block w3-black w3-left-align">Postexposure Chemoprophylaxis</button>
-                    <div id="Demo2" class="w3-container w3-hide">
-                      <h4>Section 1</h4>
-                      <p>Some text..</p>
+                    <button onclick="AccWork('Demo2')" class="hg-acc w3-btn w3-block w3-black w3-left-align">Postexposure Chemoprophylaxis Alogorhythm Alogorhythm</button>
+                    <div id="Demo2" class="w3-panel w3-hide w3-border w3-round-large w3-light-grey">
+                        <div >
+                          <button class="w3-btn w3-circle w3-border w3-left-align w3-white w3-margin-top">&#8593;</button>
+                          <button class="w3-btn w3-circle w3-border w3-right w3-white  w3-margin-top" >&#8634;</button> 
+                        </div>
+                        <div class="w3-panel w3-border w3-round-large w3-white">
+                          <p class="w3-center">Header</p>
+                          <ul>
+                              <li>Treatment: 75 mg orally twice daily for 5 days <sup>co753</sup>.</li>
+                              <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
+                            </ul>
+                        </div> 
+                        
+                    
+                        <!-- <div  class="w3-center"> -->
+                            <p class="w3-center"> &#8595;</p>
+                            <button class="w3-btn  w3-block w3-border w3-margin-bottom w3-white">Yes</button>
+                            <!-- <p class="w3-center">or</p> -->
+                            <button class="w3-btn w3-block w3-border w3-margin-bottom w3-white">No</button> 
+                          <!-- </div> -->
+                    </div>
+                    <button onclick="AccWork('Demo3')" class="hg-acc w3-btn w3-block w3-black w3-left-align" >Antivirals: <sup class="w3-text-red">3</sup></button>
+                    <div id="Demo3" class="w3-container w3-hide">
+                        <ul>
+                          <li>Oseltamivir
+                            <ul>
+                              <li>Treatment: 75 mg orally twice daily for 5 days <sup>(co753)</sup>.</li>
+                              <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
+                            </ul>
+                          </li>
+                          <li>Zanamivir</li>
+                          <li>Peramivir</li>
+                        </ul>
                     </div>
                 </div>
             
