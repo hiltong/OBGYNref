@@ -9,9 +9,19 @@
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 <link rel="manifest" href="../manifest.json">
 <link rel="stylesheet" href="../css/w3-theme-black.css">
-<link rel="stylesheet" href="../css/w3.css"> 
+<link rel="stylesheet" href="../css/w3.css">
 <style>
-  html,body,h1,h2,h3,h4,h5,h6 {font-family:  Arial, Helvetica, sans-serif;}
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   .w3-sidebar {
     z-index: 3;
     width: 250px;
@@ -19,145 +29,181 @@
     bottom: 0;
     height: inherit;
   }
-  button{word-wrap: break-word;}
-  </style>
+
+  /* button{word-wrap: break-word;} */
+</style>
 
 
-    <body>
-        <!-- Navbar -->
-        <div class="w3-top">
-          <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()">☰</a>   
-            <span class="w3-bar-item"><b>Ob/Gyn-Referenced</b></span>
-            <a href="../index.html"class="w3-bar-item w3-button  w3-hide-large w3-hide-small w3-hover-white">Home</a>
-            <a href="../references.html" class="w3-bar-item w3-button w3-hide-large w3-hide-small w3-hover-white">References</a>
-            <a href="../about.html" class="w3-bar-item w3-button w3-hide-large w3-hide-small w3-hover-white">About</a>
-          </div>
-        </div>  
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)"
+        onclick="w3_open()">☰</a>
+      <span class="w3-bar-item"><b>Ob/Gyn-Referenced</b></span>
+      <a href="../index.html" class="w3-bar-item w3-button  w3-hide-large w3-hide-small w3-hover-white">Home</a>
+      <a href="../references.html" class="w3-bar-item w3-button w3-hide-large w3-hide-small w3-hover-white">References</a>
+      <a href="../about.html" class="w3-bar-item w3-button w3-hide-large w3-hide-small w3-hover-white">About</a>
+    </div>
+  </div>
 
-        <!-- Sidebar -->
-        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-         <!--  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <!--  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
             X
           </a> -->
-          <h4 class="w3-bar-item"><b>Menu</b></h4>
-          <a class="w3-bar-item w3-button w3-hover-black" href="../index.html">Home</a>
-          <a class="w3-bar-item w3-button w3-hover-black" href="../references.html">References</a>
-          <a class="w3-bar-item w3-button w3-hover-black" href="../about.html">About</a>
-        </nav>
+    <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="../index.html">Home</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="../references.html">References</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="../about.html">About</a>
+  </nav>
 
-        <!-- Overlay effect when opening sidebar on small screens -->
-        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-        
-        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-        <div class="w3-main" style="margin-left:250px">
-        
-          <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container">
-              <h1 class="w3-text-teal">Ob: Influenza</h1>
-                <div class="w3-bar-block ">
-                    <button onclick="AccWork('Demo1')" class="hg-acc w3-btn w3-block w3-black w3-left-align" >Antivirals: <sup class="w3-text-red">3</sup></button>
-                    <div id="Demo1" class="w3-container w3-hide">
-                        <ul>
-                          <li>Oseltamivir
-                            <ul>
-                              <li>Treatment: 75 mg orally twice daily for 5 days <sup>(co753)</sup>.</li>
-                              <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
-                            </ul>
-                          </li>
-                          <li>Zanamivir</li>
-                          <li>Peramivir</li>
-                        </ul>
-                    </div>
-                    <button onclick="AccWork('Demo2')" class="hg-acc w3-btn w3-block w3-black w3-left-align">Postexposure Chemoprophylaxis Alogorhythm Alogorhythm</button>
-                    <div id="Demo2" class="w3-panel w3-hide w3-border w3-round-large w3-light-grey">
-                        <div >
-                          <button class="w3-btn w3-circle w3-border w3-left-align w3-white w3-margin-top">&#8593;</button>
-                          <button class="w3-btn w3-circle w3-border w3-right w3-white  w3-margin-top" >&#8634;</button> 
-                        </div>
-                        <div class="w3-panel w3-border w3-round-large w3-white">
-                          <p class="w3-center">Header</p>
-                          <ul>
-                              <li>Treatment: 75 mg orally twice daily for 5 days <sup>co753</sup>.</li>
-                              <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
-                            </ul>
-                        </div> 
-                        
-                    
-                        <!-- <div  class="w3-center"> -->
-                            <p class="w3-center"> &#8595;</p>
-                            <button class="w3-btn  w3-block w3-border w3-margin-bottom w3-white">Yes</button>
-                            <!-- <p class="w3-center">or</p> -->
-                            <button class="w3-btn w3-block w3-border w3-margin-bottom w3-white">No</button> 
-                          <!-- </div> -->
-                    </div>
-                    <button onclick="AccWork('Demo3')" class="hg-acc w3-btn w3-block w3-black w3-left-align" >Antivirals: <sup class="w3-text-red">3</sup></button>
-                    <div id="Demo3" class="w3-container w3-hide">
-                        <ul>
-                          <li>Oseltamivir
-                            <ul>
-                              <li>Treatment: 75 mg orally twice daily for 5 days <sup>(co753)</sup>.</li>
-                              <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
-                            </ul>
-                          </li>
-                          <li>Zanamivir</li>
-                          <li>Peramivir</li>
-                        </ul>
-                    </div>
-                </div>
-            
-            </div>
-            <div class="w3-third w3-container">
-              <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-              <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-            </div>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left:250px">
+
+    <div class="w3-row w3-padding-64">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Ob: Influenza</h1>
+        <div class="w3-bar-block ">
+
+          <button onclick="AccWork('Demo1')" class="hg-acc w3-btn w3-block w3-black w3-left-align">Antivirals: <sup>3</sup></button>
+          <div id="Demo1" class="w3-container w3-hide">
+            <ul>
+              <li>Oseltamivir
+                <ul>
+                  <li>Treatment: 75 mg orally twice daily for 5 days <sup>(co753)</sup>.</li>
+                  <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
+                </ul>
+              </li>
+              <li>Zanamivir</li>
+              <li>Peramivir</li>
+            </ul>
           </div>
-         
-          <!-- <footer id="myFooter" class="w3-bottom">
+
+          <!-- Algorhythm Flu-->
+          <button onclick="AccWork('Demo2')" class="hg-acc w3-btn w3-block w3-black w3-left-align">Postexposure
+            Chemoprophylaxis Alogorhythm Alogorhythm</button>
+          <div id="Demo2" class="w3-panel w3-hide hg-algodiv1" style="height: 400px">
+            <!-- 1st step -->
+            <div id="flu1" style="display: block;">
+              <div>
+                <button class="w3-btn w3-circle w3-border w3-left-align w3-white w3-margin-top">&#8593;</button>
+                <button class="w3-btn w3-circle w3-border w3-right w3-white  w3-margin-top">&#8634;</button>
+              </div>
+              <div class="w3-panel hg-algodivQ">
+                <p class="w3-center">Header 1</p>
+                <ul>
+                  <li>Treatment: 75 mg orally twice daily for 5 days <sup>co753</sup>.</li>
+                  <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
+                </ul>
+              </div>
+              <div class="w3-center">
+                <p class="w3-center"> &#8595;</p>
+                <button class="w3-btn  w3-block w3-border w3-margin-bottom w3-white" onclick="AlgoNext('flu1','flu2')">Yes</button>
+                <!-- <p class="w3-center">or</p> -->
+                <button class="w3-btn w3-block w3-border w3-margin-bottom w3-white">No</button>
+              </div>
+            </div>
+            <!-- 2nd step -->
+            <div id="flu2" style="display:none">
+              <div>
+                <button class="w3-btn w3-circle w3-border w3-left-align w3-white w3-margin-top" onclick="AlgoNext('flu2','flu1')">&#8593;</button>
+                <button class="w3-btn w3-circle w3-border w3-right w3-white  w3-margin-top">&#8634;</button>
+              </div>
+              <div class="w3-panel hg-algodivQ">
+                <p class="w3-center">Header 2</p>
+                <ul>
+                  <li>Treatment: 75 mg orally twice daily for 5 days <sup>co753</sup>.</li>
+                  <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
+                </ul>
+              </div>
+              <!-- <div  class="w3-center">
+                            <p class="w3-center"> &#8595;</p>
+                            <button class="w3-btn  w3-block w3-border w3-margin-bottom w3-white" >Yes</button>
+                            <button class="w3-btn w3-block w3-border w3-margin-bottom w3-white">No</button> 
+                          </div> -->
+            </div>
+
+          </div>
+
+          <button onclick="AccWork('Demo3')" class="hg-acc w3-btn w3-block w3-black w3-left-align">Antivirals: <sup
+              class="w3-text-red">3</sup></button>
+          <div id="Demo3" class="w3-container w3-hide">
+            <ul>
+              <li>Oseltamivir
+                <ul>
+                  <li>Treatment: 75 mg orally twice daily for 5 days <sup>(co753)</sup>.</li>
+                  <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
+                </ul>
+              </li>
+              <li>Zanamivir</li>
+              <li>Peramivir</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div class="w3-third w3-container">
+        <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+        <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+      </div>
+    </div>
+
+    <!-- <footer id="myFooter" class="w3-bottom">
             <div class="w3-container w3-theme-l2 w3-padding-32">
               <h4>Footer</h4>
             </div>
           </footer> -->
-        
-        <!-- END MAIN -->
-        </div>
-      
-        <script src="../script.js"></script>
-        <script>
-          // Get the Sidebar
-          var mySidebar = document.getElementById("mySidebar");
-          
-          // Get the DIV with overlay effect
-          var overlayBg = document.getElementById("myOverlay");
-          
-          // Toggle between showing and hiding the sidebar, and add overlay effect
-          function w3_open() {
-              if (mySidebar.style.display === 'block') {
-                  mySidebar.style.display = 'none';
-                  overlayBg.style.display = "none";
-              } else {
-                  mySidebar.style.display = 'block';
-                  overlayBg.style.display = "block";
-              }
-          }
-          
-          // Close the sidebar with the close button
-          function w3_close() {
-              mySidebar.style.display = "none";
-              overlayBg.style.display = "none";
-          }
 
-          function AccWork(id) {
-            var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-              x.className += " w3-show";
-            } else { 
-              x.className = x.className.replace(" w3-show", "");
-            }
-          }
-        </script>   
+    <!-- END MAIN -->
+  </div>
 
-    </body>
+  <script src="../script.js"></script>
+  <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+
+    // Accordian
+    function AccWork(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // Algorhythm
+    function AlgoNext(idhide, idshow) {
+      document.getElementById(idhide).style.display = "none";
+      document.getElementById(idshow).style.display = "block";
+    }
+
+  </script>
+
+</body>
+
 </html>
-        
- 

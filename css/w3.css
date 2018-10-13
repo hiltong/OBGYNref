@@ -243,21 +243,42 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 body{word-wrap: break-word;}
 
 /* List */
-ul{
+ul{ /*Space after ul's including nested ul's, helps spacing below nested ul*/
     padding: 0px 0px 2px 0px;
     /* background: #4CAF50; */
   }
-li{
+li{ /*space on each side of li*/
     margin: 4px 0px 4px 0px;
     /* background: yellow; */
   }
-ul li ul li{ /* targets all ul elements within an li element, itself within a ul */
+ul li ul li{ /* targets li elements within an ul element, itself within a li */
     margin: 4px 0px 4px 14px;
     /* background:red; */
 } 
 
   /* Accordian */
   .hg-acc{
+    /* width: 100%; */
     margin: 12px 0px 0px 0px; /*seperates accordians so can see shadow*/
     white-space: normal;  /*lets words wrap in accordian button*/
+    color:white;
+    background: #000;
+  }
+
+  /*Algorhythm*/
+  .hg-algodiv1{
+    background: #f0f0f0;
+    border-style: hidden;
+    border-radius: 8px;
+    margin-bottom: 32px;
+  }
+  .hg-algodivQ{
+    background: white;
+    border-style: hidden;
+    border-radius: 8px;
+    /* padding: 0px 0px 0px 80px; */
+  }
+  .hg-algodivQ ul{
+    margin-left: 6px;  /*needed space between disc and border on mobile
+    /* margin: 0px 0px 8px 8px; */
   }
