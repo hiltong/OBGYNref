@@ -282,3 +282,40 @@ ul li ul li{ /* targets li elements within an ul element, itself within a li */
     margin-left: 6px;  /*needed space between disc and border on mobile
     /* margin: 0px 0px 8px 8px; */
   }
+  .hg-algoUpBtn{
+    border: 1px solid #ccc;
+    border-radius:50%;
+    background: white;
+    margin-top: 16px;
+    text-align:left;
+    outline:none;
+  }
+  .hg-algoRfBtn{
+    border: 1px solid #ccc;
+    border-radius:50%;
+    background: white;
+    margin-top: 16px;
+    float:right;
+    outline:none;
+  }
+
+  .hg-algoAnsBtn{
+    border: 1px solid #ccc;
+    background: white;
+    margin-bottom: 16px;
+    display:block;
+    width:100%;
+    outline:none;
+  }
+
+
+
+  .hg-algodiv1 button:active{
+    opacity:0.5
+  }
+
+  .hg-algodiv1 button:transition{
+    opacity:0s
+  }
+
+ 

@@ -84,47 +84,53 @@
           </div>
 
           <!-- Algorhythm Flu-->
-          <button onclick="AccWork('Demo2')" class="hg-acc w3-btn w3-block w3-black w3-left-align">Postexposure
-            Chemoprophylaxis Alogorhythm Alogorhythm</button>
+          <button onclick="AccWork('Demo2')" class="hg-acc w3-btn w3-block w3-black w3-left-align">Algorhythm:
+            Influenza Pregnancy</button>
           <div id="Demo2" class="w3-panel w3-hide hg-algodiv1" style="height: 400px">
+
             <!-- 1st step -->
             <div id="flu1" style="display: block;">
               <div>
-                <button class="w3-btn w3-circle w3-border w3-left-align w3-white w3-margin-top">&#8593;</button>
-                <button class="w3-btn w3-circle w3-border w3-right w3-white  w3-margin-top">&#8634;</button>
+                <!--Header panel-->
+                <h5 class="w3-center">Algorhythm Start</h5>
               </div>
               <div class="w3-panel hg-algodivQ">
-                <p class="w3-center">Header 1</p>
+                <!--Question panel-->
+                <h6 class="w3-center">Overview</h6>
                 <ul>
-                  <li>Treatment: 75 mg orally twice daily for 5 days <sup>co753</sup>.</li>
-                  <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
+                  <li>Treat presumptively based clinical assessment <sup>co753</sup>.</li>
+                  <li>Treat if indciated regardless of vaccination status <sup>co753</sup>.</li>
+                  <li>Do not rely on test results to treat<sup>co753</sup>.</li>
                 </ul>
               </div>
-              <div class="w3-center">
+              <div>
+                <!--Answer panel-->
                 <p class="w3-center"> &#8595;</p>
-                <button class="w3-btn  w3-block w3-border w3-margin-bottom w3-white" onclick="AlgoNext('flu1','flu2')">Yes</button>
-                <!-- <p class="w3-center">or</p> -->
-                <button class="w3-btn w3-block w3-border w3-margin-bottom w3-white">No</button>
+                <button class="w3-btn hg-algoAnsBtn" onclick="AlgoNext('flu1','flu2')">Next</button>
               </div>
             </div>
+
             <!-- 2nd step -->
             <div id="flu2" style="display:none">
               <div>
-                <button class="w3-btn w3-circle w3-border w3-left-align w3-white w3-margin-top" onclick="AlgoNext('flu2','flu1')">&#8593;</button>
-                <button class="w3-btn w3-circle w3-border w3-right w3-white  w3-margin-top">&#8634;</button>
+                <!--Header panel-->
+                <button class="w3-btn hg-algoUpBtn" onclick="AlgoNext('flu2','flu1')">&#8593;</button>
+                <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('flu2','flu1')">&#8634;</button>
               </div>
+              <!--Question panel-->
               <div class="w3-panel hg-algodivQ">
-                <p class="w3-center">Header 2</p>
+                <h6 class="w3-center">Initial Symptom Assesment</h6>
                 <ul>
-                  <li>Treatment: 75 mg orally twice daily for 5 days <sup>co753</sup>.</li>
+                  <li>Temp &ge; 37.8&#8451; (100.0&#8457;) with one or more: <sup>co753</sup></li>
                   <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days (co753).</li>
                 </ul>
               </div>
-              <!-- <div  class="w3-center">
-                            <p class="w3-center"> &#8595;</p>
-                            <button class="w3-btn  w3-block w3-border w3-margin-bottom w3-white" >Yes</button>
-                            <button class="w3-btn w3-block w3-border w3-margin-bottom w3-white">No</button> 
-                          </div> -->
+              <div >
+                 <!--Answer panel-->
+                <p class="w3-center"> &#8595;</p>
+                <button class="w3-btn  hg-algoAnsBtn">Absent</button>
+                <button class="w3-btn hg-algoAnsBtn">Present</button>
+              </div>
             </div>
 
           </div>
@@ -161,7 +167,7 @@
     <!-- END MAIN -->
   </div>
 
-  <script src="../script.js"></script>
+  <script defer src="../script.js"></script> 
   <script>
     // Get the Sidebar
     var mySidebar = document.getElementById("mySidebar");
