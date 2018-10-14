@@ -1,4 +1,4 @@
-var CURRENT_CACHE = '2018-10-14-0735'
+var CURRENT_CACHE = '2018-10-14-1245'
 
 // INSTALL
 self.addEventListener('install', (event) => {
@@ -91,3 +91,18 @@ self.addEventListener('install', (event) => {
       })
     );
   }); */
+
+  // stale-while-revalidate (https://developers.google.com/web/tools/workbox/)
+   /*  self.addEventListener('fetch', (event) => {
+      event.respondWith(
+        caches.open(CURRENT_CACHE).then(cache => {
+          return cache.match(event.request).then(cacheResponse => {
+            const fetchPromise = fetch(event.request).then(networkResponse => {
+              cache.put(event.request, networkResponse.clone());
+              return networkResponse;
+            })
+            return cacheResponse || fetchPromise;
+          });
+        })
+      );
+    }); */
