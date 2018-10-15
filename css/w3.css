@@ -284,18 +284,20 @@ ul li ul li{ /* targets li elements within an ul element, itself within a li */
   }
   .hg-algoUpBtn{
     border: 1px solid #ccc;
-    border-radius:50%;
+    /* border-radius:50%; */
     background: white;
     margin-top: 16px;
-    text-align:left;
+    text-align:center;
+    /* text-align:left; */
     outline:none;
   }
   .hg-algoRfBtn{
     border: 1px solid #ccc;
     border-radius:50%;
     background: white;
-    margin-top: 16px;
-    float:right;
+    /* margin-top: 4px; */
+    margin-bottom: 16px;
+    /* float: right; */
     outline:none;
   }
 

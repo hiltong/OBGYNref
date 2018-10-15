@@ -86,7 +86,7 @@
           <!-- Algorhythm Flu-->
           <button onclick="AccWork('Demo2')" class="hg-acc w3-btn w3-block w3-black w3-left-align">Algorhythm:
             Influenza Pregnancy</button>
-          <div id="Demo2" class="w3-panel w3-hide hg-algodiv1" style="height: 400px">
+          <div id="Demo2" class="w3-panel w3-hide hg-algodiv1" style="height: 600px">
 
             <!-- 1st step -->
             <div id="flu1" style="display: block;">
@@ -111,12 +111,15 @@
             </div>
 
             <!-- 2nd step -->
-            <div id="flu2" style="display:none">
-              <div>
+            <div id="flu2" style="display:none" >
+               
+              <div class="w3-center">
                 <!--Header panel-->
-                <button class="w3-btn hg-algoUpBtn" onclick="AlgoNext('flu2','flu1')">&#8593;</button>
-                <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('flu2','flu1')">&#8634;</button>
+               
+                <button class="w3-btn hg-algoUpBtn w3-center" onclick="AlgoNext('flu2','flu1')">&#8593;</button>
+              
               </div>
+            
               <!--Question panel-->
               <div class="w3-panel hg-algodivQ">
                 <h6 class="w3-center">Initial Symptom Assesment</h6>
@@ -130,6 +133,7 @@
                 <p class="w3-center"> &#8595;</p>
                 <button class="w3-btn  hg-algoAnsBtn">Absent</button>
                 <button class="w3-btn hg-algoAnsBtn">Present</button>
+                <!-- <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('flu2','flu1')">&#8634;</button> -->
               </div>
             </div>
 
