@@ -1,79 +1,79 @@
-var CURRENT_CACHE = '2018-10-15-0545'
+var CURRENT_CACHE = '2018-10-15-0745'
 
 // INSTALL
 self.addEventListener('install', (event) => {
-    // if(!('caches' in self)) return;
-    if (!'caches' in self) { 
-      alert ('This browser does not support service worker caching!'); 
-      return; 
-    } 
-    event.waitUntil(
-      caches.open(CURRENT_CACHE).then(function(cache) {
-        return cache.addAll([
-            'index.html',
-            'index_ob.html',
-            'index_gyn.html',
-            'index_re.html',
-            'references.html',
-            'about.html',
-            'manifest.json',
-            'css/w3.css',
-            'css/w3-theme-black.css',
-            'script.js',
-            'ob/hiv_ob.html'
-          // etc
-        ]).then(() =>{return self.skipWaiting()}
-        );
-      })
-    );
-  });
+  // if(!('caches' in self)) return;
+  if (!'caches' in self) {
+    alert('This browser does not support service worker caching!');
+    return;
+  }
+  event.waitUntil(
+    caches.open(CURRENT_CACHE).then(function (cache) {
+      return cache.addAll([
+        'manifest.json',
+        'script.js',
+        'script-aux.js',
+        'css/w3-theme-black.css',
+        'css/w3.css',
+        'index.html',
+        'index_ob.html',
+        'index_gyn.html',
+        'index_re.html',
+        'references.html',
+        'about.html',
+        // etc
+      ]).then(() => { return self.skipWaiting() }
+      );
+    })
+  );
+});
 
 // ACYIVATE
 // Replace cache
-  self.addEventListener('activate', (event) => { 
-    // let CURRENT_CACHE = 'version2'; 
-    event.waitUntil( 
-      caches.keys().then((cacheKeys) => { 
-        return Promise.all( 
-          cacheKeys.map((cacheKey) => { 
-            if (cacheKey !== CURRENT_CACHE) { 
-              console.log('Deleting cache: ' + cacheKey); 
-              return caches.delete(cacheKey); 
-            } 
-          }) 
-        )  
-      })   
-    );  
-  }); 
-  
-  
-   
-   
+self.addEventListener('activate', (event) => {
+  // let CURRENT_CACHE = 'version2'; 
+  event.waitUntil(
+    caches.keys().then((cacheKeys) => {
+      return Promise.all(
+        cacheKeys.map((cacheKey) => {
+          if (cacheKey !== CURRENT_CACHE) {
+            console.log('Deleting cache: ' + cacheKey);
+            return caches.delete(cacheKey);
+          }
+        })
+      )
+    })
+  );
+});
+
+
+
+
 // FETCH
 
 //  Fetch from network if not in catch
-  /*self.addEventListener('fetch', function(event) {
-    event.respondWith(
-      caches.match(event.request).then(function(response) {
-        return response || fetch(event.request);
-      })
-    );
-  });*/
+/*self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      return response || fetch(event.request);
+    })
+  );
+});*/
 
 
-  // Fetch from network if not in cach and add to cache
-  self.addEventListener('fetch', function(event) {
-    event.respondWith(
-      caches.open(CURRENT_CACHE).then(function(cache) {
-        return cache.match(event.request).then(function (response) {
-          return response || fetch(event.request).then(function(response) {
-            cache.put(event.request, response.clone());
-            return response;
-          });
+// Fetch from network if not in cach and add to cache
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    caches.open(CURRENT_CACHE).then(function (cache) {
+      return cache.match(event.request).then(function (response) {
+        return response || fetch(event.request).then(function (response) {
+          cache.put(event.request, response.clone());
+          return response;
         });
-      })
-    );
-  });
+      });
+    })
+  );
+});
 
   // stale-while-revalidate
   /* self.addEventListener('fetch', (event) => {

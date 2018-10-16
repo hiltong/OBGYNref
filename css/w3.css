@@ -242,6 +242,19 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /* Word wrap all */
 body{word-wrap: break-word;}
 
+/*Back Button*/
+@media all and (display-mode: browser) {
+  .hg-BackButton {
+    color:  yellow;
+    /* visibility: hidden; */
+    display: block;
+  }
+}
+
+/* .hg-BackButton {
+  border: 50px solid yellow;
+} */
+
 /* List */
 ul{ /*Space after ul's including nested ul's, helps spacing below nested ul*/
     padding: 0px 0px 2px 0px;
