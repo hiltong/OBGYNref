@@ -245,14 +245,9 @@ body{word-wrap: break-word;}
 /*Back Button*/
 @media all and (display-mode: browser) {
   .hg-BackButton {
-    color:  yellow;
-    display: none;
+    display: none; /*Hides BackButton when in browser*/
   }
 }
-
-/* .hg-BackButton {
-  border: 50px solid yellow;
-} */
 
 /* List */
 ul{ /*Space after ul's including nested ul's, helps spacing below nested ul*/
