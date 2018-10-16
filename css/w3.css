@@ -245,6 +245,11 @@ body{word-wrap: break-word;}
 /*Back Button*/
 @media all and (display-mode: browser) {
   .hg-BackButton {
+    display: none /*Hides BackButton when in browser*/
+  }
+}
+@media all and (display-mode: standalone) {
+  .hg-BackButton {
     display: block; /*Hides BackButton when in browser*/
   }
 }
