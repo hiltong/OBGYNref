@@ -246,8 +246,7 @@ body{word-wrap: break-word;}
 @media all and (display-mode: browser) {
   .hg-BackButton {
     color:  yellow;
-    /* visibility: hidden; */
-    display: block;
+    display: none;
   }
 }
 
