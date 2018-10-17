@@ -254,7 +254,7 @@ body{word-wrap: break-word;}
   }
 }
 
-/* List */
+/* List--------------------------------------------------------------------------- */
 ul{ /*Space after ul's including nested ul's, helps spacing below nested ul*/
     padding: 0px 0px 2px 0px;
     /* background: #4CAF50; */
@@ -267,6 +267,19 @@ ul li ul li{ /* targets li elements within an ul element, itself within a li */
     margin: 4px 0px 4px 14px;
     /* background:red; */
 } 
+
+.hg-algoUlHoriz{
+  overflow: hidden;
+  /* padding: 0; */
+}
+.hg-algoUlHoriz li{
+  float: left;
+  /* display: block; */
+  padding: 0px 16px 0px 0px;
+}
+/*------------------------------------------------------------------------------------------*/
+
+
 
   /* Accordian */
   .hg-acc{
@@ -286,6 +299,7 @@ ul li ul li{ /* targets li elements within an ul element, itself within a li */
   }
   .hg-algodivQ{
     background: white;
+    /* background: #f0f0f0; */
     border-style: hidden;
     border-radius: 8px;
     /* padding: 0px 0px 0px 80px; */
