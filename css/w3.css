@@ -242,7 +242,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /* Word wrap all */
 body{word-wrap: break-word;}
 
-/*Back Button*/
+/*Back Button---------------------------------------------------------------------------------------------------------*/
 @media all and (display-mode: browser) {
   .hg-BackButton {
     display: none /*Hides BackButton when in browser*/
@@ -255,18 +255,18 @@ body{word-wrap: break-word;}
 }
 
 /* List--------------------------------------------------------------------------- */
-ul{ /*Space after ul's including nested ul's, helps spacing below nested ul*/
-    padding: 0px 0px 2px 0px;
+/* ul{ Space after ul's including nested ul's, helps spacing below nested ul */
+    /* padding: 0px 0px 2px 0px; */
     /* background: #4CAF50; */
-  }
-li{ /*space on each side of li*/
-    margin: 4px 0px 4px 0px;
+  /* } */
+/* li{ space on each side of li */
+    /* margin: 4px 0px 4px 0px; */
     /* background: yellow; */
-  }
-ul li ul li{ /* targets li elements within an ul element, itself within a li */
-    margin: 4px 0px 4px 14px;
+  /* } */
+/* ul li ul li{ targets li elements within an ul element, itself within a li */
+    /* margin: 4px 0px 4px 14px; */
     /* background:red; */
-} 
+/* }  */
 
 .hg-algoUlHoriz{
   overflow: hidden;
@@ -277,11 +277,9 @@ ul li ul li{ /* targets li elements within an ul element, itself within a li */
   /* display: block; */
   padding: 0px 16px 0px 0px;
 }
-/*------------------------------------------------------------------------------------------*/
 
 
-
-  /* Accordian */
+/*Accordian-------------------------------------------------------------------------------------------------------------*/
   .hg-acc{
     /* width: 100%; */
     margin: 12px 0px 0px 0px; /*seperates accordians so can see shadow*/
@@ -290,24 +288,51 @@ ul li ul li{ /* targets li elements within an ul element, itself within a li */
     background: #000;
   }
 
-  /*Algorhythm*/
+  /*Algorithm------------------------------------------------------------------------------------------------------*/
+
   .hg-algodiv1{
     background: #f0f0f0;
     border-style: hidden;
     border-radius: 8px;
     margin-bottom: 32px;
   }
-  .hg-algodivQ{
+
+  /*Question Panel*/
+  .hg-algoDivQ{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding-left: 16px;
+    padding-right: 16px;
     background: white;
-    /* background: #f0f0f0; */
-    border-style: hidden;
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    /* border-style: hidden; */
+    /* border-radius: 8px; */
     /* padding: 0px 0px 0px 80px; */
   }
-  .hg-algodivQ ul{
-    margin-left: 6px;  /*needed space between disc and border on mobile
-    /* margin: 0px 0px 8px 8px; */
+  .hg-algoDivQ h6{
+    text-align:center;
+    margin-bottom: 6px;
   }
+  .hg-algoDivQ ul{
+    margin-top: 0px;
+    margin-left: 16px;
+    padding: 0px;
+  }
+  /* .hg-algoDivQ ul li{
+    margin-left: 0px;  
+    background: plum;
+  } */
+
+  /*Reference panel*/
+  .hg-algoDivRef ol{
+    margin: 0px; 
+    padding: 16px;
+  }
+
+/*Up Button*/
   .hg-algoUpBtn{
     border: 1px solid #ccc;
     /* border-radius:50%; */
