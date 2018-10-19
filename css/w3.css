@@ -254,6 +254,26 @@ body{word-wrap: break-word;}
   }
 }
 
+/* Title--------------------------------------------------------------------------- */
+.hg-h1PageTitle{
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+  color: #009688;
+  /* background-color: #00ffff; */
+}
+.hg-h2PageSubtitle{
+    font-size: 1.17em;
+    margin-top: 0.10em;
+    color: #009688;
+    /* background-color: #ddffdd; */
+}
+.hg-h3PageSubtitle{
+  font-size: 1.00em;
+  margin-top: 0.10em;
+  /* color: #009688; */
+  /* background-color: #ddffdd; */
+}
+
 /* List--------------------------------------------------------------------------- */
 /* ul{ Space after ul's including nested ul's, helps spacing below nested ul */
     /* padding: 0px 0px 2px 0px; */
@@ -290,14 +310,29 @@ body{word-wrap: break-word;}
 
   /*Algorithm------------------------------------------------------------------------------------------------------*/
 
-  .hg-algodiv1{
-    background: #f0f0f0;
+  /*Containing div*/
+  .hg-algoDivMain{
+    /* background: #f0f0f0; */
     border-style: hidden;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    margin-top: 32px;
     margin-bottom: 32px;
   }
 
-  /*Question Panel*/
+  /*AlgoButton*/
+  .hg-algoBtnQ{
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    margin-bottom: 16px;
+    display:block;
+    width:100%;
+    outline:none;
+    text-align:center;
+    margin-left: auto ;
+    margin-right: auto ;
+  }
+
+  /*Question Div*/
   .hg-algoDivQ{
     margin-top: 16px;
     margin-bottom: 16px;
@@ -307,13 +342,14 @@ body{word-wrap: break-word;}
     padding-right: 16px;
     background: white;
     border: 1px solid #ccc;
-    background: #f0f0f0;
+  
     /* border-style: hidden; */
     /* border-radius: 8px; */
     /* padding: 0px 0px 0px 80px; */
   }
-  .hg-algoDivQ h6{
+  .hg-algoDivQ h3{
     text-align:center;
+    font-size: 1.10em;
     margin-bottom: 6px;
   }
   .hg-algoDivQ ul{
@@ -332,13 +368,23 @@ body{word-wrap: break-word;}
     padding: 16px;
   }
 
+  .hg_algoRefLi{
+    font-size: 0.80em;
+  }
+
 /*Up Button*/
+.hg-algoUpBtnDiv{
+   text-align:center;
+   margin-top: 32px;
+}
   .hg-algoUpBtn{
     border: 1px solid #ccc;
     /* border-radius:50%; */
-    background: white;
-    margin-top: 16px;
-    text-align:center;
+    width: 50px;
+    background: #f0f0f0;
+    margin-bottom: 16px;
+    margin-left: auto ;
+    margin-right: auto ;
     /* text-align:left; */
     outline:none;
   }
