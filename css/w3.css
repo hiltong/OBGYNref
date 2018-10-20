@@ -352,14 +352,15 @@ body{word-wrap: break-word;}
 /*Up Button*/
   .hg-algoDivBtnUp{
     text-align:center;
-    margin-top: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
   .hg-algoBtnUp{
     border: 1px solid #ccc;
     /* border-radius:50%; */
     width: 50px;
     background: #f0f0f0;
-    margin-bottom: 16px;
+    
     margin-left: auto ;
     margin-right: auto ;
     /* text-align:left; */
