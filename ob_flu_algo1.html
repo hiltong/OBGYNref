@@ -69,47 +69,56 @@
                 <h1 class="hg-h1PageTitle">Influenza in Pregnancy</h1>
                 <h2 class="hg-h2PageSubtitle">Assessment & Treatment Algorithm</h2>
                 <!--PAGE STUFF-->
-                <div class="w3-bar-block ">
+                <div>
 
                     <!-- Algo start -->
-                    <div id="start" class="hg-algoDivMain" style="display: block;">
+                    <div id="start" class="hg-algoDivMain" style="display: none;">
 
-                        <div class="hg-algoUpBtnDiv" ">
-                            <button class="w3-btn hg-algoBtnQ" style="max-width: 300px;" onclick="AlgoNext('start','proph')">Exposure
+                        <div class="hg-algoDivQ" style="width:100px">
+                            <h3 class="hg-algoh3">Start</h3>
+                        </div>
+                        <p class="hg-algoParaDn"> &#8595;</p>
+                        <div class="hg-algoDivBtnA">
+                            <button class=" w3-btn hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
                                 to influenza &#8594;</button>
-                            <button class="w3-btn hg-algoBtnQ" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
+                            <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
                                 influenza &#8594;</button>
-                            <button class="w3-btn hg-algoBtnQ" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
+                            <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
                                 influenza &#8594;</button>
                         </div>
                     </div>
 
                     <!-- Algo proph -->
-                    <div id="proph" class="hg-algoDivMain" style="display: none; ">
-                        <div class="hg-algoUpBtnDiv">
-                            <button class="w3-btn hg-algoUpBtn" onclick="AlgoNext('proph','start')">&#8593;</button>
+                    <div id="proph" class="hg-algoDivMain" style="display: block; ">
+                        <div class="hg-algoDivBtnUp">
+                            <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')">&#8593;</button>
                         </div>
-                        <div class="hg-algoDivQ" style="max-width: 500px;">
-                                <h3 >Postexposure Antiviral Chemoprophylaxis</h3>
-                                <ul>
-                                        <li>Oseltamivir
-                                          <ul>
-                                            <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days. <sup>1</sup></li>
-                                          </ul>
-                                        </li>
-                                        <li>Zanamivir</li>
-                                      </ul>
+                        <div class="hg-algoDivA" style="max-width: 500px;">
+                            <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
+                            <ul class="hg-algoUl">
+                                <li>Oseltamivir
+                                    <ul>
+                                        <li>75 mg once daily for 7–10 days. <sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Zanamivir
+                                    <ul>
+                                        <li>10 mg (two 5-mg inhalations) once daily for 7 days. <sup>1</sup></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
                         </div>
                         <!--Reference panel-->
                         <div class=hg-algoDivRef>
-                                <ol>
-                                    <li class="hg_algoRefLi">
-                                        Assessment and treatment of pregnant women with suspected or confirmed
-                                        influenza. ACOG Committee Opinion No. 753. American College of Obstetricians
-                                        and Gynecologists. Obstet Gynecol 2018;132:e169–73.
-                                    </li>
-                                </ol>
-                            </div>
+                            <ol>
+                                <li class="hg_algoRefLi">
+                                    Assessment and treatment of pregnant women with suspected or confirmed
+                                    influenza. ACOG Committee Opinion No. 753. American College of Obstetricians
+                                    and Gynecologists. Obstet Gynecol 2018;132:e169–73.
+                                </li>
+                            </ol>
+                        </div>
                     </div>
 
 
@@ -167,6 +176,7 @@
     <!-- END MAIN -->
 
     <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
     <script>
         // Get the Sidebar
         var mySidebar = document.getElementById("mySidebar");
@@ -191,11 +201,6 @@
             overlayBg.style.display = "none";
         }
 
-        // Algorhythm
-        function AlgoNext(idhide, idshow) {
-            document.getElementById(idhide).style.display = "none";
-            document.getElementById(idshow).style.display = "block";
-        }
     </script>
 
 </body>

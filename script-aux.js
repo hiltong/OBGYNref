@@ -57,3 +57,9 @@ function AccWork(document, id) {
   }
 }
 
+/*Algorhithm-------------------------------------------------------------------------------*/
+ function AlgoNext(idhide, idshow) {
+  //  alert('Here');
+  document.getElementById(idhide).style.display = "none";
+  document.getElementById(idshow).style.display = "block";
+}

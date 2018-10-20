@@ -304,80 +304,57 @@ body{word-wrap: break-word;}
     /* width: 100%; */
     margin: 12px 0px 0px 0px; /*seperates accordians so can see shadow*/
     white-space: normal;  /*lets words wrap in accordian button*/
-    color:white;
-    background: #000;
+    /* color:white; */
+    color:#000;
+    /* background: #000; */
+    background:  #f0f0f0;
   }
 
   /*Algorithm------------------------------------------------------------------------------------------------------*/
 
-  /*Containing div*/
+  /*Main containing div*/
   .hg-algoDivMain{
-    /* background: #f0f0f0; */
-    border-style: hidden;
-    /* border-radius: 8px; */
     margin-top: 32px;
     margin-bottom: 32px;
+    /* background: beige; */
   }
 
-  /*AlgoButton*/
-  .hg-algoBtnQ{
-    border: 1px solid #ccc;
-    background: #f0f0f0;
-    margin-bottom: 16px;
-    display:block;
-    width:100%;
-    outline:none;
-    text-align:center;
-    margin-left: auto ;
-    margin-right: auto ;
-  }
+/*Question Div*/
+.hg-algoDivQ{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto ;
+  margin-right: auto ;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* background: white; */
+  border: 1px solid #ccc;
+  /* background: red; */
+}
 
-  /*Question Div*/
-  .hg-algoDivQ{
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: auto ;
-    margin-right: auto ;
-    padding-left: 16px;
-    padding-right: 16px;
-    background: white;
-    border: 1px solid #ccc;
-  
-    /* border-style: hidden; */
-    /* border-radius: 8px; */
-    /* padding: 0px 0px 0px 80px; */
-  }
-  .hg-algoDivQ h3{
-    text-align:center;
-    font-size: 1.10em;
-    margin-bottom: 6px;
-  }
-  .hg-algoDivQ ul{
-    margin-top: 0px;
-    margin-left: 16px;
-    padding: 0px;
-  }
-  /* .hg-algoDivQ ul li{
-    margin-left: 0px;  
-    background: plum;
-  } */
+/*Question Div*/
+.hg-algoDivA{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto ;
+  margin-right: auto ;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* background: white; */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+    /* background: rgb(221, 205, 205); */
+}
 
-  /*Reference panel*/
-  .hg-algoDivRef ol{
-    margin: 0px; 
-    padding: 16px;
-  }
 
-  .hg_algoRefLi{
-    font-size: 0.80em;
-  }
+
 
 /*Up Button*/
-.hg-algoUpBtnDiv{
-   text-align:center;
-   margin-top: 32px;
-}
-  .hg-algoUpBtn{
+  .hg-algoDivBtnUp{
+    text-align:center;
+    margin-top: 32px;
+  }
+  .hg-algoBtnUp{
     border: 1px solid #ccc;
     /* border-radius:50%; */
     width: 50px;
@@ -386,35 +363,98 @@ body{word-wrap: break-word;}
     margin-left: auto ;
     margin-right: auto ;
     /* text-align:left; */
-    outline:none;
-  }
-  .hg-algoRfBtn{
-    border: 1px solid #ccc;
-    border-radius:50%;
-    background: white;
-    /* margin-top: 4px; */
-    margin-bottom: 16px;
-    /* float: right; */
-    outline:none;
+    /* outline:none; */
   }
 
-  .hg-algoAnsBtn{
+/*Down Arrow p*/
+.hg-algoParaDn{
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  /* background: yellow; */
+}
+
+  /*Algo AnswernButton*/
+.hg-algoDivBtnA{
+  text-align:center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* background: red; */
+}
+  .hg-algoBtnA{
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    margin-bottom: 16px;
+    display:block;
+    width:100%;
+    /* outline:none; */
+    text-align:center;
+    margin-left: auto ;
+    margin-right: auto ;
+    white-space: normal;  /*lets words wrap in accordian button*/
+  
+  }
+
+  /*Algo  h3*/
+  .hg-algoh3{
+    text-align:center;
+    font-size: 1.10em;
+    margin-bottom: 6px;
+    color: #009688;
+  }
+  
+  /*Algo UL*/
+  .hg-algoUl{
+    margin-top: 0px;
+    margin-left: 12px;
+    margin-right: 4px;
+    padding: 0px;
+    /* background: powderblue; */
+  }
+ .hg-algoUl li ul{
+    margin-left: 0px; 
+    padding-left: 16px; 
+    /* background: plum; */
+  }
+
+ /*  .hg-algoDiv ul{
+    margin-top: 0px;
+    margin-left: 16px;
+    padding: 0px;
+  } */
+  /* .hg-algoDivQ ul li{
+    margin-left: 0px;  
+    background: plum;
+  } */
+
+  
+  /*Algo Reference*/
+  .hg-algoDivRef{
+    margin-top: 0px;
+    margin-left: 0px;
+    /* background: lightcyan; */
+  }
+  .hg-algoDivRef ol{
+    margin: 0px; 
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px
+  }
+  .hg_algoRefLi{
+    font-size: 0.80em;
+  }
+
+
+  
+
+  /* .hg-algoAnsBtn{
     border: 1px solid #ccc;
     background: white;
     margin-bottom: 16px;
     display:block;
     width:100%;
-    outline:none;
-  }
+    outline:none; 
+  } 
+  */
 
-
-
-  .hg-algodiv1 button:active{
-    opacity:0.5
-  }
-
-  .hg-algodiv1 button:transition{
-    opacity:0s
-  }
-
- 
