@@ -3,7 +3,7 @@
 
 <meta charset="UTF-8">
 <title>Ob: Influenza</title>
-<meta name="description" content="Influenza in obstetrics.">
+<meta name="description" content="Pearls for the management of influenza in pregnancy.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#000">
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -66,10 +66,10 @@
 
     <div class="w3-row w3-padding-64">
       <div class="w3-twothird w3-container">
-        <h1 class="w3-text-teal">Ob: Influenza</h1>
-        <div class="w3-bar-block ">
+        <h1 class="hg-h1PageTitle">Influenza in Pregnancy</h1>
+        <!-- <div class="w3-bar-block "> -->
 
-          <button onclick="AccWork('Demo1')" class="hg-acc w3-btn w3-block w3-left-align">Antivirals:</button>
+          <button onclick="AccWork('Demo1')" class="hg-accBtn w3-btn">Antivirals:</button>
           <div id="Demo1" class="w3-container w3-hide">
             <ul>
               <li>Oseltamivir
@@ -84,90 +84,21 @@
           </div>
 
           <!-- Algorhythm Flu-->
-          <button onclick="AccWork('Demo2')" class="hg-acc w3-btn w3-block w3-left-align">Algorhythm:
+          <button onclick="AccWork('Demo2')" class="hg-accBtn w3-btn">Algorhythm:
             Influenza Pregnancy</button>
-          <div id="Demo2" class="w3-panel w3-hide hg-algodiv1" style="height: 600px">
+          <div id="Demo2" class="w3-panel w3-hide hg-algodiv1">
 
-            <!-- 1 -->
-            <div id="flu1" style="display: block;">
-              <div>
-                <!--Header panel-->
-                <h5 class="w3-center">Algorhythm Start</h5>
-              </div>
-              <div class="w3-panel hg-algodivQ">
-                <!--Question panel-->
-                <h6 class="w3-center">Overview</h6>
-                <ul>
-                  <li>Treat presumptively based clinical assessment.</li>
-                  <li>Treat if indciated regardless of vaccination status.</li>
-                  <li>Do not rely on test results to treat.</li>
-                </ul>
-                <sup style="float:right">co753</sup>
-              </div>
-              <div>
-                <!--Answer panel-->
-                <p class="w3-center"> &#8595;</p>
-                <button class="w3-btn hg-algoAnsBtn" onclick="AlgoNext('flu1','flu2')">Next</button>
-              </div>
-            </div>
-
-            <!-- 2 -->
-            <div id="flu2" style="display:none">
-              <div class="w3-center">
-                <!--Header panel-->
-                <button class="w3-btn hg-algoUpBtn w3-center" onclick="AlgoNext('flu2','flu1')">&#8593;</button>
-              </div>
-              <!--Question panel-->
-              <div class="w3-panel hg-algodivQ">
-                <h6 class="w3-center">Initial Symptom Assesment</h6>
-                <ul>
-                  <li>Fever &ge; 37.8&#8451; (100.0&#8457;) with one or more:
-                    <ul class="hg-algoUlHoriz">
-                      <li>Cough</li>
-                      <li>Sore throat</li>
-                      <li>Coryza</li>
-                      <li>Headache</li>
-                      <li>Myalgia</li>
-                      <li>Fatigue</li>
-                      <li>SOB</li>
-                    </ul>
-                  </li>
-                  <li>No fever but sudden onset symptoms consistent with influenza:</li>
-                </ul>
-                <sup style="float:right">co753</sup>
-              </div>
-              <div>
-                <!--Answer panel-->
-                <p class="w3-center"> &#8595;</p>
-                <button class="w3-btn  hg-algoAnsBtn" onclick="AlgoNext('flu2','flu3')">Absent</button>
-                <button class="w3-btn hg-algoAnsBtn">Present</button>
-              </div>
-            </div>
-
-            <!-- 3 -->
-            <div id="flu3" style="display:none">
-              <div class="w3-center">
-                <!--Header panel-->
-                <button class="w3-btn hg-algoUpBtn w3-center" onclick="AlgoNext('flu3','flu2')">&#8593;</button>
-              </div>
-              <!--Question panel-->
-              <div class="w3-panel hg-algodivQ">
-                  <h6 class="w3-center">Rountine Care</h6>
-                <!-- <p>Routine care</p> -->
-                <sup style="float:right">co753</sup>
-              </div>
-            </div>
-
+           
           </div>
 
-          <button onclick="AccWork('Demo3')" class="hg-acc w3-btn w3-block w3-left-align">References:</button>
+          <button onclick="AccWork('Demo3')" class="hg-accBtn w3-btn ">References:</button>
           <div id="Demo3" class="w3-container w3-hide">
               <dl>
                   <dt>1</dt>
                   <dd>Assessment and treatment of pregnant women with suspected or confirmed influenza. ACOG Committee Opinion No. 753. American College of Obstetricians and Gynecologists. Obstet Gynecol 2018;132:e169–73.</dd>
               </dl>
           </div>
-        </div>
+        <!-- </div> -->
 
       </div>
       <div class="w3-third w3-container">

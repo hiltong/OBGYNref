@@ -300,14 +300,15 @@ body{word-wrap: break-word;}
 
 
 /*Accordian-------------------------------------------------------------------------------------------------------------*/
-  .hg-acc{
-    /* width: 100%; */
+  .hg-accBtn{
     margin: 12px 0px 0px 0px; /*seperates accordians so can see shadow*/
     white-space: normal;  /*lets words wrap in accordian button*/
-    /* color:white; */
-    color:#000;
-    /* background: #000; */
+    text-align:left;
+    color:teal;
     background:  #f0f0f0;
+    display:block;
+    width:100%;
+    font-size: 1.2em;
   }
 
   /*Algorithm------------------------------------------------------------------------------------------------------*/
