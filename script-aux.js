@@ -80,7 +80,7 @@ function AccToggle(accID) {
 }
 
 
-function GetAccDivs(){
+/* function GetAccDivs(){
   // alert('Here');
   var accArray = document.getElementsByClassName("hg-accDivMain");
   var divArray=new Array;
@@ -97,4 +97,4 @@ function GetAccDivs(){
   }
   alert(accArray.length);
   alert(divArray.length);
-}
+} */
