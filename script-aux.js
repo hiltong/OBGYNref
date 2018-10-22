@@ -48,13 +48,28 @@ function SideBarClose(document) {
   overlayBg.style.display = "none";
 }
 
-function AccWork(document, id) {
+/* function AccWork(document, id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else {
     x.className = x.className.replace(" w3-show", "");
   }
+} */
+
+/*Accordian Open/Close*/
+function AccToggle(accID) {
+    //  alert('Here');
+  var x = document.getElementById(accID);
+    if (x.style.display === "block") {
+      // alert('Here1');
+        x.style.display = "none";
+    } 
+    else { /*For some reason CSS does not set display:None so this picks up if not set as it is on 1st call*/
+      // alert('Here3');
+        x.style.display = "block";
+    }
+
 }
 
 /*Algorhithm-------------------------------------------------------------------------------*/

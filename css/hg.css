@@ -1,0 +1,261 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family:  Arial, Helvetica, sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+/* Word wrap all */
+body{word-wrap: break-word;}
+
+/*Back Button---------------------------------------------------------------------------------------------------------*/
+@media all and (display-mode: browser) {
+    .hg-BackButton {
+      display: none /*Hides BackButton when in browser*/
+    }
+  }
+  @media all and (display-mode: standalone) {
+    .hg-BackButton {
+      display: block; /*Hides BackButton when in browser*/
+    }
+  }
+  
+  /* Title--------------------------------------------------------------------------- */
+  .hg-h1PageTitle{
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+    color: #009688;
+    /* background-color: #00ffff; */
+  }
+  .hg-h2PageSubtitle{
+      font-size: 1.17em;
+      margin-top: 0.10em;
+      color: #009688;
+      /* background-color: #ddffdd; */
+  }
+  .hg-h3PageSubtitle{
+    font-size: 1.00em;
+    margin-top: 0.10em;
+    /* color: #009688; */
+    /* background-color: #ddffdd; */
+  }
+  
+  /* List--------------------------------------------------------------------------- */
+  /* ul{ Space after ul's including nested ul's, helps spacing below nested ul */
+      /* padding: 0px 0px 2px 0px; */
+      /* background: #4CAF50; */
+    /* } */
+  /* li{ space on each side of li */
+      /* margin: 4px 0px 4px 0px; */
+      /* background: yellow; */
+    /* } */
+  /* ul li ul li{ targets li elements within an ul element, itself within a li */
+      /* margin: 4px 0px 4px 14px; */
+      /* background:red; */
+  /* }  */
+  
+  /* .hg-algoUlHoriz{
+    overflow: hidden;
+
+  } */
+ /*  .hg-algoUlHoriz li{
+    float: left;
+    padding: 0px 16px 0px 0px;
+  } */
+  
+  
+  /*Accordian-------------------------------------------------------------------------------------------------------------*/
+    .hg-accBtn{
+      margin: 12px 0px 0px 0px; /*seperates accordians so can see shadow*/
+      white-space: normal;  /*lets words wrap in accordian button*/
+      text-align:left;
+      color:teal;
+      background:  #f0f0f0;
+      display:block;
+      width:100%;
+      font-size: 1.2em;
+    }
+    .hg-accDivMain{
+        display:none;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        /* background: beige; */
+    }
+    .hg-accUl{
+       
+        margin-left: 16px;
+        margin-right: 0px;
+        padding: 0px;
+        /* background: powderblue; */
+    }
+    .hg-accUl li ul{
+        margin-left: 0px; 
+        padding-left: 16px; 
+        /* background: plum; */
+      }
+      .hg-accAalone{
+        margin-left: 16px;
+        color: teal;
+      }
+      .hg-accOlRef{
+        margin-top: 16px;
+        margin-left: 16px;
+        margin-right: 0px;
+        padding: 0px;
+        font-size: 0.80em;
+        /* background: powderblue; */
+      }
+  
+    /*Algorithm------------------------------------------------------------------------------------------------------*/
+  
+    /*Main containing div*/
+    .hg-algoDivMain{
+      margin-top: 32px;
+      margin-bottom: 32px;
+      display:none;
+      /* background: beige; */
+    }
+  
+  /*Question Div*/
+  .hg-algoDivQ{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* background: white; */
+    border: 1px solid #ccc;
+    /* background: red; */
+  }
+  
+  /*Question Div*/
+  .hg-algoDivA{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* background: white; */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+      /* background: rgb(221, 205, 205); */
+  }
+  
+  
+  
+  
+  /*Up Button*/
+    .hg-algoDivBtnUp{
+      text-align:center;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    .hg-algoBtnUp{
+      border: 1px solid #ccc;
+      /* border-radius:50%; */
+      width: 50px;
+      background: #f0f0f0;
+      margin-left: auto ;
+      margin-right: auto ;
+      font-size: 1.2em;
+      /* text-align:left; */
+      /* outline:none; */
+    }
+  
+  /*Down Arrow p*/
+  .hg-algoParaDn{
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    /* background: yellow; */
+  }
+  
+    /*Algo AnswernButton*/
+  .hg-algoDivBtnA{
+    text-align:center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+    /* background: red; */
+  }
+    .hg-algoBtnA{
+      border: 1px solid #ccc;
+      background: #f0f0f0;
+      margin-bottom: 16px;
+      display:block;
+      width:100%;
+      /* outline:none; */
+      text-align:center;
+      margin-left: auto ;
+      margin-right: auto ;
+      white-space: normal;  /*lets words wrap in accordian button*/
+    
+    }
+  
+    /*Algo  h3*/
+    .hg-algoh3{
+      text-align:center;
+      font-size: 1.10em;
+      margin-bottom: 6px;
+      color: #009688;
+    }
+    
+    /*Algo UL*/
+    .hg-algoUl{
+      margin-top: 0px;
+      margin-left: 12px;
+      margin-right: 4px;
+      padding: 0px;
+      /* background: powderblue; */
+    }
+   .hg-algoUl li ul{
+      margin-left: 0px; 
+      padding-left: 16px; 
+      /* background: plum; */
+    }
+  
+   /*  .hg-algoDiv ul{
+      margin-top: 0px;
+      margin-left: 16px;
+      padding: 0px;
+    } */
+    /* .hg-algoDivQ ul li{
+      margin-left: 0px;  
+      background: plum;
+    } */
+  
+    
+    /*Algo Reference*/
+    .hg-algoDivRef{
+      margin-top: 0px;
+      margin-left: 0px;
+      /* background: lightcyan; */
+    }
+    .hg-algoDivRef ol{
+      margin: 0px; 
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      font-size: 0.80em;
+    }
+    /* .hg-algoRefLi{
+      font-size: 0.80em;
+    } */
+  
+  
+    
+  
+    /* .hg-algoAnsBtn{
+      border: 1px solid #ccc;
+      background: white;
+      margin-bottom: 16px;
+      display:block;
+      width:100%;
+      outline:none; 
+    } 
+    */
