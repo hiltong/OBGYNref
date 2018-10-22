@@ -58,26 +58,25 @@ function SideBarClose(document) {
 } */
 
 /*Accordian Open/Close*/
-function AccToggle(accID) {
+/* function AccToggle(accID) {
     //  alert('Here');
   var x = document.getElementById(accID);
     if (x.style.display === "block") {
       // alert('Here1');
         x.style.display = "none";
     } 
-    else { /*For some reason CSS does not set display:None so this picks up if not set as it is on 1st call*/
+    else { 
       // alert('Here3');
         x.style.display = "block";
     }
-
-}
+} */
 
 /*Algorhithm-------------------------------------------------------------------------------*/
- function AlgoNext(idhide, idshow) {
+/*  function AlgoNext(idhide, idshow) {
   //  alert('Here');
   document.getElementById(idhide).style.display = "none";
   document.getElementById(idshow).style.display = "block";
-}
+} */
 
 
 /* function GetAccDivs(){
