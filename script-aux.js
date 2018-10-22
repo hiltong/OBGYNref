@@ -72,12 +72,12 @@ function AccToggle(accID) {
 }
 
 /*Algorhithm-------------------------------------------------------------------------------*/
-/*  function AlgoNext(idhide, idshow) {
+function AlgoNext(idhide, idshow) {
   //  alert('Here');
   document.getElementById(idhide).style.display = "none";
   document.getElementById(idshow).style.display = "block";
-} */
-
+} 
+ 
 
 /* function GetAccDivs(){
   // alert('Here');

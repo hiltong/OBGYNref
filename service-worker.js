@@ -3,7 +3,6 @@ var CURRENT_CACHE = '2018-10-22-1100';
 // INSTALL
 self.addEventListener('install', (event) => {
   // if(!('caches' in self)) return;
-  alert('install');
   if (!'caches' in self) {
     alert('This browser does not support service worker caching!');
     return;
@@ -33,7 +32,6 @@ self.addEventListener('install', (event) => {
 // ACYIVATE
 // Replace cache
 self.addEventListener('activate', (event) => {
-  alert('activate');
   // let CURRENT_CACHE = 'version2'; 
   event.waitUntil(
     caches.keys().then((cacheKeys) => {
