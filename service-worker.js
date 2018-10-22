@@ -1,7 +1,8 @@
-var CURRENT_CACHE = '2018-10-22-0935'
+var CURRENT_CACHE = '2018-10-22-0930'
 
 // INSTALL
-/* self.addEventListener('install', (event) => {
+self.addEventListener('install', (event) => {
+      alert('sw');
   // if(!('caches' in self)) return;
   if (!'caches' in self) {
     alert('This browser does not support service worker caching!');
@@ -27,92 +28,11 @@ var CURRENT_CACHE = '2018-10-22-0935'
       );
     })
   );
-}); */
-
-// INSTALL 
-
-
- 
-self.addEventListener('install', (event) => { 
-
-
-  // if(!('caches' in self)) return;
-
-
-  if (!'caches' in self) {
-
-
-    alert('This browser does not support service worker caching!');
-
-
-    return;
-
-
-  }
-
-
-  event.waitUntil(
-
-
-    caches.open(CURRENT_CACHE).then(function (cache) {
-
-
-      return cache.addAll([
-
-
-        'manifest.json',
-
-
-        'script.js',
-
-
-        'script-aux.js',
-
-
-        'css/w3-theme-black.css',
-
-
-        'css/w3.css',
-
-
-        'index.html',
-
-
-        'index_ob.html',
-
-
-        'index_gyn.html',
-
-
-        'index_re.html',
-
-
-        'references.html',
-
-
-        'about.html',
-
-
-        // etc
-
-
-      ]).then(() => { return self.skipWaiting() }
-
-
-      );
-
-
-    })
-
-
-  );
-
-
 });
 
 // ACYIVATE
 // Replace cache
-/* self.addEventListener('activate', (event) => {
+self.addEventListener('activate', (event) => {
   // let CURRENT_CACHE = 'version2'; 
   event.waitUntil(
     caches.keys().then((cacheKeys) => {
@@ -127,57 +47,8 @@ self.addEventListener('install', (event) => {
     })
   );
 });
- */
-
-  // ACYIVATE
 
 
- // Replace cache
-
-
- self.addEventListener('activate', (event) => {
-
-
-  // let CURRENT_CACHE = 'version2'; 
-
-
-  event.waitUntil(
-
-
-    caches.keys().then((cacheKeys) => {
-
-
-      return Promise.all(
-
-
-        cacheKeys.map((cacheKey) => {
-
-
-          if (cacheKey !== CURRENT_CACHE) {
-
-
-            console.log('Deleting cache: ' + cacheKey);
-
-
-            return caches.delete(cacheKey);
-
-
-          }
-
-
-        })
-
-
-      )
-
-
-    })
-
-
-  );
-
-
-});
 
 
 // FETCH
@@ -206,75 +77,34 @@ self.addEventListener('install', (event) => {
   );
 }); */
 
-// stale-while-revalidate
-/* self.addEventListener('fetch', (event) => {
-  const version = 'v1';
-  event.respondWith(
-   caches.open(version).then(cache => {
-      return cache.match(event.request).then((response) => {
-        let fetchPromise = fetch(event.request).then(networkResponse => {
-          cache.put(event.request, networkResponse.clone());
-          return networkResponse;
-        });
-        event.waitUntil(fetchPromise);
-        return response;
-      })
-    })
-  );
-}); */
-
-// stale-while-revalidate (https://developers.google.com/web/tools/workbox/)
-/*  self.addEventListener('fetch', (event) => {
-   event.respondWith(
-     caches.open(CURRENT_CACHE).then(cache => {
-       return cache.match(event.request).then(cacheResponse => {
-         const fetchPromise = fetch(event.request).then(networkResponse => {
-           cache.put(event.request, networkResponse.clone());
-           return networkResponse;
-         })
-         return cacheResponse || fetchPromise;
-       });
-     })
-   );
- }); */
-
-// stale-while-revalidate (https://developers.google.com/web/tools/workbox/)
-
-
-self.addEventListener('fetch', (event) => {
-
-
-  event.respondWith(
-
-
-    caches.open(CURRENT_CACHE).then(cache => {
-
-
-      return cache.match(event.request).then(cacheResponse => {
-
-
-        const fetchPromise = fetch(event.request).then(networkResponse => {
-
-
-          cache.put(event.request, networkResponse.clone());
-
-
-          return networkResponse;
-
-
+  // stale-while-revalidate
+  /* self.addEventListener('fetch', (event) => {
+    const version = 'v1';
+    event.respondWith(
+     caches.open(version).then(cache => {
+        return cache.match(event.request).then((response) => {
+          let fetchPromise = fetch(event.request).then(networkResponse => {
+            cache.put(event.request, networkResponse.clone());
+            return networkResponse;
+          });
+          event.waitUntil(fetchPromise);
+          return response;
         })
+      })
+    );
+  }); */
 
-
-        return cacheResponse || fetchPromise;
-
-
-      });
-
-
-    })
-
-
-  );
-
-
-});
+  // stale-while-revalidate (https://developers.google.com/web/tools/workbox/)
+    self.addEventListener('fetch', (event) => {
+      event.respondWith(
+        caches.open(CURRENT_CACHE).then(cache => {
+          return cache.match(event.request).then(cacheResponse => {
+            const fetchPromise = fetch(event.request).then(networkResponse => {
+              cache.put(event.request, networkResponse.clone());
+              return networkResponse;
+            })
+            return cacheResponse || fetchPromise;
+          });
+        })
+      );
+    });
