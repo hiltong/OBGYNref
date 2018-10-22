@@ -58,7 +58,7 @@ function SideBarClose(document) {
 } */
 
 /*Accordian Open/Close*/
-/* function AccToggle(accID) {
+function AccToggle(accID) {
     //  alert('Here');
   var x = document.getElementById(accID);
     if (x.style.display === "block") {
@@ -69,7 +69,7 @@ function SideBarClose(document) {
       // alert('Here3');
         x.style.display = "block";
     }
-} */
+}
 
 /*Algorhithm-------------------------------------------------------------------------------*/
 /*  function AlgoNext(idhide, idshow) {
