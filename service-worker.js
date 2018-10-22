@@ -1,4 +1,4 @@
-var CURRENT_CACHE = '2018-10-21-2130'
+var CURRENT_CACHE = '2018-10-21-2135'
 
 // INSTALL
 self.addEventListener('install', (event) => {
@@ -15,6 +15,7 @@ self.addEventListener('install', (event) => {
         'script-aux.js',
         'css/w3-theme-black.css',
         'css/w3.css',
+        'css/hg.css',
         'index.html',
         'index_ob.html',
         'index_gyn.html',
