@@ -96,10 +96,13 @@ body{word-wrap: break-word;}
         padding-left: 16px; 
         /* background: plum; */
       }
+
       .hg-accAalone{
         margin-left: 16px;
         color: teal;
+        text-decoration: none;
       }
+
       .hg-accOlRef{
         margin-top: 16px;
         margin-left: 16px;
