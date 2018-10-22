@@ -78,3 +78,23 @@ function AccToggle(accID) {
   document.getElementById(idhide).style.display = "none";
   document.getElementById(idshow).style.display = "block";
 }
+
+
+function GetAccDivs(){
+  // alert('Here');
+  var accArray = document.getElementsByClassName("hg-accDivMain");
+  var divArray=new Array;
+  // var person(firstName, lastName);
+  for (i = 0; i < accArray.length; i++) {
+    // alert('Here2');
+    // var nm = accArray[i].id;
+    var nm = accArray[i];
+    alert(nm.id);
+    var st = nm.style.display;
+    alert(st);
+    var acc = {id:nm.id, display:"Doe"};
+    divArray.push(acc);
+  }
+  alert(accArray.length);
+  alert(divArray.length);
+}

@@ -13,8 +13,9 @@
 <link rel="stylesheet" href="css/hg.css">
 
 
-
-<body>
+<!-- onload="GetAccDivs()" -->
+<!-- onload="alert('bye')" -->
+<body >
   <!-- Navbar -->
   <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
@@ -52,7 +53,7 @@
         <div>
 
           <button onclick="AccToggle('Demo1')" class="hg-accBtn w3-btn">Antivirals:</button>
-          <div id="Demo1" class="hg-accDivMain">
+          <div id="Demo1" class="hg-accDivMain" style="display: none">
             <ul class=hg-accUl>
               <li>Oseltamivir
                 <ul>
@@ -106,7 +107,32 @@
 
   <script defer src="script.js"></script>
   <script defer src="script-aux.js"></script>
+ 
   <script>
+    // window.onload ="GetAccDivs()";
+    // window.onload = alert('hi');
+        // window.onunload = alert('bye');
+
+        // window.addEventListener("unbeforeload", alert('bye'));
+  /*   window.addEventListener("beforeunload", function(event) {
+    // alert('hi') ;
+    event.w3_close();
+    // event.returnValue = "Write something clever here..";
+    event.
+}) ; */
+
+window.addEventListener("beforeunload", function(event) {
+    // event.returnValue = "Write something clever here..";
+    // event.w3_close;
+    // event.test();
+    // alert('hi');
+   
+});
+function test(){
+  
+}
+
+
     // Get the Sidebar
     var mySidebar = document.getElementById("mySidebar");
 
