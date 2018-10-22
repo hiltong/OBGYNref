@@ -1,8 +1,9 @@
-var CURRENT_CACHE = '2018-10-22-1045';
+var CURRENT_CACHE = '2018-10-22-1050';
 
 // INSTALL
 self.addEventListener('install', (event) => {
   // if(!('caches' in self)) return;
+  alert('install');
   if (!'caches' in self) {
     alert('This browser does not support service worker caching!');
     return;
