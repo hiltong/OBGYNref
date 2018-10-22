@@ -1,4 +1,4 @@
-var CURRENT_CACHE = '2018-10-22-1050';
+var CURRENT_CACHE = '2018-10-22-1100';
 
 // INSTALL
 self.addEventListener('install', (event) => {
@@ -33,6 +33,7 @@ self.addEventListener('install', (event) => {
 // ACYIVATE
 // Replace cache
 self.addEventListener('activate', (event) => {
+  alert('activate');
   // let CURRENT_CACHE = 'version2'; 
   event.waitUntil(
     caches.keys().then((cacheKeys) => {
@@ -108,3 +109,6 @@ self.addEventListener('activate', (event) => {
         })
       );
     });
+    
+
+    

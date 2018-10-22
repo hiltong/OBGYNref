@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <title>Gynecology</title>
 <meta name="description" content="Gynecology index for the web app 'Ob/Gyn-Referenced'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,42 +12,42 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
 
-    
+
 <body>
-<h1>GYN Index</h1>
-<ul>
-    <!--<li><a href="indexob.html">Ob Index</a></li>
+    <h1>GYN Index</h1>
+    <ul>
+        <!--<li><a href="indexob.html">Ob Index</a></li>
     <li><a href="indexgyn.html">Gyn Index</a></li>-->
-</ul>
+    </ul>
 
 
 
-<script defer src="script.js"></script> 
-<script>
-    // Get the Sidebar
-    var mySidebar = document.getElementById("mySidebar");
-    
-    // Get the DIV with overlay effect
-    var overlayBg = document.getElementById("myOverlay");
-    
-    // Toggle between showing and hiding the sidebar, and add overlay effect
-    function w3_open() {
-        if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-            overlayBg.style.display = "none";
-        } else {
-            mySidebar.style.display = 'block';
-            overlayBg.style.display = "block";
+    <script defer src="script.js"></script>
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
         }
-    }
-    
-    // Close the sidebar with the close button
-    function w3_close() {
-        mySidebar.style.display = "none";
-        overlayBg.style.display = "none";
-    }
-  </script>   
-  
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+
 </body>
 
 </html>
