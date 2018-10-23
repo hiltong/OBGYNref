@@ -59,41 +59,52 @@ function SideBarClose(document) {
 
 /*Accordian Open/Close*/
 function AccToggle(accID) {
-    //  alert('Here');
   var x = document.getElementById(accID);
-    if (x.style.display === "block") {
-      // alert('Here1');
-        x.style.display = "none";
-    } 
-    else { 
-      // alert('Here3');
-        x.style.display = "block";
-    }
+  // alert(accID);
+  // alert(x.style.display);
+  // var data1 = sessionStorage.getItem('try');
+  // alert(data1);
+  if (x.style.display == "block") {
+    x.style.display = "none";
+    sessionStorage.setItem(accID, 'none')
+    // alert('here1');
+  }
+  else {
+    x.style.display = "block";
+    sessionStorage.setItem(accID, 'block')
+    // alert('here2');
+  }
+  // alert(accID);
+  var data = sessionStorage.getItem(accID);
+  // alert(data);
 }
+function SetAccDivs(){
+  // alert('Here');
+  var accArray = document.getElementsByClassName("hg-accDivMain");
+  for (i = 0; i < accArray.length; i++) {
+    // alert('Here2');
+    var accdiv = accArray[i];
+    var data = sessionStorage.getItem(accdiv.id);
+    if (data=='block'){
+      // alert('block');
+      accdiv.style.display="block";
+    }
+    else{
+      accdiv.style.display="none";
+      // alert('none');
+    }
+    // alert(data);
+  }
+  // alert(accArray.length);
+}
+
+
 
 /*Algorhithm-------------------------------------------------------------------------------*/
 function AlgoNext(idhide, idshow) {
   //  alert('Here');
   document.getElementById(idhide).style.display = "none";
   document.getElementById(idshow).style.display = "block";
-} 
- 
+}
 
-/* function GetAccDivs(){
-  // alert('Here');
-  var accArray = document.getElementsByClassName("hg-accDivMain");
-  var divArray=new Array;
-  // var person(firstName, lastName);
-  for (i = 0; i < accArray.length; i++) {
-    // alert('Here2');
-    // var nm = accArray[i].id;
-    var nm = accArray[i];
-    alert(nm.id);
-    var st = nm.style.display;
-    alert(st);
-    var acc = {id:nm.id, display:"Doe"};
-    divArray.push(acc);
-  }
-  alert(accArray.length);
-  alert(divArray.length);
-} */
+
