@@ -112,8 +112,11 @@ function SetAlgoDivs(){
     if (data=='block'){
       algodiv.style.display="block";
     }
-    else{
+    else if (data=='none'){
       algodiv.style.display="none";
+    }
+    else if (i==0){
+      algodiv.style.display="block";
     }
 
   }
