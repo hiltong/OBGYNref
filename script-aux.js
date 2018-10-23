@@ -78,24 +78,19 @@ function AccToggle(accID) {
   var data = sessionStorage.getItem(accID);
   // alert(data);
 }
+
 function SetAccDivs(){
-  // alert('Here');
   var accArray = document.getElementsByClassName("hg-accDivMain");
   for (i = 0; i < accArray.length; i++) {
-    // alert('Here2');
     var accdiv = accArray[i];
     var data = sessionStorage.getItem(accdiv.id);
     if (data=='block'){
-      // alert('block');
       accdiv.style.display="block";
     }
     else{
       accdiv.style.display="none";
-      // alert('none');
     }
-    // alert(data);
   }
-  // alert(accArray.length);
 }
 
 
@@ -104,7 +99,26 @@ function SetAccDivs(){
 function AlgoNext(idhide, idshow) {
   //  alert('Here');
   document.getElementById(idhide).style.display = "none";
+  sessionStorage.setItem(idhide, 'none')
   document.getElementById(idshow).style.display = "block";
+  sessionStorage.setItem(idshow, 'block')
 }
+
+function SetAlgoDivs(){
+  var algoArray = document.getElementsByClassName("hg-algoDivMain");
+  for (i = 0; i < algoArray.length; i++) {
+    var algodiv = algoArray[i];
+    var data = sessionStorage.getItem(algodiv.id);
+    if (data=='block'){
+      algodiv.style.display="block";
+    }
+    else{
+      algodiv.style.display="none";
+    }
+
+  }
+  // alert(algoArray.length);
+}
+
 
 
