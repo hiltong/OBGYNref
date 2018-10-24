@@ -117,9 +117,10 @@ body{word-wrap: break-word;}
     /*Main containing div*/
     .hg-algoDivMain{
       margin-top: 32px;
-      margin-bottom: 32px;
+      margin-bottom: 16px;
       display:none;
-      /* background: beige; */
+      /* background: #f0f0f0; */
+ 
     }
   
   /*Question Div*/
@@ -162,7 +163,9 @@ body{word-wrap: break-word;}
       border: 1px solid #ccc;
       /* border-radius:50%; */
       width: 50px;
-      background: #f0f0f0;
+      /* background: #f0f0f0; */
+      background: teal;
+      color: white;
       margin-left: auto ;
       margin-right: auto ;
       font-size: 1.2em;
@@ -197,7 +200,8 @@ body{word-wrap: break-word;}
       margin-left: auto ;
       margin-right: auto ;
       white-space: normal;  /*lets words wrap in accordian button*/
-    
+      background:teal;
+      color: white;
     }
   
     /*Algo  h3*/
@@ -243,7 +247,7 @@ body{word-wrap: break-word;}
       margin: 0px; 
       padding-left: 16px;
       padding-right: 16px;
-      padding-top: 24px;
+      padding-top: 16px;
       padding-bottom: 24px;
       font-size: 0.80em;
     }
@@ -251,7 +255,15 @@ body{word-wrap: break-word;}
       font-size: 0.80em;
     } */
   
-  
+    .hg-algoRfBtn{
+      /* border: 1px solid #ccc; */
+      border-radius:50%;
+      background:teal;
+      color: white;
+      margin-top: 16px;
+      /* float:right; */
+      /* outline:none; */
+    }
     
   
     /* .hg-algoAnsBtn{

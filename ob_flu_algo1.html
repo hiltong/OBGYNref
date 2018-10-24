@@ -73,17 +73,18 @@
                     <!-- Algo proph -->
                     <div id="proph" class="hg-algoDivMain">
                         <div class="hg-algoDivBtnUp">
-                            <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')">&#8593;</button>
+                            <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')" ">&#8593;</button>
+                           
                         </div>
                         <div class="hg-algoDivA" style="max-width: 500px;">
                             <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
                             <ul class="hg-algoUl">
-                                <li>Oseltamivir
+                                <li>Oseltamivir (Tamiflu)
                                     <ul>
                                         <li>75 mg orally once daily for 7–10 days.<sup>1</sup></li>
                                     </ul>
                                 </li>
-                                <li>Zanamivir
+                                <li>Zanamivir (Relenza)
                                     <ul>
                                         <li>10 mg (two 5-mg inhalations) once daily for 7 days.<sup>1</sup></li>
                                     </ul>
@@ -91,22 +92,13 @@
 
                             </ul>
                         </div>
-                        <!--Reference panel-->
-                        <div class=hg-algoDivRef>
-                            <ol>
-                                <li class="hg_algoRefLi">
-                                    Assessment and treatment of pregnant women with suspected or confirmed
-                                    influenza. ACOG Committee Opinion No. 753. American College of Obstetricians
-                                    and Gynecologists. Obstet Gynecol 2018;132:e169–73.
-                                </li>
-                            </ol>
-                        </div>
+                        <button class="w3-btn hg-algoRfBtn"  onclick="AlgoNext('proph','start')">&#8634;</button>
                     </div>
 
 
 
                     <!-- Algo1 -->
-                    <div id="flu1" style="display: none;">
+                    <div id="flu1" class="hg-algoDivMain" style="display: none;">
                         <!--Header panel-->
                         <div>
                             <!-- <h3 class="w3-center">Algorithm Start</h3> -->
@@ -130,17 +122,16 @@
                             <button class="w3-btn hg-algoAnsBtn" onclick="AlgoNext('flu1','flu2')">Next</button>
                         </div>
 
-                        <!--Reference panel-->
-                        <div class=hg-algoDivRef>
-                            <ol>
-                                <!-- <lh >References</lh> -->
-                                <li style="font-size: x-small">
-                                    Assessment and treatment of pregnant women with suspected or confirmed
-                                    influenza. ACOG Committee Opinion No. 753. American College of Obstetricians
-                                    and Gynecologists. Obstet Gynecol 2018;132:e169–73.
-                                </li>
-                            </ol>
-                        </div>
+                    </div>
+
+                    <div class=hg-algoDivRef>
+                        <ol>
+                            <li class="hg_algoRefLi">
+                                Assessment and treatment of pregnant women with suspected or confirmed
+                                influenza. ACOG Committee Opinion No. 753. American College of Obstetricians
+                                and Gynecologists. Obstet Gynecol 2018;132:e169–73.
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>
