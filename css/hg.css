@@ -194,7 +194,7 @@ body{word-wrap: break-word;}
       /* border-radius:50%; */
       width: 50px;
       /* background: #f0f0f0; */
-      background: teal;
+      background: coral;
       color: white;
       margin-left: auto ;
       margin-right: auto ;
@@ -202,19 +202,7 @@ body{word-wrap: break-word;}
       /* text-align:left; */
       /* outline:none; */
     }
-    .hg-algoBtnUp{
-      border: 1px solid #ccc;
-      /* border-radius:50%; */
-      width: 50px;
-      /* background: #f0f0f0; */
-      background: teal;
-      color: white;
-      margin-left: auto ;
-      margin-right: auto ;
-      font-size: 1.2em;
-      /* text-align:left; */
-      /* outline:none; */
-    }
+    
   
   /*Down Arrow p*/
   .hg-algoParaDn{
@@ -243,7 +231,7 @@ body{word-wrap: break-word;}
       margin-left: auto ;
       margin-right: auto ;
       white-space: normal;  /*lets words wrap in accordian button*/
-      background:teal;
+      background:coral;
       color: white;
     }
   
@@ -301,7 +289,7 @@ body{word-wrap: break-word;}
     .hg-algoRfBtn{
       /* border: 1px solid #ccc; */
       border-radius:50%;
-      background:teal;
+      background:coral;
       color: white;
       /* position: absolute; */
       /* bottom: 12px; */
