@@ -91,6 +91,22 @@ function SetAccDivs(){
       accdiv.style.display="none";
     }
   }
+
+  var algoArray = document.getElementsByClassName("hg-algoDivMain2");
+  for (i = 0; i < algoArray.length; i++) {
+    var algodiv = algoArray[i];
+    var data = sessionStorage.getItem(algodiv.id);
+    if (data=='block'){
+      algodiv.style.display="block";
+    }
+    else if (data=='none'){
+      algodiv.style.display="none";
+    }
+    else if (i==0){
+      algodiv.style.display="block";
+    }
+
+  }
 }
 
 

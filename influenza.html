@@ -15,10 +15,13 @@
 
 <!-- onload="GetAccDivs()" -->
 <!-- onload="alert('bye')" -->
+
 <body onload="SetAccDivs()">
   <!-- Navbar -->
   <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a class="w3-button   w3-left w3-hover-white w3-large  hg-BackButton w3-theme-l1" href="javascript:void(0)"
+        onclick="goBack()" )">&larr;</a>
       <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)"
         onclick="w3_open()">☰</a>
       <span class="w3-bar-item"><b>Ob/Gyn-Referenced</b></span>
@@ -60,10 +63,10 @@
                   <li>Treatment: 75 mg orally twice daily for 5 days.<sup>1</sup></li>
                   <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days.<sup>1</sup></li>
                 </ul>
-              </li> 
+              </li>
               <li>Zanamivir</li>
               <li>Peramivir</li>
-            </ul>  
+            </ul>
           </div>
 
           <!--test-->
@@ -72,8 +75,57 @@
             <a href="ob_flu_algo1.html" class="hg-accAalone">Assessment & Treatment Algorithm</a>
           </div>
 
-          <button onclick="AccToggle('Demo3')" class="hg-accBtn w3-btn ">References:</button>
-          <div id="Demo3" class="hg-accDivMain">
+          <!--Algo Start-->
+          <button onclick="AccToggle('Algo1')" class="hg-accBtn w3-btn">Algorhythms 2</button>
+          <div id="Algo1" class="hg-accDivMain">
+            <!-- Algo start -->
+            <div id="start" class="hg-algoDivMain2" style="display: block; height: 400px;">
+              <div class="hg-algoDivQ2" style="width:100px">
+                <h3 class="hg-algoh3">Start</h3>
+              </div>
+              <p class="hg-algoParaDn"> &#8595;</p>
+              <div class="hg-algoDivBtnA">
+                <button class=" w3-btn hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
+                  to influenza &#8594;</button>
+                <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
+                  influenza &#8594;</button>
+                <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
+                  influenza &#8594;</button>
+              </div>
+            </div>
+            <!--Chemoprophylaxis-->
+            <div id="proph" class="hg-algoDivMain2" style="display: none; height: 400px;">
+              <!-- <div style="float:right"> -->
+              <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="float:right">&#8634;</button>
+              <!-- </div> -->
+              <div class="hg-algoDivBtnUp">
+                <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')"
+                  ">&#8593;</button>
+              </div>
+              <div class=" hg-algoDivA2" style="max-width: 500px;">
+                  <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
+                  <ul class="hg-algoUl">
+                    <li>Oseltamivir (Tamiflu)
+                      <ul>
+                        <li>75 mg orally once daily for 7–10 days.<sup>1</sup></li>
+                      </ul>
+                    </li>
+                    <li>Zanamivir (Relenza)
+                      <ul>
+                        <li>10 mg (two 5-mg inhalations) once daily for 7 days.<sup>1</sup></li>
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+          <button onclick="AccToggle('Refs')" class="hg-accBtn w3-btn ">References:</button>
+          <div id="Refs" class="hg-accDivMain">
             <ol class="hg-accOlRef">
               <li>
                 Assessment and treatment of pregnant women with suspected or confirmed
@@ -84,6 +136,7 @@
 
           </div>
         </div>
+
       </div>
       <!--END NON-ADDS-->
 
