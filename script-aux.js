@@ -17,7 +17,6 @@ function MyFunction(document) {
 }
 
 function goBack() {
-  //  alert('Back');
   window.history.back();
 }
 
