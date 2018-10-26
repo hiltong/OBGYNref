@@ -78,7 +78,8 @@ function AccToggle(accID) {
   // alert(data);
 }
 
-function SetAccDivs(){
+//Sets divs for accordian and algorithms on page
+function SetAccDivsALgoDivs(){
   var accArray = document.getElementsByClassName("hg-accDivMain");
   for (i = 0; i < accArray.length; i++) {
     var accdiv = accArray[i];
@@ -90,8 +91,7 @@ function SetAccDivs(){
       accdiv.style.display="none";
     }
   }
-
-  var algoArray = document.getElementsByClassName("hg-algoDivMain2");
+  var algoArray = document.getElementsByClassName("hg-algoDivMain");
   for (i = 0; i < algoArray.length; i++) {
     var algodiv = algoArray[i];
     var data = sessionStorage.getItem(algodiv.id);

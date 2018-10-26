@@ -16,7 +16,7 @@
 <!-- onload="GetAccDivs()" -->
 <!-- onload="alert('bye')" -->
 
-<body onload="SetAccDivs()">
+<body onload="SetAccDivsALgoDivs()">
   <!-- Navbar -->
   <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
@@ -24,7 +24,7 @@
         onclick="goBack()" )">&larr;</a>
       <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)"
         onclick="w3_open()">☰</a>
-      <span class="w3-bar-item"><b>Ob/Gyn-Referenced</b></span>
+      <span class="w3-bar-item"><b>ObGyn Pearls<sup>r</sup></b></span>
       <a href="index.html" class="w3-bar-item w3-button  w3-hide-large w3-hide-small w3-hover-white">Home</a>
       <a href="references.html" class="w3-bar-item w3-button w3-hide-large w3-hide-small w3-hover-white">References</a>
       <a href="about.html" class="w3-bar-item w3-button w3-hide-large w3-hide-small w3-hover-white">About</a>
@@ -78,13 +78,15 @@
           <!--Algo 1-->
           <button onclick="AccToggle('Algo1')" class="hg-accBtn w3-btn">Algorhythms 2</button>
           <div id="Algo1" class="hg-accDivMain">
-            <!-- Algo start -->
-            <div id="start" class="hg-algoDivMain2" style="display: block; height: 400px;">
-              <div class="hg-algoDivQ2" style="width:100px">
+
+            <div id="start" class="hg-algoDivMain" style="display: block; height: 400px; ">
+              <div class="hg-algoDivStrBorder" style="width:100px">
                 <h3 class="hg-algoh3">Start</h3>
               </div>
-              <p class="hg-algoParaDn"> &#8595;</p>
-              <div class="hg-algoDivBtnA">
+              <div class="hg-algoDivNoBorder">
+                <p class="hg-algoParaDn"> &#8595;</p>
+              </div>
+              <div class="hg-algoDivNoBorder">
                 <button class=" w3-btn hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
                   to influenza &#8594;</button>
                 <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
@@ -93,16 +95,13 @@
                   influenza &#8594;</button>
               </div>
             </div>
-            <!--Chemoprophylaxis-->
-            <div id="proph" class="hg-algoDivMain2" style="display: none; height: 400px;">
-              <!-- <div style="float:right"> -->
-              <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="float:right">&#8634;</button>
-              <!-- </div> -->
-              <div class="hg-algoDivBtnUp">
+            <!--Algo Chemoprophylaxis-->
+            <div id="proph" class="hg-algoDivMain" style="display: none; height: 400px; ">
+              <div class="hg-algoDivNoBorder">
                 <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')"
                   ">&#8593;</button>
               </div>
-              <div class=" hg-algoDivA2" style="max-width: 500px;">
+              <div class=" hg-algoDivRdBorder" style="max-width: 500px;">
                   <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
                   <ul class="hg-algoUl">
                     <li>Oseltamivir (Tamiflu)
@@ -117,7 +116,7 @@
                     </li>
                   </ul>
               </div>
-
+              <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="left:18px ; ">&#8634;</button>
             </div>
 
 
