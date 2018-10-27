@@ -59,7 +59,9 @@ body{word-wrap: break-word;}
       border:none;
       display:block;
       outline:0;
-      text-decoration:none;
+      /* text-decoration: navy; */
+      /* text-decoration: underline; */
+      color: teal;
     }
     a.hg-aIndex:hover{
       background: teal;
@@ -68,10 +70,11 @@ body{word-wrap: break-word;}
   
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
     .hg-accBtn{
-      margin: 12px 0px 0px 0px; /*seperates accordians so can see shadow*/
+      margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
       white-space: normal;  /*lets words wrap in accordian button*/
       text-align:left;
       color:white;
+      /* color:black; */
       /* background:  #f0f0f0; */
       background: teal;
       display:block;
