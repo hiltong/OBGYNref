@@ -52,10 +52,11 @@
       <!--NON-ADDS-->
       <div class="w3-twothird w3-container">
         <h1 class="hg-h1PageTitle">Influenza in Pregnancy</h1>
-        <h2 class="hg-h2PageSubtitle">Pearls</h2>
+        <!-- <h2 class="hg-h2PageSubtitle">Pearls</h2> -->
         <div>
 
-          <button onclick="AccToggle('Demo1')" class="hg-accBtn w3-btn">Antivirals:</button>
+         
+          <button onclick="AccToggle('Demo1')" class="hg-accBtn w3-btn" >Antivirals:</button>
           <div id="Demo1" class="hg-accDivMain" style="display: none">
             <ul class=hg-accUl>
               <li>Oseltamivir
@@ -75,53 +76,54 @@
             <a href="ob_flu_algo1.html" class="hg-accAalone">Assessment & Treatment Algorithm</a>
           </div>
 
-          <!--Algo 1-->
-          <button onclick="AccToggle('Algo1')" class="hg-accBtn w3-btn">Algorhythms 2</button>
-          <div id="Algo1" class="hg-accDivMain">
-
-            <div id="start" class="hg-algoDivMain" style="display: block; height: 400px; ">
-              <div class="hg-algoDivStrBorder" style="width:100px">
-                <h3 class="hg-algoh3">Start</h3>
-              </div>
-              <div class="hg-algoDivNoBorder">
-                <p class="hg-algoParaDn"> &#8595;</p>
-              </div>
-              <div class="hg-algoDivNoBorder">
-                <button class=" w3-btn hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
-                  to influenza &#8594;</button>
-                <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
-                  influenza &#8594;</button>
-                <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
-                  influenza &#8594;</button>
-              </div>
-            </div>
-            <!--Algo Chemoprophylaxis-->
-            <div id="proph" class="hg-algoDivMain" style="display: none; height: 400px; ">
-              <div class="hg-algoDivNoBorder">
-                <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')"
-                  ">&#8593;</button>
-              </div>
-              <div class=" hg-algoDivRdBorder" style="max-width: 500px;">
-                  <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
-                  <ul class="hg-algoUl">
-                    <li>Oseltamivir (Tamiflu)
-                      <ul>
-                        <li>75 mg orally once daily for 7–10 days.<sup>1</sup></li>
-                      </ul>
-                    </li>
-                    <li>Zanamivir (Relenza)
-                      <ul>
-                        <li>10 mg (two 5-mg inhalations) once daily for 7 days.<sup>1</sup></li>
-                      </ul>
-                    </li>
-                  </ul>
-              </div>
-              <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="left:18px ; ">&#8634;</button>
-            </div>
-
-
-
-          </div>
+           <!--Algo 1-->
+           <button onclick="AccToggle('Algo1')" class="hg-accBtn w3-btn">Algorhythms 2</button>
+           <div id="Algo1" class="hg-accDivMain" >
+ 
+             <div id="start" class="hg-algoDivMain"  style="display: block; ">
+               <div class="hg-algoDivStrBorder" style="width:100px">
+                 <h3 class="hg-algoh3">Start</h3>
+               </div>
+               <div class="hg-algoDivNoBorder">
+                 <p class="hg-algoParaDn"> &#8595;</p>
+               </div>
+               <div class="hg-algoDivNoBorder">
+                 <button class=" w3-btn hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
+                   to influenza &#8594;</button>
+                 <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
+                   influenza &#8594;</button>
+                 <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
+                   influenza &#8594;</button>
+               </div>
+             </div>
+             <!--Algo Chemoprophylaxis-->
+             <div id="proph" class="hg-algoDivMain" style="display: block; " >
+               <div class="hg-algoDivNoBorder">
+                 <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')"
+                   ">&#8593;</button>
+               </div>
+               <div class=" hg-algoDivRdBorder" style="max-width: 500px;">
+                   <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
+                   <ul class="hg-algoUl">
+                     <li>Oseltamivir (Tamiflu)
+                       <ul>
+                         <li>75 mg orally once daily for 7–10 days.<sup>1</sup></li>
+                       </ul>
+                     </li>
+                     <li>Zanamivir (Relenza)
+                       <ul>
+                         <li>10 mg (two 5-mg inhalations) once daily for 7 days.<sup>1</sup></li>
+                       </ul>
+                     </li>
+                   </ul>
+               </div>
+               <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="left:18px ; ">&#8634;</button>
+             </div>
+ 
+ 
+ 
+           </div>
+ 
 
           <button onclick="AccToggle('Refs')" class="hg-accBtn w3-btn ">References:</button>
           <div id="Refs" class="hg-accDivMain">
@@ -140,7 +142,7 @@
       <!--END NON-ADDS-->
 
       <!--ADDS-->
-      <div class="w3-third w3-container">
+      <div class="w3-third w3-container" >
         <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
         <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
       </div>

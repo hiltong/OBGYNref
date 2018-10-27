@@ -26,13 +26,14 @@ body{word-wrap: break-word;}
   .hg-h1PageTitle{
     font-size: 1.5em;
     margin-bottom: 0.2em;
-    color: #009688;
+    color: Black;
+    font-weight: bold;
     /* background-color: #00ffff; */
   }
   .hg-h2PageSubtitle{
       font-size: 1.17em;
       margin-top: 0.10em;
-      color: #009688;
+      color: Black;
       /* background-color: #ddffdd; */
   }
   .hg-h3PageSubtitle{
@@ -42,29 +43,28 @@ body{word-wrap: break-word;}
     /* background-color: #ddffdd; */
   }
   
-  /* List--------------------------------------------------------------------------- */
-  /* ul{ Space after ul's including nested ul's, helps spacing below nested ul */
-      /* padding: 0px 0px 2px 0px; */
-      /* background: #4CAF50; */
-    /* } */
-  /* li{ space on each side of li */
-      /* margin: 4px 0px 4px 0px; */
-      /* background: yellow; */
-    /* } */
-  /* ul li ul li{ targets li elements within an ul element, itself within a li */
-      /* margin: 4px 0px 4px 14px; */
-      /* background:red; */
-  /* }  */
-  
-  /* .hg-algoUlHoriz{
-    overflow: hidden;
-
-  } */
- /*  .hg-algoUlHoriz li{
-    float: left;
-    padding: 0px 16px 0px 0px;
-  } */
-  
+  /*Index-----------------------------------------------------------------------------------------------------*/
+    .hg-aIndex {
+      /* padding-top: 16px; */
+      /* padding-bottom: 16px; */
+      /* font-size:18px; */
+      font-size: 1.2em;
+      text-align:left;
+      white-space:normal;
+      padding:8px 16px;
+      float:none;
+      /* float:left; */
+      width:100%;
+      /* width:auto; */
+      border:none;
+      display:block;
+      outline:0;
+      text-decoration:none;
+    }
+    a.hg-aIndex:hover{
+      background: teal;
+      color:white;
+    }
   
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
     .hg-accBtn{
@@ -78,11 +78,14 @@ body{word-wrap: break-word;}
       width:100%;
       font-size: 1.2em;
     }
+   
+
     .hg-accDivMain{
         display:none;
         margin-top: 16px;
         margin-bottom: 32px;
         /* background: beige; */
+        
     }
     .hg-accUl{
        
@@ -112,6 +115,7 @@ body{word-wrap: break-word;}
         /* background: powderblue; */
       }
   
+
     /*Algorithm------------------------------------------------------------------------------------------------------*/
   /*Main div*/
     .hg-algoDivMain{
@@ -123,7 +127,7 @@ body{word-wrap: break-word;}
       /* background: lightcyan; */
       /* border-radius: 24px; */
       border: 1px solid #ccc;
-      position: relative;
+      /* position: relative; */
   }
   /*Straight border div*/
   .hg-algoDivStrBorder{
@@ -161,7 +165,7 @@ body{word-wrap: break-word;}
     text-align:center;
     /* margin: 6px; */
     font-size: 1.10em;
-    color: #009688;
+    color: black;
   }
   /*Up button*/
   .hg-algoBtnUp{
@@ -235,8 +239,10 @@ body{word-wrap: break-word;}
       /* background:#ffdb58; */
       background:#f0f0f0;
       color: black;
-      position: absolute;
-      bottom: 12px;
+      /* position: absolute; */
+      /* bottom: 12px; */
+      margin-left: 16px;
+      margin-bottom: 16px;
       /* margin-top: 32px; */
       /* float:right; */
       /* outline:none; */
