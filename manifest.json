@@ -1,6 +1,6 @@
 {
-  "name": "OBGYN Referrenced",
-  "short_name": "OBGYNRef",
+  "name": "Functional OBGYN",
+  "short_name": "OBGYN",
   "start_url": "index.html",
   "display": "standalone",
   "theme_color": "#000",

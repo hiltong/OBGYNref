@@ -10,7 +10,35 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family:  Arial, Helvetica, sans-serif;}
 /* Word wrap all */
 body{word-wrap: break-word;}
 
+/*Nav Bar*/
+.hg-NavBar{
+  background: black;
+  position:fixed;
+  width:100%;
+  /* z-index:1; */
+}
+/*Nav Bar Title*/
+.hg-NavBarTitle{
+  padding:8px 16px;
+  float:left;
+  font-size:18px!important;
+  color: white;
+}
 /*Back Button---------------------------------------------------------------------------------------------------------*/
+.hg-BackButton{
+  background: black;
+  color: white;
+  font-size:18px!important;
+  float:left!important;
+  padding:8px 16px;
+  text-decoration:none;
+}
+.hg-BackButton:hover{
+  background: white !important;;
+  color: black;
+  /* font-size:18px!important */
+}
+
 @media all and (display-mode: browser) {
     .hg-BackButton {
       display: none /*Hides BackButton when in browser*/
@@ -21,7 +49,22 @@ body{word-wrap: break-word;}
       display: block; /*Hides BackButton when in browser*/
     }
   }
+  /*Hamburger Button*/
+  .hg-HamBtn{
+    background: black;
+    color: white;
+    font-size:18px!important;
+    float:right!important;
+    padding:8px 16px;
+    text-decoration:none;
+   
+  }
+  .hg-HamBtn:hover{
+    background: white !important;;
+    color: black;
+  }
   
+
   /* Title--------------------------------------------------------------------------- */
   .hg-h1PageTitle{
     font-size: 1.5em;
