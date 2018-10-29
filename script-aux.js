@@ -57,26 +57,40 @@ function SideBarClose(document) {
 } */
 
 /*Accordian Open/Close*/
-function AccToggle(accID) {
+/* function AccToggle3(accID) {
   var x = document.getElementById(accID);
-  // alert(accID);
-  // alert(x.style.display);
-  // var data1 = sessionStorage.getItem('try');
-  // alert(data1);
   if (x.style.display == "block") {
     x.style.display = "none";
     sessionStorage.setItem(accID, 'none')
-    // alert('here1');
   }
   else {
     x.style.display = "block";
     sessionStorage.setItem(accID, 'block')
-    // alert('here2');
+
+  }
+  var data = sessionStorage.getItem(accID);
+} */
+
+function AccToggle(accID) {
+  var chevronId = accID+1;
+  var x = document.getElementById(accID);
+  var chevron = document.getElementById(chevronId);
+
+  if (x.style.display == "block") {
+    chevron.innerHTML='&#9660';
+    x.style.display = "none";
+    sessionStorage.setItem(accID, 'none')
+  }
+  else {  
+    chevron.innerHTML='&#9650';
+    x.style.display = "block";
+    sessionStorage.setItem(accID, 'block')
   }
   // alert(accID);
   var data = sessionStorage.getItem(accID);
   // alert(data);
 }
+
 
 //Sets divs for accordian and algorithms on page
 function SetAccDivsALgoDivs(){
@@ -84,11 +98,16 @@ function SetAccDivsALgoDivs(){
   for (i = 0; i < accArray.length; i++) {
     var accdiv = accArray[i];
     var data = sessionStorage.getItem(accdiv.id);
+    var chevronId = accdiv.id+1;
+    var chevron = document.getElementById(chevronId);
     if (data=='block'){
+      chevron.innerHTML='&#9650';
       accdiv.style.display="block";
     }
     else{
+            //  chevron.innerHTML='&#9660';
       accdiv.style.display="none";
+     
     }
   }
   var algoArray = document.getElementsByClassName("hg-algoDivMain");
