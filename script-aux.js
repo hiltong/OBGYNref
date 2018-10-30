@@ -101,11 +101,10 @@ function SetAccDivsALgoDivs(){
     var chevronId = accdiv.id+1;
     var chevron = document.getElementById(chevronId);
     if (data=='block'){
-      chevron.innerHTML='&#9650';
+       chevron.innerHTML='&#9650';
       accdiv.style.display="block";
     }
     else{
-            //  chevron.innerHTML='&#9660';
       accdiv.style.display="none";
      
     }

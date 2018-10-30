@@ -88,32 +88,25 @@ body{word-wrap: break-word;}
   
   /*Index-----------------------------------------------------------------------------------------------------*/
     .hg-aIndex {
-      /* padding-top: 16px; */
-      /* padding-bottom: 16px; */
-      /* font-size:18px; */
       font-size: 1.2em;
       text-align:left;
       white-space:normal;
       padding:12px 16px;
       float:none;
-      /* float:left; */
       width:100%;
-      /* width:auto; */
       border:none;
       display:block;
       outline:0;
-      /* text-decoration: navy; */
-      /* text-decoration: underline; */
       color: teal;
     }
     a.hg-aIndex:hover{
       background: teal;
       color:white;
-    }
+    } 
 
     /*Nav Link----------------------------------------------------------------------------------------------------*/
   .hg-NavLink{
-    padding:10px 16px;
+    padding:10px 8px 10px 16px;
     margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
     white-space: normal;  /*lets words wrap in accordian button*/
     text-align:left;
@@ -137,11 +130,14 @@ body{word-wrap: break-word;}
     /* font-size: 1.2em;   */
     font-size: 18px !important;  
     margin:0px; 
+    /* background: red; */
     background: black;
+    color: red;
+    width: 24px;
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
     .hg-accBtn{
-      padding:8px 16px;
+      padding:10px 8px 10px 16px;
       margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
       white-space: normal;  /*lets words wrap in accordian button*/
       text-align:left;
