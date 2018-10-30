@@ -128,6 +128,7 @@ body{word-wrap: break-word;}
   
     float:right;  
     /* font-size: 1.2em;   */
+    text-align: right;
     font-size: 18px !important;  
     margin:0px; 
     /* background: red; */
