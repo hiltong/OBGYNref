@@ -122,7 +122,8 @@ body{word-wrap: break-word;}
     display:block;
     border:none;
     width:100%;
-    font-size: 1.2em;
+    font-size: 18px !important;  
+    /* font-size: 1.2em; */
     text-decoration: none;
     cursor:pointer;
     /* height: 50px; */
@@ -133,8 +134,8 @@ body{word-wrap: break-word;}
   .hg-NavLinkChevron{
   
     float:right;  
-    font-size: 1.2em;  
-    font-size: 18px;  
+    /* font-size: 1.2em;   */
+    font-size: 18px !important;  
     margin:0px; 
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
@@ -148,7 +149,8 @@ body{word-wrap: break-word;}
       display:block;
       border:none;
       width:100%;
-      font-size: 1.2em;
+      font-size: 18px !important;  
+      /* font-size: 1.2em; */
       text-decoration: none;
       cursor:pointer;
     }
