@@ -113,48 +113,52 @@ body{word-wrap: break-word;}
 
     /*Nav Link----------------------------------------------------------------------------------------------------*/
   .hg-NavLink{
+    padding:8px 16px;
     margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
-    color :white;
     white-space: normal;  /*lets words wrap in accordian button*/
     text-align:left;
+    color :white;
     background: teal;
+    display:block;
     border:none;
-    display:inline-block;
     width:100%;
     font-size: 1.2em;
     text-decoration: none;
-    padding:8px 16px;
-    vertical-align:middle;
+    cursor:pointer;
+    height: 50px;
   }
   .hg-NavLink:hover{
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
   }
   .hg-NavLinkChevron{
+  
     float:right;  
     font-size: 1.2em;  
     margin:0px; 
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
     .hg-accBtn{
+      padding:8px 16px;
       margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
       white-space: normal;  /*lets words wrap in accordian button*/
       text-align:left;
       color:white;
-      /* color:black; */
-      /* background:  #f0f0f0; */
       background: teal;
       display:block;
+      border:none;
       width:100%;
       font-size: 1.2em;
+      text-decoration: none;
+      cursor:pointer;
     }
-   
-
+    .hg-accBtn:hover{
+      box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+    }
     .hg-accDivMain{
         display:none;
         margin-top: 16px;
         margin-bottom: 32px;
         /* background: beige; */
-        
     }
     .hg-accUl{
        
