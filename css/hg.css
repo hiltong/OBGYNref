@@ -106,7 +106,7 @@ body{word-wrap: break-word;}
 
     /*Nav Link----------------------------------------------------------------------------------------------------*/
   .hg-NavLink{
-    padding:10px 8px 10px 16px;
+    padding:10px 16px 10px 16px;
     margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
     white-space: normal;  /*lets words wrap in accordian button*/
     text-align:left;
@@ -125,20 +125,19 @@ body{word-wrap: break-word;}
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
   }
   .hg-NavLinkChevron{
-  
     float:right;  
     /* font-size: 1.2em;   */
-    text-align: right!important;
+    /* text-align: right!important; */
     font-size: 18px !important;  
     margin:0px; 
     /* background: red; */
-    background: black;
-    color: peru;
-    width: 24px;
+    /* background: black; */
+    color: white;
+    /* width: 24px; */
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
     .hg-accBtn{
-      padding:10px 8px 10px 16px;
+      padding:10px 16px 10px 16px;
       margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
       white-space: normal;  /*lets words wrap in accordian button*/
       text-align:left;
