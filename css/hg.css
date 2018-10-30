@@ -128,12 +128,12 @@ body{word-wrap: break-word;}
   
     float:right;  
     /* font-size: 1.2em;   */
-    text-align: right;
+    text-align: right!important;
     font-size: 18px !important;  
     margin:0px; 
     /* background: red; */
     background: black;
-    color: red;
+    color:yellow;
     width: 24px;
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
