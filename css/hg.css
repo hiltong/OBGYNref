@@ -113,7 +113,7 @@ body{word-wrap: break-word;}
 
     /*Nav Link----------------------------------------------------------------------------------------------------*/
   .hg-NavLink{
-    padding:8px 16px;
+    padding:10px 16px;
     margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
     white-space: normal;  /*lets words wrap in accordian button*/
     text-align:left;
@@ -125,7 +125,7 @@ body{word-wrap: break-word;}
     font-size: 1.2em;
     text-decoration: none;
     cursor:pointer;
-    height: 50px;
+    /* height: 50px; */
   }
   .hg-NavLink:hover{
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
@@ -134,6 +134,7 @@ body{word-wrap: break-word;}
   
     float:right;  
     font-size: 1.2em;  
+    font-size: 18px;  
     margin:0px; 
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
