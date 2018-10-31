@@ -106,7 +106,6 @@ function SetAccDivsALgoDivs(){
     }
     else{
       accdiv.style.display="none";
-     
     }
   }
   var algoArray = document.getElementsByClassName("hg-algoDivMain");
@@ -122,8 +121,14 @@ function SetAccDivsALgoDivs(){
     else if (i==0){
       algodiv.style.display="block";
     }
-
   }
+
+ /*  var navLinkArray= document.getElementsByTagName("i")
+    alert(navLinkArray.length);
+    for (i = 0; i < navLinkArray.length; i++) {
+      var iii = navLinkArray[i]
+      iii.className="fa fa-camera-retro";
+    } */
 }
 
 
