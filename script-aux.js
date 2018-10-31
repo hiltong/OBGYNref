@@ -1,4 +1,4 @@
-function MyFunction(document) {
+function MyFunction() {
   alert('Hit! aux');
   /* var acc = document.getElementsByClassName("accordion");
   var i;
@@ -71,6 +71,8 @@ function SideBarClose(document) {
   var data = sessionStorage.getItem(accID);
 } */
 
+
+
 function AccToggle(accID) {
   var chevronId = accID+1;
   var x = document.getElementById(accID);
@@ -83,14 +85,16 @@ function AccToggle(accID) {
   }
   else {  
     chevron.innerHTML='&#9650';
+    // chevron.className=ARROWUP;
     x.style.display = "block";
     sessionStorage.setItem(accID, 'block')
   }
-  // alert(accID);
   var data = sessionStorage.getItem(accID);
-  // alert(data);
 }
 
+const ARROWRIGHT='fa fa-chevron-right';
+const ARROWDOWN='fa fa-chevron-down';
+const ARROWUP='fa fa-chevron-up';
 
 //Sets divs for accordian and algorithms on page
 function SetAccDivsALgoDivs(){
@@ -123,14 +127,23 @@ function SetAccDivsALgoDivs(){
     }
   }
 
- /*  var navLinkArray= document.getElementsByTagName("i")
-    alert(navLinkArray.length);
-    for (i = 0; i < navLinkArray.length; i++) {
-      var iii = navLinkArray[i]
-      iii.className="fa fa-camera-retro";
-    } */
+  var NavLinkArray = document.getElementsByClassName("hg-NavLink");
+  for (i = 0; i <NavLinkArray.length; i++) {
+    var nla = NavLinkArray[i];
+    var iArray =  nla.getElementsByTagName("i");
+    iArray[0].className=ARROWRIGHT;
+  } 
+
 }
 
+function SetNavLinkChevron(){
+  var NavLinkArray = document.getElementsByClassName("hg-NavLink");
+  for (i = 0; i <NavLinkArray.length; i++) {
+    var nla = NavLinkArray[i];
+    var iArray =  nla.getElementsByTagName("i");
+    iArray[0].className=ARROWUP;
+  } 
+}
 
 
 /*Algorhithm-------------------------------------------------------------------------------*/
