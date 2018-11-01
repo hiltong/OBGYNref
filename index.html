@@ -17,18 +17,18 @@
 <body onload="SetAccDivsALgoDivs()">
 
   <!-- Navbar -->
-  <div class="hg-NavBar" >
-      <a class="hg-BackButton " href="javascript:void(0)" onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></a> 
-      <a class="hg-HamBtn " href="javascript:void(0)" onclick="SideBarOpen() "><i class="fa fa-bars"></i></a>
-      <span class="hg-NavBarTitle">Ob/Gyn Pocket Notes <sup>r</sup></span>
-    </div>
+  <div class="hg-NavBar">
+    <!-- <a class="hg-BackButton " href="javascript:void(0)" onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>  -->
+    <a class="hg-HamBtn " href="javascript:void(0)" onclick="SideBarOpen() "><i class="fa fa-bars"></i></a>
+    <span class="hg-NavBarTitle">Ob/Gyn Pocket Notes <sup>r</sup></span>
+  </div>
 
   <!-- Sidebar -->
-  <nav class="hg-SideBar w3-sidebar  w3-bar-block w3-collapse  " id="mySidebar">
-    <h4 class="w3-bar-item"><b>Menu</b></h4>
-    <a class="w3-bar-item w3-button  w3-hover-black " style="margin-top: 2px; color:white; background-color: black;" onclick="SideBarClose()">Start</a>
-    <a class="w3-bar-item w3-button w3-hover-black" style="margin-top: 2px; " href="references.html">References</a>
-    <a class="hg-SideBarItem"   href="about.html">About</a>
+  <nav class="hg-SideBar w3-sidebar" id="mySidebar">
+    <h4>Menu</h4>
+    <a class="hg-SideBarItemSelected" onclick="SideBarClose()">Start</a>
+    <a class="hg-SideBarItem" href="references.html">References</a>
+    <a class="hg-SideBarItem" href="about.html">About</a>
   </nav>
 
   <!-- Overlay effect when opening sidebar on small screens -->
@@ -41,10 +41,10 @@
       <div class="w3-twothird w3-container">
         <h1 class="hg-h1PageTitle">Start</h1>
         <div>
-          <a href="index_ob.html" class="hg-NavLink">Obstetrics<p class="hg-NavLinkChevron"><i class="fa fa-chevron-right"></i></p></a>
-          <a href="index_gyn.html" class="hg-aIndex">Gynecology</a>
-          <a href="#" class="hg-aIndex">Infertility</a>
-          <a href="index_re.html" class="hg-aIndex">Reproductive Endocrinology</a>
+          <a href="index_ob.html" class="hg-NavLink">Obstetrics<p class="hg-NavLinkChevron"><i></i></p></a>
+          <a href="index_gyn.html" class="hg-NavLink">Gynecology<p class="hg-NavLinkChevron"><i></i></p></a>
+          <a href="#" class="hg-NavLink">Infertility<p class="hg-NavLinkChevron"><i></i></p></a>
+          <a href="index_re.html" class="hg-NavLink">Reproductive Endocrinology<p class="hg-NavLinkChevron"><i></i></p></a>
         </div>
       </div>
       <div class="w3-third w3-container">
@@ -58,7 +58,7 @@
   </div>
 
   <script defer src="script.js"></script>
-  <script defer src="script-aux.js"></script> 
+  <script defer src="script-aux.js"></script>
   <!-- <script>
     // Get the Sidebar
     var mySidebar = document.getElementById("mySidebar");
