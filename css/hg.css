@@ -86,23 +86,35 @@ body{word-wrap: break-word;}
     /* background-color: #ddffdd; */
   }
   
-  /*Index-----------------------------------------------------------------------------------------------------*/
-    .hg-aIndex {
-      font-size: 1.2em;
-      text-align:left;
-      white-space:normal;
-      padding:12px 16px;
-      float:none;
-      width:100%;
-      border:none;
-      display:block;
-      outline:0;
-      color: teal;
-    }
-    a.hg-aIndex:hover{
-      background: teal;
-      color:white;
-    } 
+  /*Side Bar---------------------------------------------------------------------------------------------------*/
+  .hg-SideBar{
+    font-size:18px!important;
+    color:#000 !important; 
+    background-color:#f0f0f0 !important;
+    position:relative;
+    animation:animateleft 0.4s;
+  }
+  @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+  .hg-SideBarItem{
+    margin-top: 2px;
+  
+    color: black;
+    text-decoration: none;
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0
+  }
+  .hg-SideBarItem:hover{
+    /* color:darkblue; */
+    color: white;
+    background-color:black;
+  }
 
     /*Nav Link----------------------------------------------------------------------------------------------------*/
   .hg-NavLink{
@@ -111,7 +123,7 @@ body{word-wrap: break-word;}
     white-space: normal;  /*lets words wrap in accordian button*/
     text-align:left;
     color :white;
-    background: #b87333 ;
+    background: black ;
     display:block;
     border:none;
     width:100%;

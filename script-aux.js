@@ -1,26 +1,10 @@
-function MyFunction() {
-  alert('Hit! aux');
-  /* var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight){
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      } 
-    });
-  } */
-}
+
 
 function goBack() {
   window.history.back();
 }
 
-function SideBarOpen(document) {
+function SideBarOpen() {
   // alert('Open');
   // Get the Sidebar
   var mySidebar = document.getElementById("mySidebar");
@@ -36,7 +20,7 @@ function SideBarOpen(document) {
   }
 }
 
-function SideBarClose(document) {
+function SideBarClose() {
   // alert('Open');
   // Get the Sidebar
   var mySidebar = document.getElementById("mySidebar");
@@ -47,29 +31,8 @@ function SideBarClose(document) {
   overlayBg.style.display = "none";
 }
 
-/* function AccWork(document, id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-} */
 
-/*Accordian Open/Close*/
-/* function AccToggle3(accID) {
-  var x = document.getElementById(accID);
-  if (x.style.display == "block") {
-    x.style.display = "none";
-    sessionStorage.setItem(accID, 'none')
-  }
-  else {
-    x.style.display = "block";
-    sessionStorage.setItem(accID, 'block')
 
-  }
-  var data = sessionStorage.getItem(accID);
-} */
 
 
 
