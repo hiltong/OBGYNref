@@ -111,7 +111,7 @@ body{word-wrap: break-word;}
     white-space: normal;  /*lets words wrap in accordian button*/
     text-align:left;
     color :white;
-    background: teal;
+    background: #b87333 ;
     display:block;
     border:none;
     width:100%;

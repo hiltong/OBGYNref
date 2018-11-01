@@ -74,18 +74,19 @@ function SideBarClose(document) {
 
 
 function AccToggle(accID) {
-  var chevronId = accID+1;
+  var chevronId = accID+ "_c";
   var x = document.getElementById(accID);
   var chevron = document.getElementById(chevronId);
 
   if (x.style.display == "block") {
-    chevron.innerHTML='&#9660';
+    // chevron.innerHTML='&#9660';
+    chevron.className =ARROWDOWN;
     x.style.display = "none";
     sessionStorage.setItem(accID, 'none')
   }
   else {  
-    chevron.innerHTML='&#9650';
-    // chevron.className=ARROWUP;
+    // chevron.innerHTML='&#9650';
+    chevron.className=ARROWUP;
     x.style.display = "block";
     sessionStorage.setItem(accID, 'block')
   }
@@ -102,10 +103,13 @@ function SetAccDivsALgoDivs(){
   for (i = 0; i < accArray.length; i++) {
     var accdiv = accArray[i];
     var data = sessionStorage.getItem(accdiv.id);
-    var chevronId = accdiv.id+1;
+    // var chevronId = accdiv.id+1;
+    var chevronId = accdiv.id + "_c";
     var chevron = document.getElementById(chevronId);
     if (data=='block'){
-       chevron.innerHTML='&#9650';
+      //  chevron.innerHTML='&#9650';
+
+       chevron.className =ARROWUP;
       accdiv.style.display="block";
     }
     else{
@@ -141,7 +145,7 @@ function SetNavLinkChevron(){
   for (i = 0; i <NavLinkArray.length; i++) {
     var nla = NavLinkArray[i];
     var iArray =  nla.getElementsByTagName("i");
-    iArray[0].className=ARROWUP;
+    iArray[0].className=ARROWRIGHT;
   } 
 }
 
