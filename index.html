@@ -17,15 +17,17 @@
 <body onload="SetAccDivsALgoDivs()">
 
   <!-- Navbar -->
-  <div class="hg-NavBar">
+  <!-- style="position:fixed; z-index:6;  -->
+  <div class="hg-NavBar" >
     <!-- <a class="hg-BackButton " href="javascript:void(0)" onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>  -->
     <a class="hg-HamBtn " href="javascript:void(0)" onclick="SideBarOpen() "><i class="fa fa-bars"></i></a>
     <span class="hg-NavBarTitle">Ob/Gyn Pocket Notes <sup>r</sup></span>
   </div>
 
-  <!-- Sidebar -->
-  <nav class="hg-SideBar w3-sidebar" id="mySidebar">
+  <!-- Sidebar  -->
+  <nav class="hg-SideBar" id="mySidebar">
     <h4>Menu</h4>
+    <!-- style="position: fixed; top: 43px; z-index:6; " -->
     <a class="hg-SideBarItemSelected" onclick="SideBarClose()">Start</a>
     <a class="hg-SideBarItem" href="references.html">References</a>
     <a class="hg-SideBarItem" href="about.html">About</a>
