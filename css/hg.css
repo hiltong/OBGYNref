@@ -161,6 +161,12 @@ body{word-wrap: break-word;}
     padding-bottom:64px!important;
     transition:margin-left .4s;
   }
+  .hg-InfoContent{
+    padding:0.01em 16px;
+  }
+  .hg-AddContent{
+    padding:0.01em 16px
+  }
   
   /*Nav Link----------------------------------------------------------------------------------------------------*/
   .hg-NavLink{
