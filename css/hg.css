@@ -105,10 +105,10 @@ body{word-wrap: break-word;}
     top: 43px;
     bottom: 0;
     height: inherit;
-    animation:animateleft 0.4s;
+    animation: animateleft 0.4s;
   }
   @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-  /* <!-- style="position: fixed; top: 43px; z-index:6; " --> */
+
   .hg-SideBar h4{
     padding-top: 8px;
     padding-bottom: 12px;
@@ -385,13 +385,8 @@ body{word-wrap: break-word;}
       /* background:#ffdb58; */
       background:#f0f0f0;
       color: black;
-      /* position: absolute; */
-      /* bottom: 12px; */
       margin-left: 16px;
       margin-bottom: 16px;
-      /* margin-top: 32px; */
-      /* float:right; */
-      /* outline:none; */
     }
     
   

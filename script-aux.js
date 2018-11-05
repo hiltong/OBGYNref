@@ -64,7 +64,7 @@ const ARROWDOWN = 'fa fa-chevron-down';
 const ARROWUP = 'fa fa-chevron-up';
 
 //Sets divs for accordian and algorithms on page
-function SetAccDivsALgoDivs() {
+function SetUpPage() {
 
   var bbarray = document.getElementsByClassName("hg-BackButton");
   var bbarrayi = bbarray[0].getElementsByTagName("i");
@@ -131,7 +131,7 @@ function AlgoNext(idhide, idshow) {
   sessionStorage.setItem(idshow, 'block')
 }
 
-function SetAlgoDivs() {
+/* function SetAlgoDivs() {
   var algoArray = document.getElementsByClassName("hg-algoDivMain");
   for (i = 0; i < algoArray.length; i++) {
     var algodiv = algoArray[i];
@@ -147,8 +147,7 @@ function SetAlgoDivs() {
     }
 
   }
-  // alert(algoArray.length);
-}
+} */
 
 
 
