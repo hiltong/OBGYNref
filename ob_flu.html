@@ -1,199 +1,130 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <meta charset="UTF-8">
+
 <title>Ob: Influenza</title>
-<meta name="description" content="Pearls for the management of influenza in pregnancy.">
+<meta name="description" content="Influenza in obstetrics.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#000">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="css/w3-theme-black.css">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
-
 <body onload="SetUpPage()">
 
-   <!-- Navbar -->
-  <div class="hg-NavBar" >
-    <a class="hg-BackButton " href="javascript:void(0)" onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></a> 
-    <a class="hg-HamBtn w3-hide-large" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars" ></i></a>
-    <span class="hg-NavBarTitle">Ob/Gyn Pocket Notes <sup>r</sup></span>
+  <!-- Navbar -->
+  <div class="hg-NavBar">
+    <a class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"><i></i></a>
+    <a class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"><i></i></a>
+    <span class="hg-NavBarTitle"></span>
   </div>
 
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-    <!--  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-            X
-          </a> -->
-    <h4 class="w3-bar-item"><b>Menu</b></h4>
-    <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="references.html">References</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="about.html">About</a>
+  <nav class="hg-SideBar" id="mySidebar">
+    <h4>Menu</h4>
+    <a class="hg-SideBarItem" href="index.html">Start</a>
+    <a class="hg-SideBarItem" href="references.html">References</a>
+    <a class="hg-SideBarItem" href="about.html">About</a>
   </nav>
 
   <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
 
   <!-- MAIN: shift it to the right by 250 pixels when the sidebar is visible -->
-  <div class="w3-main" style="margin-left:250px">
-    <div class="w3-row w3-padding-64">
+  <div class="hg-MainContent">
 
-      <!--NON-ADDS-->
-      <div class="w3-twothird w3-container">
-        <h1 class="hg-h1PageTitle">Influenza in Obstetrics</h1>
-        <!-- <h2 class="hg-h2PageSubtitle">Pearls</h2> -->
-        <div>
+    <div class="hg-InfoContent">
+      <h1 class="hg-h1PageTitle">Influenza in Obstetrics</h1>
 
-       
-         
-          <button onclick="AccToggle('Demo1')" class="hg-accBtn" >Antivirals:<p  class="hg-NavLinkChevron"><i id="Demo1_c" class="fa fa-chevron-down"></i> </p></button>
-          <div id="Demo1" class="hg-accDivMain" >
-            <ul class=hg-accUl>
-              <li>Oseltamivir
-                <ul>
-                  <li>Treatment: 75 mg orally twice daily for 5 days.<sup>1</sup></li>
-                  <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days.<sup>1</sup></li>
-                </ul>
-              </li>
-              <li>Zanamivir</li>
-              <li>Peramivir</li>
+      <button onclick="AccToggle('Demo1')" class="hg-accBtn">Antivirals:<p class="hg-NavLinkChevron"><i id="Demo1_c"
+            class="fa fa-chevron-down"></i> </p></button>
+      <div id="Demo1" class="hg-accDivMain">
+        <ul class=hg-accUl>
+          <li>Oseltamivir
+            <ul>
+              <li>Treatment: 75 mg orally twice daily for 5 days.<sup>1</sup></li>
+              <li>Postexposure chemoprophylaxis: 75 mg once daily for 7–10 days.<sup>1</sup></li>
             </ul>
-          </div>
-
-
-          <!--test-->
-          <button onclick="AccToggle('Demo2')" class="hg-accBtn">Algorhythms<p class="hg-NavLinkChevron"><i id="Demo2_c" class="fa fa-chevron-down"></i> </p></button>
-          <div id="Demo2" class="hg-accDivMain">
-            <a href="ob_flu_algo1.html" ">Assessment & Treatment Algorithm</a>
-          </div>
-
-           <!--Algo 1-->
-           <button onclick="AccToggle('Algo1')" class="hg-accBtn">Algorhythms 2<p  class="hg-NavLinkChevron"> <i id="Algo1_c" class="fa fa-chevron-down"></i>  </p></button>
-           <div id="Algo1" class="hg-accDivMain" >
- 
-             <div id="start" class="hg-algoDivMain"  style="display: block; ">
-               <div class="hg-algoDivStrBorder" style="width:100px">
-                 <h3 class="hg-algoh3">Start</h3>
-               </div>
-               <div class="hg-algoDivNoBorder">
-                 <p class="hg-algoParaDn"> &#8595;</p>
-               </div>
-               <div class="hg-algoDivNoBorder">
-                 <button class=" w3-btn hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
-                   to influenza &#8594;</button>
-                 <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
-                   influenza &#8594;</button>
-                 <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
-                   influenza &#8594;</button>
-               </div>
-             </div>
-             <div id="proph" class="hg-algoDivMain" style="display: none; " >
-               <div class="hg-algoDivNoBorder">
-                 <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')"
-                   ">&#8593;</button>
-               </div>
-               <div class=" hg-algoDivRdBorder" style="max-width: 500px;">
-                   <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
-                   <ul class="hg-algoUl">
-                     <li>Oseltamivir (Tamiflu)
-                       <ul>
-                         <li>75 mg orally once daily for 7–10 days.<sup>1</sup></li>
-                       </ul>
-                     </li>
-                     <li>Zanamivir (Relenza)
-                       <ul>
-                         <li>10 mg (two 5-mg inhalations) once daily for 7 days.<sup>1</sup></li>
-                       </ul>
-                     </li>
-                   </ul>
-               </div>
-               <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="left:18px ; ">&#8634;</button>
-             </div>
-
-           </div>
-
-
-          <button  onclick="AccToggle('Refs')" class="hg-accBtn">References: <p  class="hg-NavLinkChevron"><i id="Refs_c" class="fa fa-chevron-down"></i></p></button>
-          <div id="Refs" class="hg-accDivMain">
-            <ol class="hg-accOlRef"
-              <li>
-                Assessment and treatment of pregnant women with suspected or confirmed
-                influenza. ACOG Committee Opinion No. 753. American College of Obstetricians
-                and Gynecologists. Obstet Gynecol 2018;132:e169–73.
-              </li>
-            </ol>
-
-          </div>
-
-  
-         
-        </div>
-
+          </li>
+          <li>Zanamivir</li>
+          <li>Peramivir</li>
+        </ul>
       </div>
-      <!--END NON-ADDS-->
 
-      <!--ADDS-->
-      <div class="w3-third w3-container" >
-        <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-        <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+      <button onclick="AccToggle('Demo2')" class="hg-accBtn">Algorhythms<p class="hg-NavLinkChevron"><i id="Demo2_c"
+            class="fa fa-chevron-down"></i> </p></button>
+      <div id="Demo2" class="hg-accDivMain">
+        <a href="ob_flu_algo1.html">Assessment & Treatment Algorithm</a>
       </div>
-      <!--END ADDS-->
+
+      <button onclick="AccToggle('Algo1')" class="hg-accBtn">Algorhythms 2<p class="hg-NavLinkChevron"> <i id="Algo1_c"
+            class="fa fa-chevron-down"></i>
+        </p></button>
+      <div id="Algo1" class="hg-accDivMain">
+          <div id="start" class="hg-algoDivMain" style="display: block; ">
+              <div class="hg-algoDivStrBorder" style="width:100px">
+                <h3 class="hg-algoh3">Start</h3>
+              </div>
+              <div class="hg-algoDivNoBorder">
+                <p class="hg-algoParaDn"> &#8595;</p>
+              </div>
+              <div class="hg-algoDivNoBorder">
+                <button class=" w3-btn hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
+                  to influenza &#8594;</button>
+                <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
+                  influenza &#8594;</button>
+                <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
+                  influenza &#8594;</button>
+              </div>
+            </div>
+            <div id="proph" class="hg-algoDivMain" style="display: none; ">
+                <div class="hg-algoDivNoBorder">
+                  <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')"
+                    ">&#8593;</button>
+                 </div>
+                 <div class=" hg-algoDivRdBorder" style="max-width: 500px;">
+                    <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
+                    <ul class="hg-algoUl">
+                      <li>Oseltamivir (Tamiflu)
+                        <ul>
+                          <li>75 mg orally once daily for 7–10 days.<sup>1</sup></li>
+                        </ul>
+                      </li>
+                      <li>Zanamivir (Relenza)
+                        <ul>
+                          <li>10 mg (two 5-mg inhalations) once daily for 7 days.<sup>1</sup></li>
+                        </ul>
+                      </li>
+                    </ul>
+                </div>
+                <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="left:18px ; ">&#8634;</button>
+              </div>
+      </div>
+
+      <button onclick="
+          AccToggle('Refs')" class="hg-accBtn">References: <p class="hg-NavLinkChevron"><i id="Refs_c"
+            class="fa fa-chevron-down"></i></p></button>
+      <div id="Refs" class="hg-accDivMain">
+        <ol class="hg-accOlRef" <li>
+          Assessment and treatment of pregnant women with suspected or confirmed
+          influenza. ACOG Committee Opinion No. 753. American College of Obstetricians
+          and Gynecologists. Obstet Gynecol 2018;132:e169–73.
+          </li>
+        </ol>
+      </div>
 
     </div>
 
-  </div>
-  <!-- END MAIN -->
+    <div class="hg-AddContent">
+      <p class="hg-AddSmall ">AD</p>
+      <p class="hg-AddLarge  ">AD</p>
+    </div>
 
+  </div>
 
   <script defer src="script.js"></script>
   <script defer src="script-aux.js"></script>
-
-  <script>
-
-
-    // Get the Sidebar
-    var mySidebar = document.getElementById("mySidebar");
-
-    // Get the DIV with overlay effect
-    var overlayBg = document.getElementById("myOverlay");
-
-    // Toggle between showing and hiding the sidebar, and add overlay effect
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-      } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
-      }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-      overlayBg.style.display = "none";
-    }
-
-    // Accordian
-    /* function AccWork(id) {
-      var x = document.getElementById(id);
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    } */
-
-    // Algorhythm
-    /* function AlgoNext(idhide, idshow) {
-      document.getElementById(idhide).style.display = "none";
-      document.getElementById(idshow).style.display = "block";
-    } */
-
-  </script>
 
 </body>
 

@@ -56,7 +56,7 @@ function AccToggle(accID) {
   var data = sessionStorage.getItem(accID);
 }
 
-const TITLEHTML = "Ob/Gyn Pocket Notess <sup>r</sup>";
+const TITLEHTML = "Ob/Gyn Pocket Notes <sup>r</sup>";
 const HAMBURGER = 'fa fa-bars';
 const BACKARROW = 'fa fa-arrow-left';
 const ARROWRIGHT = 'fa fa-chevron-right';

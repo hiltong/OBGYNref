@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <meta charset="UTF-8">
+
 <title>Obstetrics</title>
-<meta name="description" content="Obstetrics index for the web app 'Ob/Gyn-Referenced'">
+<meta name="description" content="Main obstetrics index for 'Ob/Gyn Pocket Notes'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#000">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="css/w3-theme-black.css">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -16,75 +14,43 @@
 <body onload="SetUpPage()">
 
   <!-- Navbar -->
-  <div class="hg-NavBar" >
-    <a class="hg-BackButton " href="javascript:void(0)" onclick="goBack()"><i class="fa fa-arrow-left" aria-hidden="true"></i></a> 
-    <a class="hg-HamBtn w3-hide-large" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <span class="hg-NavBarTitle">Ob/Gyn Pocket Notes <sup>r</sup></span>
+  <div class="hg-NavBar">
+    <a class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"><i></i></a>
+    <a class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"><i></i></a>
+    <span class="hg-NavBarTitle"></span>
   </div>
 
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-    <!--  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-            X
-          </a> -->
-    <h4 class="w3-bar-item"><b>Menu</b></h4>
-    <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="references.html">References</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="about.html">About</a>
+  <nav class="hg-SideBar" id="mySidebar">
+    <h4>Menu</h4>
+    <a class="hg-SideBarItem" href="index.html">Start</a>
+    <a class="hg-SideBarItem" href="references.html">References</a>
+    <a class="hg-SideBarItem" href="about.html">About</a>
   </nav>
 
   <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
 
   <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-  <div class="w3-main" style="margin-left:250px">
+  <div class="hg-MainContent">
 
-    <div class="w3-row w3-padding-64">
-      <div class="w3-twothird w3-container">
-        <h1 class="hg-h1PageTitle">Obstetrics</h1>
-        <!-- <h2 class="hg-h2PageSubtitle">Index</h2> -->
-        <div>
-          <a href="ob_flu.html" class="hg-NavLink">Influenza<p class="hg-NavLinkChevron"><i class="fa fa-chevron-right"></i></p></a>
-        </div>
+    <div class="hg-InfoContent">
+      <h1 class="hg-h1PageTitle">Obstetrics</h1>
+      <div>
+        <a href="ob_flu.html" class="hg-NavLink">Influenza<p class="hg-NavLinkChevron"><i></i></p></a>
       </div>
+    </div>
 
-      <div class="w3-third w3-container">
-        <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-        <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-      </div>
-
+    <div class="hg-AddContent">
+        <p class="hg-AddSmall ">AD</p>
+        <p class="hg-AddLarge  ">AD</p>
     </div>
 
   </div>
-  <!-- END MAIN -->
 
   <script defer src="script.js"></script>
   <script defer src="script-aux.js"></script>
-  <script>
-    // Get the Sidebar
-    var mySidebar = document.getElementById("mySidebar");
-
-    // Get the DIV with overlay effect
-    var overlayBg = document.getElementById("myOverlay");
-
-    // Toggle between showing and hiding the sidebar, and add overlay effect
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-      } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
-      }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-      overlayBg.style.display = "none";
-    }
-  </script>
-
+  
 </body>
 
 </html>
