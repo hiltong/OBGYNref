@@ -273,7 +273,7 @@ body{word-wrap: break-word;}
       padding-right: 12px;
       padding-bottom: 12px;
       display: none;
-      background: lightblue
+      /* background: lightblue */
       /* background: lightcyan; */
       /* border-radius: 24px; */
       /* border: 1px solid #ccc; */
@@ -299,7 +299,8 @@ body{word-wrap: break-word;}
     padding-left: 16px;
     padding-right: 16px;
     border: 1px solid black;
-    background: white;
+    /* background: lightcyan; */
+    background: rgb(220, 241, 220);
     border-radius: 8px;
   }
  /*No border div*/
@@ -322,7 +323,8 @@ body{word-wrap: break-word;}
   /*Up button*/
   .hg-algoBtnUp{
     width: 50px;
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
+    background: lightgoldenrodyellow;
     color: black;
     margin-left: auto ;
     margin-right: auto ;
@@ -347,8 +349,8 @@ body{word-wrap: break-word;}
     white-space: normal;  /*lets words wrap in accordian button*/
     /* background: coral; */
     /* background: #ffdb58; */
-    /* background: gold; */
-    background: #f0f0f0;
+    background: lightgoldenrodyellow;
+    /* background: #f0f0f0; */
     color:black;
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   }
@@ -390,8 +392,9 @@ body{word-wrap: break-word;}
     .hg-algoRfBtn{
       /* border: 1px solid #ccc; */
       border-radius:50%;
-      /* background:#ffdb58; */
-      background:#f0f0f0;
+      /* background: lightgoldenrodyellow; */
+      background: lightpink;
+      /* background:#f0f0f0; */
       color: black;
       margin-left: 16px;
       margin-bottom: 16px;
