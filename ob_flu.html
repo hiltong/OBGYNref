@@ -58,48 +58,51 @@
         <a href="ob_flu_algo1.html">Assessment & Treatment Algorithm</a>
       </div>
 
-      <button onclick="AccToggle('Algo1')" class="hg-accBtn">Algorhythms 2<p class="hg-NavLinkChevron"> <i id="Algo1_c"
-            class="fa fa-chevron-down"></i>
-        </p></button>
+      <button onclick="AccToggle('Algo1')" class="hg-accBtn">Algorithms 2<p class="hg-NavLinkChevron"> <i id="Algo1_c"
+            class="fa fa-chevron-down"></i></button>
       <div id="Algo1" class="hg-accDivMain">
-          <div id="start" class="hg-algoDivMain" style="display: block; ">
-              <div class="hg-algoDivStrBorder" style="width:100px">
-                <h3 class="hg-algoh3">Start</h3>
-              </div>
-              <div class="hg-algoDivNoBorder">
-                <p class="hg-algoParaDn"> &#8595;</p>
-              </div>
-              <div class="hg-algoDivNoBorder">
-                <button class=" w3-btn hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
-                  to influenza &#8594;</button>
-                <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
-                  influenza &#8594;</button>
-                <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
-                  influenza &#8594;</button>
-              </div>
-            </div>
-            <div id="proph" class="hg-algoDivMain" style="display: none; ">
-                <div class="hg-algoDivNoBorder">
-                  <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')"
-                    ">&#8593;</button>
-                 </div>
-                 <div class=" hg-algoDivRdBorder" style="max-width: 500px;">
-                    <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
-                    <ul class="hg-algoUl">
-                      <li>Oseltamivir (Tamiflu)
-                        <ul>
-                          <li>75 mg orally once daily for 7–10 days.<sup>1</sup></li>
-                        </ul>
-                      </li>
-                      <li>Zanamivir (Relenza)
-                        <ul>
-                          <li>10 mg (two 5-mg inhalations) once daily for 7 days.<sup>1</sup></li>
-                        </ul>
-                      </li>
-                    </ul>
-                </div>
-                <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="left:18px ; ">&#8634;</button>
-              </div>
+
+        <div id="start" class="hg-algoDivMain" style="display: block; ">
+          <p style="margin:0px 0px 12px 0px;">Algorithm start</p>
+          <!-- <div class="hg-algoDivStrBorder" style="width:100px">
+            <h3 class="hg-algoh3">Start</h3>
+          </div> -->
+          <!-- <div class="hg-algoDivNoBorder">
+            <p class="hg-algoParaDn"> &#8595;</p>
+          </div> -->
+          <div class="hg-algoDivNoBorder">
+            <button class=" w3-btn hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
+              to influenza &#8594;</button>
+            <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
+              influenza &#8594;</button>
+            <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
+              influenza &#8594;</button>
+          </div>
+        </div>
+
+        <div id="proph" class="hg-algoDivMain" style="display: none; ">
+            <p style="margin:0px;">Algorithm end</p>
+          <div class="hg-algoDivNoBorder">
+            <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')">&#8593;</button>
+          </div>
+          <div class=" hg-algoDivRdBorder" style="max-width: 500px;">
+            <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
+            <ul class="hg-algoUl">
+              <li>Oseltamivir (Tamiflu)
+                <ul>
+                  <li>75 mg orally once daily for 7–10 days.<sup>1</sup></li>
+                </ul>
+              </li>
+              <li>Zanamivir (Relenza)
+                <ul>
+                  <li>10 mg (two 5-mg inhalations) once daily for 7 days.<sup>1</sup></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button class="w3-btn hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="left:18px ; ">&#8634;</button>
+        </div>
+
       </div>
 
       <button onclick="
