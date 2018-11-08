@@ -63,7 +63,7 @@
       <div id="Algo1" class="hg-accDivMain">
 
         <div id="start" class="hg-algoDivMain" style="display: block; ">
-          <p style="margin:0px 0px 12px 0px;">Algorithm start</p>
+          <p class="hg-pAlgoStatus">Algorithm start</p>
           <!-- <div class="hg-algoDivStrBorder" style="width:100px">
             <h3 class="hg-algoh3">Start</h3>
           </div> -->
@@ -71,19 +71,19 @@
             <p class="hg-algoParaDn"> &#8595;</p>
           </div> -->
           <div class="hg-algoDivNoBorder">
-            <button class=" w3-btn hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
+            <button class=" hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('start','proph')">Exposure
               to influenza &#8594;</button>
-            <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
+            <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Suspected
               influenza &#8594;</button>
-            <button class="w3-btn hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
+            <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('flu1','flu2')">Confirmed
               influenza &#8594;</button>
           </div>
         </div>
 
         <div id="proph" class="hg-algoDivMain" style="display: none; ">
-            <p style="margin:0px;">Algorithm end</p>
+            <p class="hg-pAlgoStatus">Algorithm end</p>
           <div class="hg-algoDivNoBorder">
-            <button class="w3-btn hg-algoBtnUp" onclick="AlgoNext('proph','start')">&#8593;</button>
+            <button class="hg-algoBtnUp" onclick="AlgoNext('proph','start')">&#8593;</button>
           </div>
           <div class=" hg-algoDivRdBorder" style="max-width: 500px;">
             <h3 class="hg-algoh3">Postexposure Antiviral Chemoprophylaxis</h3>
