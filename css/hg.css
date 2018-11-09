@@ -189,8 +189,8 @@ body{word-wrap: break-word;}
     margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
     white-space: normal;  /*lets words wrap in accordian button*/
     text-align:left;
-    color :white;
-    background:teal ;
+    color :black;
+    background:#f0f0f0 ;
     display:block;
     border:none;
     width:100%;
@@ -207,7 +207,7 @@ body{word-wrap: break-word;}
     float:right;  
     font-size: 18px !important;  
     margin:0px; 
-    color: white;
+    color: red;
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
     .hg-accBtn{
@@ -215,8 +215,9 @@ body{word-wrap: break-word;}
       margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
       white-space: normal;  /*lets words wrap in accordian button*/
       text-align:left;
-      color:white;
-      background: teal;
+      color:black;
+      background:#f0f0f0;
+      /* background:lightpink; */
       display:block;
       border:none;
       width:100%;
