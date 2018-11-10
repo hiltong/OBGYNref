@@ -9,23 +9,14 @@
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
-<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-
-<Style>
-  a {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 12px;
-  }
-</Style>
 
 <body onload="SetUpPage()">
 
-  <!-- Navbar -->
-  <div class="hg-NavBar" >
-    <a class="hg-BackButton" href="javascript:void(0)" onclick="goBack()" style="display: none"><i></i></a> 
-    <a class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"><i></i></a>
-    <span class="hg-NavBarTitle"></span>
+  <!-- Navbar &larr;-->
+  <div class="hg-NavBar">
+    <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()" style="display: none"></a>
+    <a id="hmbrgbtn"  class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+    <span id="titbar" class="hg-NavBarTitle"></span>
   </div>
 
   <!-- Sidebar  -->
@@ -40,35 +31,32 @@
   <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
 
   <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-  <div class="hg-MainContent" >
-    
-      <div class="hg-InfoContent">
-        <h1 class="hg-h1PageTitle" >Start</h1>
-        <div>
-          <a href="ob_index.html" class="hg-NavLink">Obstetrics<p class="hg-NavLinkChevron"><i></i></p></a>
-          <a href="ob_glossary.html" class="hg-NavLink" style="margin-left: 20px; width:auto;">Obstetric Glossary<p class="hg-NavLinkChevron"><i></i></p></a>
-          <a href="index_gyn.html" class="hg-NavLink" >Gynecology<p class="hg-NavLinkChevron"><i></i></p></a>
-          <a href="#" class="hg-NavLink">Infertility<p class="hg-NavLinkChevron"><i></i></p></a>
-          <a href="index_re.html" class="hg-NavLink">Reproductive Endocrinology<p class="hg-NavLinkChevron"><i></i></p></a>
-          <!-- <a href="ob_index.html" >Obstetrics</a>
-          <a href="ob_glossary.html" style="margin-left:20px" >Obstetric Glossary</a>
-          <a href="index_gyn.html" >Gynecology<p class="hg-NavLinkChevron"><i></i></p></a>
-          <a href="#" >Infertility</a>
-          <a href="index_re.html">Reproductive Endocrinology</a> -->
-          
-        </div>
-      </div>
+  <div class="hg-MainContent">
 
-      <div class="hg-AddContent">
-        <p class="hg-AddSmall ">AD</p>
-        <p class="hg-AddLarge  ">AD</p>
+    <div class="hg-InfoContent">
+      <h1 class="hg-h1PageTitle">Start</h1>
+      <div>
+        <a href="ob_index.html" class="hg-NavLink">Obstetrics<p class="hg-NavLinkChevronRt"><i></i></p></a>
+        <a href="ob_glossary.html" class="hg-NavLink hg-NavLinkSub1" ">Obstetric Glossary<p class="
+          hg-NavLinkChevronRt"><i></i></p></a>
+        <a href="index_gyn.html" class="hg-NavLink">Gynecology<p class="hg-NavLinkChevronRt"><i></i></p></a>
+        <a href="#" class="hg-NavLink">Infertility<p class="hg-NavLinkChevronRt"><i></i></p></a>
+        <a href="index_re.html" class="hg-NavLink">Reproductive Endocrinology<p class="hg-NavLinkChevronRt"><i></i></p></a>
+        <!-- <a href="index_re.html" class="hg-NavLink">Reproductive Endocrinology<p class="hg-NavLinkChevronRt" >   &#10148;</p></a> -->
+     
       </div>
+    </div>
+
+    <div class="hg-AddContent">
+      <p class="hg-AddSmall ">AD</p>
+      <p class="hg-AddLarge  ">AD</p>
+    </div>
 
   </div>
 
   <script defer src="script.js"></script>
   <script defer src="script-aux.js"></script>
-  
+
 </body>
 
 </html>

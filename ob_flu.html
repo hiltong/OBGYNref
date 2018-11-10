@@ -9,15 +9,14 @@
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
-<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
 <body onload="SetUpPage()">
 
   <!-- Navbar -->
   <div class="hg-NavBar">
-    <a class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"><i></i></a>
-    <a class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"><i></i></a>
-    <span class="hg-NavBarTitle"></span>
+    <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+    <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+    <span id="titbar" class="hg-NavBarTitle"></span>
   </div>
 
   <!-- Sidebar -->
@@ -37,8 +36,7 @@
     <div class="hg-InfoContent">
       <h1 class="hg-h1PageTitle">Influenza in Obstetrics</h1>
 
-      <button onclick="AccToggle('Demo1')" class="hg-accBtn">Antivirals:<p class="hg-NavLinkChevron"><i id="Demo1_c"
-            class="fa fa-chevron-down"></i> </p></button>
+      <button onclick="AccToggle('Demo1')" class="hg-accBtn">Antivirals:<p id="Demo1_c" class="hg-NavLinkChevron"></p></button>
       <div id="Demo1" class="hg-accDivMain">
         <ul class=hg-accUl>
           <li>Oseltamivir
@@ -52,14 +50,12 @@
         </ul>
       </div>
 
-      <button onclick="AccToggle('Demo2')" class="hg-accBtn">Algorhythms<p class="hg-NavLinkChevron"><i id="Demo2_c"
-            class="fa fa-chevron-down"></i> </p></button>
+      <button onclick="AccToggle('Demo2')" class="hg-accBtn">Algorhythms<p id="Demo2_c" class="hg-NavLinkChevron"></p></button>
       <div id="Demo2" class="hg-accDivMain">
-          <a href="ob_glossary.html" class="hg-NavLink" style="margin-left: 20px; width:auto;">Obstetric Glossary<p class="hg-NavLinkChevron"><i></i></p></a>
+        
       </div>
 
-      <button onclick="AccToggle('Algo1')" class="hg-accBtn">Algorithms 2<p class="hg-NavLinkChevron"> <i id="Algo1_c"
-            class="fa fa-chevron-down"></i></button>
+      <button onclick="AccToggle('Algo1')" class="hg-accBtn">Algorithms 2<p id="Algo1_c" class="hg-NavLinkChevron"></p></button>
       <div id="Algo1" class="hg-accDivMain">
 
         <div id="start" class="hg-algoDivMain" style="display: block; ">
@@ -106,8 +102,7 @@
       </div>
 
       <button onclick="
-          AccToggle('Refs')" class="hg-accBtn">References: <p class="hg-NavLinkChevron"><i id="Refs_c"
-            class="fa fa-chevron-down"></i></p></button>
+          AccToggle('Refs')" class="hg-accBtn">References: <p id="Refs_c" class="hg-NavLinkChevron"></p></button>
       <div id="Refs" class="hg-accDivMain">
         <ol class="hg-accOlRef" <li>
           Assessment and treatment of pregnant women with suspected or confirmed

@@ -186,33 +186,47 @@ body{word-wrap: break-word;}
   /*Nav Link----------------------------------------------------------------------------------------------------*/
   .hg-NavLink{
     padding:10px 16px 10px 16px;
-    margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
+    margin: 6px 0px 0px 0px; /*seperates accordians so can see shadow*/
     white-space: normal;  /*lets words wrap in accordian button*/
     text-align:left;
     color :black;
     background:#f0f0f0 ;
     display:block;
     border:none;
-    width:100%;
-    font-size: 18px !important;  
+    /* width:100%; */
+    width:auto;
+    font-size: 18px;  
     /* font-size: 1.2em; */
     text-decoration: none;
     cursor:pointer;
     /* height: 50px; */
   }
+
+  .hg-NavLinkSub1{
+    /* margin-left: 24px; */
+    background:#f0f0f0 ;
+    width: 50%;
+  }
+
   .hg-NavLink:hover{
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
   }
   .hg-NavLinkChevron{
     float:right;  
-    font-size: 18px !important;  
+    font-size: 18px;  
     margin:0px; 
-    color: red;
+    color: black;
+  }
+  .hg-NavLinkChevronRt{
+    float:right;  
+    font-size: 18px;  
+    margin:0px; 
+    color:black;
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
     .hg-accBtn{
       padding:10px 16px 10px 16px;
-      margin: 2px 0px 0px 0px; /*seperates accordians so can see shadow*/
+      margin: 6px 0px 0px 0px; /*seperates accordians so can see shadow*/
       white-space: normal;  /*lets words wrap in accordian button*/
       text-align:left;
       color:black;
@@ -221,7 +235,7 @@ body{word-wrap: break-word;}
       display:block;
       border:none;
       width:100%;
-      font-size: 18px !important;  
+      font-size: 18px;  
       /* font-size: 1.2em; */
       text-decoration: none;
       cursor:pointer;
@@ -231,8 +245,8 @@ body{word-wrap: break-word;}
     }
     .hg-accDivMain{
         display:none;
-        margin-top: 16px;
-        margin-bottom: 32px;
+        margin-top: 0px;
+        margin-bottom: 16px;
         /* background: beige; */
     }
     .hg-accUl{
