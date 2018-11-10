@@ -13,14 +13,13 @@ self.addEventListener('install', (event) => {
         'manifest.json',
         'script.js',
         'script-aux.js',
-        'css/w3-theme-black.css',
         'css/w3.css',
         'css/hg.css',
         'index.html',
-        'index_ob.html',
+        'ob_index.html',
+        'ob_glossary',
         'index_gyn.html',
         'index_re.html',
-        'references.html',
         'about.html',
         // etc
       ]).then(() => { return self.skipWaiting() }
