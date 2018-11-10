@@ -16,10 +16,9 @@ self.addEventListener('install', (event) => {
         'css/w3.css',
         'css/hg.css',
         'index.html',
+        'index_glossary',
         'ob_index.html',
         'ob_glossary',
-        'index_gyn.html',
-        'index_re.html',
         'about.html',
         // etc
       ]).then(() => { return self.skipWaiting() }
