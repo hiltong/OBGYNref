@@ -11,15 +11,30 @@
 <link rel="stylesheet" href="css/hg.css">
 
 <style>
-a{
-  display:block;
+.hg-MainLink {
+  /* font-size: 22px; */
   color: blue;
-  font-size: 22px;
-  margin: 8px 0px 8px 0px;
+  display:block;
+  /* margin: 8px 0px 0px 0px; */
+
+    font-size: 1.4em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    /* font-weight: bold; */
 }
-h3{
-  font-size: 22px;
+.hg-MainLink:hover{
+  background: #ccc;
+  color:black;
 }
+.hg-MainLink:active{
+  /* background: #ccc; */
+  color:red;
+}
+
+/* a:hover   { color: #00c }   */
+/* a:active  { color: #ccc }   */
 </style>
 
 <body onload="SetUpPage()">
@@ -53,10 +68,10 @@ h3{
         <a href="#" class="hg-NavLink">Infertility<p class="hg-NavLinkChevronRt"><i></i></p></a>
         <a href="index_re.html" class="hg-NavLink">Reproductive Endocrinology<p class="hg-NavLinkChevronRt"><i></i></p></a> -->
         
-        <a href="ob_index.html" ><h3>Obstetrics</h3></a>
-        <h3><a href="index_gyn.html" >Gynecology</a></h3>
-        <a href="#" >Infertility<p class="hg-NavLinkChevronRt"><i></i></p></a>
-        <a href="index_re.html" >Reproductive Endocrinology<p class="hg-NavLinkChevronRt"><i></i></p></a>
+        <a class="hg-MainLink" href="ob_index.html" >Obstetrics</a>
+        <a class="hg-MainLink" href="index_gyn.html" >Gynecology</a>
+        <a class="hg-MainLink" href="#" >Infertility</a>
+        <a class="hg-MainLink" href="index_re.html" >Reproductive Endocrinology</a>
       </div>
     </div>
 

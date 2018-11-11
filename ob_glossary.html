@@ -9,12 +9,64 @@
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 <style>
-    .hg-glossary a {
-        color: blue;
-        display: block;
+    .hg-glossaryAZ {
+        font-size: 20px;
+    }
+
+    .hg-glossaryAZ a {
+        margin-right: 12px;
+        margin-bottom: 12px;
+        width: 40px;
+        display: inline-block;
+        text-decoration: none;
+        /* border: 1px solid black; */
+        text-align: center;
+        background: #f0f0f0 ;
+        border-radius: 12%;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .hg-glossaryAZ a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .hg-glossaryTop a {
+        margin-right: 12px;
+        margin-bottom: 12px;
+        width: 40px;
+        display: inline-block;
+        text-decoration: none;
+        /* border: 1px solid black; */
+        text-align: center;
+        background:#f0f0f0;
+        border-radius: 12%;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .hg-glossaryTop a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .hg-glossaryBody h2 {
+        /* color: teal; */
+        /* background: red; */
+        margin-bottom: 0px;
+    }
+
+    .hg-glossaryBody dl {
+        /* background: lightblue; */
         margin-top: 8px;
-        margin-left: 8px;
+    }
+
+    .hg-glossaryBody dl dt a {
+        display: inline-block;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        /* background: yellow */
     }
 </style>
 
@@ -22,16 +74,16 @@
 
     <!-- Navbar -->
     <div class="hg-NavBar">
-        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"><i></i></a>
-        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
-        <span id="titbar" class="hg-NavBarTitle"></span>
+        <a class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"><i></i></a>
+        <a class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"><i></i></a>
+        <span class="hg-NavBarTitle"></span>
     </div>
 
     <!-- Sidebar  -->
     <nav class="hg-SideBar" id="mySidebar">
         <h4>Menu</h4>
         <a class="hg-SideBarItem" href="index.html"">Start</a>
-        <a class="hg-SideBarItem" href="index_glossaries.html">Glossaries</a>
+        <a class=" hg-SideBarItem" href="references.html">References</a>
         <a class="hg-SideBarItem" href="about.html">About</a>
     </nav>
 
@@ -41,37 +93,37 @@
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
     <div class="hg-MainContent">
 
-        <div class="hg-InfoContent hg-glossary">
-            <h1 class="hg-h1PageTitle hg-glossary">Obstetric Glossary</h1>
-
-            <button onclick="AccToggle('A')" class="hg-accBtn" style=" font-size: 20px; ">A<p id="A_c" class="hg-NavLinkChevron"></p></button>
-            <div id="A" class="hg-accDivMain">
-
-            </div>
-
-            <button onclick="AccToggle('B')" class="hg-accBtn" style="font-size: 20px; ">B<p id="B_c" class="hg-NavLinkChevron"></p></button>
-            <div id="B" class="hg-accDivMain">
-            </div>
-
-            <button onclick="AccToggle('I')" class="hg-accBtn" style=" font-size: 20px; ">I<p id="I_c"  class="hg-NavLinkChevron"></p></button>
-            <div id="I" class="hg-accDivMain">
-                <a href="ob_id.html">Infectious Disease in Obstetrics</a>
-                <a href="ob_flu.html">Influenza in Obstetrics</a>
-            </div>
-
-            <button onclick="AccToggle('O')" class="hg-accBtn" style=" font-size: 20px;">O<p id="O_c" class="hg-NavLinkChevron"></p></button>
-            <div id="O" class="hg-accDivMain">
-                <a href="ob_flu.html">Oseltamivir (Tamiflu)</a>
-            </div>
-
-            <button onclick="AccToggle('T')" class="hg-accBtn" style=" font-size: 20px; ">T<p id="T_c" class="hg-NavLinkChevron"></p></button>
-            <div id="T" class="hg-accDivMain">
-                <a href="ob_flu.html">Tamiflu (Oseltamivir)</a>
-            </div>
-
-
-
-            <!-- <div id="startA" class="hg-glossaryBody">
+        <div class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Obstetric Glossary</h1>
+            <p class="hg-glossaryAZ">
+                <a href="#startA">A</a>
+                <a href="#startB">B</a>
+                <a href="#startC">C</a>
+                <a href="#startD">D</a>
+                <a href="#startE">E</a>
+                <a href="#startF">F</a>
+                <a href="#startG">G</a>
+                <a href="#startH">H</a>
+                <a id="I" href="#startI" onclick=displayDate()>I</a>
+                <a href="#startJ">J</a>
+                <a href="#startK">K</a>
+                <a href="#startL">L</a>
+                <a href="#startM">M</a>
+                <a href="#startN">N</a>
+                <a href="#startO">O</a>
+                <a href="#startP">P</a>
+                <a href="#startQ">Q</a>
+                <a href="#startR">R</a>
+                <a href="#startS">S</a>
+                <a href="#startT">T</a>
+                <a href="#startU">U</a>
+                <a href="#startV">V</a>
+                <a href="#startW">W</a>
+                <a href="#startX">X</a>
+                <a href="#startY">Y</a>
+                <a href="#startZ">Z</a>
+            </p>
+            <div id="startA" class="hg-glossaryBody" >
                 <h2>A</h2>
                 <dl>
                     <dt> <a href="ob_flu.html">Influenza in Obstetrics</a></dt>
@@ -169,7 +221,7 @@
                         transferred between servers and browsers.</dd>
                 </dl>
 
-                <p id="startI" class="hg-glossaryTop"><a href="#top" target="_blank">TOP</a></p>
+                <p id="startI" class="hg-glossaryTop" ><a href="#top" target="_blank">TOP</a></p>
                 <h2>I</h2>
                 <dl>
                     <dt> <a href="ob_flu.html">Influenza in Obstetrics</a></dt>
@@ -351,7 +403,7 @@
                 <p id="startZ" class="hg-glossaryTop"><a href="#top">TOP</a></p>
 
 
-            </div> -->
+            </div>
 
         </div>
 
@@ -366,7 +418,21 @@
 
     <script defer src="script.js"></script>
     <script defer src="script-aux.js"></script>
+    <script>
+        // window.addEventListener("beforeunload", function (e) {
+        //     alert('leave');
+        // }
+        // document.getElementById("I").addEventListener("click", displayDate);
 
+        //  document.getElementsByTagName("a").addEventListener("click", displayDate);
+
+        function displayDate(){
+            // window.history.go(-1);
+            // location.replace("ob_glossary2.html");
+            window.history.pushState(,"here","ob_glossary.html");
+            alert('here');
+        }
+    </script>
 </body>
 
 </html>
