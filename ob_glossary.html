@@ -23,7 +23,7 @@
         text-decoration: none;
         /* border: 1px solid black; */
         text-align: center;
-        background: #f0f0f0 ;
+        background: #f0f0f0;
         border-radius: 12%;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -41,7 +41,7 @@
         text-decoration: none;
         /* border: 1px solid black; */
         text-align: center;
-        background:#f0f0f0;
+        background: #f0f0f0;
         border-radius: 12%;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -125,7 +125,7 @@
             </p>
             <button onclick=displayDate() style="color: blue; border: none; background: #f0f0f0;  border-radius: 12%;
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 40px; font-size: 20px;">Q</button>
-            <div id="startA" class="hg-glossaryBody" >
+            <div id="startA" class="hg-glossaryBody">
                 <h2>A</h2>
                 <dl>
                     <dt> <a href="ob_flu.html">Influenza in Obstetrics</a></dt>
@@ -223,7 +223,7 @@
                         transferred between servers and browsers.</dd>
                 </dl>
 
-                <p id="startI" class="hg-glossaryTop" ><a href="#top" target="_blank">TOP</a></p>
+                <p id="startI" class="hg-glossaryTop"><a href="#top" target="_blank">TOP</a></p>
                 <h2>I</h2>
                 <dl>
                     <dt> <a href="ob_flu.html">Influenza in Obstetrics</a></dt>
@@ -402,7 +402,7 @@
                     <dt>XML</dt>
                     <dd>eXtensible Markup Language; a metalanguage for creating custom markup languages</dd>
                 </dl>
-                <p  class="hg-glossaryTop"><a href="#top">TOP</a></p>
+                <p class="hg-glossaryTop"><a href="#top">TOP</a></p>
 
 
             </div>
@@ -428,14 +428,19 @@
 
         //  document.getElementsByTagName("a").addEventListener("click", displayDate);
 
-        function displayDate(){
+        function displayDate() {
             // window.history.go(-1);
             // location.replace("ob_glossary2.html");
-            
-            document.getElementById("startQ").scrollIntoView();
-  // will scroll to 4th h3 element
-// }
-            alert('here');
+
+            document.getElementById("startQ").scrollIntoView({behavior:"smooth"});
+            // will scroll to 4th h3 element
+            // }
+            // alert('here');
+            // function showRoseIndia(paraId) {
+            //     var element = document.getElementById(paraId);
+            //     element.scrollIntoView(true);
+            // }
+
         }
     </script>
 </body>
