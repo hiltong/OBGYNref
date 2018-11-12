@@ -184,7 +184,28 @@ body{word-wrap: break-word;}
     padding:64px 24px!important;
     text-align:center!important
   }
-  
+  /* MainLink---------------------------------------------------------------------------------------- */
+  .hg-MainLink {
+    color: blue;
+    display: block;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+    font-size: 1.4em;
+    /* margin-top: 0.5em; */
+    /* margin-bottom: 0.5em; */
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight:normal;
+  }
+
+  .hg-MainLink:hover {
+    background:black;
+    color: white;
+  }
+
+  .hg-MainLink:active {
+    color: red;
+  }
   /*Nav Link----------------------------------------------------------------------------------------------------*/
   .hg-NavLink{
     padding:10px 16px 10px 16px;
@@ -217,7 +238,6 @@ body{word-wrap: break-word;}
     float:right;  
     font-size: 18px;  
     margin:0px; 
-    color: black;
   }
   .hg-NavLinkChevronRt{
     float:right;  
@@ -227,13 +247,12 @@ body{word-wrap: break-word;}
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
     .hg-accBtn{
-      padding:10px 16px 10px 16px;
-      margin: 6px 0px 0px 0px; /*seperates accordians so can see shadow*/
+      padding:10px 16px 10px 0px;
+      margin: 0px 0px 0px 0px; /*seperates accordians so can see shadow*/
       white-space: normal;  /*lets words wrap in accordian button*/
       text-align:left;
       color:black;
-      background:#f0f0f0;
-      /* background:lightpink; */
+      /* background:#f0f0f0; */
       display:block;
       border:none;
       width:100%;
@@ -241,13 +260,27 @@ body{word-wrap: break-word;}
       /* font-size: 1.2em; */
       text-decoration: none;
       cursor:pointer;
+      background: white; 
+      font-weight: bold; 
+      border-top: 1px solid#ccc ;
+      /* border-left: 1px solid black; */
     }
     .hg-accBtn:hover{
-      box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+      color:white;
+      background:black;
+      /* box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) */
     }
+    .hg-accBtn:active{
+      color:red;
+      /* box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) */
+    }
+    hg-NavLinkChevron:hover{
+      color:white;
+    }
+
     .hg-accDivMain{
         display:none;
-        margin-top: 0px;
+        margin-top: -16px;
         margin-bottom: 16px;
         /* background: beige; */
     }
@@ -283,9 +316,9 @@ body{word-wrap: break-word;}
     /*Algorithm------------------------------------------------------------------------------------------------------*/
   /*Main div*/
     .hg-algoDivMain{
-      margin-top: -16px;
+      /* margin-top: -16px; */
       margin-bottom: 16px;
-      padding-top: 24px;
+      /* padding-top: 24px; */
       padding-left: 12px;
       padding-right: 12px;
       padding-bottom: 12px;
@@ -339,7 +372,9 @@ body{word-wrap: break-word;}
   }
   /*Algo status*/
 .hg-pAlgoStatus{
-  margin:0px 0px 12px 0px;
+  /* margin:0px 0px 12px 0px; */
+  /* background: red; */
+  color:red;
 }
 
   /*Up button*/
@@ -399,23 +434,7 @@ body{word-wrap: break-word;}
     }
 
     
-    /*Reference*/
-    /* .hg-algoDivRef{
-      margin-top: 0px;
-      margin-left: 0px;
-      background: lightcyan;
-    } */
-    /* .hg-algoDivRef ol{
-      margin: 0px; 
-      padding-left: 16px;
-      padding-right: 16px;
-      padding-top: 16px;
-      padding-bottom: 24px;
-      font-size: 0.80em;
-    } */
-    /* .hg-algoRefLi{
-      font-size: 0.80em;
-    } */
+   
   
     /*Refresh button*/
     .hg-algoRfBtn{
