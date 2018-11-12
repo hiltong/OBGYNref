@@ -123,7 +123,7 @@ body{word-wrap: break-word;}
 
   .hg-SideBarItem{
     margin-top: 2px;
-    color: black;
+    color: blue;
     text-decoration: none;
     display:block;
     padding:8px 16px;
@@ -135,6 +135,9 @@ body{word-wrap: break-word;}
     color: white;
     background-color:black;
   }
+  .hg-SideBarItem:active{
+    color: red;
+  }
   .hg-SideBarItemSelected{
     margin-top: 2px;
     color: white;
@@ -145,6 +148,31 @@ body{word-wrap: break-word;}
     /* width:100%; */
     /* text-align:left; */
   }
+
+  .hg-SideBarItem2{
+    margin-top: 2px;
+    margin-left: 12px;
+    color: blue;
+    text-decoration: none;
+    display:block;
+    padding:8px 16px;
+    /* width:100%; 
+    /* text-align:left; */
+  }
+  .hg-SideBarItem2:hover{
+    color: white;
+    background-color:black;
+  }
+  .hg-SideBarItem2:active{
+    color: red;
+  }
+.hg-SideBarSubHeader{
+  color:black; 
+  margin-left: 14px;
+  margin-top: 12px; 
+  margin-bottom: 8px;
+}
+
 
   /*OverLay---------------------------------------------------------------------------------------------*/
   .hg-OverLay{
@@ -272,7 +300,7 @@ body{word-wrap: break-word;}
     }
     .hg-accBtn:active{
       color:red;
-      /* box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) */
+      background: white; 
     }
     hg-NavLinkChevron:hover{
       color:white;
