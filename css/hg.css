@@ -275,11 +275,12 @@ body{word-wrap: break-word;}
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
     .hg-accBtn{
-      padding:10px 16px 10px 0px;
+      padding:10px 16px 10px 2px;
       margin: 0px 0px 0px 0px; /*seperates accordians so can see shadow*/
       white-space: normal;  /*lets words wrap in accordian button*/
       text-align:left;
       color:black;
+      background: white; 
       /* background:#f0f0f0; */
       display:block;
       border:none;
@@ -288,11 +289,12 @@ body{word-wrap: break-word;}
       /* font-size: 1.2em; */
       text-decoration: none;
       cursor:pointer;
-      background: white; 
+
       font-weight: bold; 
       border-top: 1px solid#ccc ;
       /* border-left: 1px solid black; */
     }
+    
     .hg-accBtn:hover{
       color:white;
       background:black;
@@ -301,11 +303,17 @@ body{word-wrap: break-word;}
     .hg-accBtn:active{
       color:red;
       background: white; 
+ 
     }
+    .hg-accBtn:focus{
+      color:black;
+      background: white; 
+    }
+
+
     hg-NavLinkChevron:hover{
       color:white;
     }
-
     .hg-accDivMain{
         display:none;
         margin-top: -16px;
