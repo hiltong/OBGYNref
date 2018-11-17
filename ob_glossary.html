@@ -18,12 +18,14 @@
         /* padding: 0.2em 0.6em 0.2em 0.6em; */
         color: blue;
         border: none;
-        background: #f0f0f0;
+        /* background: #f0f0f0; */
+         background: WHITE;
         border-radius: 12%;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
         width: 2em;
         height: 2em;
         cursor: pointer;
+        text-decoration: underline;
     }
 
     .hg-glossaryAZ button:hover {
@@ -35,53 +37,61 @@
         color: red;
     }
 
- .hg-glossaryBody h2 {
-        margin-bottom: -8px;
-        padding-bottom: 0px;
+    .hg-glossaryBody h2 {
+        display: inline;
+        /* padding-bottom: 0px; */
         /* background: pink; */
+        font-size: 1.6em;
     }
 
- .hg-glossaryBody a{
-    color: blue;
-    display: block;
-    padding-top: 0.35em;
-    padding-bottom: 0.35em;
-    font-size: 1.2em;
-    /* margin-top: 0.5em; */
-    /* margin-bottom: 0.5em; */
-    margin-left: 0px;
-    margin-right: 0px;
-    font-weight:normal;
-  }
+    .hg-glossaryBody a {
+        color: blue;
+        display: block;
+        /* padding-top: 0.35em; */
+        /* padding-bottom: 0.35em; */
+        font-size: 1.2em;
+        /* margin-top: 0.5em; */
+        /* margin-bottom: 0.5em; */
+        margin-left: 0px;
+        margin-right: 0px;
+        font-weight: normal;
+    }
 
-  .hg-glossaryBody a:hover {
-    /* background: #ccc;
-    color: black; */
-    background: black;
-    color: white;
-  }
+    .hg-glossaryBody a:hover {
+        background: black;
+        color: white;
+    }
 
-  .hg-glossaryBody a:active {
-    color: red;
-  }
+    .hg-glossaryBody a:active {
+        color: red;
+    }
 
     .hg-glossaryBody button {
+        vertical-align: top;
+        margin-left: 30px;
+        display: inline;
         font-size: 1.2em;
-        margin-top: 1em;
-        margin-right: 0.6em;
-        margin-bottom: 0.6em;
-        display:block;
+        /* font-size: 1.6em; */
+        /* margin-top: 1em; */
+        /* margin-right: 0.6em; */
+        /* margin-left: 1.0em; */
+        /* margin-top: -20px; */
+        /* margin-bottom: 0.6em; */
         color: blue;
+        /* text-decoration: underline; */
         border: none;
-        background: #f0f0f0;
-        border-radius: 12%;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        width: 3em;
-        height: 2em;
+        /* background: #f0f0f0; */
+        background: white;
+        /* border-radius: 6%; */
+        /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        /* width: 3em; */
+        /* height: 2em; */
         cursor: pointer;
+        /* height:30px; */
     }
 
     .hg-glossaryBody button:hover {
+        /* color:red; */
         color: white;
         background-color: black;
     }
@@ -90,7 +100,9 @@
         color: red;
     }
 
-   
+    .hg-pTag {
+        height: 0.4em;
+    }
 </style>
 
 <body onload="SetUpPage()">
@@ -106,10 +118,10 @@
     <nav class="hg-SideBar" id="mySidebar">
         <h4>Menu</h4>
         <a class="hg-SideBarItem" href="index.html"">Start</a>
-        <p class="hg-SideBarSubHeader">Glossaries</p>
-        <a class=" hg-SideBarItem2" href="ob_glossary.html">Obstetric</a>
-        <a class=" hg-SideBarItem2" href="index_glossaries.html">Gynecology</a>
-        <a class="hg-SideBarItem" href="about.html">About</a>
+        <p class=" hg-SideBarSubHeader">Glossaries</p>
+            <a class=" hg-SideBarItem2" href="ob_glossary.html">Obstetric</a>
+            <a class=" hg-SideBarItem2" href="index_glossaries.html">Gynecology</a>
+            <a class="hg-SideBarItem" href="about.html">About</a>
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -149,88 +161,221 @@
                 <button onclick="ScrollToSection('startZ')">Z</button>
             </div>
 
-            <div id="startA" class="hg-glossaryBody">
-                <h2>A</h2>
+            <div class="hg-glossaryBody">
 
-                <button id="startB" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>B</h2>    
+                <p id="startA" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >A</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+               
 
-                <button id="startC" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>C</h2>
-               
-                <button id="startD" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>D</h2>
-               
-                <button id="startE" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>E</h2>
-                
-                <button id="startF" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>F</h2>
-               
-                <button id="startG" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>G</h2>
-               
-                <button id="startH" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>H</h2>
-                
-                <button id="startI" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>I</h2>
+
+                <p id="startB" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >B</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startC" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >C</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startD" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >D</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startE" class="hg-pTag"></p>
+                <hr>
+                <div>
+                    <h2>E</h2>
+                    <button onclick="ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startF" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >F</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startG" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >G</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startH" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >H</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startI" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >I</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
                 <a href="ob_flu.html">Influenza in Obstetrics</a>
-                
-                <button id="startJ" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>J</h2>
-               
-                <button id="startK" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>K</h2>
-               
-                <button id="startL" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>L</h2>
-               
-                <button id="startM" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>M</h2>
 
-                <button id="startN" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>N</h2>
+                <p id="startJ" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >J</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
 
-                <button id="startO" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>O</h2>
+                <p id="startK" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >K</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startL" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >L</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startM" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >M</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startN" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >N</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startO" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >O</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
                 <a href="ob_flu.html">Oseltamivir (Tamiflu)</a>
 
-                <button id="startP" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>P</h2>
+                <p id="startP" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >P</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
 
-                <button id="startQ" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>Q</h2>
+                <p id="startQ" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >Q</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
 
-                <button id="startR" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>R</h2>
-                
-                <button id="startS" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>S</h2>
-               
-                <button id="startT" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>T</h2>
+                <p id="startR" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >R</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startS" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >S</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startT" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >T</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
                 <a href="ob_flu.html">Tamiflu (Oseltamivir)</a>
 
-                <button id="startU" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>U</h2>
-                
-                <button id="startV" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>V</h2>
-                
-                <button id="startW" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>W</h2>
+                <p id="startU" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >U</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startV" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >V</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startW" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >W</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startX" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >X</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startY" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >Y</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
+                <p id="startZ" class="hg-pTag"></p>
+                <hr>
+                <div ">
+                    <h2 >Z</h2>
+                    <button onclick="
+                    ScrollToSection('startTop')">&#8593;</button>
+                </div>
+
                
-                <button id="startX" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>X</h2>
-               
-                <button id="startY" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>Y</h2>
-               
-                <button id="startZ" onclick="ScrollToSection('startTop')">Top </button>
-                <h2>Z</h2>
-               
-                <button onclick="ScrollToSection('startTop')">Top </button>
 
 
             </div>

@@ -302,7 +302,7 @@ body{word-wrap: break-word;}
     }
     .hg-accBtn:active{
       color:red;
-      background: white; 
+      /* background: white;  */
  
     }
     .hg-accBtn:focus{
@@ -311,9 +311,9 @@ body{word-wrap: break-word;}
     }
 
 
-    hg-NavLinkChevron:hover{
+    /* .hg-NavLinkChevron:hover{
       color:white;
-    }
+    } */
     .hg-accDivMain{
         display:none;
         margin-top: -16px;
