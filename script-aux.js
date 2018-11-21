@@ -56,7 +56,7 @@ function AccToggle(accID) {
   var data = sessionStorage.getItem(accID);
 }
 
-const BACKBUTTON ='&#8592;';
+const BACKBUTTON = '&#8592;';
 // const TITLEHTML = "Ob/Gyn Pocket<sup>r</sup>";
 const TITLEHTML = "Ob/Gyn Pocket";
 const HAMBURGER = '&#9776;';
@@ -125,9 +125,53 @@ function SetUpPage() {
     iArray[0].innerHTML = ARROWRIGHT;
   }
 
+  CreateSideBar();
 }
 
+function CreateSideBar() {
+  var sideBar = document.getElementById("mySidebar");
 
+  var menu = document.createElement("h4");
+  var menuText = document.createTextNode("Menu");
+  menu.appendChild(menuText);
+  sideBar.appendChild(menu);
+
+  var start = document.createElement("a");
+  var startText = document.createTextNode("Start");
+  start.appendChild(startText);
+  start.setAttribute("class", "hg-SideBarItem")
+  start.setAttribute("href", "index.html")
+  sideBar.appendChild(start);
+
+  var glossaryHeader = document.createElement("p");
+  var glossaryHeaderText = document.createTextNode("Glossaries");
+  glossaryHeader.appendChild(glossaryHeaderText);
+  glossaryHeader.setAttribute("class", "hg-SideBarSubHeader")
+  sideBar.appendChild(glossaryHeader);
+
+  var obGlossary = document.createElement("a");
+  var obGlossaryText = document.createTextNode("Obstetric");
+  obGlossary.appendChild(obGlossaryText);
+  obGlossary.setAttribute("class", "hg-SideBarItem2")
+  obGlossary.setAttribute("href", "ob_glossary.html")
+  sideBar.appendChild(obGlossary);
+
+  var gynGlossary = document.createElement("a");
+  var gynGlossaryText = document.createTextNode("Gynecology");
+  gynGlossary.appendChild(gynGlossaryText);
+  gynGlossary.setAttribute("class", "hg-SideBarItem2")
+  gynGlossary.setAttribute("href", "#")
+  sideBar.appendChild(gynGlossary);
+
+  var about = document.createElement("a");
+  var aboutText = document.createTextNode("About");
+  about.appendChild(aboutText);
+  about.setAttribute("class", "hg-SideBarItem")
+  about.setAttribute("href", "about.html")
+  sideBar.appendChild(about);
+
+
+}
 
 /*Algorhithm-------------------------------------------------------------------------------*/
 function AlgoNext(idhide, idshow) {
