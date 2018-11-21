@@ -170,6 +170,14 @@ function CreateSideBar() {
   about.setAttribute("href", "about.html")
   sideBar.appendChild(about);
 
+  var back = document.createElement("a");
+  var backText = document.createTextNode("Back");
+  back.appendChild(backText);
+  back.setAttribute("class", "hg-SideBarItem")
+  back.setAttribute("href", "javascript:void(0)")
+  back.setAttribute("onclick", "goBack()")
+  sideBar.appendChild(back);
+
 
 }
 
