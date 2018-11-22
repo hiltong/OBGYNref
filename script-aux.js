@@ -125,7 +125,7 @@ function SetUpPage() {
     iArray[0].innerHTML = ARROWRIGHT;
   }
 
-  CreateHeader();
+  // CreateHeader();
   CreateSideBar();
 }
 function CreateHeader() {
