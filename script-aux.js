@@ -125,9 +125,20 @@ function SetUpPage() {
     iArray[0].innerHTML = ARROWRIGHT;
   }
 
+  CreateHeader();
   CreateSideBar();
 }
-
+function CreateHeader() {
+ 
+  var varHeader = document.getElementById("MyHeader");
+  var hmbg = document.createElement("button");
+  hmbg.innerHTML = HAMBURGER;
+  hmbg.setAttribute("id", "myHmBgBtn");
+  hmbg.setAttribute("class", "hg-HamBtn");
+  hmbg.setAttribute("onclick", "SideBarOpen()");
+  varHeader.appendChild(hmbg);
+  //  alert('here');
+}
 function CreateSideBar() {
   var sideBar = document.getElementById("mySidebar");
 
@@ -138,6 +149,10 @@ function CreateSideBar() {
 
   var start = document.createElement("a");
   var startText = document.createTextNode("Start");
+  start.appendChild(startText);
+  start.setAttribute("class", "hg-SideBarItem")
+  start.setAttribute("href", "index.html")
+  sideBar.appendChild(start);
   start.appendChild(startText);
   start.setAttribute("class", "hg-SideBarItem")
   start.setAttribute("href", "index.html")

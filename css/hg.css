@@ -46,10 +46,16 @@ body{word-wrap: break-word;}
     .hg-BackButton {
       display: none /*Hides BackButton when in browser*/
     }
+    #myHmBgBtn{
+      display: none/*Hides BackButton when in browser*/
+    }
   }
   @media all and (display-mode: standalone) {
     .hg-BackButton {
-      display: block; /*Hides BackButton when in browser*/
+      display: block; /*Shows BackButton when in pwa*/
+    }
+    #myHmBgBtn{
+      display: none /*Hides BackButton when in browser*/
     }
   }
   /*Hamburger Button*/
