@@ -58,7 +58,7 @@ function AccToggle(accID) {
 
 const BACKBUTTON = '&#8592;';
 // const TITLEHTML = "Ob/Gyn Pocket<sup>r</sup>";
-const TITLEHTML = "Ob/Gyn Pocket";
+const TITLEHTML = "Pocket Ob/Gyn";
 const HAMBURGER = '&#9776;';
 const ARROWRIGHT = '&#10148;';
 const ARROWDOWN = "+"
@@ -125,16 +125,18 @@ function SetUpPage() {
     iArray[0].innerHTML = ARROWRIGHT;
   }
 
-  CreateHeader();
+  // CreateHeader();
   CreateSideBar();
 }
 function CreateHeader() {
+
+
 
   var varHeader = document.getElementById("MyHeader");
   var hmbg = document.createElement("button");
   // hmbg.innerHTML = HAMBURGER;
   hmbg.innerHTML = "test";
-  hmbg.setAttribute("id", "myHmBgBtn");
+  hmbg.setAttribute("id", "myBkBtn");
   hmbg.setAttribute("class", "hg-BackButton");
   // hmbg.setAttribute("onclick", "SideBarOpen()");
   varHeader.appendChild(hmbg);
@@ -149,6 +151,7 @@ function CreateHeader() {
   varHeader.appendChild(hmbg2);
 
 }
+
 function CreateSideBar() {
   var sideBar = document.getElementById("mySidebar");
 
