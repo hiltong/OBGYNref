@@ -142,25 +142,32 @@ function CreateSideBar() {
   start.setAttribute("href", "index.html")
   sideBar.appendChild(start);
 
-  var glossaryHeader = document.createElement("p");
-  var glossaryHeaderText = document.createTextNode("Glossaries");
-  glossaryHeader.appendChild(glossaryHeaderText);
-  glossaryHeader.setAttribute("class", "hg-SideBarSubHeader")
-  sideBar.appendChild(glossaryHeader);
+  // var glossaryHeader = document.createElement("p");
+  // var glossaryHeaderText = document.createTextNode("Glossaries");
+  // glossaryHeader.appendChild(glossaryHeaderText);
+  // glossaryHeader.setAttribute("class", "hg-SideBarSubHeader")
+  // sideBar.appendChild(glossaryHeader);
 
   var obGlossary = document.createElement("a");
-  var obGlossaryText = document.createTextNode("Obstetrics");
+  var obGlossaryText = document.createTextNode("Index");
   obGlossary.appendChild(obGlossaryText);
-  obGlossary.setAttribute("class", "hg-SideBarItem2")
+  obGlossary.setAttribute("class", "hg-SideBarItem")
   obGlossary.setAttribute("href", "ob_glossary.html")
   sideBar.appendChild(obGlossary);
 
-  var gynGlossary = document.createElement("a");
-  var gynGlossaryText = document.createTextNode("Gynecology");
-  gynGlossary.appendChild(gynGlossaryText);
-  gynGlossary.setAttribute("class", "hg-SideBarItem2")
-  gynGlossary.setAttribute("href", "#")
-  sideBar.appendChild(gynGlossary);
+  // var gynGlossary = document.createElement("a");
+  // var gynGlossaryText = document.createTextNode("Gynecology");
+  // gynGlossary.appendChild(gynGlossaryText);
+  // gynGlossary.setAttribute("class", "hg-SideBarItem2")
+  // gynGlossary.setAttribute("href", "#")
+  // sideBar.appendChild(gynGlossary);
+
+  var obGlossary = document.createElement("a");
+  var obGlossaryText = document.createTextNode("Site Map");
+  obGlossary.appendChild(obGlossaryText);
+  obGlossary.setAttribute("class", "hg-SideBarItem")
+  obGlossary.setAttribute("href", "#")
+  sideBar.appendChild(obGlossary);
 
   var about = document.createElement("a");
   var aboutText = document.createTextNode("About");
@@ -168,14 +175,6 @@ function CreateSideBar() {
   about.setAttribute("class", "hg-SideBarItem")
   about.setAttribute("href", "about.html")
   sideBar.appendChild(about);
-
-  var back = document.createElement("a");
-  var backText = document.createTextNode("Back");
-  back.appendChild(backText);
-  back.setAttribute("class", "hg-SideBarItem")
-  back.setAttribute("href", "javascript:void(0)")
-  back.setAttribute("onclick", "goBack()")
-  sideBar.appendChild(back);
 
 
 }
