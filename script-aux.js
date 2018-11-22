@@ -125,14 +125,15 @@ function SetUpPage() {
     iArray[0].innerHTML = ARROWRIGHT;
   }
 
-  // CreateHeader();
+  CreateHeader();
   CreateSideBar();
 }
 function CreateHeader() {
- 
+
   var varHeader = document.getElementById("MyHeader");
   var hmbg = document.createElement("button");
-  hmbg.innerHTML = HAMBURGER;
+  // hmbg.innerHTML = HAMBURGER;
+  hmbg.innerHTML = "test";
   hmbg.setAttribute("id", "myHmBgBtn");
   hmbg.setAttribute("class", "hg-HamBtn");
   hmbg.setAttribute("onclick", "SideBarOpen()");

@@ -47,7 +47,7 @@ body{word-wrap: break-word;}
       display: none /*Hides BackButton when in browser*/
     }
     #myHmBgBtn{
-      display: none/*Hides BackButton when in browser*/
+      display: none
     }
   }
   @media all and (display-mode: standalone) {
@@ -55,7 +55,7 @@ body{word-wrap: break-word;}
       display: block; /*Shows BackButton when in pwa*/
     }
     #myHmBgBtn{
-      display: none /*Hides BackButton when in browser*/
+      display: none 
     }
   }
   /*Hamburger Button*/
