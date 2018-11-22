@@ -55,7 +55,7 @@ body{word-wrap: break-word;}
       display: block; /*Shows BackButton when in pwa*/
     }
     #myHmBgBtn{
-      display: none 
+      display: block; 
     }
   }
   /*Hamburger Button*/
