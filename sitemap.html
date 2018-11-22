@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>Pocket OB/GYN</title>
+<meta name="description" content="Site Map">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+<style>
+    ul, #myUL {
+      list-style-type: none;
+      font-size: 18px;
+    }
+    
+    #myUL {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .caret {
+      cursor: pointer;
+      -webkit-user-select: none; /* Safari 3.1+ */
+      -moz-user-select: none; /* Firefox 2+ */
+      -ms-user-select: none; /* IE 10+ */
+      user-select: none;
+    }
+    
+    .caret::before {
+      content: "\25B6";
+      color: black;
+      display: inline-block;
+      margin-right: 6px;
+    }
+    
+    .caret-down::before {
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: rotate(90deg); /* Safari */
+      transform: rotate(90deg);  
+    }
+    
+    .nested {
+      display: none;
+    }
+    
+    .active {
+      display: block;
+    }
+    </style>
+
+<body onload="SetUpPage()">
+
+  <!-- Navbar -->
+  <header id="MyHeader" class="hg-NavBar">
+    <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+    <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+    <span id="titbar" class="hg-NavBarTitle"></span>
+  </header>
+
+  <!-- Sidebar -->
+  <nav class="hg-SideBar" id="mySidebar"></nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+  <!-- MAIN: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="hg-Content">
+
+    <main class="hg-InfoContent">
+      <h1 class="hg-h1PageTitle">Site Map</h1>
+
+      <ul id="myUL">
+        <li><span class="caret">Obstetrics</span>
+          <ul class="nested">
+            <li>Water</li>
+            <li>Coffee</li>
+            <li><span class="caret">Tea</span>
+              <ul class="nested">
+                <li>Black Tea</li>
+                <li>White Tea</li>
+                <li onclick="ToggleMe()"><span class="caret">Infectious Disease</span>
+                  <ul class="nested" ">
+                    <li>  <a  href="ob_flu.html">Influenza</a></li>
+                    <li>Gyokuro</li>
+                    <li>Matcha</li>
+                    <li>Pi Lo Chun</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>  
+          </ul>
+        </li>
+        <li><span class="caret">Gynecology</span>
+        </li>
+      </ul>
+
+      
+
+      
+
+    </main>
+
+    <div class="hg-AddContent">
+      <p class="hg-AddSmall ">AD</p>
+      <p class="hg-AddLarge  ">AD</p>
+    </div>
+
+  </div>
+
+  <script defer src="script.js"></script>
+  <script defer src="script-aux.js"></script>
+  <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+
+    function ToggleMe(){
+        alert('here');
+    }
+    </script>
+</body>
+
+</html>

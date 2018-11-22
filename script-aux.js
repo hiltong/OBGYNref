@@ -166,7 +166,7 @@ function CreateSideBar() {
   var obGlossaryText = document.createTextNode("Site Map");
   obGlossary.appendChild(obGlossaryText);
   obGlossary.setAttribute("class", "hg-SideBarItem")
-  obGlossary.setAttribute("href", "#")
+  obGlossary.setAttribute("href", "sitemap.html")
   sideBar.appendChild(obGlossary);
 
   var about = document.createElement("a");
