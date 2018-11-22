@@ -135,10 +135,19 @@ function CreateHeader() {
   // hmbg.innerHTML = HAMBURGER;
   hmbg.innerHTML = "test";
   hmbg.setAttribute("id", "myHmBgBtn");
-  hmbg.setAttribute("class", "hg-HamBtn");
-  hmbg.setAttribute("onclick", "SideBarOpen()");
+  hmbg.setAttribute("class", "hg-BackButton");
+  // hmbg.setAttribute("onclick", "SideBarOpen()");
   varHeader.appendChild(hmbg);
   //  alert('here');
+
+  var hmbg2 = document.createElement("button");
+  // hmbg.innerHTML = HAMBURGER;
+  hmbg2.innerHTML = "ham";
+  hmbg2.setAttribute("id", "myHmBgBtn");
+  hmbg2.setAttribute("class", "hg-HamBtn");
+  hmbg2.setAttribute("onclick", "SideBarOpen()");
+  varHeader.appendChild(hmbg2);
+
 }
 function CreateSideBar() {
   var sideBar = document.getElementById("mySidebar");
