@@ -67,15 +67,9 @@ const ARROWUP = '&#8722;';
 //Sets divs for accordian and algorithms on page
 function SetUpPage() {
 
-  // var bbarray = document.getElementsByClassName("hg-BackButton");
-  // var bbarrayi = bbarray[0].getElementsByTagName("i");
-  // bbarrayi[0].className = BACKARROW;
+
   var bk = document.getElementById("bkbtn");
   bk.innerHTML = BACKBUTTON;
-
-  // var titlecarray = document.getElementsByClassName("hg-NavBarTitle");
-  // var titlespan = titlecarray[0];
-  // titlespan.innerHTML = TITLEHTML;
 
   var tb = document.getElementById("titbar");
   tb.innerHTML = TITLEHTML;
@@ -125,32 +119,9 @@ function SetUpPage() {
     iArray[0].innerHTML = ARROWRIGHT;
   }
 
-  // CreateHeader();
   CreateSideBar();
 }
-function CreateHeader() {
 
-
-
-  var varHeader = document.getElementById("MyHeader");
-  var hmbg = document.createElement("button");
-  // hmbg.innerHTML = HAMBURGER;
-  hmbg.innerHTML = "test";
-  hmbg.setAttribute("id", "myBkBtn");
-  hmbg.setAttribute("class", "hg-BackButton");
-  // hmbg.setAttribute("onclick", "SideBarOpen()");
-  varHeader.appendChild(hmbg);
-  //  alert('here');
-
-  var hmbg2 = document.createElement("button");
-  // hmbg.innerHTML = HAMBURGER;
-  hmbg2.innerHTML = "ham";
-  hmbg2.setAttribute("id", "myHmBgBtn");
-  hmbg2.setAttribute("class", "hg-HamBtn");
-  hmbg2.setAttribute("onclick", "SideBarOpen()");
-  varHeader.appendChild(hmbg2);
-
-}
 
 function CreateSideBar() {
   var sideBar = document.getElementById("mySidebar");
@@ -178,7 +149,7 @@ function CreateSideBar() {
   sideBar.appendChild(glossaryHeader);
 
   var obGlossary = document.createElement("a");
-  var obGlossaryText = document.createTextNode("Obstetric");
+  var obGlossaryText = document.createTextNode("Obstetrics");
   obGlossary.appendChild(obGlossaryText);
   obGlossary.setAttribute("class", "hg-SideBarItem2")
   obGlossary.setAttribute("href", "ob_glossary.html")

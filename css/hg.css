@@ -23,18 +23,19 @@ body{word-wrap: break-word;}
 .hg-NavBarTitle{
   padding:8px 16px;
   float:left;
-  font-size:18px!important;
+  font-size:20px!important;
   color: white;
 }
 /*Back Button---------------------------------------------------------------------------------------------------------*/
 .hg-BackButton{
   background: black;
   color: white;
-  font-size:18px!important;
+  font-size:20px!important;
   float:left!important;
   padding:8px 16px;
   text-decoration:none;
   border: none;
+  height: 100%;
 }
 .hg-BackButton:hover{
   background: white !important;;
@@ -62,7 +63,7 @@ body{word-wrap: break-word;}
   .hg-HamBtn{
     background: black;
     color: white;
-    font-size:18px!important;
+    font-size:20px!important;
     float:right!important;
     padding:8px 16px;
     text-decoration:none;
@@ -231,6 +232,7 @@ body{word-wrap: break-word;}
     margin-left: 0px;
     margin-right: 0px;
     font-weight:normal;
+    text-decoration: none;
   }
 
   .hg-MainLink:hover {
