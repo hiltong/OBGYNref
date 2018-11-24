@@ -10,45 +10,52 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
 <style>
-    ul, #myUL {
-      list-style-type: none;
-      font-size: 18px;
-    }
-    
-    #myUL {
-      margin: 0;
-      padding: 0;
-    }
-    
-    .caret {
-      cursor: pointer;
-      -webkit-user-select: none; /* Safari 3.1+ */
-      -moz-user-select: none; /* Firefox 2+ */
-      -ms-user-select: none; /* IE 10+ */
-      user-select: none;
-    }
-    
-    .caret::before {
-      content: "\25B6";
-      color: black;
-      display: inline-block;
-      margin-right: 6px;
-    }
-    
-    .caret-down::before {
-      -ms-transform: rotate(90deg); /* IE 9 */
-      -webkit-transform: rotate(90deg); /* Safari */
-      transform: rotate(90deg);  
-    }
-    
-    .nested {
-      display: none;
-    }
-    
-    .active {
-      display: block;
-    }
-    </style>
+  ul,
+  #myUL {
+    list-style-type: none;
+    font-size: 18px;
+  }
+
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+
+  .caret {
+    cursor: pointer;
+    -webkit-user-select: none;
+    /* Safari 3.1+ */
+    -moz-user-select: none;
+    /* Firefox 2+ */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+  }
+
+  .caret::before {
+    content: "\25B6";
+    /*black right arrow*/
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .caret-down::before {
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari */
+    transform: rotate(90deg);
+  }
+
+  .nested {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+</style>
 
 <body onload="SetUpPage()">
 
@@ -74,6 +81,15 @@
       <ul id="myUL">
         <li><span class="caret">Obstetrics</span>
           <ul class="nested">
+            <li onclick="ToggleMe('inf')" id="inf"><span class="caret">Infectious Disease</span>
+              <ul class="nested">
+                <li><a href=" ob_flu.html">Influenza</a>
+                </li>
+                <li>Gyokuro</li>
+                <li>Matcha</li>
+                <li>Pi Lo Chun</li>
+              </ul>
+            </li>
             <li>Water</li>
             <li>Coffee</li>
             <li><span class="caret">Tea</span>
@@ -82,23 +98,24 @@
                 <li>White Tea</li>
                 <li onclick="ToggleMe()"><span class="caret">Infectious Disease</span>
                   <ul class="nested" ">
-                    <li>  <a  href="ob_flu.html">Influenza</a></li>
-                    <li>Gyokuro</li>
-                    <li>Matcha</li>
-                    <li>Pi Lo Chun</li>
-                  </ul>
+                    <li><a  href=" ob_flu.html">Influenza</a>
                 </li>
+                <li>Gyokuro</li>
+                <li>Matcha</li>
+                <li>Pi Lo Chun</li>
               </ul>
-            </li>  
+            </li>
           </ul>
         </li>
-        <li><span class="caret">Gynecology</span>
-        </li>
+      </ul>
+      </li>
+      <li><span class="caret">Gynecology</span>
+      </li>
       </ul>
 
-      
 
-      
+
+
 
     </main>
 
@@ -114,18 +131,20 @@
   <script>
     var toggler = document.getElementsByClassName("caret");
     var i;
-    
+
     for (i = 0; i < toggler.length; i++) {
-      toggler[i].addEventListener("click", function() {
+      toggler[i].addEventListener("click", function () {
         this.parentElement.querySelector(".nested").classList.toggle("active");
         this.classList.toggle("caret-down");
       });
     }
 
-    function ToggleMe(){
-        alert('here');
+    function ToggleMe(ee) {
+      // alert('here');
+      var rerw = ee;
+      alert(rerw);
     }
-    </script>
+  </script>
 </body>
 
 </html>
