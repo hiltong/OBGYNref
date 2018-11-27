@@ -10,6 +10,10 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
 <style>
+  a {
+    text-decoration: none;
+  }
+
   ul,
   #myUL {
     list-style-type: none;
@@ -81,36 +85,27 @@
       <ul id="myUL">
         <li><span class="caret">Obstetrics</span>
           <ul class="nested">
-            <li onclick="ToggleMe('inf')" id="inf"><span class="caret">Infectious Disease</span>
+            <li onclick="ToggleMe('obinfsm')" id="obinfsm"><span class="caret">Infectious Disease</span>
               <ul class="nested">
-                <li><a href=" ob_flu.html">Influenza</a>
-                </li>
-                <li>Gyokuro</li>
-                <li>Matcha</li>
-                <li>Pi Lo Chun</li>
+                <li><a href=" ob_flu.html">Influenza</a></li>
               </ul>
             </li>
-            <li>Water</li>
-            <li>Coffee</li>
-            <li><span class="caret">Tea</span>
+            <li onclick="ToggleMe('preglosssm')" id="preglosssm"><span class="caret">Pregnancy Loss</span>
               <ul class="nested">
-                <li>Black Tea</li>
-                <li>White Tea</li>
-                <li onclick="ToggleMe()"><span class="caret">Infectious Disease</span>
-                  <ul class="nested" ">
-                    <li><a  href=" ob_flu.html">Influenza</a>
-                </li>
-                <li>Gyokuro</li>
-                <li>Matcha</li>
-                <li>Pi Lo Chun</li>
+                <li><a href="#">Early Pregnancy Loss</a></li>
               </ul>
             </li>
+            <li onclick="ToggleMe('etc')" id="etc"><span class="caret">Etc.</span>
+              <ul class="nested">
+                <li onclick="ToggleMe('obdef')" id="obdef"><a href="#">Definitions</a></li>
+                <li onclick="ToggleMe('obcommon')" id="obcommon"><a href="#">Most Commons</a></li>
+              </ul>
+            </li>
+
           </ul>
         </li>
-      </ul>
-      </li>
-      <li><span class="caret">Gynecology</span>
-      </li>
+        <li><span class="caret">Gynecology</span>
+        </li>
       </ul>
 
 
@@ -142,7 +137,7 @@
     function ToggleMe(ee) {
       // alert('here');
       var rerw = ee;
-      alert(rerw);
+      // alert(rerw);
     }
   </script>
 </body>
