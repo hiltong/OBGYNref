@@ -58,10 +58,12 @@ function AccToggle(accID) {
 
 const BACKBUTTON = '&#8592;';
 // const TITLEHTML = "Ob/Gyn Pocket<sup>r</sup>";
-const TITLEHTML = "Pocket Ob/Gyn";
-const HAMBURGER = '&#9776;';
+// const TITLEHTML = "Pocket Ob/Gyn";
+const TITLEHTML = "<span style=\"color:black\"> 1</span>";
+// const HAMBURGER = '&#9776';
+const HAMBURGER = 'Menu';
 const ARROWRIGHT = '&#10148;';
-const ARROWDOWN = "+"
+const ARROWDOWN = "+";
 const ARROWUP = '&#8722;';
 
 //Sets divs for accordian and algorithms on page
