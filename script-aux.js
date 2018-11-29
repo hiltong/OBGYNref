@@ -59,7 +59,7 @@ function AccToggle(accID) {
 const BACKBUTTON = '&#8592;';
 // const TITLEHTML = "Ob/Gyn Pocket<sup>r</sup>";
 // const TITLEHTML = "Pocket Ob/Gyn";
-const TITLEHTML = "<span style=\"color:black\"> 1</span>";
+const TITLEHTML = "";
 // const HAMBURGER = '&#9776';
 const HAMBURGER = 'Menu';
 const ARROWRIGHT = '&#10148;';

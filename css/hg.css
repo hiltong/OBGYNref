@@ -14,33 +14,40 @@ body{word-wrap: break-word;}
 
 /*Nav Bar*/
 .hg-NavBar{
-  background: black;
+  /* background: black; */
+  background: #f0f0f0;
   position:fixed;
   width:100%;
   z-index:1;
+  height: 44px;
 }
 /*Nav Bar Title*/
 .hg-NavBarTitle{
   padding:8px 16px;
   float:left;
-  font-size:18px!important;
+  font: size 18px;;
   color: white;
 }
 /*Back Button---------------------------------------------------------------------------------------------------------*/
 .hg-BackButton{
-  background: black;
-  color: white;
-  font-size:18px!important;
-  float:left!important;
+  /* background: black; */
+  background: #f0f0f0;
+  /* color: white; */
+  color: black;
+  font-size:18px;
+  float:left;
   padding:8px 16px;
   text-decoration:none;
   border: none;
   height: 100%;
 }
 .hg-BackButton:hover{
-  background: white !important;;
+  background: white;
   color: black;
-  /* font-size:18px!important */
+}
+.hg-BackButton:active{
+  background: f0f0f0;
+  color: black;
 }
 
 @media all and (display-mode: browser) {
@@ -61,16 +68,22 @@ body{word-wrap: break-word;}
   }
   /*Hamburger Button*/
   .hg-HamBtn{
-    background: black;
-    color: white;
-    font-size:18px!important;
-    float:right!important;
+    /* background: black; */
+    background: #f0f0f0;
+    /* color: white; */
+    color: black;
+    font-size:18px;
+    float:right;
     padding:8px 16px;
     text-decoration:none;
     border: none;
   }
   .hg-HamBtn:hover{
-    background: white !important;;
+    background: white;
+    color: black;
+  }
+  .hg-HamBtn:active{
+    background:#f0f0f0;
     color: black;
   }
   
@@ -100,7 +113,7 @@ body{word-wrap: break-word;}
   .hg-SideBar{
     font-size:18px!important;
     color:#000 !important; 
-    background-color:#f0f0f0 !important;
+    background-color:#f0f0f0;
     display:none;
     float:none;
     margin-left: 0px;
@@ -112,7 +125,7 @@ body{word-wrap: break-word;}
     overflow:auto;
     z-index: 3;
     width: 250px;
-    top: 46px;
+    top: 40px;
     bottom: 0;
     height: inherit;
     animation: animateleft 0.4s;
