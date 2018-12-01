@@ -14,12 +14,13 @@ body{word-wrap: break-word;}
 
 /*Nav Bar*/
 .hg-NavBar{
-  /* background: black; */
-  background: #f0f0f0;
+  background: black;
+  /* background: #f0f0f0; */
   position:fixed;
   width:100%;
   z-index:1;
-  height: 44px;
+  min-height: 42px;
+  /* height: 44px; */
 }
 /*Nav Bar Title*/
 .hg-NavBarTitle{
@@ -30,10 +31,10 @@ body{word-wrap: break-word;}
 }
 /*Back Button---------------------------------------------------------------------------------------------------------*/
 .hg-BackButton{
-  /* background: black; */
-  background: #f0f0f0;
+  background: black;
+  /* background: #f0f0f0; */
   /* color: white; */
-  color: black;
+  color: white;
   font-size:18px;
   float:left;
   padding:8px 16px;
@@ -46,8 +47,8 @@ body{word-wrap: break-word;}
   color: black;
 }
 .hg-BackButton:active{
-  background: f0f0f0;
-  color: black;
+  background: black;
+  color: white;
 }
 
 @media all and (display-mode: browser) {
@@ -68,10 +69,10 @@ body{word-wrap: break-word;}
   }
   /*Hamburger Button*/
   .hg-HamBtn{
-    /* background: black; */
-    background: #f0f0f0;
-    /* color: white; */
-    color: black;
+    background: black;
+    /* background: #f0f0f0; */
+    color: white;
+    /* color: black; */
     font-size:18px;
     float:right;
     padding:8px 16px;
@@ -83,8 +84,8 @@ body{word-wrap: break-word;}
     color: black;
   }
   .hg-HamBtn:active{
-    background:#f0f0f0;
-    color: black;
+    background:black;
+    color: white;
   }
   
 
@@ -125,7 +126,7 @@ body{word-wrap: break-word;}
     overflow:auto;
     z-index: 3;
     width: 250px;
-    top: 40px;
+    top: 44px;
     bottom: 0;
     height: inherit;
     animation: animateleft 0.4s;
