@@ -1,4 +1,4 @@
-var CURRENT_CACHE = '2018-10-29-1945';
+var CURRENT_CACHE = '2018-11-30-2030';
 
 // INSTALL
 self.addEventListener('install', (event) => {
@@ -60,7 +60,7 @@ self.addEventListener('activate', (event) => {
 });*/
 
 
-// Fetch from network if not in cach and add to cache
+// Fetch from network if not in cach and add to cache *****
 /* self.addEventListener('fetch', function (event) {
   event.respondWith(
     caches.open(CURRENT_CACHE).then(function (cache) {
@@ -91,7 +91,9 @@ self.addEventListener('activate', (event) => {
     );
   }); */
 
-  // stale-while-revalidate (https://developers.google.com/web/tools/workbox/)
+
+
+  // stale-while-revalidate (https://developers.google.com/web/tools/workbox/)   ****
     self.addEventListener('fetch', (event) => {
       event.respondWith(
         caches.open(CURRENT_CACHE).then(cache => {
