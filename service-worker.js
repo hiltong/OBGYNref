@@ -60,7 +60,7 @@ self.addEventListener('activate', (event) => {
 
 
 // Fetch from network if not in cach and add to cache *****
-/* self.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', function (event) {
   event.respondWith(
     caches.open(CURRENT_CACHE).then(function (cache) {
       return cache.match(event.request).then(function (response) {
@@ -71,7 +71,7 @@ self.addEventListener('activate', (event) => {
       });
     })
   );
-}); */
+}); 
 
   // stale-while-revalidate
   /* self.addEventListener('fetch', (event) => {
@@ -93,19 +93,19 @@ self.addEventListener('activate', (event) => {
 
 
   // stale-while-revalidate (https://developers.google.com/web/tools/workbox/)   ****
-    self.addEventListener('fetch', (event) => {
-      event.respondWith(
-        caches.open(CURRENT_CACHE).then(cache => {
-          return cache.match(event.request).then(cacheResponse => {
-            const fetchPromise = fetch(event.request).then(networkResponse => {
-              cache.put(event.request, networkResponse.clone());
-              return networkResponse;
-            })
-            return cacheResponse || fetchPromise;
-          });
-        })
-      );
-    });
+    // self.addEventListener('fetch', (event) => {
+    //   event.respondWith(
+    //     caches.open(CURRENT_CACHE).then(cache => {
+    //       return cache.match(event.request).then(cacheResponse => {
+    //         const fetchPromise = fetch(event.request).then(networkResponse => {
+    //           cache.put(event.request, networkResponse.clone());
+    //           return networkResponse;
+    //         })
+    //         return cacheResponse || fetchPromise;
+    //       });
+    //     })
+    //   );
+    // });
     
 
     
