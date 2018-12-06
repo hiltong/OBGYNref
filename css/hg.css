@@ -46,9 +46,9 @@ body{word-wrap: break-word;}
   background: white;
   color: black;
 }
-.hg-BackButton:active{
-  background: black;
-  color: white;
+.hg-BackButton:focus{
+  background: white;
+  color: black;
 }
 
 @media all and (display-mode: browser) {
@@ -83,9 +83,9 @@ body{word-wrap: break-word;}
     background: white;
     color: black;
   }
-  .hg-HamBtn:active{
-    background:black;
-    color: white;
+  .hg-HamBtn:focus{
+    background: white;
+    color: black;
   }
   
 
@@ -240,7 +240,7 @@ body{word-wrap: break-word;}
     display: block;
     padding-top: 0.35em;
     padding-bottom: 0.35em;
-    font-size: 1.4em;
+    font-size: 1.0em;
     /* margin-top: 0.5em; */
     /* margin-bottom: 0.5em; */
     margin-left: 0px;

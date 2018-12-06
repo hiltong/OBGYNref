@@ -10,38 +10,44 @@
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
+<style>
+ .hg-IndexPageDiv h2{
+   font-size: 1.4em;
+   display: block;
+ }
+ .hg-IndexPageDiv a{
+  text-decoration: none;
+  display: block;
+  padding-left: 4px
+ }
+ .hg-IndexPageDiv a:hover{
+   color: white;
+   background: black;
+ }
+</style>
 
 <body onload="SetUpPage()">
 
-  <!-- Navbar &larr;-->
   <header id="MyHeader" class="hg-NavBar">
     <button id="bkbtn" class="hg-BackButton"  onclick="goBack()" style="display: none"></button>
     <button id="hmbrgbtn" class="hg-HamBtn"  onclick="SideBarOpen()"></button>
     <span id="titbar" class="hg-NavBarTitle"></span>
   </header>
 
-  <!-- Sidebar  -->
   <nav class="hg-SideBar" id="mySidebar"></nav>
 
-  <!-- Overlay effect when opening sidebar on small screens -->
   <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
 
-  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
   <div class="hg-Content">
 
     <main class="hg-InfoContent">
       <h1 class="hg-h1PageTitle">Start</h1>
-      <div>
-        <!-- <a href="ob_index.html" class="hg-NavLink">Obstetrics<p class="hg-NavLinkChevronRt"><i></i></p></a>
-        <a href="index_gyn.html" class="hg-NavLink">Gynecology<p class="hg-NavLinkChevronRt"><i></i></p></a>
-        <a href="#" class="hg-NavLink">Infertility<p class="hg-NavLinkChevronRt"><i></i></p></a>
-        <a href="index_re.html" class="hg-NavLink">Reproductive Endocrinology<p class="hg-NavLinkChevronRt"><i></i></p></a> -->
-
-        <a class="hg-MainLink" href="ob_index.html">Obstetrics</a>
-        <a class="hg-MainLink" href="index_gyn.html">Gynecology</a>
-        <a class="hg-MainLink" href="#">Infertility</a>
-        <a class="hg-MainLink" href="index_re.html">Reproductive Endocrinology</a>
-        <a class="hg-MainLink" href="#">Infectious Diseases</a>
+      <div class="hg-IndexPageDiv">
+        <h2 ><a href="ob_index.html">Obstetrics</a></h2>
+        <h2><a href="index_gyn.html">Gynecology</a></h2>
+        <h2><a href="#">Infertility</a></h2>
+        <h2><a href="index_re.html">Reproductive Endocrinology</a></h2>
+        <h2><a href="#">Infectious Diseases</a></h2>
         <!-- <p>2030</p> -->
       </div>
     </main>

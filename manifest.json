@@ -5,7 +5,7 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#000000",
-  "description": "Information for the Ob/Gyn Pocket",
+  "description": "Information for Ob/Gyn Pocket",
   "icons": [{
     "src": "images/app-icon48.png",
     "sizes": "48x48",
