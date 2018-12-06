@@ -234,26 +234,37 @@ body{word-wrap: break-word;}
     padding:64px 24px!important;
     text-align:center!important
   }
-  /* MainLink---------------------------------------------------------------------------------------- */
+  /* Index Pages---------------------------------------------------------------------------------------- */
+
+  .hg-IndexPageDiv h2{
+    font-size: 1.4em;
+    display: block;
+  }
+  .hg-IndexPageDiv a{
+   text-decoration: none;
+   display: block;
+   padding-left: 4px
+  }
+  .hg-IndexPageDiv a:hover{
+    color: white;
+    background: black;
+  }
+
   .hg-MainLink {
     color: blue;
     display: block;
     padding-top: 0.35em;
     padding-bottom: 0.35em;
     font-size: 1.0em;
-    /* margin-top: 0.5em; */
-    /* margin-bottom: 0.5em; */
     margin-left: 0px;
     margin-right: 0px;
     font-weight:normal;
     text-decoration: none;
   }
-
   .hg-MainLink:hover {
     background:black;
     color: white;
   }
-
   .hg-MainLink:active {
     color: red;
   }

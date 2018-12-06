@@ -134,7 +134,7 @@ function CreateSideBar() {
   sideBar.appendChild(menu);
 
   var start = document.createElement("a");
-  var startText = document.createTextNode("Start");
+  var startText = document.createTextNode("Home");
   start.appendChild(startText);
   start.setAttribute("class", "hg-SideBarItem")
   start.setAttribute("href", "index.html")
