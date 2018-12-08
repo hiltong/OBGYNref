@@ -243,11 +243,11 @@ body{word-wrap: break-word;}
   .hg-IndexPageDiv a{
    text-decoration: none;
    display: block;
-   padding-left: 4px;
-   padding-top: 10px;
-    padding-bottom: 10px;
+   padding-left: 4px; 
+   padding-top: 6px;
+   padding-bottom: 6px;
   }
-  .hg-IndexPageDiv a:hover{
+  .hg-IndexPageDiv a:active{
     color: white;
     background: black;
   }
@@ -311,13 +311,13 @@ body{word-wrap: break-word;}
   }
   /*Accordian-------------------------------------------------------------------------------------------------------------*/
     .hg-accBtn{
-      padding:10px 16px 10px 2px;
+      padding:8px 16px 8px 4px;
       margin: 0px 0px 0px 0px; /*seperates accordians so can see shadow*/
       white-space: normal;  /*lets words wrap in accordian button*/
       text-align:left;
       color:black;
-      background: white; 
-      /* background:#f0f0f0; */
+      /* background: white;  */
+      background:#f0f0f0;
       display:block;
       border:none;
       width:100%;
@@ -325,26 +325,25 @@ body{word-wrap: break-word;}
       font-size: 1.2em;
       text-decoration: none;
       cursor:pointer;
-
       font-weight: bold; 
       border-top: 1px solid#ccc ;
       /* border-left: 1px solid black; */
     }
-    
+/*     
     .hg-accBtn:hover{
       color:white;
       background:black;
-      /* box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) */
-    }
+    } */
     .hg-accBtn:active{
-      color:red;
+      /* color:red; */
       /* background: white;  */
- 
+      color:white;
+      background:black;
     }
-    .hg-accBtn:focus{
+    /* .hg-accBtn:focus{
       color:black;
       background: white; 
-    }
+    } */
 
 
     /* .hg-NavLinkChevron:hover{
@@ -352,13 +351,13 @@ body{word-wrap: break-word;}
     } */
     .hg-accDivMain{
         display:none;
-        margin-top: -16px;
+        margin-top: -12px;
         margin-bottom: 16px;
         /* background: beige; */
     }
+
     .hg-accUl{
-       
-        margin-left: 16px;
+        margin-left: 22px;
         margin-right: 0px;
         padding: 0px;
         /* background: powderblue; */
@@ -368,6 +367,18 @@ body{word-wrap: break-word;}
         padding-left: 16px; 
         /* background: plum; */
       }
+
+      .hg-accOl{
+        margin-left: 26px;
+        margin-right: 0px;
+        padding: 0px;
+      }
+
+      /* .hg-accDivMain ol li{
+          background: plum;
+  
+      } */
+
 
       .hg-accAalone{
         margin-left: 16px;
