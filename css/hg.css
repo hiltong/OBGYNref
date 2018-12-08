@@ -42,14 +42,14 @@ body{word-wrap: break-word;}
   border: none;
   height: 100%;
 }
-.hg-BackButton:hover{
+.hg-BackButton:active{
   background: white;
   color: black;
 }
-.hg-BackButton:focus{
+/* .hg-BackButton:focus{
   background: white;
   color: black;
-}
+} */
 
 @media all and (display-mode: browser) {
     .hg-BackButton {
@@ -79,14 +79,14 @@ body{word-wrap: break-word;}
     text-decoration:none;
     border: none;
   }
-  .hg-HamBtn:hover{
+  .hg-HamBtn:active{
     background: white;
     color: black;
   }
-  .hg-HamBtn:focus{
+  /* .hg-HamBtn:focus{
     background: white;
     color: black;
-  }
+  } */
   
 
   /* Title--------------------------------------------------------------------------- */
