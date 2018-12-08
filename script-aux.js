@@ -151,7 +151,7 @@ function CreateSideBar() {
   // sideBar.appendChild(glossaryHeader);
 
   var obGlossary = document.createElement("a");
-  var obGlossaryText = document.createTextNode("Index");
+  var obGlossaryText = document.createTextNode("Glossary");
   obGlossary.appendChild(obGlossaryText);
   obGlossary.setAttribute("class", "hg-SideBarItem")
   obGlossary.setAttribute("href", "ob_glossary.html")

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Stuff</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Obstetric Ultrasound Amniotic Fluid">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<body onload="SetUpPage()">
+
+  <header id="MyHeader" class="hg-NavBar">
+    <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+    <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+    <span id="titbar" class="hg-NavBarTitle"></span>
+  </header>
+
+  <nav class="hg-SideBar" id="mySidebar"></nav>
+
+  <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+  <div class="hg-Content">
+
+    <main class="hg-InfoContent">
+      <h1 class="hg-h1PageTitle">Ultrasound Amniotic Fluid</h1>
+
+      <section class="algorithm">
+        <h3 onclick="AccToggle('AFITechnique')" class="hg-accBtn">AFI<span id="AFITechnique_c" class="hg-NavLinkChevron"></span></h3>
+        <div id="AFITechnique" class="hg-accDivMain">
+          <ul class=hg-accUl>
+            <li>Divide uterus into 4 qudrants and add deepest vertical pocket in each quadrant together.<sup>1</sup></li>
+            <li>Width of pocket must be &ge; 1 cm.<sup>1</sup></li>
+            <li>Normal 5-23 cm.<sup>1</sup></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="algorithm">
+        <h3 onclick="AccToggle('SDPTechnique')" class="hg-accBtn">Deepest vertical pocket<span id="SDPTechnique_c"
+            class="hg-NavLinkChevron"></span></h3>
+        <div id="SDPTechnique" class="hg-accDivMain">
+          <ul class=hg-accUl>
+            <li>Deepest vertical pocket of fluid free of cord and fetal parts.<sup>1</sup></li>
+            <li>Width of pocket must be &ge; 1 cm.<sup>1</sup></li>
+            <li>Normal 2-7 cm.<sup>1</sup></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="algorithm">
+          <h3 onclick="AccToggle('Usedvp')" class="hg-accBtn">Use deepest vertical pocket:<span id="Usedvp_c"
+              class="hg-NavLinkChevron"></span></h3>
+          <div id="Usedvp" class="hg-accDivMain">
+            <ol class=hg-accUl>
+              <li>BPP.<sup>2</sup></li>
+              <li>Diagnosis of oligohydraminos.<sup>1</sup></li>
+              <li>Multiple gestations.<sup>1</sup></li>
+            </ol>
+          </div>
+        </section>
+
+      <section class="algorithm">
+        <h3 onclick="AccToggle('USOligo')" class="hg-accBtn">Oligohydraminos<span id="USOligo_c" class="hg-NavLinkChevron"></span></h3>
+        <div id="USOligo" class="hg-accDivMain">
+          <ul class=hg-accUl>
+            <li>AFI < 5 cm.<sup>1</sup> (&le; 5 <sup>2</sup>)</li>
+            <li>Deepest vertical pocket < 2 cm. <sup>1</sup> (&le; 2 <sup>2</sup>)</li>
+            <li>Deepest vertical pocket recommended as less unnecessary interventions.<sup>1</sup></li>
+            <li>Use only deepest vertical pocket with multiple gestations.<sup>1</sup></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="algorithm">
+        <h3 onclick="AccToggle('USAFRefs')" class="hg-accBtn">References: <span id="USAFRefs_c" class="hg-NavLinkChevron"></span></h3>
+        <div id="USAFRefs" class="hg-accDivMain">
+          <ol class="hg-accOlRef">
+            <li>Ultrasound in pregnancy. Practice Bulletin No. 175. American College of Obstetricians and Gynecologists. Obstet Gynecol 2016;128:e241–56.</li>
+            <li>Antepartum fetal surveillance. Practice Bulletin No. 145. American College of Obstetricians and Gynecologists. Obstet Gynecol 2014;124:182–92.</li>
+          </ol>
+        </div>
+      </section>
+
+
+
+
+    </main>
+
+    <div class="hg-AddContent">
+      <p class="hg-AddSmall ">AD</p>
+      <p class="hg-AddLarge  ">AD</p>
+    </div>
+
+  </div>
+
+  <script defer src="script.js"></script>
+  <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
