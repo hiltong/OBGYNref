@@ -133,16 +133,18 @@ function CreateSideBar() {
   menu.appendChild(menuText);
   sideBar.appendChild(menu);
 
+  var obstetrics = document.createElement("h5");
+  var obstetricsText = document.createTextNode("Obstetrics");
+  obstetrics.appendChild(obstetricsText);
+  sideBar.appendChild(obstetrics);
+
   var start = document.createElement("a");
-  var startText = document.createTextNode("Home");
+  var startText = document.createTextNode("Index");
   start.appendChild(startText);
-  start.setAttribute("class", "hg-SideBarItem")
-  start.setAttribute("href", "index.html")
+  start.setAttribute("class", "hg-SideBarItem2")
+  start.setAttribute("href", "ob_index.html")
   sideBar.appendChild(start);
-  start.appendChild(startText);
-  start.setAttribute("class", "hg-SideBarItem")
-  start.setAttribute("href", "index.html")
-  sideBar.appendChild(start);
+ 
 
   // var glossaryHeader = document.createElement("p");
   // var glossaryHeaderText = document.createTextNode("Glossaries");
@@ -153,7 +155,7 @@ function CreateSideBar() {
   var obGlossary = document.createElement("a");
   var obGlossaryText = document.createTextNode("Glossary");
   obGlossary.appendChild(obGlossaryText);
-  obGlossary.setAttribute("class", "hg-SideBarItem")
+  obGlossary.setAttribute("class", "hg-SideBarItem2")
   obGlossary.setAttribute("href", "ob_glossary.html")
   sideBar.appendChild(obGlossary);
 

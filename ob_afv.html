@@ -2,7 +2,7 @@
 <html lang="en-US">
 <meta charset="UTF-8">
 
-<title>OB/GYN Stuff</title>
+<title>OB/GYN Pocket</title>
 <meta name="theme-color" content="#000000" />
 <meta name="description" content="Obstetric Ultrasound Amniotic Fluid">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,10 +26,10 @@
   <div class="hg-Content">
 
     <main class="hg-InfoContent">
-      <h1 class="hg-h1PageTitle">Ultrasound Amniotic Fluid</h1>
+      <h1 class="hg-h1PageTitle">Amniotic Fluid Volume</h1>
 
-      <section class="algorithm">
-        <button onclick="AccToggle('AFITechnique')" class="hg-accBtn">AFI<span id="AFITechnique_c" class="hg-NavLinkChevron"></span></button>
+      <section class="accordian">
+        <button onclick="AccToggle('AFITechnique')" class="hg-accBtn">Amniotic fluid index (AFI) technique:<span id="AFITechnique_c" class="hg-NavLinkChevron"></span></button>
         <div id="AFITechnique" class="hg-accDivMain">
           <ul class=hg-accUl>
             <li>Divide uterus into 4 qudrants and add deepest vertical pocket in each quadrant together.<sup>1</sup></li>
@@ -39,8 +39,8 @@
         </div>
       </section>
 
-      <section class="algorithm">
-        <button onclick="AccToggle('SDPTechnique')" class="hg-accBtn">Deepest vertical pocket<span id="SDPTechnique_c"
+      <section class="accordian">
+        <button onclick="AccToggle('SDPTechnique')" class="hg-accBtn">Maximum vertical pocket (MVP) technique:<span id="SDPTechnique_c"
             class="hg-NavLinkChevron"></span></button>
         <div id="SDPTechnique" class="hg-accDivMain">
           <ul class=hg-accUl>
@@ -51,8 +51,8 @@
         </div>
       </section>
 
-      <section class="algorithm">
-          <button onclick="AccToggle('Usedvp')" class="hg-accBtn">Use deepest vertical pocket:<span id="Usedvp_c"
+      <section class="accordian">
+          <button onclick="AccToggle('Usedvp')" class="hg-accBtn">MVP recommended over AFI for:<span id="Usedvp_c"
               class="hg-NavLinkChevron"></span></button>
           <div id="Usedvp" class="hg-accDivMain">
             <ol class=hg-accOl>
@@ -63,29 +63,29 @@
           </div>
         </section>
 
-      <section class="algorithm">
-        <button onclick="AccToggle('USOligo')" class="hg-accBtn">Oligohydraminos<span id="USOligo_c" class="hg-NavLinkChevron"></span></button>
+      <section class="accordian">
+        <button onclick="AccToggle('USOligo')" class="hg-accBtn">Oligohydraminos crieria:<span id="USOligo_c" class="hg-NavLinkChevron"></span></button>
         <div id="USOligo" class="hg-accDivMain">
           <ul class=hg-accUl>
             <li>AFI < 5 cm.<sup>1</sup> (&le; 5 <sup>2</sup>)</li>
-            <li>Deepest vertical pocket < 2 cm. <sup>1</sup> (&le; 2 <sup>2</sup>)</li>
-            <li>Deepest vertical pocket recommended as less unnecessary interventions.<sup>1</sup></li>
-            <li>Use only deepest vertical pocket with multiple gestations.<sup>1</sup></li>
+            <li>MVP < 2 cm. <sup>1</sup> (&le; 2 <sup>2</sup>)</li>
+            <li>MVP recommended as less unnecessary interventions.<sup>1</sup></li>
+            <li>Use only MVP with multiple gestations.<sup>1</sup></li>
           </ul>
         </div>
       </section>
 
-      <section class="algorithm">
-          <button onclick="AccToggle('USpoly')" class="hg-accBtn">Polyhydraminos<span id="USpoly_c" class="hg-NavLinkChevron"></span></button>
+      <section class="accordian">
+          <button onclick="AccToggle('USpoly')" class="hg-accBtn">Polyhydraminos criteria:<span id="USpoly_c" class="hg-NavLinkChevron"></span></button>
           <div id="USpoly" class="hg-accDivMain">
             <ul class=hg-accUl>
               <li>AFI &ge; 24 cm.<sup>1</sup></li>
-              <li>Deepest vertical pocket &ge; 8 cm. <sup>1</sup></li>   
+              <li>MVP &ge; 8 cm. <sup>1</sup></li>   
             </ul>
           </div>
         </section>
 
-      <section class="algorithm">
+      <section class="accordian">
         <button onclick="AccToggle('USAFRefs')" class="hg-accBtn">References: <span id="USAFRefs_c" class="hg-NavLinkChevron"></span></button>
         <div id="USAFRefs" class="hg-accDivMain">
           <ol class="hg-accOlRef">

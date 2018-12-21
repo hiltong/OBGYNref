@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Obstetric Ultrasound Amniotic Fluid">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Low-Dose Aspirin</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('asaindications')" class="hg-accBtn">Low-dose aspirin recommened:<span id="asaindications_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="asaindications" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>One or more high-risk factors for preeclampsia.<sup>1</sup></li>
+                        <li>Two or more moderate-risk factors for preeclampsia.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('asanotrecc')" class="hg-accBtn">Low-dose aspirin not recommended:<span id="asanotrecc_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="asanotrecc" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Previous unexplained stillbirth without risk factors for preeclampsia.<sup>1</sup></li>
+                        <li>Prevention fetal growth restriction without risk factors for preeclampsia.<sup>1</sup></li>
+                        <li>Prevention spontaneous preterm birth without risk factors for preeclampsia.<sup>1</sup></li>
+                        <li>Prevention of early pregnancy loss without risk factors for preeclampsia.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('asadose')" class="hg-accBtn">Low-dose aspirin dose:<span id="asadose_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="asadose" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>81 mg/day.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('asastart')" class="hg-accBtn">Low-dose aspirin start/stop:<span id="asastart_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="asastart" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>12-28 weeks (optimally before 16 weeks).</sup></li>
+                        <li>Continue until delivery.</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('asaHRfactors')" class="hg-accBtn">High-risk factors preeclampsia:<span id="asaHRfactors_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="asaHRfactors" class="hg-accDivMain">
+                    <ol class=hg-accUl>
+                    <li>Previous preeclampsia.<sup>1</sup></li>
+                    <li>Multifetal pregnancy.<sup>1</sup></li>
+                    <li>Chronic hypertension.<sup>1</sup></li>
+                    <li>Diabetes type 1 or 2.<sup>1</sup></li>
+                    <li>Renal disease.<sup>1</sup></li>
+                    <li>Autoimmune disease.<sup>1</sup></li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('asaHRIncidence')" class="hg-accBtn">Incidence preeclampsia if high-risk
+                    factor present:<span id="asaHRIncidence_c" class="hg-NavLinkChevron"></span></button>
+                <div id="asaHRIncidence" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>&ge; 8%<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('asaMRfactors')" class="hg-accBtn">Moderate-risk factors preeclampsia:<span
+                        id="asaMRfactors_c" class="hg-NavLinkChevron"></span></button>
+                <div id="asaMRfactors" class="hg-accDivMain">
+                    <ol class=hg-accUl>
+                        <li>&ge; 35 years of age.<sup>1</sup></li>
+                        <li>Nulliparous.<sup>1</sup></li>
+                        <li>BMI > 30.<sup>1</sup></li>
+                        <li>Mother or sister with preeclampsia.<sup>1</sup></li>
+                        <li>Sociodemographic (Africian american race or low socioeconomic status).<sup>1</sup></li>
+                        <li>Autoimmune disease.<sup>1</sup></li>
+                        <li>Personal history (previous SGA, previous adverse pregnancy outcome, &gt 10 year pregnancy
+                            interval).<sup>1</sup></li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="accordian">
+                    <button onclick="AccToggle('asaLRfactors')" class="hg-accBtn">Low-risk factors preeclampsia:<span
+                            id="asaLRfactors_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="asaLRfactors" class="hg-accDivMain">
+                        <ol class=hg-accUl>
+                            <li>Previous uncomplicated term delivery.<sup>1</sup></li>
+                        </ol>
+                    </div>
+                </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('asaContra')" class="hg-accBtn">Aspirin absolute contraindications:<span id="asaContra_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="asaContra" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Salicylate hypersensitivity.<sup>1</sup></li>
+                        <li>NSAID hypersensitivity.<sup>1</sup></li>
+                        <li>Nasal polyps.<sup>1</sup></li>
+                        <li>Aspirin induced asthmatic bronchospasm.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                    <button onclick="AccToggle('asaRel')" class="hg-accBtn">Aspirin relative contraindications:<span id="asaRel_c"
+                            class="hg-NavLinkChevron"></span></button>
+                    <div id="asaRel" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li>History GI bleeding.<sup>1</sup></li>
+                            <li>Active PUD.<sup>1</sup></li>
+                            <li>Severe hepatic dysfunction.<sup>1</sup></li>
+                            <li>&lt 18 years of age and recovering from viral illness (especially influenza & chickenpox) secondary to risk Reye syndrome (<1%).<sup>1</sup></li>
+                        </ul>
+                    </div>
+                </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('asaRefs')" class="hg-accBtn">References: <span id="asaRefs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="asaRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Low-dose aspirin use during pregnancy. ACOG Committee Opinion No. 743. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2018;132:e44–52.</li>
+
+                    </ol>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
