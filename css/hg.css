@@ -332,8 +332,8 @@ body{
       white-space: normal;  /*lets words wrap in accordian button*/
       text-align:left;
       color:black;
-      /* background: white;  */
-      background:#f0f0f0;
+      background: white; 
+      /* background:#f0f0f0; */
       display:block;
       border:none;
       width:100%;
@@ -548,8 +548,106 @@ body{
       box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
     }
     
-  
+  /*Glossary*/
+  .hg-glossaryAZ {
+    font-size: 1.2em;
+}
 
+.hg-glossaryAZ button {
+    /* font-size: 1.2em; */
+    margin-right: 0.4em;
+    margin-left: 0.4em;
+    margin-bottom: 0.6em;
+    /* padding: 0.2em 0.6em 0.2em 0.6em; */
+    color: blue;
+    /* border: none; */
+    border-width: 1px;
+    border-style: solid;
+    background: #f0f0f0;
+    /* background: WHITE; */
+    border-radius: 12%;
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hg-glossaryAZ button:hover {
+    color: white;
+    background-color: black;
+}
+
+.hg-glossaryAZ button:active {
+    color: red;
+}
+
+.hg-glossaryBody h2 {
+    display: inline;
+    /* padding-bottom: 0px; */
+    /* background: pink; */
+    font-size: 1.6em;
+}
+
+.hg-glossaryBody a {
+    color: blue;
+    display: block;
+    /* padding-top: 0.35em; */
+    /* padding-bottom: 0.35em; */
+    font-size: 1.2em;
+    /* margin-top: 0.5em; */
+    /* margin-bottom: 0.5em; */
+    margin-left: 10px;
+    margin-right: 0px;
+    font-weight: normal;
+}
+
+.hg-glossaryBody a:hover {
+    background: black;
+    color: white;
+}
+
+.hg-glossaryBody a:active {
+    color: red;
+}
+
+.hg-glossaryBody button {
+    vertical-align: top;
+    margin-left: 30px;
+    display: inline;
+    font-size: 1.2em;
+    /* font-size: 1.6em; */
+    /* margin-top: 1em; */
+    /* margin-right: 0.6em; */
+    /* margin-left: 1.0em; */
+    /* margin-top: -20px; */
+    /* margin-bottom: 0.6em; */
+    color: blue;
+    /* text-decoration: underline; */
+    border: none;
+    /* background: #f0f0f0; */
+    background: white;
+    /* border-radius: 6%; */
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* width: 3em; */
+    /* height: 2em; */
+    cursor: pointer;
+    /* height:30px; */
+}
+
+.hg-glossaryBody button:hover {
+    /* color:red; */
+    color: white;
+    background-color: black;
+}
+
+.hg-glossaryBody button:active {
+    color: red;
+}
+
+.hg-pTag {
+    height: 0.4em;
+}
 
     @media (min-width:601px){.hg-InfoContent{width:66.66666%} .hg-AddContent{float: right; width:33.33333%;}}
     @media (max-width:600px){.hg-InfoContent{width:100%} .hg-AddContent{width: 100%; float: left;}}

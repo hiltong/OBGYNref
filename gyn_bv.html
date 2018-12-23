@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Bacterial Vaginosis">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Bacterial Vaginosis</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('asaindications')" class="hg-accBtn">Secnidazole (Solosec)<span id="asaindications_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="asaindications" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>1 packet (2 grams) of granules PO without regard to timing of meals .<sup>1</sup></li>
+                        <li>Sprinkle entire contents of the packet of secnidazole onto applesauce, yogurt, or pudding and take all the mixture within 30 minutes without chewing or crunching the granules. Drink a glass of water to aid in swallowing the mixture; secnidazole mixture is not intended to be dissolved in any liquid. Advise the patient that secnidazole may be taken without regard to the timing of meals <sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bvRefs')" class="hg-accBtn">References: <span id="bvRefs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="bvRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Medscape</li>
+                    </ol>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

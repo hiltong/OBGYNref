@@ -133,17 +133,24 @@ function CreateSideBar() {
   menu.appendChild(menuText);
   sideBar.appendChild(menu);
 
-  var obstetrics = document.createElement("h5");
-  var obstetricsText = document.createTextNode("Obstetrics");
-  obstetrics.appendChild(obstetricsText);
-  sideBar.appendChild(obstetrics);
+  // var obstetrics = document.createElement("h5");
+  // var obstetricsText = document.createTextNode("Obstetrics");
+  // obstetrics.appendChild(obstetricsText);
+  // sideBar.appendChild(obstetrics);
 
-  var start = document.createElement("a");
-  var startText = document.createTextNode("Index");
-  start.appendChild(startText);
-  start.setAttribute("class", "hg-SideBarItem2")
-  start.setAttribute("href", "ob_index.html")
-  sideBar.appendChild(start);
+  var ob = document.createElement("a");
+  var obText = document.createTextNode("Obstetrics");
+  ob.appendChild(obText);
+  ob.setAttribute("class", "hg-SideBarItem")
+  ob.setAttribute("href", "ob_index.html")
+  sideBar.appendChild(ob);
+
+  // var start = document.createElement("a");
+  // var startText = document.createTextNode("Index");
+  // start.appendChild(startText);
+  // start.setAttribute("class", "hg-SideBarItem2")
+  // start.setAttribute("href", "ob_index.html")
+  // sideBar.appendChild(start);
  
 
   // var glossaryHeader = document.createElement("p");
@@ -159,12 +166,19 @@ function CreateSideBar() {
   obGlossary.setAttribute("href", "ob_glossary.html")
   sideBar.appendChild(obGlossary);
 
-  // var gynGlossary = document.createElement("a");
-  // var gynGlossaryText = document.createTextNode("Gynecology");
-  // gynGlossary.appendChild(gynGlossaryText);
-  // gynGlossary.setAttribute("class", "hg-SideBarItem2")
-  // gynGlossary.setAttribute("href", "#")
-  // sideBar.appendChild(gynGlossary);
+  var gynGlossary = document.createElement("a");
+  var gynGlossaryText = document.createTextNode("Gynecology");
+  gynGlossary.appendChild(gynGlossaryText);
+  gynGlossary.setAttribute("class", "hg-SideBarItem")
+  gynGlossary.setAttribute("href", "gyn_index.html")
+  sideBar.appendChild(gynGlossary);
+
+  var gynGlossary = document.createElement("a");
+  var gynGlossaryText = document.createTextNode("Glossary");
+  gynGlossary.appendChild(gynGlossaryText);
+  gynGlossary.setAttribute("class", "hg-SideBarItem2")
+  gynGlossary.setAttribute("href", "gyn_glossary.html")
+  sideBar.appendChild(gynGlossary);
 
   var obGlossary = document.createElement("a");
   var obGlossaryText = document.createTextNode("Site Map");
@@ -210,5 +224,7 @@ function AlgoNext(idhide, idshow) {
   }
 } */
 
-
-
+/*Glossary-----------------------------------------------------------------------------------------------*/
+function ScrollToSection(section) {
+  document.getElementById(section).scrollIntoView({ block: "start", behavior: "smooth" });
+}
