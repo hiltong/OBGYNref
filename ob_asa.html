@@ -35,7 +35,9 @@
                     <ul class=hg-accUl>
                         <li>One or more high-risk factors for preeclampsia.<sup>1</sup></li>
                         <li>Two or more moderate-risk factors for preeclampsia.<sup>1</sup></li>
+                        <li>Start 81 mg/day* at 12-28 weeks (optimally before 16 weeks) and continue until delivery.<sup>1</sup></li>
                     </ul>
+                    <p>* Studies used 60-150 mg/day and not 81 mg/day but 81 mg/day only dose availbale in US reasonable.<sup>2</sup></p>
                 </div>
             </section>
 
@@ -47,84 +49,57 @@
                         <li>Previous unexplained stillbirth without risk factors for preeclampsia.<sup>1</sup></li>
                         <li>Prevention fetal growth restriction without risk factors for preeclampsia.<sup>1</sup></li>
                         <li>Prevention spontaneous preterm birth without risk factors for preeclampsia.<sup>1</sup></li>
-                        <li>Prevention of early pregnancy loss without risk factors for preeclampsia.<sup>1</sup></li>
+                        <li>Prevention of early pregnancy loss.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
 
             <section class="accordian">
-                <button onclick="AccToggle('asadose')" class="hg-accBtn">Low-dose aspirin dose:<span id="asadose_c"
-                        class="hg-NavLinkChevron"></span></button>
-                <div id="asadose" class="hg-accDivMain">
-                    <ul class=hg-accUl>
-                        <li>81 mg/day.<sup>1</sup></li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="accordian">
-                <button onclick="AccToggle('asastart')" class="hg-accBtn">Low-dose aspirin start/stop:<span id="asastart_c"
-                        class="hg-NavLinkChevron"></span></button>
-                <div id="asastart" class="hg-accDivMain">
-                    <ul class=hg-accUl>
-                        <li>12-28 weeks (optimally before 16 weeks).</sup></li>
-                        <li>Continue until delivery.</sup></li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="accordian">
-                <button onclick="AccToggle('asaHRfactors')" class="hg-accBtn">High-risk factors preeclampsia:<span id="asaHRfactors_c"
-                        class="hg-NavLinkChevron"></span></button>
-                <div id="asaHRfactors" class="hg-accDivMain">
-                    <ol class=hg-accUl>
-                    <li>Previous preeclampsia.<sup>1</sup></li>
-                    <li>Multifetal pregnancy.<sup>1</sup></li>
-                    <li>Chronic hypertension.<sup>1</sup></li>
-                    <li>Diabetes type 1 or 2.<sup>1</sup></li>
-                    <li>Renal disease.<sup>1</sup></li>
-                    <li>Autoimmune disease.<sup>1</sup></li>
-                    </ol>
-                </div>
-            </section>
-
-            <section class="accordian">
-                <button onclick="AccToggle('asaHRIncidence')" class="hg-accBtn">Incidence preeclampsia if high-risk
-                    factor present:<span id="asaHRIncidence_c" class="hg-NavLinkChevron"></span></button>
-                <div id="asaHRIncidence" class="hg-accDivMain">
-                    <ul class=hg-accUl>
-                        <li>&ge; 8%<sup>1</sup></li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="accordian">
-                <button onclick="AccToggle('asaMRfactors')" class="hg-accBtn">Moderate-risk factors preeclampsia:<span
-                        id="asaMRfactors_c" class="hg-NavLinkChevron"></span></button>
-                <div id="asaMRfactors" class="hg-accDivMain">
-                    <ol class=hg-accUl>
-                        <li>&ge; 35 years of age.<sup>1</sup></li>
-                        <li>Nulliparous.<sup>1</sup></li>
-                        <li>BMI > 30.<sup>1</sup></li>
-                        <li>Mother or sister with preeclampsia.<sup>1</sup></li>
-                        <li>Sociodemographic (Africian american race or low socioeconomic status).<sup>1</sup></li>
-                        <li>Autoimmune disease.<sup>1</sup></li>
-                        <li>Personal history (previous SGA, previous adverse pregnancy outcome, &gt 10 year pregnancy
-                            interval).<sup>1</sup></li>
-                    </ol>
-                </div>
-            </section>
-
-            <section class="accordian">
-                    <button onclick="AccToggle('asaLRfactors')" class="hg-accBtn">Low-risk factors preeclampsia:<span
-                            id="asaLRfactors_c" class="hg-NavLinkChevron"></span></button>
-                    <div id="asaLRfactors" class="hg-accDivMain">
-                        <ol class=hg-accUl>
-                            <li>Previous uncomplicated term delivery.<sup>1</sup></li>
-                        </ol>
+                    <button onclick="AccToggle('asanotrisk')" class="hg-accBtn">Low-dose aspirin does not increase risk of:<span id="asanotrisk_c"
+                            class="hg-NavLinkChevron"></span></button>
+                    <div id="asanotrisk" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li>Abruption.<sup>2</sup></li>
+                            <li>Postpartum hemorrhage.<sup>2</sup></li>
+                            <li>Fetal intracranial bleeding.<sup>2</sup></li>
+                        </ul>
                     </div>
                 </section>
 
+            <section class="accordian">
+                <button onclick="AccToggle('asaCRfactors')" class="hg-accBtn">Risk factors preeclampsia*:<span id="asaCRfactors_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="asaCRfactors" class="hg-accDivMain">
+                    <ul class=hg-accUl>  
+                        <li>High risk factors (Recommend low-dose ASA if &ge; 1 present as risk preeclampsia &ge; 8%)</li>
+                        <ol class=hg-accOl>
+                            <li>Previous preeclampsia.<sup>1,2</sup></li>
+                            <li>Multifetal pregnancy.<sup>1,2</sup></li>
+                            <li>Chronic hypertension.<sup>1,2</sup></li>
+                            <li>Diabetes type 1 or 2.<sup>1,2</sup></li>
+                            <li>Renal disease.<sup>1,2</sup></li>
+                            <li>Autoimmune disease (SLE,APS).<sup>1,2</sup></li>
+                        </ol>
+                        <li>Moderate risk factors (Consider low-dose ASA if &ge; 2 present)</li>
+                        <ol>
+                            <li>&ge; 35 years of age.<sup>1,2</sup></li>
+                            <li>Nulliparity.<sup>1,2</sup></li>
+                            <li>BMI > 30.<sup>1,2</sup></li>
+                            <li>Family histroy preeclampsia (mother or sister).<sup>1,2</sup></li>
+                            <li>Sociodemographic factors (Africian american race, low socioeconomic status).<sup>1,2</sup></li>
+                            <li>Autoimmune disease.<sup>1,2</sup></li>
+                            <li>Personal history (e.g. SGA, previous adverse pregnancy outcome, &gt 10 year pregnancy interval).<sup>1,2</sup></li>
+                        </ol>
+                        <li>Low-risk factors (Low-dose ASA not indciated)
+                            <ul>
+                                <li>Previous uncomplicated term delivery.<sup>1,2</sup></li>
+                            </ul>
+                        </li>
+                        <p>* Note all risk factors are historical.</p>
+                </div>
+            </section>
+
+        
             <section class="accordian">
                 <button onclick="AccToggle('asaContra')" class="hg-accBtn">Aspirin absolute contraindications:<span id="asaContra_c"
                         class="hg-NavLinkChevron"></span></button>
@@ -139,17 +114,18 @@
             </section>
 
             <section class="accordian">
-                    <button onclick="AccToggle('asaRel')" class="hg-accBtn">Aspirin relative contraindications:<span id="asaRel_c"
-                            class="hg-NavLinkChevron"></span></button>
-                    <div id="asaRel" class="hg-accDivMain">
-                        <ul class=hg-accUl>
-                            <li>History GI bleeding.<sup>1</sup></li>
-                            <li>Active PUD.<sup>1</sup></li>
-                            <li>Severe hepatic dysfunction.<sup>1</sup></li>
-                            <li>&lt 18 years of age and recovering from viral illness (especially influenza & chickenpox) secondary to risk Reye syndrome (<1%).<sup>1</sup></li>
-                        </ul>
-                    </div>
-                </section>
+                <button onclick="AccToggle('asaRel')" class="hg-accBtn">Aspirin relative contraindications:<span id="asaRel_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="asaRel" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>History GI bleeding.<sup>1</sup></li>
+                        <li>Active PUD.<sup>1</sup></li>
+                        <li>Severe hepatic dysfunction.<sup>1</sup></li>
+                        <li>&lt 18 years of age and recovering from viral illness (especially influenza & chickenpox)
+                            secondary to risk Reye syndrome (<1%).<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
 
             <section class="accordian">
                 <button onclick="AccToggle('asaRefs')" class="hg-accBtn">References: <span id="asaRefs_c" class="hg-NavLinkChevron"></span></button>
@@ -157,7 +133,9 @@
                     <ol class="hg-accOlRef">
                         <li>Low-dose aspirin use during pregnancy. ACOG Committee Opinion No. 743. American College of
                             Obstetricians and Gynecologists. Obstet Gynecol 2018;132:e44–52.</li>
-
+                        <li>Final Recommendation Statement: Low-Dose Aspirin Use for the Prevention of Morbidity and
+                            Mortality From Preeclampsia: Preventive Medication . U.S. Preventive Services Task Force.
+                            December 2016.</li>
                     </ol>
                 </div>
             </section>

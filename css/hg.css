@@ -390,6 +390,13 @@ body{
         padding: 0px;
       }
 
+      .hg-accUl li + ol{
+        margin-left: 16px;
+        margin-right: 0px;
+        padding: 0px;
+        /* background: powderblue; */
+    }
+
       /* .hg-accDivMain ol li{
           background: plum;
   
@@ -548,7 +555,7 @@ body{
       box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
     }
     
-  /*Glossary*/
+  /*Glossary---------------------------------------------------------------------------------------------------------------*/
   .hg-glossaryAZ {
     font-size: 1.2em;
 }
