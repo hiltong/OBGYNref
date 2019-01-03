@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Prelabor Rupture of Membranes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Prelabor Rupture of Membranes</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('rxga')" class="hg-accBtn">Management by GA:<span id="rxga_c" class="hg-NavLinkChevron"></span></button>
+                <div id="rxga" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>&lt; 23/24 weeks
+                            <ul>
+                                <li>Expectant management vs induction.</li>
+                                <li>Latency antibiotics early as 20 weeks.</li>
+                            </ul>
+                        </li>
+                        <li>23/24 - &lt; 31 6/7 weeks
+                            <ul>
+                                <li>Expectant management.</li>
+                                <li>Latency antibiotics.</li>
+                                <li>Single course corticosteoids.</li>
+                                <li>GBS prophylaxis if indicated.</li>
+                                <li>Magnesium sulfate neuroprotection.</li>
+                            </ul>
+                        </li>
+                        <li>32 - 33 6/7
+                            <ul>
+                                <li>Expectant management.</li>
+                                <li>Latency antibiotics.</li>
+                                <li>Single course corticosteoids.</li>
+                                <li>GBS prophylaxis if indicated.</li>
+                            </ul>
+                        </li>
+                        <li>&ge; 34 weeks
+                            <ul>
+                                <li>GBS prophylaxis if indicated.</li>
+                                <li>Deliver.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('insulinRefs')" class="hg-accBtn">References: <span id="insulinRefs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="insulinRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Prelabor rupture of membranes. ACOG Practice Bulletin No. 188. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2018;131:e1–14.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
