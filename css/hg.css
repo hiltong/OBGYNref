@@ -372,6 +372,11 @@ body{
         /* background: beige; */
     }
 
+    .hg-algoRef{
+      font-weight: normal;
+      font-size: 0.7em;
+    }
+;
     .hg-accUl{
         margin-left: 22px;
         margin-right: 0px;
