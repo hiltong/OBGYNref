@@ -27,7 +27,8 @@
     <main class="hg-InfoContent">
       <h1 class="hg-h1PageTitle">Low-Dose Aspirin Preeclampsia Prophylaxis</h1>
 
-      <div id="asaprophtart" class="hg-algoDivMain" style="display: block;">
+
+      <div id="asaprophstart" class="hg-algoDivMain" style="display: block;">
         <p class="hg-pAlgoStatus">Algorithm start</p>
         <div class="hg-algoDivRdBorder" style="max-width: 500px;">
           <div class="hg_algoCenterHorizDiv">
@@ -43,40 +44,54 @@
           </ul>
         </div>
         <div class="hg-algoDivNoBorder">
-          <button class=" hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('asaprophstart','proph')">No risk factor present &#8594;</button>
-          <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('asaprophstart','flu2')">&ge; 1 Risk factor present &#8594;</button>
+          <button class=" hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('asaprophstart','asaMRfactors')">No
+            risk factor present &#8594;</button>
+          <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('asaprophstart','flu2')">&ge; 1 Risk
+            factor present &#8594;</button>
         </div>
       </div>
 
 
-
-
-
-
-
-
-
-      <div id="asaproph" class="hg-algoDivMain" style="display: none; ">
-        <p class="hg-pAlgoStatus">Algorithm end</p>
-        <div class="hg-algoDivNoBorder">
-          <button class="hg-algoBtnUp" onclick="AlgoNext('proph','start')">&#8593;</button>
+      <div id="asaMRfactors" class="hg-algoDivMain" style="display: none;">
+        <p class="hg-pAlgoStatus">Algorithm in progress</p>
+        <div class="hg_algoCenterHorizDiv">
+          <button class="hg-algoBtnUp" onclick="AlgoNext('asaMRfactors','asaprophstart')">&#8593;</button>
         </div>
-        <div class=" hg-algoDivRdBorder" style="max-width: 500px;">
-          <button class="hg-algobutton">Postexposure Antiviral Chemoprophylaxis</button>
+        <div class="hg-algoDivRdBorder" style="max-width: 500px;">
+          <div class="hg_algoCenterHorizDiv">
+            <h3 class="hg-algoh3">Moderate Risk Factors<sup>1</sup></h3>
+          </div>
           <ul class="hg-algoUl">
-            <li>Oseltamivir (Tamiflu)
-              <ul>
-                <li>75 mg orally once daily for 7–10 days.<sup>1</sup></li>
-              </ul>
-            </li>
-            <li>Zanamivir (Relenza)
-              <ul>
-                <li>10 mg (two 5-mg inhalations) once daily for 7 days.<sup>1</sup></li>
-              </ul>
-            </li>
+            <li>&ge; 35 years of age.</li>
+            <li>Nulliparity.</li>
+            <li>BMI > 30.</li>
+            <li>Family histroy preeclampsia (mother or sister).</li>
+            <li>Sociodemographic factors (Africian american race, low socioeconomic status).</li>
+            <li>Autoimmune disease.</li>
+            <li>Personal history (e.g. SGA, previous adverse pregnancy outcome, &gt 10 year pregnancy interval).</li>
           </ul>
         </div>
-        <button class="hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="left:18px ; ">&#8634;</button>
+        <div class="hg-algoDivNoBorder">
+          <button class=" hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('asaMRfactors','asaNotIndicated1')">&lt;
+            2 risk factors present &#8594;</button>
+          <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('asaprophstart','flu2', 'asaBackStep')"></button>
+        </div>
+        <button class="hg-algoRfBtn" onclick="AlgoNext('asaMRfactors','asaprophstart')" style="left:18px ;">Restart</button>
+      </div>
+
+
+
+      <div id="asaNotIndicated1" class="hg-algoDivMain" style="display: none; ">
+        <p class="hg-pAlgoStatus">Algorithm end</p>
+        <div class="hg_algoCenterHorizDiv">
+          <button class="hg-algoBtnUp" onclick="AlgoNext('asaNotIndicated1','asaMRfactors')">&#8593;</button>
+        </div>
+        <div class=" hg-algoDivStrBorder" style="max-width: 500px;">
+          <div class="hg_algoCenterHorizDiv">
+            <p>Low dose apspirin not indciated for preeclampsia prophylaxis<sup>1</sup></p>
+          </div>
+        </div>
+        <button class="hg-algoRfBtn" onclick="AlgoNext('asaNotIndicated1','asaprophstart')" style="left:18px ;">Restart</button>
       </div>
 
 

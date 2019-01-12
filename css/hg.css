@@ -448,23 +448,23 @@ body{
       padding-left: 12px;
       padding-right: 12px;
       padding-bottom: 12px;
-      /* display: none; */
+      display: none;
       /* background: lightblue */
       /* background: lightcyan; */
       /* border-radius: 24px; */
       /* border: 1px solid #ccc; */
       /* position: relative; */
   }
-  /*Straight border div*/
-  .hg-algoDivStrBorder{
-    margin-top: 0px;
-    margin-bottom: 16px;
-    margin-left: auto ;
-    margin-right: auto ;
-    padding-left: 16px;
-    padding-right: 16px;
-    border: 1px solid black; 
-    background: white;
+/*Straight border div*/
+.hg-algoDivStrBorder{
+margin-top: 0px;
+margin-bottom: 16px;
+margin-left: auto ;
+margin-right: auto ;
+padding-left: 16px;
+padding-right: 16px;
+border: 1px solid black; 
+background: lightpink;
 }
 
 /*Rounded border div*/
@@ -521,9 +521,8 @@ color:red;
   .hg-algoBtnUp{
     padding:8px 16px;
     width: 50px;
-    /* background: #f0f0f0; */
     background: lightgoldenrodyellow;
-    color: black;
+    margin-bottom: 16px;
     margin-left: auto ;
     margin-right: auto ;
     font-size: 1.2em;
@@ -574,11 +573,12 @@ padding-left: 16px;
 /*Refresh button*/
     .hg-algoRfBtn{
       /* border: 1px solid #ccc; */
-      border-radius:50%;
+      /* border-radius:50%; */
       /* background: lightgoldenrodyellow; */
-      background: lightpink;
+      /* background: lightpink; */
       /* background:#f0f0f0; */
-      color: black;
+      font-size: 0.8em;
+      color: red;
       margin-left: 16px;
       margin-bottom: 16px;
       box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)

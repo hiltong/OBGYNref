@@ -200,11 +200,39 @@ function CreateSideBar() {
 /*Algorhithm-------------------------------------------------------------------------------*/
 function AlgoNext(idhide, idshow) {
   //  alert('Here');
+  //  alert(idhide);
   document.getElementById(idhide).style.display = "none";
   sessionStorage.setItem(idhide, 'none')
   document.getElementById(idshow).style.display = "block";
   sessionStorage.setItem(idshow, 'block')
+  // alert('Here');
 }
+
+// function AlgoNext(idhide, idshow, algobackstep) {
+//   // alert('Here');
+//   // alert(idhide);
+//  document.getElementById(idhide).style.display = "none";
+//  sessionStorage.setItem(idhide, 'none')
+//  document.getElementById(idshow).style.display = "block";
+//   sessionStorage.setItem(idshow, 'block')
+//   sessionStorage.setItem(algobackstep, idhide)
+//   // alert(algobackstep);
+//   // alert(idhide);
+// //  var idshow = sessionStorage.getItem('BackStep');
+//  document.getElementById(idshow).style.display = "block";
+//  sessionStorage.setItem(idshow, 'block')
+// //  alert(idshow);
+// }
+
+function AlgoBack(idhide, algobackstep) {
+  document.getElementById(idhide).style.display = "none";
+  sessionStorage.setItem(idhide, 'none')
+  var idshow = sessionStorage.getItem(algobackstep);
+  document.getElementById(idshow).style.display = "block";
+  sessionStorage.setItem(idshow, 'block')
+  //  alert(idshow);
+}
+
 
 /* function SetAlgoDivs() {
   var algoArray = document.getElementsByClassName("hg-algoDivMain");
