@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
 
+
 <body onload="SetUpPage()">
 
   <!-- Navbar -->
@@ -34,49 +35,46 @@
       <h1 class="hg-h1PageTitle">Obstetric proteinuria</h1>
 
       <section class="accordian">
-          <button onclick="AccToggle('24hrpro')" class="hg-accBtn">24 hour urine<sup class="hg-algoRef">1</sup><span id="24hrpro_c" class="hg-NavLinkChevron"></span></button>
+          <button onclick="AccToggle('24hrpro')" class="hg-accBtn">24 hour urine<sup class="hg-accRefNum">1</sup><span id="24hrpro_c" class="hg-NavLinkChevron"></span></button>
           <div id="24hrpro" class="hg-accDivMain">             
-              <ul class=hg-accUl>
+              <ul class="hg-accUl" >
                   <li style="list-style: none": none">&ge; 300 mg/dL of protein in a 24-hour urine collection.</li>     
               </ul>
           </div>
       </section>
 
       <section class="accordian">
-          <button onclick="AccToggle('prcr')" class="hg-accBtn">Protein-to-creatinine ratio<sup class="hg-algoRef">1</sup><span id="prcr_c" class="hg-NavLinkChevron"></span></button>
+          <button onclick="AccToggle('prcr')" class="hg-accBtn">Protein-to-creatinine ratio<sup class="hg-accRefNum">1</sup><span id="prcr_c" class="hg-NavLinkChevron"></span></button>
           <div id="prcr" class="hg-accDivMain">             
-              <ul class=hg-accUl>
+              <ul class="hg-accUl">
                   <li style="list-style: none": none">&ge; 0.3 (each mg/dl)</li>     
               </ul>
           </div>
       </section>
 
       <section class="accordian">
-          <button onclick="AccToggle('prdip')" class="hg-accBtn">Urine dipstick<sup class="hg-algoRef">1</sup><span id="prdip_c" class="hg-NavLinkChevron"></span></button>
+          <button onclick="AccToggle('prdip')" class="hg-accBtn">Urine dipstick<sup class="hg-accRefNum">1</sup><span id="prdip_c" class="hg-NavLinkChevron"></span></button>
           <div id="prdip" class="hg-accDivMain">             
-              <ul class=hg-accUl>
-                  <li>High false positive & negative compared to 300mg cutoff/24 urine
+              <ul class="hg-accUl" >
+                  <li>High false positive & negative compared to 300 mg cutoff/24 urine
                       <ul >
                           <li>1+ ~ 71% false postive</li>    
                           <li>3+ ~ 7% false postive</li> 
-                          <li>~ 9% false postive</li>    
-                          <li>Use 2+ if have to use</li>    
+                          <li>~ 9% false negative</li>    
                       </ul>
-                  </li>     
+                  </li>   
+                  <li>Use 2+ if have to use</li>      
               </ul>
           </div>
       </section>
 
       <section class="accordian">
-          <button onclick="AccToggle('propepatho')" class="hg-accBtn">Preeclampsia proteinuria pathophysiology<sup class="hg-algoRef">1</sup><span id="propepatho_c" class="hg-NavLinkChevron"></span></button>
-          <div id="propepatho" class="hg-accDivMain">             
-              <ul class=hg-accUl>
-                  <li style="list-style: none": none">Nonselective tubular leak of large mwt proteins (albumin, globulin, transferrin, and hemoglobin).</li>     
-              </ul>
+          <button onclick="AccToggle('propepatho')" class="hg-accBtn">Preeclampsia proteinuria pathophysiology<sup class="hg-accRefNumf">1</sup><span id="propepatho_c" class="hg-NavLinkChevron"></span></button>
+          <div id="propepatho" class="hg-accDivMain">   
+            <p >Nonselective tubular leak of large mwt proteins (albumin, globulin, transferrin, and hemoglobin).</p>          
           </div>
       </section>
-
-
+     
       <section class="accordian">
           <button onclick="AccToggle('obproRefs')" class="hg-accBtn">References: <span id="obproRefs_c" class="hg-NavLinkChevron"></span></button>
           <div id="obproRefs" class="hg-accDivMain">

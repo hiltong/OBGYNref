@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Influenza in obstetrics.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<body onload="SetUpPage()">
+
+  <header id="MyHeader" class="hg-NavBar">
+    <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+    <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+    <span id="titbar" class="hg-NavBarTitle"></span>
+  </header>
+
+  <nav class="hg-SideBar" id="mySidebar"></nav>
+
+  <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+  <div class="hg-Content">
+    <main class="hg-InfoContent">
+      <h1 class="hg-h1PageTitle">Low-Dose Aspirin Preeclampsia Prophylaxis</h1>
+
+      <div id="asaprophtart" class="hg-algoDivMain" style="display: block;">
+        <p class="hg-pAlgoStatus">Algorithm start</p>
+        <div class="hg-algoDivRdBorder" style="max-width: 500px;">
+          <div class="hg_algoCenterHorizDiv">
+            <h3 class="hg-algoh3">High Risk Factors<sup>1</sup></h3>
+          </div>
+          <ul class="hg-algoUl">
+            <li>Previous preeclampsia.</sup></li>
+            <li>Multifetal pregnancy.</sup></li>
+            <li>Chronic hypertension.</sup></li>
+            <li>Diabetes type 1 or 2.</sup></li>
+            <li>Renal disease.</sup></li>
+            <li>Autoimmune disease (SLE,APS).</li>
+          </ul>
+        </div>
+        <div class="hg-algoDivNoBorder">
+          <button class=" hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('asaprophstart','proph')">No risk factor present &#8594;</button>
+          <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('asaprophstart','flu2')">&ge; 1 Risk factor present &#8594;</button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div id="asaproph" class="hg-algoDivMain" style="display: none; ">
+        <p class="hg-pAlgoStatus">Algorithm end</p>
+        <div class="hg-algoDivNoBorder">
+          <button class="hg-algoBtnUp" onclick="AlgoNext('proph','start')">&#8593;</button>
+        </div>
+        <div class=" hg-algoDivRdBorder" style="max-width: 500px;">
+          <button class="hg-algobutton">Postexposure Antiviral Chemoprophylaxis</button>
+          <ul class="hg-algoUl">
+            <li>Oseltamivir (Tamiflu)
+              <ul>
+                <li>75 mg orally once daily for 7–10 days.<sup>1</sup></li>
+              </ul>
+            </li>
+            <li>Zanamivir (Relenza)
+              <ul>
+                <li>10 mg (two 5-mg inhalations) once daily for 7 days.<sup>1</sup></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <button class="hg-algoRfBtn" onclick="AlgoNext('proph','start')" style="left:18px ; ">&#8634;</button>
+      </div>
+
+
+
+
+      <ol class="hg-accOlRef">
+        <li>Low-dose aspirin use during pregnancy. ACOG Committee Opinion No. 743. American College of Obstetricians
+          and Gynecologists. Obstet Gynecol 2018;132:e44–52.</li>
+      </ol>
+
+
+    </main>
+
+    <div class="hg-AddContent">
+      <p class="hg-AddSmall ">AD</p>
+      <p class="hg-AddLarge  ">AD</p>
+    </div>
+
+  </div>
+
+  <script defer src="script.js"></script>
+  <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

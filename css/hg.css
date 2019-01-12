@@ -345,11 +345,12 @@ body{
       border-top: 1px solid#ccc ;
       /* border-left: 1px solid black; */
     }
-/*     
+  
     .hg-accBtn:hover{
       color:white;
       background:black;
-    } */
+    } 
+
     .hg-accBtn:active{
       /* color:red; */
       /* background: white;  */
@@ -371,23 +372,35 @@ body{
         margin-bottom: 16px;
         /* background: beige; */
     }
-
-    .hg-algoRef{
+    .hg-accRefNum{
       font-weight: normal;
       font-size: 0.7em;
     }
-;
+
+    .hg-accDivMain p{
+      margin-left: 4px;
+    }
+
+
     .hg-accUl{
-        margin-left: 22px;
-        margin-right: 0px;
+      /* background: olivedrab; */ 
         padding: 0px;
-        /* background: powderblue; */
+    }
+    .hg-accUl li{
+      margin-left: 16px; 
+      /* background: red; */
     }
     .hg-accUl li ul{
-        margin-left: 0px; 
-        padding-left: 12px; 
+      padding: 0px;
+      /* background: plum; */
+    }
+      .hg-accUl li ul li{
+        margin-left: 16px; 
         /* background: plum; */
       }
+
+     
+
 
       .hg-accOl{
         margin-left: 26px;
@@ -399,8 +412,10 @@ body{
         margin-left: 16px;
         margin-right: 0px;
         padding: 0px;
-        /* background: powderblue; */
-    }
+        background: powderblue;
+      }
+
+      
 
       /* .hg-accDivMain ol li{
           background: plum;
@@ -433,7 +448,7 @@ body{
       padding-left: 12px;
       padding-right: 12px;
       padding-bottom: 12px;
-      display: none;
+      /* display: none; */
       /* background: lightblue */
       /* background: lightcyan; */
       /* border-radius: 24px; */
@@ -450,20 +465,21 @@ body{
     padding-right: 16px;
     border: 1px solid black; 
     background: white;
-  }
-  /*Rounded border div*/
-  .hg-algoDivRdBorder{
-    margin-top: 0px;
-    margin-bottom: 16px;
-    margin-left: auto ;
-    margin-right: auto ;
-    padding-left: 16px;
-    padding-right: 16px;
-    border: 1px solid black;
-    /* background: lightcyan; */
-    background: rgb(220, 241, 220);
-    border-radius: 8px;
-  }
+}
+
+/*Rounded border div*/
+.hg-algoDivRdBorder{
+margin-top: 0px;
+margin-bottom: 16px;
+margin-left: auto ;
+margin-right: auto ;
+padding-left: 16px;
+padding-right: 16px;
+border: 1px solid black;
+background: lightcyan;
+border-radius: 8px;
+}
+
  /*No border div*/
   .hg-algoDivNoBorder{
     margin-top: 0px;
@@ -474,21 +490,34 @@ body{
     padding-right: 16px;
     text-align:center;
   }
-   /*h3*/
-   .hg-algoh3{
-    text-align:center;
-    /* margin: 6px; */
-    font-size: 1.10em;
-    color: black;
-  }
-  /*Algo status*/
-.hg-pAlgoStatus{
-  /* margin:0px 0px 12px 0px; */
-  /* background: red; */
-  color:red;
+
+.hg_algoCenterHorizDiv{
+display: flex;              /* establish flex container */
+flex-direction: column;     /* stack flex items vertically */
+/* justify-content: center;    center items vertically, in this case */
+align-items: center;        /* center items horizontally, in this case */
+/* background-color: pink; */
 }
 
-  /*Up button*/
+/*h3*/
+.hg-algoh3{
+text-align:center;
+/* margin: 6px; */
+font-size: 1.10em;
+font-weight: bold;
+}
+.hg-algoh3 sup{
+  font-weight: normal;
+}
+
+/*Algo status*/
+.hg-pAlgoStatus{
+/* margin:0px 0px 12px 0px; */
+/* background: red; */
+color:red;
+}
+
+/*Up button*/
   .hg-algoBtnUp{
     padding:8px 16px;
     width: 50px;
@@ -507,47 +536,42 @@ body{
     color: black;
     font-size: 1.2em;
   }
-  .hg-algoBtnA{
-    /* border: 1px solid #ccc; */
-    padding:8px 16px;
-    font-size: 1.2em;
-    margin-bottom: 16px;
-    display:block;
-    width:100%;
-    /* outline:none; */
-    text-align:center;
-    margin-left: auto ;
-    margin-right: auto ;
-    white-space: normal;  /*lets words wrap in accordian button*/
-    /* background: coral; */
-    /* background: #ffdb58; */
-    background: lightgoldenrodyellow;
-    /* background: lightpink; */
-    /* background: #f0f0f0; */
-    color:black;
-    border:none;
-    cursor:pointer;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  }
+.hg-algoBtnA{
+/* border: 1px solid #ccc; */
+padding:8px 16px;
+font-size: 1.1em;
+margin-bottom: 16px;
+display:block;
+width:100%;
+text-align:center;
+margin-left: auto ;
+margin-right: auto ;
+white-space: normal;  /*lets words wrap in accordian button*/
+background: lightgoldenrodyellow;
+color:black;
+border:none;
+cursor:pointer;
+box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
   
-    /*UL*/
-    .hg-algoUl{
-      margin-top: 0px;
-      margin-left: 12px;
-      margin-right: 4px;
-      padding: 0px;
-      /* background: powderblue; */
-    }
-   .hg-algoUl li ul{
-      margin-left: 0px; 
-      padding-left: 16px; 
-      /* background: plum; */
-    }
+/*UL*/
+.hg-algoUl{
+margin-top: 0px;
+margin-left: 12px;
+margin-right: 4px;
+padding: 0px;
+/* background: orange; */
+}
+.hg-algoUl li ul{
+margin-left: 0px; 
+padding-left: 16px; 
+/* background: plum; */
+}
 
     
    
   
-    /*Refresh button*/
+/*Refresh button*/
     .hg-algoRfBtn{
       /* border: 1px solid #ccc; */
       border-radius:50%;
@@ -559,10 +583,14 @@ body{
       margin-bottom: 16px;
       box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
     }
+
+
+
+
     
-  /*Glossary---------------------------------------------------------------------------------------------------------------*/
+/*Glossary---------------------------------------------------------------------------------------------------------------*/
   .hg-glossaryAZ {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .hg-glossaryAZ button {
@@ -586,8 +614,8 @@ body{
 }
 
 .hg-glossaryAZ button:hover {
-    color: white;
-    background-color: black;
+color: white;
+background-color: black;
 }
 
 .hg-glossaryAZ button:active {
