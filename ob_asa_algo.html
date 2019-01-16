@@ -35,22 +35,21 @@
             <h3 class="hg-algoh3">High Risk Factors<sup>1</sup></h3>
           </div>
           <ul class="hg-algoUl">
-            <li>Previous preeclampsia.</sup></li>
-            <li>Multifetal pregnancy.</sup></li>
-            <li>Chronic hypertension.</sup></li>
-            <li>Diabetes type 1 or 2.</sup></li>
-            <li>Renal disease.</sup></li>
+            <li>Previous preeclampsia.</li>
+            <li>Multifetal pregnancy.</li>
+            <li>Chronic hypertension.</li>
+            <li>Diabetes type 1 or 2.</li>
+            <li>Renal disease.</li>
             <li>Autoimmune disease (SLE,APS).</li>
           </ul>
         </div>
         <div class="hg-algoDivNoBorder">
           <button class=" hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('asaprophstart','asaMRfactors')">No
             risk factor present &#8594;</button>
-          <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('asaprophstart','flu2')">&ge; 1 Risk
+          <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('asaprophstart','asaAbsContra1')">&ge; 1 Risk
             factor present &#8594;</button>
         </div>
       </div>
-
 
       <div id="asaMRfactors" class="hg-algoDivMain" style="display: none;">
         <p class="hg-pAlgoStatus">Algorithm in progress</p>
@@ -68,34 +67,72 @@
             <li>Family histroy preeclampsia (mother or sister).</li>
             <li>Sociodemographic factors (Africian american race, low socioeconomic status).</li>
             <li>Autoimmune disease.</li>
-            <li>Personal history (e.g. SGA, previous adverse pregnancy outcome, &gt 10 year pregnancy interval).</li>
+            <li>Personal history (e.g. SGA, previous adverse pregnancy outcome, &gt; 10 year pregnancy interval).</li>
           </ul>
         </div>
         <div class="hg-algoDivNoBorder">
-          <button class=" hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('asaMRfactors','asaNotIndicated1')">&lt;
+          <button class=" hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('asaMRfactors','asaNotIndicated2')">&lt;
             2 risk factors present &#8594;</button>
-          <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('asaprophstart','flu2', 'asaBackStep')"></button>
+          <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('asaprophstart','flu2')">&ge; 2 risk factors present &#8594;</button>
         </div>
         <button class="hg-algoRfBtn" onclick="AlgoNext('asaMRfactors','asaprophstart')" style="left:18px ;">Restart</button>
       </div>
 
-
+      <div id="asaAbsContra1" class="hg-algoDivMain" style="display: none;">
+          <p class="hg-pAlgoStatus">Algorithm in progress</p>
+          <div class="hg_algoCenterHorizDiv">
+            <button class="hg-algoBtnUp" onclick="AlgoNext('asaAbsContra1','asaprophstart')">&#8593;</button>
+          </div>
+          <div class="hg-algoDivRdBorder" style="max-width: 500px;">
+            <div class="hg_algoCenterHorizDiv">
+              <h3 class="hg-algoh3">Aspirin absolute contraindications<sup>1</sup></h3>
+            </div>
+            <ul class="hg-algoUl">
+                <li>Salicylate hypersensitivity.</li>
+                <li>NSAID hypersensitivity.</li>
+                <li>Nasal polyps.</li>
+                <li>Aspirin induced asthmatic bronchospasm.</li>
+            </ul>
+          </div>
+          <div class="hg-algoDivNoBorder">
+            <button class=" hg-algoBtnA" style="max-width: 300px; " onclick="AlgoNext('asaAbsContra1','asaNotIndicated1')">Any present &#8594;</button>
+            <button class=" hg-algoBtnA" style="max-width: 300px;" onclick="AlgoNext('asaprophstart','flu2')">None present &#8594;</button>
+          </div>
+          <button class="hg-algoRfBtn" onclick="AlgoNext('asaAbsContra1','asaprophstart')" style="left:18px ;">Restart</button>
+        </div>
 
       <div id="asaNotIndicated1" class="hg-algoDivMain" style="display: none; ">
         <p class="hg-pAlgoStatus">Algorithm end</p>
         <div class="hg_algoCenterHorizDiv">
-          <button class="hg-algoBtnUp" onclick="AlgoNext('asaNotIndicated1','asaMRfactors')">&#8593;</button>
+          <button class="hg-algoBtnUp" onclick="AlgoNext('asaNotIndicated1','asaAbsContra1')">&#8593;</button>
         </div>
         <div class=" hg-algoDivStrBorder" style="max-width: 500px;">
           <div class="hg_algoCenterHorizDiv">
-            <p>Low dose apspirin not indciated for preeclampsia prophylaxis<sup>1</sup></p>
+            <p>Low dose apspirin not indciated for preeclampsia prophylaxis secondary to presence of absolute contraidication(s).<sup>1</sup></p>
           </div>
         </div>
         <button class="hg-algoRfBtn" onclick="AlgoNext('asaNotIndicated1','asaprophstart')" style="left:18px ;">Restart</button>
       </div>
 
+      <div id="asaNotIndicated2" class="hg-algoDivMain" style="display: none; ">
+          <p class="hg-pAlgoStatus">Algorithm end</p>
+          <div class="hg_algoCenterHorizDiv">
+            <button class="hg-algoBtnUp" onclick="AlgoNext('asaNotIndicated1','asaMRfactors')">&#8593;</button>
+          </div>
+          <div class=" hg-algoDivStrBorder" style="max-width: 500px;">
+            <div class="hg_algoCenterHorizDiv">
+              <p>Low dose apspirin not indciated for preeclampsia prophylaxis<sup>1</sup></p>
+            </div>
+          </div>
+          <button class="hg-algoRfBtn" onclick="AlgoNext('asaNotIndicated2','asaprophstart')" style="left:18px ;">Restart</button>
+        </div>
 
 
+      <!-- <li>History GI bleeding.</li>
+      <li>Active PUD.</li>
+      <li>Severe hepatic dysfunction.</li>
+      <li>&lt 18 years of age and recovering from viral illness (especially influenza & chickenpox)
+          secondary to risk Reye syndrome (<1%).</li> -->
 
       <ol class="hg-accOlRef">
         <li>Low-dose aspirin use during pregnancy. ACOG Committee Opinion No. 743. American College of Obstetricians

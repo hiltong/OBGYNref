@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Breastfeeding">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Breastfeeding</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bfcontra')" class="hg-accBtn">Breastfeeding contraindicated:<span id="bfcontra_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="bfcontra" class="hg-accDivMain">
+                    <ol class=hg-accUl>
+                        <li>Infant
+                            <ul>
+                                <li>Galactosemia (can't digest galactose in milk)<sup>1</sup> </li>
+                            </ul>
+                        </li>
+                        <li>Maternal infections
+                            <ul>
+                                <li>Human immunodeficiency virus (HIV) infection<sup>1</sup></li>
+                                <li>Human T-cell lymphotropic virus type I or type II<sup>1</sup></li>
+                                <li>Active untreated tuberculosis<sup>1</sup></li>
+                                <li>Varicella<sup>1</sup></li>
+                                <li>Active herpes simplex virus lesions on the nipple<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Maternal medications
+                            <ul>
+                                <li>Lead levels &ge; 40 mcg/dl or lead level > 20 mcg/dL and infant lead level &ge; 5
+                                    mcg/dL<sup>2</sup></li>
+                                <li>Lithium<sup>3</sup></li>
+                                <li>Methotrexate<sup>?</sup></li>
+                                <li>Radioactive iodine within 120 days<sup>?</sup></li>
+                                <li>Statins (HMG-CoA reductase inhibitors)<sup>?</sup></li>
+                            </ul>
+                        </li>
+                        <li>Maternal substance abuse
+                            <ul>
+                                <li>Alcohol use<sup>?</sup></li>
+                                <li>Street Drugs (e.g. Methamphetamines)<sup>?</sup></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('bfok')" class="hg-accBtn">Breastfeeding not contraindicated:<span id="bfok_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="bfok" class="hg-accDivMain">
+                    <ol class=hg-accUl>
+                        <li>Maternal infections
+                            <ul>
+                                <li>Hepatitis C & B<sup>?</sup></li>
+                            </ul>
+                        </li>
+                        <li>Maternal medications
+                            <ul>
+                                <li>Coumadin<sup>?</sup></li>
+                                <li>Gadolinium<sup>3</sup></li>
+                                <li>Methadone or buprenorphine<sup>1</sup></li>
+                            </ul>
+                        </li>
+
+                    </ol>
+                </div>
+            </section>
+
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('bRefs')" class="hg-accBtn">References: <span id="bfRefs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="bfRefs" class=f"hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Optimizing support for breastfeeding as part of obstetric practice. ACOG Committee Opinion
+                            No. 756. American College of Obstetricians and Gynecologists. Obstet Gynecol
+                            2018;132:e187–96.</li>
+                        <li>Lead screening during pregnancy and lactation. Committee Opinion No. 533. American College
+                            of Obstetricians and Gynecologists. Obstet Gynecol 2012;120:416–20.</li>
+                        <li>Use of psychiatric medications during pregnancy and lactation. ACOG Practice Bulletin No.
+                            92. American College of Obstetricians and Gynecologists. Obstet Gynecol 2008;111:1001–20.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

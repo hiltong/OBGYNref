@@ -325,26 +325,28 @@ body{
     margin:0px; 
     color:black;
   }
-  /*Accordian-------------------------------------------------------------------------------------------------------------*/
-    .hg-accBtn{
-      padding:8px 16px 8px 4px;
-      margin: 0px 0px 0px 0px; /*seperates accordians so can see shadow*/
-      white-space: normal;  /*lets words wrap in accordian button*/
-      text-align:left;
-      color:black;
-      background: white; 
-      /* background:#f0f0f0; */
-      display:block;
-      border:none;
-      width:100%;
-      /* font-size: 18px;   */
-      font-size: 1.2em;
-      text-decoration: none;
-      cursor:pointer;
-      font-weight: bold; 
-      border-top: 1px solid#ccc ;
-      /* border-left: 1px solid black; */
-    }
+
+/*Accordian-------------------------------------------------------------------------------------------------------------*/
+.hg-accBtn{
+padding:8px 16px 8px 4px;
+margin: 0px 0px 0px 0px; /*seperates accordians so can see shadow*/
+white-space: normal;  /*lets words wrap in accordian button*/
+text-align:left;
+color:black;
+background: white; 
+/* background:#f0f0f0; */
+display:block;
+border:none;
+width:100%;
+font-size: 1.2em;
+font-weight: bold; 
+text-decoration: none;
+cursor:pointer;
+border-top: 1px solid#ccc ;
+}
+.hg-accBtn sup{
+font-weight: normal;
+}
   
     .hg-accBtn:hover{
       color:white;
@@ -640,6 +642,7 @@ background-color: black;
     margin-left: 10px;
     margin-right: 0px;
     font-weight: normal;
+    text-decoration-line: none;
 }
 
 .hg-glossaryBody a:hover {
