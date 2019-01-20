@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="BMI">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Body Mass Index (BMI)</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bmiclass')" class="hg-accBtn">BMI calculation:<sup>1</sup><span id="bmiclass_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="bmiclass" class="hg-accDivMain">
+                    <p>Weight in kilograms divided by height in meters squared (kg/m2).</p>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bmicalc')" class="hg-accBtn">BMI categories:<sup>1</sup><span id="bmicalc_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="bmicalc" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Underweight
+                            <ul>
+                                <li>BMI &lt; 18.5</li>
+                            </ul>
+                        </li>
+                        <li>Normal weight
+                            <ul>
+                                <li>BMI 18.5 - 24.9</li>
+                            </ul>
+                        </li>
+                        <li>Overweight
+                            <ul>
+                                <li>BMI 25.0 - 29.9</li>
+                            </ul>
+                        </li>
+                        <li>Obsesity class I
+                            <ul>
+                                <li>BMI 30.0 - 34.9</li>
+                            </ul>
+                        </li>
+                        <li>Obsesity class II
+                            <ul>
+                                <li>BMI 35.0 - 39.9</li>
+                            </ul>
+                        </li>
+                        <li>Obsesity class III
+                            <ul>
+                                <li>BMI &ge; 40</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('obbmiRefs')" class="hg-accBtn">References: <span id="obbmiRefs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="obbmiRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Obesity in pregnancy. Practice Bulletin No. 156. American College of Obstetricians and Gynecologists. Obstet Gynecol 2015;126:e112–26.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

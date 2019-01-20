@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Placenta accreta">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Placenta accreta</h1>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('placcretacsnum')" class="hg-accBtn">Risk with c-section number:<sup>1</sup><span id="placcretacsnum_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="placcretacsnum" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>1st/primary c-section (about same as planned vaginal delivery)
+                            <ul>
+                                <li>0.2% accreta</li>
+                                <li>0.7% hysterectomy</li>
+                            </ul>
+                        </li>
+                        <li>2nd c-section
+                            <ul>
+                                <li>0.3% accreta</li>
+                                <li>0.4% hysterectomy</li>
+                            </ul>
+                        </li>
+                        <li>3rd c-section
+                            <ul>
+                                <li>0.6% accreta</li>
+                                <li>0.9% hysterectomy</li>
+                            </ul>
+                        </li>
+                        <li>4th c-section
+                            <ul>
+                                <li>2.1% accreta</li>
+                                <li>2.4% hysterectomy</li>
+                            </ul>
+                        </li>
+                        <li>5th c-section
+                            <ul>
+                                <li>2.3% accreta</li>
+                                <li>3.5% hysterectomy</li>
+                            </ul>
+                        </li>
+                        <li>&ge; 6 c-section
+                            <ul>
+                                <li>6.7% accreta</li>
+                                <li>9% hysterectomy</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('placcretacsnumprevia')" class="hg-accBtn">Risk with number of prior c-sections and placenta previa present:<sup>1</sup><span id="placcretacsnumprevia_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="placcretacsnumprevia" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>1 prior c-section & placenta previa present
+                            <ul>
+                                <li>11% accreta</li>
+                            </ul>
+                        </li>
+                        <li>2 prior c-sections & placenta previa present
+                            <ul>
+                                <li>40% accreta</li>
+                            </ul>
+                        </li>
+                        <li>3 prior c-sections & placenta previa present
+                            <ul>
+                                <li>61% accreta</li>
+                            </ul>
+                        </li>
+                        <li>&ge; 4 prior c-sections & placenta previa present
+                            <ul>
+                                <li>67% accreta</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('placcRefs')" class="hg-accBtn">References: <span id="placcRefs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="placcRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Cesarean delivery on maternal request. ACOG Committee Opinion No. 761. American College of Obstetricians and Gynecologists. Obstet Gynecol 2019;133:e73–7.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
