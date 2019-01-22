@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Hypertension Postpartum">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Hypertension Postpartum</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('obhtnpprisks')" class="hg-accBtn">Postpartum risks:<sup>1</sup><span id="obhtnpprisks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="obhtnpprisks" class="hg-accDivMain">
+                   <ul class=hg-accUl>
+                       <li>&gt; 50% postpartum strokes within 10 days of discharge</li>
+                       <li>&gt; 50% maternal deaths after delivery</li>
+                   </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('obhtnfu')" class="hg-accBtn">Postpartum BP evaluation:<sup>1</sup><span id="obhtnfu_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="obhtnfu" class="hg-accDivMain">
+                   <ul class=hg-accUl>
+                       <li>Within 7-10 days</li>
+                       <li>Within 3-5 days if severe hypertension</li>
+                   </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('obhtnppRefs')" class="hg-accBtn">References: <span id="obhtnppRefs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="obhtnppRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Optimizing postpartum care. ACOG Committee Opinion No. 736. American College of Obstetricians and Gynecologists. Obstet Gynecol 2018;131:e140–50.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

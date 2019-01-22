@@ -1,4 +1,4 @@
-var CURRENT_CACHE = '2019-01-20-1730';
+var CURRENT_CACHE = '2019-01-21-1948';
 
 // INSTALL
 self.addEventListener('install', (event) => {
@@ -16,9 +16,9 @@ self.addEventListener('install', (event) => {
         'css/w3.css',
         'css/hg.css',
         'index.html',
-        'index_glossaries',
         'ob_index.html',
         'ob_glossary',
+        'gyn_glossary'
         // etc
       ]).then(() => { return self.skipWaiting() }
       );

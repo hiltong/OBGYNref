@@ -343,22 +343,28 @@ font-weight: bold;
 text-decoration: none;
 cursor:pointer;
 border-top: 1px solid#ccc ;
+
 }
 .hg-accBtn sup{
 font-weight: normal;
 }
   
-    .hg-accBtn:hover{
-      color:white;
-      background:black;
-    } 
+    /* .hg-accBtn:hover{ */
+      /* color:white; */
+      /* background:black; */
+      /* border: 1px solid #2492ff ; */
+      /* margin:-1px; */
+      /* margin-left: -1px; */
+      /* margin-bottom: -1px; */
+      /* margin-top: -1px; */
+    /* }  */
 
-    .hg-accBtn:active{
+    /* .hg-accBtn:active{ */
       /* color:red; */
       /* background: white;  */
-      color:white;
-      background:black;
-    }
+      /* color:white; */
+      /* background:black; */
+    /* } */
     /* .hg-accBtn:focus{
       color:black;
       background: white; 
