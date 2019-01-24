@@ -160,7 +160,7 @@ function CreateSideBar() {
   // sideBar.appendChild(glossaryHeader);
 
   var obGlossary = document.createElement("a");
-  var obGlossaryText = document.createTextNode("Glossary");
+  var obGlossaryText = document.createTextNode("Index");
   obGlossary.appendChild(obGlossaryText);
   obGlossary.setAttribute("class", "hg-SideBarItem2")
   obGlossary.setAttribute("href", "ob_glossary.html")
@@ -174,7 +174,7 @@ function CreateSideBar() {
   sideBar.appendChild(gynGlossary);
 
   var gynGlossary = document.createElement("a");
-  var gynGlossaryText = document.createTextNode("Glossary");
+  var gynGlossaryText = document.createTextNode("Index");
   gynGlossary.appendChild(gynGlossaryText);
   gynGlossary.setAttribute("class", "hg-SideBarItem2")
   gynGlossary.setAttribute("href", "gyn_glossary.html")
