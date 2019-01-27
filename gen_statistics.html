@@ -10,6 +10,25 @@
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+
+    table {
+        margin-top: 16px;
+        /* background: green; */
+        text-align: center;
+    }
+</style>
 
 <body onload="SetUpPage()">
 
@@ -26,23 +45,66 @@
     <div class="hg-Content">
 
         <main class="hg-InfoContent">
-            <h1 class="hg-h1PageTitle">Statistics</h1>
+            <h1 class="hg-h1PageTitle">Statistics: Screening Tests</h1>
 
             <section class="accordian">
-                <button onclick="AccToggle('falsepos')" class="hg-accBtn">False positive:<span id="falsepos_c" class="hg-NavLinkChevron"></span></button>
-                <div id="falsepos" class="hg-accDivMain">
+                <button onclick="AccToggle('tablebtest')" class="hg-accBtn">Table overview:<span id="tablebtest_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="tablebtest" class="hg-accDivMain">
+                    <table>
+                        <colgroup>
+                            <col style="width: 25%">
+                            <col style="width: 25%">
+                            <col style="width: 25%">
+                            <col style="width: 25%">
+                        </colgroup>
+                        <tr>
+                            <th></th>
+                            <th>Disease</th>
+                            <th>No Disease</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>Test +</th>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <th>Test -</th>
+                            <td>1</td>
+                            <td>980</td>
+                            <td>981</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>10</td>
+                            <td>990</td>
+                            <td>1000</td>
+                        </tr>
+                    </table>
                     <ul class=hg-accUl>
-                        <li>Test result that wrongly indicates the presence of a disease the test is designed to
-                            reveal. <sup>1</sup></li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="accordian">
-                <button onclick="AccToggle('falseneg')" class="hg-accBtn">False negative:<span id="falseneg_c" class="hg-NavLinkChevron"></span></button>
-                <div id="falseneg" class="hg-accDivMain">
-                    <ul class=hg-accUl>
-                        <li>People who have a disease but are not identified through the test.<sup>1</sup></li>
+                        <li>Row 1: Positives
+                            <ul>
+                                <li>True postive: 9</li>
+                                <li>False postive: 10</li>
+                                <li>All positives (Subjects tested postive): 19</li>
+                            </ul>
+                        </li>
+                        <li>Row 2: Negatives
+                            <ul>
+                                <li>False negative: 1</li>
+                                <li>True negative: 980</li>
+                                <li>All negatives (Subjects tested negative): 981</li>
+                            </ul>
+                        </li>
+                        <li>Row 3:
+                            <ul>
+                                <li>Total subjects with disease: 10</li>
+                                <li>Total subjects no disease: 990</li>
+                                <li>Total subjects tested: 1000</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -51,52 +113,67 @@
                 <button onclick="AccToggle('sensi')" class="hg-accBtn">Sensitivity:<span id="sensi_c" class="hg-NavLinkChevron"></span></button>
                 <div id="sensi" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>The proportion of people with a disease (<em>true positive</em>) who are correctly
-                            diagnosed.<sup>1</sup></li>
+                        <li>The probability that a positive test correctly indicates disease.<sup>1</sup></li>
                         <li>The number of <em>true positive</em> results divided by the total with the disease (<em>true
-                                positive</em> plus <em>false negative</em> results).<sup>1</sup> </li>
+                                positive</em> + <em>false negative</em>).<sup>1</sup> </li>
+                        <li><em>true positive</em> / <em>true positive</em> + <em>false negative</em></li>
+                        <li>( 9/ (9 + 1)) x 100% = 90%</li>
+                        <li>There is a 90% probablity the screening test will correctly identify subjects with disease.</li>
                         <li>The higher the sensitivity of a test the lower the rate of <em>false negative</em> results.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
 
             <section class="accordian">
-                    <button onclick="AccToggle('ppv')" class="hg-accBtn">Positive predictive value:<span id="ppv_c"
-                            class="hg-NavLinkChevron"></span></button>
-                    <div id="ppv" class="hg-accDivMain">
-                        <ul class=hg-accUl>
-                            <li>The probability that a patient with a positive test result really does have the condition for which the test was conducted.<sup>1</sup></li>
-                            <li>The number of <em>true positive</em> results divided by all that test positive (<em>true positive</em> plus <em>false positive</em> results).<sup>1</sup></li>
-                            <li>A low positive predictive value indicates that many of the positive results are false positives and it would be necessary to follow up any positive result with a more reliable test</li>
-                        </ul>
-                    </div>
-                </section>
-
-            <section class="accordian">
                 <button onclick="AccToggle('spiciy')" class="hg-accBtn">Specificity:<span id="spiciy_c" class="hg-NavLinkChevron"></span></button>
                 <div id="spiciy" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>The probability that a person not having a disease (<em>true negative</em>) will be
-                            correctly identified by a clinical test .<sup>1</sup></li>
-                        <li>The number of <em>true negative</em> results divided by the total number of all those
-                            without the disease (<em>true negative</em> plus <em>false positive</em> results).<sup>1</sup></li>
+                        <li>The probability that a negative test correctly indicates not having disease.<sup>1</sup></li>
+                        <li>The number of <em>true negative</em> results divided by the total number                          without the disease (<em>false positive</em> + <em>true negative</em>).<sup>1</sup></li>
+
+                        <li><em>true negative</em> / <em>false positive</em> + <em>true negative</em></li>
+                        <li>( 980/ (10 + 980)) x 100% = 98.9%</li>
+                        <li>There is a 98.9% probablity the screening test will correctly identify subjects with out disease.</li>
+
+
                         <li>The higher the specificity of the test the lower the rate of <em>false positive</em>
                             results.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
 
+
+
             <section class="accordian">
-                    <button onclick="AccToggle('npv')" class="hg-accBtn">Negative predictive value:<span id="npv_c"
-                            class="hg-NavLinkChevron"></span></button>
-                    <div id="npv" class="hg-accDivMain">
-                        <ul class=hg-accUl>
-                            <li>The probability that a patient with a negative test result really is free of the condition for which the test was conducted.<sup>1</sup></li>
-                            <li>The number of <em>true negative</em> results divided by all that test negative (<em>true negative</em> plus <em>false negative</em> results).<sup>1</sup></li>
-                            <li>A high negative predictive value gives high confidence that a negative result is correct.</li>
-                        </ul>
-                    </div>
-                </section>
+                <button onclick="AccToggle('ppv')" class="hg-accBtn">Positive predictive value:<span id="ppv_c" class="hg-NavLinkChevron"></span></button>
+                <div id="ppv" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>The probability that a patient with a positive test result really does have the condition
+                            for which the test was conducted.<sup>1</sup></li>
+                        <li>The number of <em>true positive</em> results divided by all that test positive (<em>true
+                                positive</em> plus <em>false positive</em> results).<sup>1</sup></li>
+                        <li>A low positive predictive value indicates that many of the positive results are false
+                            positives and it would be necessary to follow up any positive result with a more reliable
+                            test</li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('npv')" class="hg-accBtn">Negative predictive value:<span id="npv_c" class="hg-NavLinkChevron"></span></button>
+                <div id="npv" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>The probability that a patient with a negative test result really is free of the condition
+                            for which the test was conducted.<sup>1</sup></li>
+                        <li>The number of <em>true negative</em> results divided by all that test negative (<em>true
+                                negative</em> plus <em>false negative</em> results).<sup>1</sup></li>
+                        <li>A high negative predictive value gives high confidence that a negative result is correct.</li>
+                    </ul>
+                </div>
+            </section>
+
 
 
             <section class="accordian">
@@ -104,7 +181,9 @@
                         class="hg-NavLinkChevron"></span></button>
                 <div id="statisticsRefs" class="hg-accDivMain">
                     <ol class="hg-accOlRef">
-                        <li>The Free Dictionary, https://medical-dictionary.thefreedictionary.com/sensitivity</li>
+                        <li>Screening for Disease; Boston University School of Public Health; Wayne W. LaMorte, MD,
+                            PhD, MPH; http://sphweb.bumc.bu.edu/otlt/MPH-Modules/EP/EP713_Screening/
+                        </li>
                     </ol>
                 </div>
             </section>
