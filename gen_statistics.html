@@ -48,9 +48,8 @@
             <h1 class="hg-h1PageTitle">Statistics: Screening Tests</h1>
 
             <section class="accordian">
-                <button onclick="AccToggle('tablebtest')" class="hg-accBtn">Table overview:<span id="tablebtest_c"
-                        class="hg-NavLinkChevron"></span></button>
-                <div id="tablebtest" class="hg-accDivMain">
+                <button onclick="AccToggle('tablebtest1')" class="hg-accBtn">Table 1:<span id="tablebtest1_c" class="hg-NavLinkChevron"></span></button>
+                <div id="tablebtest1" class="hg-accDivMain">
                     <table>
                         <colgroup>
                             <col style="width: 25%">
@@ -83,6 +82,14 @@
                             <td>1000</td>
                         </tr>
                     </table>
+
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('tablebtestOv')" class="hg-accBtn">Table 1 overview:<span id="tablebtestOv_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="tablebtestOv" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li>Row 1: Positives
                             <ul>
@@ -113,7 +120,8 @@
                 <button onclick="AccToggle('sensi')" class="hg-accBtn">Sensitivity:<span id="sensi_c" class="hg-NavLinkChevron"></span></button>
                 <div id="sensi" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>The probability that a positive test correctly indicates disease.<sup>1</sup></li>
+                        <li>The probability that a positive test correctly identifies subjects with disease as having
+                            disease (i.e. left column).<sup>1</sup></li>
                         <li>The number of <em>true positive</em> results divided by the total with the disease (<em>true
                                 positive</em> + <em>false negative</em>).<sup>1</sup> </li>
                         <li><em>true positive</em> / <em>true positive</em> + <em>false negative</em></li>
@@ -128,30 +136,43 @@
                 <button onclick="AccToggle('spiciy')" class="hg-accBtn">Specificity:<span id="spiciy_c" class="hg-NavLinkChevron"></span></button>
                 <div id="spiciy" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>The probability that a negative test correctly indicates not having disease.<sup>1</sup></li>
-                        <li>The number of <em>true negative</em> results divided by the total number                          without the disease (<em>false positive</em> + <em>true negative</em>).<sup>1</sup></li>
-
+                        <li>The probability that a negative test correctly identifies subjects without disease as not
+                            having disease (i.e. right column).<sup>1</sup></li>
+                        <li>The number of <em>true negative</em> results divided by the total number without the
+                            disease (<em>false positive</em> + <em>true negative</em>).<sup>1</sup></li>
                         <li><em>true negative</em> / <em>false positive</em> + <em>true negative</em></li>
                         <li>( 980/ (10 + 980)) x 100% = 98.9%</li>
-                        <li>There is a 98.9% probablity the screening test will correctly identify subjects with out disease.</li>
-
-
+                        <li>There is a 98.9% probablity the screening test will correctly identify subjects with out
+                            disease.</li>
                         <li>The higher the specificity of the test the lower the rate of <em>false positive</em>
                             results.<sup>1</sup></li>
+                        <li>If lower the test cutoff for abnormal the sensitivity will be better but the specificity
+                            will be worse. If raise the cutoff for abormal the sensitivity will be worse but hte
+                            specificity will be better.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
 
-
+            <section class="accordian">
+                <button onclick="AccToggle('prevdz')" class="hg-accBtn">Prevalence of disease:<span id="prevdz_c" class="hg-NavLinkChevron"></span></button>
+                <div id="prevdz" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>The proportion of the subjects affected by the disease at a given time.<sup>2</sup></li>
+                        <li>10 / 1000 = 0.01 or 1% or 100/10,000 or 1,000/100,000.<sup>2</sup></li>
+                        <li>(Incidence is the number of new cases that develop in subjects over a given time period.)<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
 
             <section class="accordian">
                 <button onclick="AccToggle('ppv')" class="hg-accBtn">Positive predictive value:<span id="ppv_c" class="hg-NavLinkChevron"></span></button>
                 <div id="ppv" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>The probability that a patient with a positive test result really does have the condition
-                            for which the test was conducted.<sup>1</sup></li>
+                        <li>The probability that a subject with a positive test really does have the disease (i.e. 1st
+                            row). <sup>1</sup></li>
                         <li>The number of <em>true positive</em> results divided by all that test positive (<em>true
                                 positive</em> plus <em>false positive</em> results).<sup>1</sup></li>
+                        <li>9/19 x 100 = 47%, i.e. a subject with a positive screening test has a 47% probablilty of having the disease.<sup>1</sup></li>
                         <li>A low positive predictive value indicates that many of the positive results are false
                             positives and it would be necessary to follow up any positive result with a more reliable
                             test</li>
@@ -165,10 +186,11 @@
                 <button onclick="AccToggle('npv')" class="hg-accBtn">Negative predictive value:<span id="npv_c" class="hg-NavLinkChevron"></span></button>
                 <div id="npv" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>The probability that a patient with a negative test result really is free of the condition
-                            for which the test was conducted.<sup>1</sup></li>
+                        <li>The probability that a subject with a negative test result really is free of disease (i.e.
+                            2nd row).<sup>1</sup></li>
                         <li>The number of <em>true negative</em> results divided by all that test negative (<em>true
                                 negative</em> plus <em>false negative</em> results).<sup>1</sup></li>
+                        <li>980/981 x 100 = 99.8% i.e. a subject with a negative screening test has a 99.8% probablilty of not having the disease).<sup>1</sup></li>
                         <li>A high negative predictive value gives high confidence that a negative result is correct.</li>
                     </ul>
                 </div>
@@ -184,6 +206,7 @@
                         <li>Screening for Disease; Boston University School of Public Health; Wayne W. LaMorte, MD,
                             PhD, MPH; http://sphweb.bumc.bu.edu/otlt/MPH-Modules/EP/EP713_Screening/
                         </li>
+                        <li>From Wikipedia, the free encyclopedia</li>
                     </ol>
                 </div>
             </section>
