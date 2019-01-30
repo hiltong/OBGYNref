@@ -254,5 +254,5 @@ function AlgoBack(idhide, algobackstep) {
 
 /*Glossary-----------------------------------------------------------------------------------------------*/
 function ScrollToSection(section) {
-  document.getElementById(section).scrollIntoView({ block: "start", behavior: "smooth" });
+  document.getElementById(section).scrollIntoView({ block: "start", behavior:"auto" });
 }

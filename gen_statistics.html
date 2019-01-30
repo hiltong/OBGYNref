@@ -11,19 +11,14 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
 <style>
-    table,
-    th,
-    td {
+    table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
     }
-
-    th,
-    td {
+th, td {
         padding: 6px;
     }
-
-    table {
+table {
         margin-top: 16px;
         /* background: green; */
         text-align: center;
@@ -128,6 +123,7 @@
                         <li>( 9/ (9 + 1)) x 100% = 90%</li>
                         <li>There is a 90% probablity the screening test will correctly identify subjects with disease.</li>
                         <li>The higher the sensitivity of a test the lower the rate of <em>false negative</em> results.<sup>1</sup></li>
+                        <li>Sensitivity and specificity are characteristics of the test and are only influenced by the test characteristics and the cut offs that used.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
@@ -147,8 +143,8 @@
                         <li>The higher the specificity of the test the lower the rate of <em>false positive</em>
                             results.<sup>1</sup></li>
                         <li>If lower the test cutoff for abnormal the sensitivity will be better but the specificity
-                            will be worse. If raise the cutoff for abormal the sensitivity will be worse but hte
-                            specificity will be better.<sup>1</sup></li>
+                            will be worse. If raise the cutoff for abormal the sensitivity will be worse but the specificity will be better.<sup>1</sup></li>
+                            <li>Sensitivity and specificity are characteristics of the test and are only influenced by the test characteristics and the cut offs that used.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
@@ -168,29 +164,79 @@
                 <button onclick="AccToggle('ppv')" class="hg-accBtn">Positive predictive value:<span id="ppv_c" class="hg-NavLinkChevron"></span></button>
                 <div id="ppv" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>The probability that a subject with a positive test really does have the disease (i.e. 1st
-                            row). <sup>1</sup></li>
-                        <li>The number of <em>true positive</em> results divided by all that test positive (<em>true
-                                positive</em> plus <em>false positive</em> results).<sup>1</sup></li>
-                        <li>9/19 x 100 = 47%, i.e. a subject with a positive screening test has a 47% probablilty of having the disease.<sup>1</sup></li>
-                        <li>A low positive predictive value indicates that many of the positive results are false
-                            positives and it would be necessary to follow up any positive result with a more reliable
-                            test</li>
+                        <li>The probability that a subject with a positive test really does have the disease (i.e. 1st row). <sup>1</sup></li>
+                        <li>The number of <em>true positive</em> results divided by all that test positive (<em>true positive</em> + <em>false positive</em> results).<sup>1</sup></li>
+                        <li>9/9+10 x 100 = 47%, i.e. a subject with a positive screening test has a 47% probablilty of having the disease.<sup>1</sup></li>
+                        <li>A low <em>positive predictive value</em> for a screening test indicates that many of the positive results are <em>false positives</em> and it would be necessary to follow up any positive result with a more reliable test<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
 
+            <section class="accordian">
+                    <button onclick="AccToggle('yield')" class="hg-accBtn">Yield (positive predictive value):<span id="yield_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="yield" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li>The number of cases of disease detected by a screening test.<sup>1</sup></li>
+                            <li>The yield (<em>positive predictive value</em>) of a given screening tests is affected by the prevalence of the disease as well as the specificity of the test.<sup>1</sup></li>
+                            <li>The higher the prevalence of disease in the subjects being screened with a given test the higher the yield (<em>positive predictive value</em>) so to increase the yield of a screening program one way is to target groups with higher prevalnce of disease.<sup>1</sup></li>
+                        <p> Table 2</p>
+                        <table>
+                                <colgroup>
+                                    <col style="width: 25%">
+                                    <col style="width: 25%">
+                                    <col style="width: 25%">
+                                    <col style="width: 25%">
+                                </colgroup>
+                                <tr>
+                                    <th></th>
+                                    <th>Disease</th>
+                                    <th>No Disease</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <th>Test +</th>
+                                    <td>90</td>
+                                    <td>10</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <th>Test -</th>
+                                    <td>10</td>
+                                    <td>890</td>
+                                    <td>900</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>100</td>
+                                    <td>900</td>
+                                    <td>1000</td>
+                                </tr>
+                            </table>
+                            <li>The number of <em>true positive</em> results divided by all that test positive (<em>true positive</em> + <em>false positive</em>).<sup>1</sup></li>
+                            <li>90 / 100 x 100 = 90%</li>
+                        </ul>
+                    </div>
+                </section>
 
+                <section class="accordian">
+                        <button onclick="AccToggle('yield2')" class="hg-accBtn">2 ways to increase yield of screening for a disease:<span id="yield2_c" class="hg-NavLinkChevron"></span></button>
+                        <div id="yield2" class="hg-accDivMain">
+                            <ul class=hg-accUl>
+                                <li>Use a more specific test to decrease <em>false positive</em> results (NIPT vs MSS).</li>
+                                <li>Screen a population with a higher prevalence of disease (maternal age).</li>
+                            </ul>
+                        </div>
+                    </section>
+         
+    
 
             <section class="accordian">
                 <button onclick="AccToggle('npv')" class="hg-accBtn">Negative predictive value:<span id="npv_c" class="hg-NavLinkChevron"></span></button>
                 <div id="npv" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>The probability that a subject with a negative test result really is free of disease (i.e.
-                            2nd row).<sup>1</sup></li>
-                        <li>The number of <em>true negative</em> results divided by all that test negative (<em>true
-                                negative</em> plus <em>false negative</em> results).<sup>1</sup></li>
-                        <li>980/981 x 100 = 99.8% i.e. a subject with a negative screening test has a 99.8% probablilty of not having the disease).<sup>1</sup></li>
+                        <li>The probability that a subject with a negative test result really is free of disease (i.e. 2nd row).<sup>1</sup></li>
+                        <li>The number of <em>true negative</em> results divided by all that test negative (<em>false negative</em> + <em>true negative</em> results).<sup>1</sup></li>
+                        <li>980/1+ 980 x 100 = 99.8%, i.e. a subject with a negative screening test has a 99.8% probablilty of not having the disease.<sup>1</sup></li>
                         <li>A high negative predictive value gives high confidence that a negative result is correct.</li>
                     </ul>
                 </div>
@@ -210,7 +256,6 @@
                     </ol>
                 </div>
             </section>
-
 
         </main>
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Surgical Wound Classification">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Surgical Wound Classification</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('xxx')" class="hg-accBtn">Classes:<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
+                <div id="xxx" class="hg-accDivMain">
+                    <ol class=hg-accUl>
+                        <li>Class I/Clean
+                            <ul>
+                                <li>An uninfected operative wound in which no inflammation is encountered and the respiratory, alimentary, genital, or uninfected urinary tract is not entered. In addition, clean wounds are primarily closed and, if necessary, drained with closed drainage. Operative incisional wounds that follow nonpenetrating (blunt) trauma should be included in this category if they meet the criteria.<sup>1</sup></li>
+                                <li> Laparotomies or laparoscopies are classified as clean techniques as long as the vagina is not entered and when infections occur these procedures are usually caused by infectious skin bacteria.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Class II/Clean-Contaminated
+                            <ul>
+                                <li>An operative wound in which the respiratory, alimentary, genital, or urinary tracts are entered under controlled conditions and without unusual contamination. Specifically, operations involving the biliary tract, appendix, vagina, and oropharynx are included in this category,provided no evidence of infection or major break in technique is encountered.<sup>1</sup></li>
+                                <li>When the vagina is entered during surgery, the surgical site is exposed to a polymicrobial flora of aerobes and anaerobes, and the procedure is classified as clean-contaminated.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li> Class III/Contaminated
+                            <ul>
+                                <li>Open, fresh, accidental wounds. In addition, operations with major breaks in sterile technique (e.g., open cardiac massage) or gross spillage from the gastrointestinal tract, and incisions in which acute, nonpurulent inflammation is encountered are included in this category.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Class IV/Dirty-Infected
+                            <ul>
+                                <li> Old traumatic wounds with retained devitalized tissue and those that involve existing clinical infection or perforated viscera. This definition suggests that the organisms causing postoperative infection were present in the operative field before the operation.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('surwoundclassRefs')" class="hg-accBtn">References: <span id="surwoundclassRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="surwoundclassRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Antibacterial Sutures for Wound Closure After Surgery: A Review of Clinical and Cost-Effectiveness and Guidelines for Use [Internet]. https://www.ncbi.nlm.nih.gov/books/NBK263230/table/T5/</li>
+                        <li>Prevention of infection after gynecologic procedures. ACOG Practice Bulletin No. 195. American College of Obstetricians and Gynecologists. Obstet Gynecol 2018;131:e172–89.</li>
+                    </ol>
+                    
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
