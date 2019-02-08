@@ -134,7 +134,8 @@
                                 positive</em> + <em>false negative</em>).<sup>1</sup> </li>
                         <li><em>true positive</em> / <em>true positive</em> + <em>false negative</em></li>
                         <li>( 90/ (90 + 10)) x 100% = 90%</li>
-                        <li>There is a 90% probablity the screening test will correctly identify subjects with disease as positive.</li>
+                        <li>There is a 90% probablity the screening test will correctly identify subjects with disease
+                            as positive.</li>
                         <li>The higher the sensitivity of a test the lower the rate of <em>false negative</em> results.<sup>1</sup></li>
                         <li>Sensitivity and specificity are characteristics of the test and are only influenced by the
                             test characteristics and the cut offs that used.<sup>1</sup></li>
@@ -152,7 +153,8 @@
                             disease (<em>false positive</em> + <em>true negative</em>).<sup>1</sup></li>
                         <li><em>true negative</em> / <em>false positive</em> + <em>true negative</em></li>
                         <li>( 980/ (10 + 980)) x 100% = 98.9%</li>
-                        <li>There is a 98.9% probablity the screening test will correctly identify subjects with out disease as negative.</li>
+                        <li>There is a 98.9% probablity the screening test will correctly identify subjects with out
+                            disease as negative.</li>
                         <li>The higher the specificity of the test the lower the rate of <em>false positive</em>
                             results.<sup>1</sup></li>
                         <li>If lower the test cutoff for abnormal the sensitivity will be better but the specificity
@@ -179,9 +181,12 @@
                 <button onclick="AccToggle('ppv')" class="hg-accBtn">Positive predictive value:<span id="ppv_c" class="hg-NavLinkChevron"></span></button>
                 <div id="ppv" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>The probability that a subject with a positive test really does have the disease (i.e. 1st row). <sup>1</sup></li>
-                        <li>The number of <em>true positive</em> results divided by all that test positive (<em>true positive</em> + <em>false positive</em>).<sup>1</sup></li>
-                        <li>90 / 99+10 x 100 = 90%, i.e. a subject with a positive screening test has a 90% probablilty of having the disease.<sup>1</sup></li>
+                        <li>The probability that a subject with a positive test really does have the disease (i.e. 1st
+                            row). <sup>1</sup></li>
+                        <li>The number of <em>true positive</em> results divided by all that test positive (<em>true
+                                positive</em> + <em>false positive</em>).<sup>1</sup></li>
+                        <li>90 / 99+10 x 100 = 90%, i.e. a subject with a positive screening test has a 90% probablilty
+                            of having the disease.<sup>1</sup></li>
                         <li><em>Positive predictive value</em> is influenced by:
                             <ol>
                                 <li>The <em>sensitivty</em> and the <em>specificity</em> of the screening test.<sup>1</sup></li>
@@ -192,9 +197,10 @@
                             <ol>
                                 <li>Use a test with better <em>sensitivty</em> and/or <em>specificity</em>.<sup>1</sup>
                                 </li>
-                                <li>Screen a population with a higher <em>prevlance</em> of the disease .<sup>1</sup>
+                                <li>Screen a population with a increase <em>prevlance</em> of the disease .<sup>1</sup>
                                     <table>
-                                        <caption>Table 1 Population with increase prevalence but test same sensitivity and specificity</caption>
+                                        <caption>Table 2 population has increase prevalence but test has same
+                                            sensitivity and specificity as Table 1</caption>
                                         <colgroup>
                                             <col style="width: 25%">
                                             <col style="width: 25%">
@@ -230,10 +236,11 @@
                                         <li>Prevalence: 20%</li>
                                         <li>Sensivity: 90% </li>
                                         <li>Specificity: 98%</li>
-                                        <li> 180 / 189 x 100 = 95%, i.e. a subject with a positive screening test now has a 95% probablilty of having the disease.</li>
+                                        <li> 180 / 189 x 100 = 95%, i.e. a subject with a positive screening test now
+                                            has a 95% probablilty of having the disease.</li>
                                         <li>Negative predictive value: 97.5% </li>
                                     </ul>
-                                   
+
                                 </li>
                             </ol>
                         </li>
@@ -244,7 +251,6 @@
                 </div>
             </section>
 
-        
             <section class="accordian">
                 <button onclick="AccToggle('npv')" class="hg-accBtn">Negative predictive value:<span id="npv_c" class="hg-NavLinkChevron"></span></button>
                 <div id="npv" class="hg-accDivMain">
@@ -253,11 +259,40 @@
                             2nd row).<sup>1</sup></li>
                         <li>The number of <em>true negative</em> results divided by all that test negative (<em>false
                                 negative</em> + <em>true negative</em>).<sup>1</sup></li>
-                        <li>890/10 + 890 x 100 = 98.9%, i.e. a subject with a negative screening test has a 98.9% probablilty of not having the disease.<sup>1</sup></li>
+                        <li>890/10 + 890 x 100 = 98.9%, i.e. a subject with a negative screening test has a 98.9%
+                            probablilty of not having the disease.<sup>1</sup></li>
                         <li>A high negative predictive value gives high confidence that a negative result is correct.</li>
                     </ul>
                 </div>
             </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('lhr1')" class="hg-accBtn">Likelihood Ratio:<span id="lhr1_c" class="hg-NavLinkChevron"></span></button>
+                <div id="lhr1" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Indicates how likely a patient has a disease. Ratios range from zero to infinity. The higher the ratio the more likely the disease. The lower the ratio means the less likley the disease.<sup>3</sup></li>
+                        <li>This ratio indicates how many times more likely a positive result is to happen in a patient with the condition than it would in a patient without the condition.<sup>3</sup></li>
+                        <li><em>True positive</em>/<em>False positive</em></li>
+                        <ul>
+                            <li>0 to 1: Decrease likelihood of disease. The closer to zero the higher decrease in likelihood of disease.<sup>3</sup> </li>
+                            <li>1: No diagnostic value.<sup>3</sup></li>
+                            <li>Above 1: Increase likelihood of disease. The farther away from 1 the higher the likelihood of disease. Ratios over 10 very high likelihood of disease.<sup>3</sup> </li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                    <button onclick="AccToggle('sumsensi')" class="hg-accBtn">Summary:<span id="sumsensi_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="sumsensi" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li>The <em>sensivity</em> of a test tells me if I have a disease what percentage of the time a test will be positive. If I don't know my disease status the <em>positive predictive value</em> of a test tells me how likley I am to have the disease if the test is positive.<sup>1</sup></li>
+                            <li>The <em>specificity</em> of a test tells me if I don't have a disease what percentage of the time a test will be negative. If I don't know my disease status the <em>negative predictive value</em> of a test tells me how likley I am to not have the disease if the test is negative.<sup>1</sup></li>
+                        </ul>
+                    </div>
+                </section>
 
 
 
@@ -270,6 +305,7 @@
                             PhD, MPH; http://sphweb.bumc.bu.edu/otlt/MPH-Modules/EP/EP713_Screening/
                         </li>
                         <li>From Wikipedia, the free encyclopedia</li>
+                        <li> Statistics How To, https://www.statisticshowto.datasciencecentral.com/likelihood-ratio/</li> 
                     </ol>
                 </div>
             </section>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Preterm Labor">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Preterm Labor</h1>
+
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('ptlindocin')" class="hg-accBtn">Indomethacin<span id="ptlindocin_c" class="hg-NavLinkChevron"></span></button>
+                <div id="ptlindocin" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Indications
+                            <ul>
+                                <li>Preterm labor &lt; 32 weeks.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Contraindications
+                            <ul>
+                                <li>Platlet dysfunction or bleeding disorder.<sup>2</sup></li>
+                                <li>Asthma with aspirin hypersensitivty.<sup>2</sup></li>
+                                <li>GI ulcerative disease.<sup>2</sup></li>
+                                <li>Hepatic dysfunction.<sup>2</sup></li>
+                                <li>Renal dysfunction.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Risks (especially &gt; 48 hours use)
+                                <ul>
+                                    <li>Constriction of ductus arteriosus.<sup>2</sup></li>
+                                    <li>Oligohydraminos.<sup>2</sup></li>
+                                    <li>Necrotizing enterocolitis in preterm neonates.<sup>2</sup></li>
+                                    <li>Possibly patent  ductus arteriosus in neonates.<sup>2</sup></li>
+                                </ul>
+                            </li>
+                        <li>Dose
+                            <ul>
+                                <li>Loading dose 50 mg orally.<sup>1</sup></li>
+                                <li>25 mg orally every 6 hours for 7 doses (48 hours total).<sup>1</sup></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ptl1Refs')" class="hg-accBtn">References:<span id="ptl1Refs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="ptl1Refs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Haas DM, Benjamin T, Sawyer R, Quinney SK. Short-term tocolytics for preterm delivery -
+                            current perspectives. Int J Womens Health. 2014;6:343-9. Published 2014 Mar 27.
+                            doi:10.2147/IJWH.S44048</li>
+                        <li>Management of preterm labor. Practice Bulletin No. 171. American College of Obstetricians
+                            and Gynecologists. Obstet Gynecol 2016;128:e155–64.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

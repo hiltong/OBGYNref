@@ -406,7 +406,10 @@ font-weight: normal;
         margin-left: 16px; 
         /* background: plum; */
       }
-
+      .hg-accUl a{
+        /* background: pink;  */
+        text-decoration: none;
+      }
      
 
 

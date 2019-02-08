@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Fetal Pyelectasis">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Fetal Pyelectasis</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('frpusc')" class="hg-accBtn">Ultrasound criteria for pyelectasis:<span id="frpusc_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="frpusc" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Measure anterior posterior (AP) renal pelvic diameter in a transverse scan of the fetal
+                            kidney.<sup>1</sup></li>
+                        <li>Normal
+                            <ul>
+                                <li>
+                                    < 4 mm at any GA.<sup>1</sup>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Abnormal (criteria vary in literature)
+                            <ul>
+                                <li>&ge; 4 mm in 2nd trimester.<sup>1,2,3</sup></li>
+                                <li>&ge; 7 mm in 3rd trimester.<sup>1,2</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ifrpusc')" class="hg-accBtn">Importance of pyelectasis:<span id="ifrpusc_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ifrpusc" class="hg-accDivMain">
+                    <ol class=hg-accUl>
+                        <li>Soft marker Trisomy 21.<sup>1</sup>
+                            <ul>
+                                <li>1.5-1.6 likelihood ratio for Trisomy 21 <sup>3</sup></li>
+                                <li>Offer screening for aneuploidy.<sup>3</sup> </li>
+                            </ul>
+                        </li>
+                        <li>Possible indicator of renal obstruction.<sup>1</sup>
+                            <ul>
+                                <li>Repeat ultrasound 3rd trimester.<sup>3</sup></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('saifrpusc')" class="hg-accBtn">See also:<span id="saifrpusc_c" class="hg-NavLinkChevron"></span></button>
+                <div id="saifrpusc" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_usaneuploidymarkers.html">Ultrasound, Aneuploidy Markers</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('fetalpyelectasisRefs')" class="hg-accBtn">References: <span id="fetalpyelectasisRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="fetalpyelectasisRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>obimages.net, https://www.obimages.net/cme25/</li>
+                        <li>Multidisciplinary consensus on the classification of prenatal and postnatal urinary tract
+                            dilation (UTD classification system) Nguyen, Hiep T. et al. Journal of Pediatric Urology ,
+                            Volume 10 , Issue 6 , 982 - 998 </li>
+                        <li>Screening for fetal aneuploidy. Practice Bulletin No. 163. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2016;127:e123–37.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
