@@ -166,26 +166,26 @@ function CreateSideBar() {
   obGlossary.setAttribute("href", "ob_glossary.html")
   sideBar.appendChild(obGlossary);
 
-  var gynGlossary = document.createElement("a");
-  var gynGlossaryText = document.createTextNode("Gynecology");
-  gynGlossary.appendChild(gynGlossaryText);
-  gynGlossary.setAttribute("class", "hg-SideBarItem")
-  gynGlossary.setAttribute("href", "gyn_index.html")
-  sideBar.appendChild(gynGlossary);
+  // var gynGlossary = document.createElement("a");
+  // var gynGlossaryText = document.createTextNode("Gynecology");
+  // gynGlossary.appendChild(gynGlossaryText);
+  // gynGlossary.setAttribute("class", "hg-SideBarItem")
+  // gynGlossary.setAttribute("href", "gyn_index.html")
+  // sideBar.appendChild(gynGlossary);
 
   var gynGlossary = document.createElement("a");
-  var gynGlossaryText = document.createTextNode("Index");
+  var gynGlossaryText = document.createTextNode("Gynecology Index");
   gynGlossary.appendChild(gynGlossaryText);
-  gynGlossary.setAttribute("class", "hg-SideBarItem2")
+  gynGlossary.setAttribute("class", "hg-SideBarItem")
   gynGlossary.setAttribute("href", "gyn_glossary.html")
   sideBar.appendChild(gynGlossary);
 
-  var obGlossary = document.createElement("a");
-  var obGlossaryText = document.createTextNode("Site Map");
-  obGlossary.appendChild(obGlossaryText);
-  obGlossary.setAttribute("class", "hg-SideBarItem")
-  obGlossary.setAttribute("href", "sitemap.html")
-  sideBar.appendChild(obGlossary);
+  // var obGlossary = document.createElement("a");
+  // var obGlossaryText = document.createTextNode("Site Map");
+  // obGlossary.appendChild(obGlossaryText);
+  // obGlossary.setAttribute("class", "hg-SideBarItem")
+  // obGlossary.setAttribute("href", "sitemap.html")
+  // sideBar.appendChild(obGlossary);
 
   var about = document.createElement("a");
   var aboutText = document.createTextNode("About");
