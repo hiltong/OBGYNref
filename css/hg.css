@@ -411,7 +411,7 @@ font-weight: normal;
         text-decoration: none;
       }
      
-
+   
 
       .hg-accOl{
         margin-left: 26px;
@@ -446,7 +446,10 @@ font-weight: normal;
         margin-right: 0px;
         padding: 0px;
         font-size: 0.90em;
-        /* background: powderblue; */
+        /* background: powderblue;       */
+      }
+      .hg-accOlRef a {
+        text-decoration: none;
       }
   
 
