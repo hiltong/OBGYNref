@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Orilissa">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Orilissa (elagolix)</h1>
+
+            <!--Mechanism-->
+            <section class="accordian">
+                <button onclick="AccToggle('orilissamoa')" class="hg-accBtn">Mechanism of action<span id="orilissamoa_c" class="hg-NavLinkChevron"></span></button>
+                <div id="orilissamoa" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Oral GnRH receptor antagonist. <sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--Indications-->
+            <section class="accordian">
+                <button onclick="AccToggle('indiorilissa')" class="hg-accBtn">Indications<span id="indiorilissa_c" class="hg-NavLinkChevron"></span></button>
+                <div id="indiorilissa" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Moderate to severe endometriosis pain. <sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--Dosage-->
+            <section class="accordian">
+                <button onclick="AccToggle('doseorilissa')" class="hg-accBtn">Dosage<span id="doseorilissa_c" class="hg-NavLinkChevron"></span></button>
+                <div id="doseorilissa" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Dysmenorrhea and non-menstrual pelvic pain:<sup>1</sup>
+                            <ul>
+                                <li>Orilissa 150 mg QD.</li>
+                                <li>Max duration 24 months.</li>
+                            </ul>
+                        </li>
+                        <li>Dysmenorrhea, non-menstrual pelvic pain + dyspareunia:<sup>1</sup>
+                            <ul>
+                                <li>Orilissa 200 mg BID.</li>
+                                <li>Max duration 6 months.</li>
+                            </ul>
+                        </li>
+                        <li>Moderate hepatic impairment (Child-Pugh Clas B):<sup>1</sup>
+                            <ul>
+                                <li>Orilissa 150 mg QD.</li>
+                                <li>Max duration 6 months.</li>
+                                <li>Mild hepatic impairment (Child-Pugh Clas A) does not need dose adjustment.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--Contraidications-->
+            <section class="accordian">
+                <button onclick="AccToggle('contraorilissa')" class="hg-accBtn">Contraidications<span id="contraorilissa_c" class="hg-NavLinkChevron"></span></button>
+                <div id="contraorilissa" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Pregnancy.<sup>1</sup></li>
+                        <li>Known osteoporosis.<sup>1</sup></li>
+                        <li>Severe hepatic impairment because of the risk of bone loss.<sup>1</sup></li>
+                        <li>Concomitant use of strong organic anion transporting polypeptide (OATP) 1B1 inhibitors (e.g., cyclosporine and gemfibrozil).<sup>1</sup></li>     
+                                
+                    </ul>
+                </div>
+            </section>
+
+            <!--XXX-->
+            <section class="accordian">
+                    <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="xxx" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li></li>
+                        </ul>
+                    </div>
+                </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('orilissaRefs')" class="hg-accBtn">References:<span id="orilissaRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="orilissaRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li><a href="https://www.orilissa.com/">Orilissa</a></li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
