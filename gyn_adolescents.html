@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Pocket</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Adolescents">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Adolescents</h1>
+    
+            <section class="accordian">
+                <button onclick="AccToggle('stagesadolescent')" class="hg-accBtn">Adolescent stages<span id="stagesadolescent_c" class="hg-NavLinkChevron"></span></button>
+                <div id="stagesadolescent" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Young-aged adolescents: 12–14 year olds 
+                            <ul>
+                                <li>Concrete thinkers, poor or inconsistent abstract reasoning or problem-solving skills.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Middle-aged adolescents:15–17 year-olds 
+                            <ul>
+                                <li>Often assume they are invulnerable.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Late-aged adolescents: 18-21 year-olds
+                            <ul>
+                                <li>Acquired problem-solving abilities and have relatively consistent abstract reasoning.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('adolescenttopics')" class="hg-accBtn">Adolescent topics<span id="adolescenttopics_c" class="hg-NavLinkChevron"></span></button>
+                <div id="adolescenttopics" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="gyn_menstruation_adolescents.html">Menstruation: Girls & Adolescents</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('adolescentRefs')" class="hg-accBtn">References:<span id="adolescentRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="adolescentRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Promoting healthy relationships in adolescents. ACOG Committee Opinion No. 758. American College of Obstetricians and Gynecologists. Obstet Gynecol 2018;132:e213–20.</li>
+                    </ol>
+                </div>
+            </section>
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
