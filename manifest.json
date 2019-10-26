@@ -1,11 +1,11 @@
 {
-  "name": "Ob/Gyn Pocket",
-  "short_name": "OGP",
+  "name": "OB/GYN Nuggets",
+  "short_name": "OGN",
   "start_url": "index.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#000000",
-  "description": "Information for Ob/Gyn Pocket",
+  "description": "Information",
   "icons": [{
     "src": "images/app-icon48.png",
     "sizes": "48x48",
