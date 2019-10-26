@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Adolescents PCOS">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Adolescents PCOS</h1>
+
+            <section class="accordian">
+                    <button onclick="AccToggle('adolincpcos')" class="hg-accBtn">Incidence PCOS<span id="adolincpcos_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="adolincpcos" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li>6-15% reproductive age women<sup>1</sup></li>
+                            <li>Most common cause hyperandrogenism in aldolescents.<sup>1</sup></li>
+                        </ul>
+                    </div>
+                </section>
+    
+            <section class="accordian">
+                <button onclick="AccToggle('adolcautpcos')" class="hg-accBtn">Diagnosis cautions<span id="adolcautpcos_c" class="hg-NavLinkChevron"></span></button>
+                <div id="adolcautpcos" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Overlap of PCOS symptoms and normal puberty (acne, irregular menses, ovarian ultrasound morphology).<sup>1</sup></li>
+                        <li>Ultrasound PCOS ovarian morphology in 30-40% adolescents and not indication of having or developing PCOS.<sup>1</sup></li>
+                        <li>Evaluate longitudinally but don't assign diagnosis in first 2 years of menarche.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('adolescentpcosRefs')" class="hg-accBtn">References:<span id="adolescentpcosRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="adolescentpcosRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Screening and management of the hyperandrogenic adolescent. ACOG Committee Opinion No. 789. American College of Obstetricians and Gynecologists. Obstet Gynecol 2019;134:e106-14.</li>
+                    </ol>
+                </div>
+            </section>
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
