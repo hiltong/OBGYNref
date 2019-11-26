@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Quantitative Blood Loss in Obstetrics">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Quantitative Blood Loss in Obstetrics</h1>
+
+    
+            <section class="accordian">
+                <button onclick="AccToggle('quanbloodlossSum')" class="hg-accBtn">Summary<span id="quanbloodlossSum_c" class="hg-NavLinkChevron"></span></button>
+                <div id="quanbloodlossSum" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Inaccurate estimation of blood loss is a leading cause of delayed response to postpartum hemorrhage.<sup>1</sup></li>
+                        <li>Quantification of blood loss shown more accurate than visual estimation.<sup>1</sup></li>
+                        <li>Benefit of quantification of blood loss by itself on clinical outcomes has not been demonstated.<sup>1</sup></li>
+                        <li>Quantification of blood loss is a component of obstetric hemorrhage bundles which have shown clinical beneift.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('quanbloodlossmethod')" class="hg-accBtn">General method<span id="quanbloodlossmethod_c" class="hg-NavLinkChevron"></span></button>
+                <div id="quanbloodlossmethod" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Fluid volume = fluid collected before delivery of placenta (mostly amniotic fluid) is subtracted from total fluid collected after birth excluding irrigation (mostly blood after delvery).<sup>1</sup></li>
+                        <li>Blood soaked materials = weight of blood soaked materials minus dry weight (1 gram = 1 ml).<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('quanbloodlossRefs')" class="hg-accBtn">References:<span id="quanbloodlossRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="quanbloodlossRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Quantitative blood loss in obstetric hemorrhage. ACOG Committee Opinion No. 794. American College of Obstetricians and Gynecologists. Obstet Gynecol 2019;134:e150-6. </li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
