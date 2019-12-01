@@ -29,10 +29,75 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Hereditary Breast and Ovarian Cancer Syndrome</h1>
 
+            <section class="accordian">
+                    <button onclick="AccToggle('etioHBOCS')" class="hg-accBtn">Etiology:<span id="etioHBOCS_c"
+                            class="hg-NavLinkChevron"></span></button>
+                    <div id="etioHBOCS" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li>Germline pathogenic variants in autosomal dominant DNA repair genes with incomplete penetrance.<sup>1</sup></li>
+                            <li>BRCA1 and BRCA2 pathogenic variants most common.<sup>1</sup></li>
+                            <li>Other genes (eg. ATM, BRIP1, CDH1, CHEK2, NBN, NF1, PALB2, RAD51C, RAD51D) are a significant of cause heriditary breast and ovarian cancer syndromes.<sup>1</sup>
+                            <ul>
+                                <li>Some (CDH1, CHEK2) increase breast cancer risk and not ovarian cancer risk.<sup>1</sup></li>
+                                <li>Some (BRIP1, RAD51C, RAD51D) increase ovarian cnacer risk and not breast cancer risk.<sup>1</sup></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>  
+                
+                <section class="accordian">
+                        <button onclick="AccToggle('riskshbocsif')" class="hg-accBtn">Cancer risks:<span id="riskshbocsif_c"
+                                class="hg-NavLinkChevron"></span></button>
+                        <div id="riskshbocsif" class="hg-accDivMain">
+                            <ul class=hg-accUl>
+                                <li>Breast cancer
+                                    <ul>
+                                        <li>Women 65-74% lifetime risk.<sup>1</sup></li>
+                                        <li>Men at risks with BRCA2 pathogenic variants.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Ovarian cancer.
+                                    <ul>
+                                        <li>39-46% lifetime risk BRCA1 pathogenic variants.<sup>1</sup></li>
+                                        <li>12-20% lifetime risk BRCA2 pathogenic variants.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Pancreatic cancer.<sup>1</sup>
+                                    <ul>
+                                        <li>BRCA2 pathogenic variants.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Prostate cancer.<sup>1</sup>
+                                    <ul>
+                                        <li>BRCA2 pathogenic variants.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Melanoma cancer.<sup>1</sup>
+                                    <ul>
+                                        <li>BRCA2 pathogenic variants.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+            <!--   <section class="accordian">
+                    <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="xxx" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li><sup>xxx</sup>
+                                <ul>
+                                    <li><sup>xxx</sup></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section> -->
 
             <section class="accordian">
-                <button onclick="AccToggle('riskfachbocs')" class="hg-accBtn">Risk factors:<span id="riskfachbocs_c"
-                        class="hg-NavLinkChevron"></span></button>
+                <button onclick="AccToggle('riskfachbocs')" class="hg-accBtn">Indications for testing:<span
+                        id="riskfachbocs_c" class="hg-NavLinkChevron"></span></button>
                 <div id="riskfachbocs" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li>Personal history:
@@ -58,19 +123,7 @@
                 </div>
             </section>
 
-            <!-- <section class="accordian">
-                    <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
-                    <div id="xxx" class="hg-accDivMain">
-                        <ul class=hg-accUl>
-                            <li><sup>xxx</sup>
-                                <ul>
-                                    <li><sup>xxx</sup></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </section> -->
-
+           
             <!-- <section class="accordian">
                     <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
                     <div id="xxx" class="hg-accDivMain">
@@ -90,21 +143,24 @@
                 <div id="bocsRelLinks" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li> <a href="gyn_hereditary_cancer_syndromes.html">Hereditary Cancer Syndromes Related to Gyn
-                                Cancers</a></li>
+                                Cancers</a>
+                        </li>
+                        <li><a href="gyn_ovarian_cancer.html">Ovarian Cancer</a></li>
                     </ul>
                 </div>
             </section>
 
             <section class="accordian">
-                    <button onclick="AccToggle('hbocszRefs')" class="hg-accBtn">References:<span id="hbocszRefs_c"
-                            class="hg-NavLinkChevron"></span></button>
-                    <div id="hbocszRefs" class="hg-accDivMain">
-                        <ol class="hg-accOlRef">
-                            <li>Hereditary cancer syndromes and risk assessment. ACOG Committee Opinion No. 793. American
-                                College of Obstetricians and Gynecologists. Obstet Gynecol 2019;134:e143-9.</li>
-                        </ol>
-                    </div>
-                </section>
+                <button onclick="AccToggle('hbocszRefs')" class="hg-accBtn">References:<span id="hbocszRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="hbocszRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Hereditary cancer syndromes and risk assessment. ACOG Committee Opinion No. 793. American
+                            College of Obstetricians and Gynecologists. Obstet Gynecol 2019;134:e143-9.</li>
+                            <li>Hereditary breast and ovarian cancer syndrome. Practice Bulletin No. 182. American College of Obstetricians and Gynecologists. Obstet Gynecol 2017:130:e110–26.</li>
+                    </ol>
+                </div>
+            </section>
 
 
         </main>

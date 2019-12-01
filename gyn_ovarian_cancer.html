@@ -29,15 +29,36 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Ovarian Cancer</h1>
 
-    
             <section class="accordian">
-                <button onclick="AccToggle('chancehbocsif')" class="hg-accBtn">Chance of heriditary breast and ovarian cancer syndrome:<span id="chancehbocsif_c" class="hg-NavLinkChevron"></span></button>
+                    <button onclick="AccToggle('etioOVCA')" class="hg-accBtn">Etiology:<span id="etioOVCA_c"
+                            class="hg-NavLinkChevron"></span></button>
+                    <div id="etioOVCA" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li>Most sporadic in US.<sup>1</sup></li>
+                            <li>5-15% in US have BRCA1 and BRCA2 pathogenic variants.<sup>1</sup></li>
+                        </ul>
+                    </div>
+                </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('chancehbocsif')" class="hg-accBtn">Chance of heriditary breast and ovarian cancer
+                    syndrome:<span id="chancehbocsif_c" class="hg-NavLinkChevron"></span></button>
                 <div id="chancehbocsif" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                            <li>10-15% epithelial ovarian cancer, fallopian tube cancer, peritoneal cancer especially serous histology<sup>1</sup></li>
+                        <li>10-15% if serous histology.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
+
+            <section class="accordian">
+                    <button onclick="AccToggle('chanceovcaBRCA')" class="hg-accBtn">Chance of BRCA1 or BRCA2 pathogenic variant:<span id="chanceovcaBRCA_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="chanceovcaBRCA" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li>5-15% in US (ie. BRCA mutations most common cause of heriditary breast and ovarain cancer syndrome in US).<sup>1</sup></li>
+                        </ul>
+                    </div>
+                </section>
 
             <!-- <section class="accordian">
                     <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
@@ -52,7 +73,7 @@
                     </div>
                 </section> -->
 
-             <!-- <section class="accordian">
+            <!-- <section class="accordian">
                     <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
                     <div id="xxx" class="hg-accDivMain">
                         <ul class=hg-accUl>
@@ -63,14 +84,17 @@
                             </li>
                         </ul>
                     </div>
-                </section> -->   
+                </section> -->
 
             <section class="accordian">
-                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics<span id="xxxRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
                 <div id="xxxRelLinks" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                            <li><a href="gyn_hereditary_cancer_syndromes.html">Hereditary Cancer Syndromes Related to Gyn Cancers</a></li>
-                            <li><a href="gyn_hereditary_breast_ovarian_cancer_syndrome.html">Hereditary Breast and Ovarian Cancer Syndrome</a></li>
+                        <li><a href="gyn_hereditary_cancer_syndromes.html">Hereditary Cancer Syndromes Related to Gyn
+                                Cancers</a></li>
+                        <li><a href="gyn_hereditary_breast_ovarian_cancer_syndrome.html">Hereditary Breast and Ovarian
+                                Cancer Syndrome</a></li>
                     </ul>
                 </div>
             </section>
@@ -80,8 +104,8 @@
                         class="hg-NavLinkChevron"></span></button>
                 <div id="ovcanRefs" class="hg-accDivMain">
                     <ol class="hg-accOlRef">
-                            <li>Hereditary cancer syndromes and risk assessment. ACOG Committee Opinion No. 793. American
-                                    College of Obstetricians and Gynecologists. Obstet Gynecol 2019;134:e143-9.</li>
+                        <li>Hereditary cancer syndromes and risk assessment. ACOG Committee Opinion No. 793. American
+                            College of Obstetricians and Gynecologists. Obstet Gynecol 2019;134:e143-9.</li>
                     </ol>
                 </div>
             </section>
