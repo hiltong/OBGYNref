@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Obstetrical Hypertension Emergent Therapy">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Obstetrical Hypertension Emergent Therapy</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('defsevhtnemer')" class="hg-accBtn">Definition severe hypertension:<span
+                        id="defsevhtnemer_c" class="hg-NavLinkChevron"></span></button>
+                <div id="defsevhtnemer" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Systolic BP &ge; 160 or diastolic BP &ge; 110 persisting for 15 minutes.<sup>1</sup></li>
+                        <li>Severe systolic hypertension appears to be biggest risk for stroke.<sup>1</sup></li>
+                        <li>Treatment should occur within 30-60 minutes of diagnosis.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bpgoalrxhtnemer')" class="hg-accBtn">BP goal with treatment:<span
+                        id="bpgoalrxhtnemer_c" class="hg-NavLinkChevron"></span></button>
+                <div id="bpgoalrxhtnemer" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>140-150/90-100 mm Hg<sup>1</sup>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('emerghtnlabproto')" class="hg-accBtn">Labetalol order set:<span
+                        id="emerghtnlabproto_c" class="hg-NavLinkChevron"></span></button>
+                <div id="emerghtnlabproto" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>If severe hypertension:<sup>1</sup>
+                            <ul>
+                                <li>Labetalol 20 mg IV over 2 minutes.<sup>1</sup></li>
+                                <li>Repeat BP in 10 minutes.<sup>1</sup></li>
+                            </ul>
+                        <li>If still severe hypertension (if below thresholds monitor as below):<sup>1</sup>
+                            <ul>
+                                <li>Labetalol 40 mg IV over 2 minutes.<sup>1</sup></li>
+                                <li>Repeat BP in 10 minutes.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>If still severe hypertension (if below thresholds monitor as below):<sup>1</sup>
+                            <ul>
+                                <li>Labetalol 80 mg IV over 2 minutes.<sup>1</sup></li>
+                                <li>Repeat BP in 10 minutes.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>If still severe hypertension (if below thresholds monitor as below):<sup>1</sup>
+                            <ul>
+                                <li>Hydralazine 10 mg IV over 2 minutes.<sup>1</sup></li>
+                                <li>Repeat BP in 20 minutes.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>If still severe hypertension (if below thresholds monitor as below):<sup>1</sup>
+                            <ul>
+                                <li>Emergency consultation.<sup>1</sup></li>
+                                <li>Additional medications as ordered.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                    <ul class=hg-accUl>
+                        <li>No longer severe hypertension:<sup>1</sup>
+                            <ul>
+                                <li>BP every 10 minutes x 1 hour.<sup>1</sup></li>
+                                <li>BP every 15 minutes x 1 hour.<sup>1</sup></li>
+                                <li>BP every 30 minutes x 1 hour.<sup>1</sup></li>
+                                <li>BP every hour x 4 hours.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <P><strong>Note: </strong>Avoid: Maternal asthma, heart disease, congestive heart
+                        failure.<sup>1</sup></P>
+                    <P><strong>Note: </strong>Risk: Neonatal bradycardia.<sup>1</sup></P>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('emerghtnhydraproto')" class="hg-accBtn">Hydralazine order set:<span
+                        id="emerghtnhydraproto_c" class="hg-NavLinkChevron"></span></button>
+                <div id="emerghtnhydraproto" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>If severe hypertension:<sup>1</sup>
+                            <ul>
+                                <li>Hydralazine 5 mg or 10 mg IV over 2 minutes.<sup>1</sup></li>
+                                <li>Repeat BP in 20 minutes.<sup>1</sup></li>
+                            </ul>
+                        <li>If still severe hypertension (if below thresholds monitor as below):<sup>1</sup>
+                            <ul>
+                                <li>Hydralazine 10 mg IV over 2 minutes.<sup>1</sup></li>
+                                <li>Repeat BP in 20 minutes.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>If still severe hypertension (if below thresholds monitor as below):<sup>1</sup>
+                            <ul>
+                                <li>Labetalol 20 mg IV over 2 minutes.<sup>1</sup></li>
+                                <li>Repeat BP in 10 minutes.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>If still severe hypertension (if below thresholds monitor as below):<sup>1</sup>
+                            <ul>
+                                <li>Labetalol 40 mg IV over 2 minutes.<sup>1</sup></li>
+                                <li>Emergency consultation.<sup>1</sup></li>
+                                <li>Additional medications as ordered.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class=hg-accUl>
+                        <li>No longer severe hypertension:<sup>1</sup>
+                            <ul>
+                                <li>BP every 10 minutes x 1 hour.<sup>1</sup></li>
+                                <li>BP every 15 minutes x 1 hour.<sup>1</sup></li>
+                                <li>BP every 30 minutes x 1 hour.<sup>1</sup></li>
+                                <li>BP every hour x 4 hours.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <P><strong>Note: </strong>Risk: Maternal hypotension (systoilc BP &le; 90 mm Hg).<sup>1</sup></P>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('emerghtnnifaaproto')" class="hg-accBtn">Immediate-release oral nifedipine
+                    order set:<span id="emerghtnnifaaproto_c" class="hg-NavLinkChevron"></span></button>
+                <div id="emerghtnnifaaproto" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>If severe hypertension:<sup>1</sup>
+                            <ul>
+                                <li>Immediate-release oral nifedipine capsules 10 mg orally.<sup>1</sup></li>
+                                <li>Repeat BP in 20 minutes.<sup>1</sup></li>
+                            </ul>
+                        <li>If still severe hypertension (if below thresholds monitor as below):<sup>1</sup>
+                            <ul>
+                                <li>Immediate-release oral nifedipine capsules 20 mg orally.<sup>1</sup></li>
+                                <li>Repeat BP in 20 minutes.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>If still severe hypertension (if below thresholds monitor as below):<sup>1</sup>
+                            <ul>
+                                <li>Immediate-release oral nifedipine capsules 20 mg orally.<sup>1</sup></li>
+                                <li>Repeat BP in 20 minutes.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>If still severe hypertension (if below thresholds monitor as below):<sup>1</sup>
+                            <ul>
+                                <li>Labetalol 20 mg IV over 2 minutes.<sup>1</sup></li>
+                                <li>Emergency consultation.<sup>1</sup></li>
+                                <li>Additional medications as ordered.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class=hg-accUl>
+                        <li>No longer severe hypertension:<sup>1</sup>
+                            <ul>
+                                <li>BP every 10 minutes x 1 hour.<sup>1</sup></li>
+                                <li>BP every 15 minutes x 1 hour.<sup>1</sup></li>
+                                <li>BP every 30 minutes x 1 hour.<sup>1</sup></li>
+                                <li>BP every hour x 4 hours.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <P><strong>Note: </strong>Risks: Increase maternal heart rate (but less overshoot
+                        hypotension).<sup>1</sup></P>
+                    <P><strong>Note: </strong>Immediate-release oral nifedipine (Procardia), not extended-release oral
+                        nifedipine (Procardia XL).</P>
+                    <P><strong>Note: </strong>Oral only, not sublingual or punctured.<sup>1</sup></P>
+                    <P><strong>Note: </strong>Monitor maternal vital signs when used with magnesium sulfate as both are
+                        calcium anagonists.<sup>1</sup></P>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('pooptemrhtn')" class="hg-accBtn">Oral options:<span id="pooptemrhtn_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="pooptemrhtn" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Immediate-release oral nifedipine (first-line if no IV access).<sup>1</sup></li>
+                        <li>Labetalol 200 mg orally, may repeat in 30 minutes (if no IV access and immediate-release
+                            oral nifedipine not availbale).<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('altemrghtn')" class="hg-accBtn">2nd-line alternatives:<span
+                        id="altemrghtn_c" class="hg-NavLinkChevron"></span></button>
+                <div id="altemrghtn" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Nicardipine IV continous infusion.<sup>1</sup>
+                            <ul>
+                                <li>Calcium-channel blocker similar to nifedipine but more selective for cerebral and
+                                    coronary vessels.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Esmolol IV continous infusion.<sup>1</sup>
+                            <ul>
+                                <li>Very short-acting beta1-selective beta-blocker.<sup>3</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('emergHTNRefs')" class="hg-accBtn">References:<span id="emergHTNRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="emergHTNRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Emergent therapy for acute-onset, severe hypertension during pregnancy and the postpartum
+                            period. ACOG Committee Opinion No. 767. American College of Obstetricians and Gynecologists.
+                            Obstet Gynecol 2019;133:e174–80.</li>
+                        <li>PDR.net. nicardipine hydrochloride - Drug Summary,
+                            https://www.pdr.net/drug-summary/Cardene-I-V--Premixed-Injection-20-mg-nicardipine-hydrochloride-2169.8386.
+                            Accessed 7 Dec. 2019.</li>
+                        <li>PDR.net. esmolol hydrochloride - Drug Summary,
+                            https://www.pdr.net/drug-summary/Brevibloc-esmolol-hydrochloride-1159. Accessed 7 Dec. 2019.
+                        </li>
+                    </ol>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

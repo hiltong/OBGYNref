@@ -1,0 +1,9 @@
+{
+	"noTe": {
+		"prefix": "noTe",
+		"body": [
+		  "<P><strong>Note: </strong>${1:xxx}<sup>${2:x}</sup></P>"
+		],
+		"description": "noTe"
+	  }
+}
