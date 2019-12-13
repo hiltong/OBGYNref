@@ -1,0 +1,9 @@
+{
+	"acCordianNote": {
+		"prefix": ["acCordianNote", "noTeAccordian"],
+		"body": [
+		  "         <P class=\"accNote\"><strong>Note: </strong>xxx<sup>xxx</sup></P>"
+		],
+		"description": "acCordianNote"
+	  }
+}

@@ -453,6 +453,11 @@ font-weight: normal;
       .hg-accOlRef a {
         text-decoration: none;
       }
+      .hg-accNote{
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
   
 
     /*Algorithm------------------------------------------------------------------------------------------------------*/

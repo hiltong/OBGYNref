@@ -1,0 +1,11 @@
+{
+	"acCordianRefAuthor": {
+		"prefix": "reFerenceAuthor, acCordianRefAuthor",
+		"body": [
+		  " <ol class=\"hg-accOlRef\" style=\"list-style: lower-alpha;\">",
+		  "                        <li>Author</li>",
+		  "                    </ol>"
+		],
+		"description": "acCordianRefAuthor"
+	  }
+}
