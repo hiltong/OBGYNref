@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Shoulder Dystocia">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Shoulder Dystocia</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('biwtassshou')" class="hg-accBtn">Birth weight association:<span id="biwtassshou_c" class="hg-NavLinkChevron"></span></button>
+                <div id="biwtassshou" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>0.2-3% all vaginal deliveries.<sup>2</sup></li>
+                        <li>9-14% > 4,500 g birth weight.<sup>2</sup></li>
+                        <li>20-50% > 4,500 g birth weight and diabetes.<sup>2</sup></li>
+                    </ul>
+                    <P class="accNote"><strong>Note: </strong>Most shoulder dystocias occur in normal weight newborns and most macrosomic newborns don't have shoulder dystocia.<sup>2</sup></P>
+                </div>
+            </section>
+
+    
+            <section class="accordian">
+                <button onclick="AccToggle('erbpalsyman')" class="hg-accBtn">Erb palsy<span id="erbpalsyman_c" class="hg-NavLinkChevron"></span></button>
+                <div id="erbpalsyman" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                                <li>Upper cervical  C5 and C6  nerve roots.<sup>1</sup></li>
+                                <li>More frequent.<sup>1</sup></li>
+                                <li>"Waiter's tip" with adducted internally rotated shoulder and elbow extension and forearm pronantion.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+             <section class="accordian">
+                            <button onclick="AccToggle('klumpalman')" class="hg-accBtn">Klumpke palsy<span id="klumpalman_c" class="hg-NavLinkChevron"></span></button>
+                            <div id="klumpalman" class="hg-accDivMain">
+                                <ul class=hg-accUl>
+                                    <li>Lower cervical and upper thoracic nerve roots C8 and T1.<sup>1</sup></li>
+                                    <li>Weakness of hand and medial forearm muscles.<sup>1</sup></li>
+                                </ul>
+                            </div>
+                        </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('shodystRelLinks')" class="hg-accBtn">Related topics<span id="shodystRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="shodystRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_macrosomia.html">Macrosomia</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('shodystRefs')" class="hg-accBtn">References:<span id="shodystRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="shodystRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                         <li>American College of Obstetricians and Gynecologists’ Task Force on Neonatal Brachial Plexus Palsy. 2014</li>   
+                        <li>Macrosomia. ACOG Practice Bulletin No. 216. American College of Obstetricians and Gynecologists. Obstet Gynecol 2020;135:e18-35.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>              

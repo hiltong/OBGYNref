@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Macrosomia">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<style>
+    table,
+    th,
+    td {
+        /*  border: 1px solid black; */
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+
+    table {
+        margin-top: 16px;
+        margin-bottom: 12px;
+        /* background: green; */
+        text-align: left;
+    }
+</style>
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Macrosomia</h1>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('macroterms')" class="hg-accBtn">Excessive fetal growth terms:<span id="macroterms_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="macroterms" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Large for gestational age<sup>1</sup>
+                            <ul>
+                                <li>Birth weight &ge; 90th percentile for the gestational age.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Macrosomia<sup>1</sup>
+                            <ul>
+                                <li>Birth weight &ge; 4,000 g or 4,500 g regardless of gestational age.<sup>1</sup></li>
+                                <li>4,000 g ~ 40 week gestational age 90th percentile.<sup>1</sup></li>
+                                <li>"Suspected macrosomia" better term by prenatal prediction. Accurate diagnosis made
+                                    by weighing after birth.<sup>1</sup></li>
+                                <li>Some divide into 3 categories with increasing risk:
+                                    <ul>
+                                        <li>Category 1: 4,000-4,499 g<sup>1</sup></li>
+                                        <li>Category 2: 4,500-4,999 g<sup>1</sup></li>
+                                        <li>Category 3: &ge;5,000 g (associated with increased infant mortality)<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('macrogmpd')" class="hg-accBtn">Macrosomia grams to pounds:<span id="macrogmpd_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="macrogmpd" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>~ 453.6 g in 1 pound</li>
+                        <li>4,000 g ~ 8# 13oz</li>
+                        <li>4,500 g ~ 9# 15oz</li>
+                        <li>5,000 g ~ 11#</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('biwtperc')" class="hg-accBtn">Birth weight percentiles:<span id="biwtperc_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="biwtperc" class="hg-accDivMain">
+                    <table>
+                        <caption>Birth weight percentiles U.S. 2011<sup>1</sup></caption>
+                        <colgroup>
+                            <col style="width: 10%">
+                            <col style="width: 45%">
+                            <col style="width: 45%">
+                        </colgroup>
+                        <tr>
+                            <th>GA</th>
+                            <th>50th percentile</th>
+                            <th>90th percentile</th>
+                        </tr>
+                        <tr>
+                            <td>37</th>
+                            <td>3,025 g (~ 6# 11oz)</td>
+                            <td>3,612 g (~ 7# 15oz)</td>
+                        </tr>
+                        <tr>
+                            <td>38</th>
+                            <td>3,219 g (~ 7# 1oz)</td>
+                            <td>3,799 g (~ 8# 6oz)</td>
+                        </tr>
+                        <tr>
+                            <td>39</th>
+                            <td>3,374 g (~ 7# 7oz)</td>
+                            <td>3,941 g (~ 8# 11oz)</td>
+                        </tr>
+                        <tr>
+                            <td>40</th>
+                            <td>3,499 g (~ 7# 11oz)</td>
+                            <td>4,057 g (~ 8# 15oz)</td>
+                        </tr>
+                        <tr>
+                            <td>41</th>
+                            <td>3,600 g (~ 7# 15oz)</td>
+                            <td>4,167 g (~ 9# 3oz)</td>
+                        </tr>
+                        <tr>
+                            <td>42</th>
+                            <td>3,686 g (~ 8# 2oz)</td>
+                            <td>4,290 g (~ 9# 7oz)</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('usefwmacrobes')" class="hg-accBtn">Ultrasound most effective for:<span id="usefwmacrobes_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="usefwmacrobes" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Ruling out macrosomia.<sup></sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+             <section class="accordian">
+                            <button onclick="AccToggle('schindumacroi')" class="hg-accBtn">Induction for macrosomia:<span id="schindumacroi_c" class="hg-NavLinkChevron"></span></button>
+                            <div id="schindumacroi" class="hg-accDivMain">
+                                <ul class=hg-accUl>
+                                    <li>Not indicated before 39 weeks.<sup>1</sup></li>
+                                </ul>
+                            </div>
+                        </section>
+
+             <section class="accordian">
+                            <button onclick="AccToggle('schcsmacrog')" class="hg-accBtn">C-section for macrosomia:<span id="schcsmacrog_c" class="hg-NavLinkChevron"></span></button>
+                            <div id="schcsmacrog" class="hg-accDivMain">
+                                <ul class=hg-accUl>
+                                    <li>&ge; 5,000 g without diabetes.<sup>1</sup></li>
+                                    <li>&ge; 4,500 g with pregestational or gestational diabetes.<sup>1</sup></li>
+                                    <li>&ge; 4,500 g with prolonged second stage or arrest of descent &lt; 2+/5+.<sup>1</sup></li>
+                                </ul>
+                            </div>
+                        </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('macosomRelLinks')" class="hg-accBtn">Related topics<span id="macosomRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="macosomRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_shoulder_dystocia.html">Shoulder Dystocia</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('macosomRefs')" class="hg-accBtn">References:<span id="macosomRefs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="macosomRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Macrosomia. ACOG Practice Bulletin No. 216. American College of Obstetricians and
+                            Gynecologists. Obstet Gynecol 2020;135:e18-35.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
