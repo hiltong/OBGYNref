@@ -404,6 +404,10 @@ font-weight: normal;
       padding: 0px;
       /* background: plum; */
     }
+    .hg-accUl li ol{
+      padding: 0px;
+      /* background: plum; */
+    }
       .hg-accUl li ul li{
         margin-left: 16px; 
         /* background: plum; */

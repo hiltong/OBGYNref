@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Vagina">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Vagina</h1>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('vagphwer')" class="hg-accBtn">Vaginal pH<span id="vagphwer_c" class="hg-NavLinkChevron"></span></button>
+                <div id="vagphwer" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>3.5 - 4.5: 
+                            <ul>
+                                <li>Reproductive years secondary to estrogen stimulating glycogen in vaginal cells that casues colonization with lactobacillus whcih produces lactic acid.<sup>1</sup></li>
+                            <li>Vulvovaginal candidiasis.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>&gt; 4.5: 
+                            <ul>
+                                <li>Prepuberty and postmenopausal (not using estrogen).<sup>1</sup></li>
+                                <li>Bacterial vaginosis.<sup>1</sup></li>
+                                <li>Trichomoniasis.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                    <button onclick="AccToggle('vagvahRelLinks')" class="hg-accBtn">Related topics<span id="vagvahRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="vagvahRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="gyn_vaginitis_bv.html">Bacterial Vaginosis</a></li>
+                        <li><a href="gyn_vaginitis_trichomoniasis.html">Trichomoniasis</a></li>
+                        <li><a href="gyn_vaginitis_vulvovaginal_candidiasis.html">Vulvovaginal Candidiasis</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('vagineRefs')" class="hg-accBtn">References:<span id="vagineRefs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="vagineRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Vaginitis in nonpregnant patients. ACOG Practice Bulletin No. 215. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2020;135:e1-17.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Bacterial Vaginosis">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Bacterial Vaginosis</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bvcannotcom')" class="hg-accBtn">Uncommon in:<span
+                        id="bvcannotcom_c" class="hg-NavLinkChevron"></span></button>
+                <div id="bvcannotcom" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Prepuberty and postmenopausal women not on estrogen.<sup>1</sup></li>
+                        <li>Women who have never been sexually active.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bvdiag')" class="hg-accBtn">Diagnosis:<span id="bvdiag_c" class="hg-NavLinkChevron"></span></button>
+                <div id="bvdiag" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Recommended: <sup>1</sup>
+                            <ul>
+                                <li>Amsel Criteria (Need 3 of 4):<sup>1</sup>
+                                    <ol>
+                                        <li>Discharge: homogeneous, thin, white-gray discharge.<sup>1</sup></li>
+                                        <li>Vaginal pH: &gt 4.5.<sup>1</sup></li>
+                                        <li>KOH whiff test: positive.<sup>1</sup></li>
+                                        <li>Clue cells: &gt 20% (since only need 3 criteria can diagnose without
+                                            microscopy).<sup>1</sup></li>
+                                    </ol>
+                                </li>
+                                <li>Gram Stain With Nugent Scoring:<sup>1</sup>
+                                    <ul>
+                                        <li>Reference standard but impractical.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>Alternative: <sup>1</sup>
+                                <ul>
+                                        <li>FDA approved commercial tests:<sup>1</sup>
+                                            <ul>
+                                                <li>Can also detect trichomoniasis and candidiasis.<sup>1</sup></li>
+                                            </ul>
+                                        </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bvrxrec')" class="hg-accBtn">Treatment:<span id="bvrxrec_c" class="hg-NavLinkChevron"></span></button>
+                <div id="bvrxrec" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Recommended options:<sup>1</sup>
+                            <ul>
+                                <li>Metronidazole 500 mg orally BID x 7 days.<sup>1</sup>
+                                    <ul>
+                                        <li>No alcohol during and for 24 hours after treatment.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Metronidazole 0.75% gel 1 applicator (5 g) vaginally bedtime x 5 days.<sup>1</sup></li>
+                                <li>Clindamycin 2% cream 1 applicator (5 g) vaginally bedtime x 7 days.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Alternate options:<sup>1</sup>
+                            <ul>
+                                <li>Secnidazole 2 g orally x 1<sup>1</sup>
+                                    <ul class=hg-accUl>
+                                        <li>1 packet (2 grams) of granules PO without regard to timing of meals .<sup>2</sup></li>
+                                        <li>Sprinkle entire contents of the packet of secnidazole onto applesauce,
+                                            yogurt, or pudding
+                                            and take all the mixture within 30 minutes without chewing or crunching the
+                                            granules. Drink
+                                            a glass of water to aid in swallowing the mixture; secnidazole mixture is
+                                            not intended to
+                                            be dissolved in any liquid. Advise the patient that secnidazole may be
+                                            taken without regard
+                                            to the timing of meals <sup>2</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Tinidazole 2 g orally daily x 2 days.<sup>1</sup>
+                                    <ul>
+                                        <li>No alcohol during and for 72 hours after treatment.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Tinidazole 1 g orally daily x 5 days.<sup>1</sup>
+                                    <ul>
+                                        <li>No alcohol during and for 72 hours after treatment.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Clindamycin 300 mg orally BID x 7days.<sup>1</sup></li>
+                                <li>Clindamycin 100 mg ovules vaginally bedtime x 3 days.<sup>1</sup>
+                                    <ul>
+                                        <li>Base may weaken condoms and diaphragms so avoid use during and 72 hours
+                                            after treatment.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <P class="accNote"><strong>Note: </strong>Avoid sexual activity or use condoms during treatemnt.<sup>1</sup></P>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('rectbv')" class="hg-accBtn">Recurrent bacterial vaginosis:<span id="rectbv_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="rectbv" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Recurs in 30% in 3 months and 58% in 12 months.<sup>1</sup></li>
+                        <li>Criteria "recurrent bacterial vagonsis": 3 documented episodes in 1 year.<sup>1</sup></li>
+                        <li>Treatment options:<sup>1</sup>
+                            <ul>
+                                <li>Treat episode and then metronidazole gel vaginally twice weekly x 16 weeks.<sup>1</sup>
+                                <li>Change treatment or extend duration of treatment.<sup>1</sup>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('bvyRelLinks')" class="hg-accBtn">Related topics:<span id="bvyRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="bvyRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="gyn_vaginitis_trichomoniasis.html">Trichomoniasis</a></li>
+                        <li><a href="gyn_vagina.html">Vagina</a></li>
+                        <li><a href="gyn_vaginitis_vulvovaginal_candidiasis.html">Vulvovaginal Candidiasis</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('bvRefs')" class="hg-accBtn">References: <span id="bvRefs_c" class="hg-NavLinkChevron"></span></button>
+                <div id="bvRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Vaginitis in nonpregnant patients. ACOG Practice Bulletin No. 215. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2020;135:e1-17.</li>
+                        <li>Solosec, accessed Decemeber 22, 12019, https://www.solosec.com.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

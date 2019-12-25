@@ -74,7 +74,7 @@
 		  "                </section> -->   ",
 		  "",
 		  "            <section class=\"accordian\">",
-		  "                <button onclick=\"AccToggle('xxxRelLinks')\" class=\"hg-accBtn\">Related topics<span id=\"xxxRelLinks_c\" class=\"hg-NavLinkChevron\"></span></button>",
+		  "                <button onclick=\"AccToggle('xxxRelLinks')\" class=\"hg-accBtn\">Related topics:<span id=\"xxxRelLinks_c\" class=\"hg-NavLinkChevron\"></span></button>",
 		  "                <div id=\"xxxRelLinks\" class=\"hg-accDivMain\">",
 		  "                    <ul class=hg-accUl>",
 		  "                        <li><a href=\"xxx.html\">XXX</a></li>",
