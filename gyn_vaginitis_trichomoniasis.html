@@ -31,20 +31,98 @@
 
 
             <section class="accordian">
-                <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
-                <div id="xxx" class="hg-accDivMain">
+                <button onclick="AccToggle('diagtrichyo')" class="hg-accBtn">Diagnosis:<span id="diagtrichyo_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="diagtrichyo" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li><sup>xxx</sup></li>
+                        <li>Recommended:<sup>1</sup>
+                            <ul>
+                                <li>NAAT (wet prep sensitivity only 50-60%).<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Alternative:<sup>1</sup>
+                            <ul>
+                                <li>FDA approved commercial tests.<sup>1</sup>
+                                    <ul>
+                                        <li>Can also detect bacterial vaginosis and candidiasis.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Culture.<sup>1</sup></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </section>
 
-
-
+            <section class="accordian">
+                <button onclick="AccToggle('rxtrichyt')" class="hg-accBtn">Treatment:<span id="rxtrichyt_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="rxtrichyt" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Recommended options:<sup>1</sup>
+                            <ul>
+                                <li>Metronidazole 500 mg orally BID x 7days.<sup>1</sup>
+                                    <ul>
+                                        <li>7 day course more effective tahn single dose.<sup>1</sup></li>
+                                        <li>No alcohol during and for 24 hours after treatment.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Alternative options:<sup>1</sup>
+                            <ul>
+                                <li>Tinidazole 2 g orally daily x 1.<sup>1</sup>
+                                    <ul>
+                                        <li>More expensive but less GI side effects.<sup>1</sup></li>
+                                        <li>No alcohol during and for 72 hours after treatment.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Suspected metronidiazole resistance:<sup>1</sup>
+                            <ul>
+                                <li>Low-level in vitro resistance 4-10% but high-level resistance rare.<sup>1</sup></li>
+                                <li>Rule out nonadherence to medication or reinfection.<sup>1</sup></li>
+                                <li>Tinidazole 500 mg TID x 7 days.<sup>1</sup></li>
+                                <li>Tinidazole 500 mg QID x 14 days.<sup>1</sup></li>
+                                <li>Consider culture to reference lab for sensitivity testing.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <P class="hg-accNote"><strong>Note: </strong>Retest 3 months after treatment secondary to high rate
+                        reinfection.<sup>1</sup></P>
+                                 <P class="hg-accNote"><strong>Note: </strong>If allergic metronidiazole refer for desensitization.<sup>1</sup></P>
+                    <P class="hg-accNote"><strong>Note: </strong>Metronidazole gel not effective for
+                        trichomoniasis.<sup>1</sup></P>
+                </div>
+            </section>
 
             <section class="accordian">
-                <button onclick="AccToggle('trichyRelLinks')" class="hg-accBtn">Related topics:<span id="trichyRelLinks_c"
+                <button onclick="AccToggle('tricyvagphwer')" class="hg-accBtn">Vaginal pH<span id="tricyvagphwer_c"
                         class="hg-NavLinkChevron"></span></button>
+                <div id="tricyvagphwer" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>3.5 - 4.5:
+                            <ul>
+                                <li>Reproductive years secondary to estrogen stimulating glycogen in vaginal cells that
+                                    casues colonization with lactobacillus whcih produces lactic acid.<sup>1</sup></li>
+                                <li>Vulvovaginal candidiasis.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>&gt; 4.5:
+                            <ul>
+                                <li>Prepuberty and postmenopausal (not using estrogen).<sup>1</sup></li>
+                                <li>Bacterial vaginosis.<sup>1</sup></li>
+                                <li>Trichomoniasis.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('trichyRelLinks')" class="hg-accBtn">Related topics:<span
+                        id="trichyRelLinks_c" class="hg-NavLinkChevron"></span></button>
                 <div id="trichyRelLinks" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li><a href="gyn_vaginitis_bv.html">Bacterial Vaginosis</a></li>
@@ -56,7 +134,8 @@
 
 
             <section class="accordian">
-                <button onclick="AccToggle('trichyRefs')" class="hg-accBtn">References:<span id="trichyRefs_c" class="hg-NavLinkChevron"></span></button>
+                <button onclick="AccToggle('trichyRefs')" class="hg-accBtn">References:<span id="trichyRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
                 <div id="trichyRefs" class="hg-accDivMain">
                     <ol class="hg-accOlRef">
                         <li>Vaginitis in nonpregnant patients. ACOG Practice Bulletin No. 215. American College of
