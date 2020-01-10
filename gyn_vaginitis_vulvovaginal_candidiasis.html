@@ -29,9 +29,24 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Vulvovaginal Candidiasis</h1>
 
+            <section class="accordian">
+                <button onclick="AccToggle('etiocanytr')" class="hg-accBtn">Etiology:<span id="etiocanytr_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="etiocanytr" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Candida species
+                            <ul>
+                                <li>90% Candida albicans.<sup>1</sup></li>
+                                <li>10% Non-albicans Candida (usually Candida glabrata).<sup>1</sup></li>
+                            </ul>
+                    </ul>
+                </div>
+            </section>
+
 
             <section class="accordian">
-                <button onclick="AccToggle('vvcannotcom')" class="hg-accBtn">Uncommon in:<span id="vvcannotcom_c" class="hg-NavLinkChevron"></span></button>
+                <button onclick="AccToggle('vvcannotcom')" class="hg-accBtn">Uncommon in:<span id="vvcannotcom_c"
+                        class="hg-NavLinkChevron"></span></button>
                 <div id="vvcannotcom" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li>Prepuberty and postmenopausal women not on estrogen.<sup>1</sup></li>
@@ -40,30 +55,149 @@
             </section>
 
             <section class="accordian">
-                    <button onclick="AccToggle('canvagphwer')" class="hg-accBtn">Vaginal pH<span id="canvagphwer_c" class="hg-NavLinkChevron"></span></button>
-                    <div id="canvagphwer" class="hg-accDivMain">
-                        <ul class=hg-accUl>
-                            <li>3.5 - 4.5: 
-                                <ul>
-                                    <li>Reproductive years secondary to estrogen stimulating glycogen in vaginal cells that casues colonization with lactobacillus whcih produces lactic acid.<sup>1</sup></li>
+                <button onclick="AccToggle('xxx')" class="hg-accBtn">Diagnosis:<span id="xxx_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxx" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Recommended:<sup>1</sup>
+                            <ul>
+                                <li>Microscopy find spores, pseuhyphae or hyphae (sensitivity 50-70% for C
+                                    albicans).<sup>1</sup></li>
+                                <li>Yeast culture.<sup>1</sup>
+                                    <ul>
+                                        <li>Useful to detect non C albicans that are to hard to detect by microscopy (C
+                                            glabrata has blastospores instead of pseudohyphae)<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Alternative:<sup>1</sup>
+                            <ul>
+                                <li>FDA approved commercial tests.<sup>1</sup>
+                                    <ul>
+                                        <li>Can also detect bacterial vaginosis and candidiasis.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('canvagphwer')" class="hg-accBtn">Vaginal pH:<span id="canvagphwer_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="canvagphwer" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>3.5 - 4.5:
+                            <ul>
+                                <li>Reproductive years secondary to estrogen stimulating glycogen in vaginal cells that
+                                    casues colonization with lactobacillus whcih produces lactic acid.<sup>1</sup></li>
                                 <li>Vulvovaginal candidiasis.<sup>1</sup></li>
-                                </ul>
-                            </li>
-                            <li>&gt; 4.5: 
+                            </ul>
+                        </li>
+                        <li>&gt; 4.5:
+                            <ul>
+                                <li>Prepuberty and postmenopausal (not using estrogen).<sup>1</sup></li>
+                                <li>Bacterial vaginosis.<sup>1</sup></li>
+                                <li>Trichomoniasis.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('vvvcclass')" class="hg-accBtn">Vulvovaginal candidiasis classification:<span
+                        id="vvvcclass_c" class="hg-NavLinkChevron"></span></button>
+                <div id="vvvcclass" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Uncomplicated vulvovaginal candidiasis (requires all 4):<sup>1</sup>
+                            <ol>
+                                <li>Episodes infrequent.<sup>1</sup></li>
+                                <li>Symptoms/findings mild-moderate.<sup>1</sup></li>
+                                <li>Candida albicans (suspected or proven)<sup>1</sup></li>
+                                <li>Non-immunocompromized<sup>1</sup></li>
+                            </ol>
+                        </li>
+                        <li>Complicated vulvovaginal candidiasis(requires any of the 4):<sup>1</sup>
+                            <ol>
+                                <li>Episodes recurrent (&ge;4 per year).<sup>1</sup></li>
+                                <li>Symptoms/findings severe.<sup>1</sup></li>
+                                <li>Non-albicans Candida(suspected or proven)<sup>1</sup></li>
+                                <li>Immunocompromized (diabetes, HIV, corticosteroids, immunosuppresive therapy,
+                                    debilitation).<sup>1</sup></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('rxucvvcan')" class="hg-accBtn">Treatment uncomplicated vulvovaginal
+                    candidiasis:<span id="rxucvvcan_c" class="hg-NavLinkChevron"></span></button>
+                <div id="rxucvvcan" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Intravgainal azole creams/suppositories.<sup>1</sup></li>
+                        <li>Fluconazole 150 mg orally x 1.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('rxrecrvvcands')" class="hg-accBtn">Treatment recurrent vulvovaginal
+                    candidiasis:<span id="rxrecrvvcands_c" class="hg-NavLinkChevron"></span></button>
+                <div id="rxrecrvvcands" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <ul class=hg-accUl>
+                            <li>Document with yeast culture.<sup>1</sup></li>
+                            <li>Supressive therapy after initial treatment: <sup>1</sup>
                                 <ul>
-                                    <li>Prepuberty and postmenopausal (not using estrogen).<sup>1</sup></li>
-                                    <li>Bacterial vaginosis.<sup>1</sup></li>
-                                    <li>Trichomoniasis.<sup>1</sup></li>
+                                    <li>Fluconazole 150 mg weekly x 6 months.<sup>1</sup></li>
+                                    <li>Clotrimazole 500 mg vaginal suppository weekly x 6months.<sup>1</sup></li>
+                                    <li>Clotrimazole 200 mg vaginal suppository twice weekly x 6months.<sup>1</sup></li>
                                 </ul>
                             </li>
                         </ul>
-                    </div>
-                </section>
-      
+                    </ul>
+                </div>
+            </section>
 
             <section class="accordian">
-                <button onclick="AccToggle('vvcandyRelLinks')" class="hg-accBtn">Related topics:<span id="vvcandyRelLinks_c"
-                        class="hg-NavLinkChevron"></span></button>
+                <button onclick="AccToggle('rxseverevvcany')" class="hg-accBtn">Treatment severe vulvovaginal
+                    candidiasis:<span id="rxseverevvcany_c" class="hg-NavLinkChevron"></span></button>
+                <div id="rxseverevvcany" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Intravaginal azole x 10-14 days.<sup>1</sup></li>
+                        <li>Fluconazole 150 mg every 3 days (days 1,4,7) x 2-3 doses.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+             <section class="accordian">
+                            <button onclick="AccToggle('rxnonalby')" class="hg-accBtn">Treatment non-albicans Candida:<span id="rxnonalby_c" class="hg-NavLinkChevron"></span></button>
+                            <div id="rxnonalby" class="hg-accDivMain">
+                                <ul class=hg-accUl>
+                                    <li>Less likely to respond to vaginal azoles or oral fluconazole.<sup>1</sup></li>
+                                    <li>Vaginal boric acid 600 mg capsules for at least 14 days.<sup>1</sup>
+                                    <ul>
+                                        <li>Warn boric acid possibly fatal if ingested.<sup>1</sup> </li>
+                                    </ul>
+                                    </li>
+                                    <li>Flucytosine vaginal cream 5 g nightly x 14 days.<sup>1</sup>
+                                    <ul>
+                                        <li>Extremely expensive.<sup>1</sup></li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('vvcandyRelLinks')" class="hg-accBtn">Related topics:<span
+                        id="vvcandyRelLinks_c" class="hg-NavLinkChevron"></span></button>
                 <div id="vvcandyRelLinks" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li><a href="gyn_vaginitis_bv.html">Bacterial Vaginosis</a></li>
@@ -74,7 +208,8 @@
             </section>
 
             <section class="accordian">
-                <button onclick="AccToggle('vvcandyRefs')" class="hg-accBtn">References:<span id="vvcandyRefs_c" class="hg-NavLinkChevron"></span></button>
+                <button onclick="AccToggle('vvcandyRefs')" class="hg-accBtn">References:<span id="vvcandyRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
                 <div id="vvcandyRefs" class="hg-accDivMain">
                     <ol class="hg-accOlRef">
                         <li>Vaginitis in nonpregnant patients. ACOG Practice Bulletin No. 215. American College of
