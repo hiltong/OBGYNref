@@ -1,0 +1,165 @@
+.
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Gonorrhea">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay" onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Gonorrhea</h1>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('rxgcnonpreg')" class="hg-accBtn">Treatment uncomplicated gonrrhea of
+                    cervix/urethra/rectum - not pregnant:<span id="rxgcnonpreg_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="rxgcnonpreg" class="hg-accDivMain">
+                    <ul class="hg-accUl">
+                        <li>First line:
+                            <ul>
+                                <li>Ceftriaxone 250 mg IM x 1 + Azithromycin 1 gm po x 1.<sup>1</sup></li>
+                                <li class="hg-accOr" />
+                                <li>Ceftriaxone 250 mg IM x 1 + Doxycycline 100 mg po BID x 7 days.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Second line:
+                            <ul>
+                                <li>Ceftriazone not available:<sup>1</sup>
+                                    <ul>
+                                        <li>Cefixime 400 mg po x 1 + Azithromycin 1 gm po x 1.<sup>1</sup></li>
+                                        <li class="hg-accOr" />
+                                        <li>Cefixime 400 mg po x 1 + Doxycycline 100 mg po BID x 7 days.<sup>1</sup>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Severe penicillin allergy:<sup>1</sup>
+                                    <ul>
+                                        <li>Gemifloxacin 320 mg po x 1 + Azithromycin 2 gm po x 1.<sup>1</sup>
+                                            <li class="hg-accOr" />
+                                        <li>Gentamicin 240 mg IM x 1 + Azithromycin 2 gm po x 1.<sup>1</sup>
+                                            <li class="hg-accOr" />
+                                        <li>Gentamicin 240 mg IM x 1 + Doxycycline 100 mg po BID x 7
+                                            days.<sup>1</sup>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <P class="hg-accNote">Use first line if history of rash if no history of IgE
+                        mediated &beta;-lactam allergy (anaphylaxis, Steevens-Johnson syndrome, toxic epidermal
+                        necrolysis).<sup>1</sup></P>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('rxgcpreg')" class="hg-accBtn">Treatment uncomplicated gonrrhea of 
+                    cervix/urethra/rectum - pregnant:<span id="rxgcpreg_c" class="hg-NavLinkChevron"></span></button>
+                <div id="rxgcpreg" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>First line:
+                            <ul>
+                                <li>Ceftriaxone 250 mg IM + Azithromycin 1 gm po.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Second line:
+                            <ul>
+                                <li>Ceftriazone not available:<sup>1</sup>
+                                    <ul>
+                                        <li>Cefixime 400 mg po x 1 + Azithromycin 1 gm po x 1.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Severe penicillin allergy:<sup>1</sup>
+                                    <ul>
+                                        <li>Gentamicin 240 mg IM x 1 + Azithromycin 2 gm po x 1.<sup>1</sup>
+                                            <li class="hg-accOr" />
+                                        <li>Azithromycin 2 gm po x 1 (needs test of cure 1 week).<sup>1</sup>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <P class="hg-accNote"> Use first line if history of rash if no history of IgE
+                        mediated &beta;-lactam allergy (anaphylaxis, Steevens-Johnson syndrome, toxic epidermal
+                        necrolysis).<sup>1</sup></P>
+                </div>
+            </section>
+
+            <section class="accordian">
+                                <button onclick="AccToggle('tortcgcrx')" class="hg-accBtn">Test of cure | Retest<span id="tortcgcrx_c" class="hg-NavLinkChevron"></span></button>
+                                <div id="tortcgcrx" class="hg-accDivMain">
+                                    <ul class=hg-accUl>
+                                        <li>Test of cure:
+                                            <ul>
+                                                <li>Not needed for uncomplicated gonrrhea of cervix/urethra/rectum treated with 1st or 2nd line regimen.<sup>1</sup></li>
+                                                <li>1 week if Azithromycin 2 gm po x 1 used in pregnancy.<sup>1</sup></li>
+                                                <li>14 days if pharyngeal gonorhhea treated with 2nd line regimen.<sup>1</sup></li>
+                                            </ul>
+                                        </li>
+                                        <li>Retest:
+                                            <ul>
+                                                <li><sup>xxx</sup></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+
+
+            <!--  <section class="accordian">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                    </ul>
+                </div>
+            </section> -->
+
+            <section class="accordian">
+                <button onclick="AccToggle('stdgcRefs')" class="hg-accBtn">References:<span id="stdgcRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="stdgcRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Dual therapy for gonococcal infections. Committee Opinion No. 645. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2015;126:e95–9.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

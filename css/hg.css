@@ -457,15 +457,15 @@ font-weight: normal;
       .hg-accOlRef a {
         text-decoration: none;
       }
-      .hg-accNote{
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
 
+/*Formats Note: at bottom of accordian list */
+.hg-accNote{margin-top: 0px;margin-bottom: 0px;}
+.hg-accNote::before{content: "Note: "; font-weight: bold;}
+/*Adds the 'or' in an accordian list*/
+.hg-accOr{list-style-type: none; font-style: italic;}
+.hg-accOr::after{content: "or";}
 
-  
-
-    /*Algorithm------------------------------------------------------------------------------------------------------*/
+/*Algorithm------------------------------------------------------------------------------------------------------*/
   /*Main div*/
     .hg-algoDivMain{
       /* margin-top: -16px; */
