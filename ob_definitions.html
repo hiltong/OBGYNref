@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="xxx">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">OB Definitons</h1>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('obtermdefr')" class="hg-accBtn">Term pregnancy:<span id="obtermdefr_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="obtermdefr" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Early term: 37 0/7 -38 6/7 weeks.<sup>1</sup></li>
+                        <li>Full term: 39 0/7 - 40 6/7 weeks.<sup>1</sup></li>
+                        <li>Late term: 41 0/7 - 41 6/7 weeks.<sup>1</sup></li>
+                        <li>Postterm: &ge; 42 0/7 weeks.<sup>1</sup></li>
+                        <P class="hg-accNote">Classic term definition subdivided because the historically defined 5 week
+                            term period from 37 - 42 weeks did not represent uniform neonatal outcomes.<sup>1</sup></P>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('fetdet')" class="hg-accBtn">Fetal death (stillbirth):<span id="fetdet_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="fetdet" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Fetal death: &ge; 20 0/7 weeks.<sup>2</sup>
+                            <ul>
+                                <li>Early fetal death: 20 0/7 - 27 6/7 weeks.<sup>2</sup></li>
+                                <li>Late fetal death: &ge;28 0/7 weeks.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('fetdetrate')" class="hg-accBtn">Fetal death rate:<span id="fetdetrate_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="fetdetrate" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Fetal deaths in a year / Total births in a year (fetal deaths + live births) x 1000.<sup>2</sup>
+                        </li>
+                        <li>Expressed per 1000 births.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('infadeat')" class="hg-accBtn">Infant death:<span id="infadeat_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="infadeat" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Live birth death 1st year of life (< 365 days).<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('infinfmoertrate')" class="hg-accBtn">Infant mortality rate:<span
+                        id="infinfmoertrate_c" class="hg-NavLinkChevron"></span></button>
+                <div id="infinfmoertrate" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Infants deaths in a year / Live births in a year x 1000.<sup>2</sup></li>
+                        <li>Expressed per 1000 live births.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('neonatadeath')" class="hg-accBtn">Neonatal death:<span id="neonatadeath_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="neonatadeath" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Neonatal death: Infant death < 28 days.<sup>2</sup>
+                                <ul>
+                                    <li>Early neonatal death: Infant death < 7 days.<sup>2</sup></li>
+                                    <li>Late neonatal death: Infant death 7 - 27 days.<sup>2</sup></li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('neonatmortratew')" class="hg-accBtn">Neonatal mortality rate:<span
+                        id="neonatmortratew_c" class="hg-NavLinkChevron"></span></button>
+                <div id="neonatmortratew" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Neonatal deaths in a year / Number live births in a year x 1000.<sup>2</sup></li>
+                        <li>Expressed per 1000 live births.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('postneodethr')" class="hg-accBtn">Postneonatal death:<span
+                        id="postneodethr_c" class="hg-NavLinkChevron"></span></button>
+                <div id="postneodethr" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Postneonatal death: Infant death between 28 and 365 days. <sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('perinatdeath')" class="hg-accBtn">Perinatal death:<span id="perinatdeath_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="perinatdeath" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Fetal deaths + Neonatal deaths.<sup>2</sup></li>
+                        <li>Grouped secondary to assumption similar causes for loss.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('perinatmortrtae')" class="hg-accBtn">Perinatal mortality rate:<span
+                        id="perinatmortrtae_c" class="hg-NavLinkChevron"></span></button>
+                <div id="perinatmortrtae" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>perinatal deaths / total births x 1000.<sup>2</sup></li>
+                        <li>Expressed per 1000 total births.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <!--  <section class="accordian">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                    </ul>
+                </div>
+            </section> -->
+
+            <section class="accordian">
+                <button onclick="AccToggle('obdefRefs')" class="hg-accBtn">References:<span id="obdefRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="obdefRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Definition of term pregnancy. Committee Opinion No. 579. American College of Obstetricians
+                            and Gynecologists. Obstet Gynecol 2013;122:1139–40.</li>
+                        <li>Zacharias N. Perinatal mortality. In: Weisman L, ed. <i>UpToDate.</i> Waltham, Mass.:
+                            UpToDate, 2018. https://www.uptodate.com/contents/perinatal-mortality#H1. Accessed Febuary
+                            18,2020. </li>
+                    </ol>
+                </div>
+            </section>
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
