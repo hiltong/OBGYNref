@@ -429,7 +429,7 @@ font-weight: normal;
         margin-left: 16px;
         margin-right: 0px;
         padding: 0px;
-        background: powderblue;
+        /* background: powderblue; */
       }
 
       
@@ -458,12 +458,17 @@ font-weight: normal;
         text-decoration: none;
       }
 
+/*Adds the 'or' in an accordian list*/
+.hg-accOr{list-style-type: none; font-style: italic;}
+.hg-accOr::after{content: "or";}     
+
 /*Formats Note: at bottom of accordian list */
 .hg-accNote{margin-top: 0px;margin-bottom: 0px;}
 .hg-accNote::before{content: "Note: "; font-weight: bold;}
-/*Adds the 'or' in an accordian list*/
-.hg-accOr{list-style-type: none; font-style: italic;}
-.hg-accOr::after{content: "or";}
+
+/*Formats ref contained in most commons list */
+.hg-accRefInList{margin-top: 0px;margin-bottom: 0px;}
+.hg-accRefInList::before{content: "Ref: "; font-weight: bold;}
 
 /*Algorithm------------------------------------------------------------------------------------------------------*/
   /*Main div*/
