@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Intrauterine Devices">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Intrauterine Devices</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('iudlilettawe')" class="hg-accBtn">Liletta:<span id="iudlilettawe_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="iudlilettawe" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>6 years.<sup>2</sup></li>
+                        <li>Contains 52 mg of levonorgestrel.<sup>2</sup></li>
+                        <li>Releases initially 20 mcg/day, decreases progressively to ~ 8.6 mcg/day after 6
+                            years.<sup>2</sup></li>
+                        <li>Overall Size 32 x 32 mm.<sup>2</sup></li>
+                        <li>Insertion tube diameter 4.8 mm.<sup>5</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('iudmirenalk')" class="hg-accBtn">Mirena:<span id="iudmirenalk_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="iudmirenalk" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>5 years.<sup>1</sup></li>
+                        <li>Contains 52 mg of levonorgestrel.<sup>1</sup></li>
+                        <li>Releases ~ 20 mcg/day first 3 months, decreases to ~ 18 mcg/day after 1 year and then
+                            to ~ 10 mcg/day after 5 years.<sup>1</sup></li>
+                        <li>Overall Size 32 x 32 mm.<sup>1</sup></li>
+                        <li>Insertion tube diameter 4.4 mm.<sup>1</sup></li>
+                        <li>Only IUD approved for menorrhagia.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('iudlkyleenae')" class="hg-accBtn">Kyleena:<span id="iudlkyleenae_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="iudlkyleenae" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>5 years.<sup>3</sup></li>
+                        <li>Contains 19.5 mg of levonorgestrel.<sup>3</sup></li>
+                        <li>Releases ~ 17.5 mcg/day after 24 days, decreases to 9.8 mcg/day after 1 year and then to 7.4
+                            mcg/day after 5 years. <sup>3</sup></li>
+                        <li>Overall Size 28 x 30 mm.<sup>3</sup></li>
+                        <li>Insertion tube diameter 3.8 mm.<sup>3</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('iudlskylaae')" class="hg-accBtn">Skyla:<span id="iudlskylaae_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="iudlskylaae" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>3 years.<sup>4</sup></li>
+                        <li>Contains 13.5 mg of levonorgestrel.<sup>4</sup></li>
+                        <li>Releases ~ 14 mcg/day after 24 days, decreases to ~ 6 mcg/day after 1 year and to 5 mcg/day
+                            after 3 years.<sup>4</sup></li>
+                        <li>Overall Size 28 x 30 mm.<sup>4</sup></li>
+                        <li>Insertion tube diameter 3.8 mm.<sup>4</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--   <section class="accordian">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                    </ul>
+                </div>
+            </section> -->
+
+            <section class="accordian">
+                <button onclick="AccToggle('xxxRefs')" class="hg-accBtn">References:<span id="xxxRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Mirena HCP Site. https://hcp.mirena-us.com. Assessed 3/2/2020.</li>
+                        <li>Liletta. https://www.lilettahcp.com/##. Assessed 3/2/2020.</li>
+                        <li>Home Page Kyleena. https://hcp.kyleena-us.com/. Assessed 3/2/2020.</li>
+                        <li>Skyla. http://labeling.bayerhealthcare.com/html/products/pi/Skyla_PI.pdf#isi. Assessed
+                            3/2/2020.</li>
+                        <li>Levonorgestrel-releasing intrauterine systems for long-acting contraception: current
+                            perspectives, safety, and patient counseling.
+                            https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5066847/. Assessed 3/2/2020.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

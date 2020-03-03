@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Preeclampsia with Severe Features">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Preeclampsia with Severe Features</h1>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('sevepreecrity')" class="hg-accBtn">Preeclampsia with severe features
+                    criteria:<span id="sevepreecrity_c" class="hg-NavLinkChevron"></span></button>
+                <div id="sevepreecrity" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Systolic BP &ge; 160 or diastolic BP &ge; 110 on 2 occasions at least 4 hours apart unless
+                            BP treated before 4 hours.<sup>1</sup></li>
+                        <li>Platelet count < 100,000/microL.<sup>1</sup></li>
+                        <li>Elevated liver enzymes &ge; twice upper limit of normal or severe persistent right upper
+                            quadrant or epigastric pain unresponsive to medication and not accounted for by alternative
+                            diagnoses or both.<sup>1</sup></li>
+                        <li>Serum creatinine concentration > 1.1 mg/dL or a doubling of the serum creatinine in absence
+                            of other renal disease.<sup>1</sup></li>
+                        <li>Pulmonary edema.<sup>1</sup></li>
+                        <li>New-onset headache unresponsive to medication and not accounted for by other diagnoses.<sup>1</sup></li>
+                        <li>Visual disturbances.<sup>1</sup></li>
+                    </ul>
+                    <P class="hg-accNote">Older criteria included proteinuria > 5 g/24 hours and fetal growth
+                        restriction.<sup>1</sup></P>
+                </div>
+            </section>
+
+            <!-- <section class="accordian">
+                    <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="xxx" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li><sup>xxx</sup>
+                                <ul>
+                                    <li><sup>xxx</sup></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section> -->
+
+            <!-- <section class="accordian">
+                    <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="xxx" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li><sup>xxx</sup>
+                                <ul>
+                                    <li><sup>xxx</sup></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section> -->
+
+            <section class="accordian">
+                <button onclick="AccToggle('preesevrwedRelLinks')" class="hg-accBtn">Related topics:<span
+                        id="preesevrwedRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="preesevrwedRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_htn_emergent_therapy.html">Hypertension, Obstetrical, Emergent Therapy</a></li>
+                        <li><a href="ob_htn_postpartum.html">Hypertension Postpartum</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('preesereRefs')" class="hg-accBtn">References:<span id="preesereRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="preesereRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Gestational hypertension and preeclampsia. ACOG Practice Bulletin No. 202. American College
+                            of Obstetricians and Gynecologists. Obstet Gynecol 2019;133:e1-25.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
