@@ -29,6 +29,8 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Newborn Early Onset GBS Disease Prevention</h1>
 
+            <h2 class="hg-h2SectionTitle">General</h2>
+
             <section class="accordian">
                 <button onclick="AccToggle('gbsvrimp')" class="hg-accBtn">Importance:<span id="gbsvrimp_c"
                         class="hg-NavLinkChevron"></span></button>
@@ -125,6 +127,8 @@
                 </div>
             </section>
 
+            <h2 class="hg-h2SectionTitle">Diagnosis</h2>
+
             <section class="accordian">
                 <button onclick="AccToggle('univgbsscr')" class="hg-accBtn">Universal GBS screening:<span
                         id="univgbsscr_c" class="hg-NavLinkChevron"></span></button>
@@ -135,7 +139,8 @@
                                 <li>If labor before 37 0/7 weeks and unknown GBS status antiobiotic prophylaxis
                                     recommended.<sup>1</sup></li>
                                 <li>Reflects GBS colonization very accurately if performed within 5 weeks of birth so
-                                    covers up to &ge; 41 0/7 weeks. Accuracy decreases after 5 weeks.<sup>1</sup></li>
+                                    covers up to &ge; 41 0/7 weeks. Accuracy decreases after 5 weeks ("5 week screening
+                                    accuracy window").<sup>1</sup></li>
                                 <li>"likely to reduce the reported incidence of discrepant antepartum culture results
                                     and colonization status at the time of birth".<sup>1</sup></li>
                             </ul>
@@ -195,7 +200,7 @@
                 </div>
             </section>
 
-
+            <h2 class="hg-h2SectionTitle">Treatment</h2>
 
             <section class="accordian">
                 <button onclick="AccToggle('indfripabx')" class="hg-accBtn">Indications for GBS prophylaxis:<span
@@ -245,6 +250,40 @@
                 </div>
             </section>
 
+            <section class="accordian">
+                <button onclick="AccToggle('gbsprtha')" class="hg-accBtn">Antibiotics for GBS prophylaxis:<span
+                        id="gbsprtha_c" class="hg-NavLinkChevron"></span></button>
+                <div id="gbsprtha" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>IV penicillin 1st line <sup>1</sup></li>
+                        <ul>
+                            <li>IV ampicillin acceptable.<sup>1</sup></li>
+                        </ul>
+                        <li>IV cefazolin if low risk or uncertain risk penicillin allergy.<sup>1</sup></li>
+                        <li>IV clindamycin if high risk penicillin allergy and GBS susceptible to
+                            clindamycin.<sup>1</sup></li>
+                        <li>IV vancomycin only alternative if high risk penicillin allergy and GBS not susceptible to
+                            clindamycin.<sup>1</sup>
+                            <ul>
+                                <li>Use weight/renal fuction based dose <sup>1</sup>
+                                    <ul>
+                                        <li>20 mg/kg IV every 8 hours.<sup>1</sup></li>
+                                        <li>Max 2 g per dose.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <P class="hg-accNote">Consider penicillin allergy testing if possible IgE mediated allergy or
+                            unknown severity of allergy.<sup>1</sup></P>
+                        <P class="hg-accNote">Oral or IM antibiotics antepartum or intrapartum not
+                            acceptable.<sup>1</sup></P>
+                        <P class="hg-accNote">Antibiotic duration &ge; 4 hours most effective but 2 hours shown to
+                            decrease vaginal colony counts and neonatal sepsis.<sup>1</sup></P>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Special circumstances</h2>
 
             <section class="accordian">
                 <button onclick="AccToggle('gbdbascetiu')" class="hg-accBtn">GBS bacteriuria:<span id="gbdbascetiu_c"
@@ -282,43 +321,8 @@
             </section>
 
             <section class="accordian">
-                <button onclick="AccToggle('gbsprtha')" class="hg-accBtn">Antibiotics for GBS prophylaxis:<span
-                        id="gbsprtha_c" class="hg-NavLinkChevron"></span></button>
-                <div id="gbsprtha" class="hg-accDivMain">
-                    <ul class=hg-accUl>
-                        <li>IV penicillin 1st line <sup>1</sup></li>
-                        <ul>
-                            <li>IV ampicillin acceptable.<sup>1</sup></li>
-                        </ul>
-                        <li>IV cefazolin if low risk or uncertain risk penicillin allergy.<sup>1</sup></li>
-                        <li>IV clindamycin if high risk penicillin allergy and GBS susceptible to
-                            clindamycin.<sup>1</sup></li>
-                        <li>IV vancomycin only alternative if high risk penicillin allergy and GBS not susceptible to
-                            clindamycin.<sup>1</sup>
-                            <ul>
-                                <li>Use weight/renal fuction based dose <sup>1</sup>
-                                    <ul>
-                                        <li>20 mg/kg IV every 8 hours.<sup>1</sup></li>
-                                        <li>Max 2 g per dose.<sup>1</sup></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <P class="hg-accNote">Consider penicillin allergy testing if possible IgE mediated allergy or
-                            unknown severity of allergy.<sup>1</sup></P>
-                        <P class="hg-accNote">Oral or IM antibiotics antepartum or intrapartum not
-                            acceptable.<sup>1</sup></P>
-                        <P class="hg-accNote">Antibiotic duration &ge; 4 hours most effective but 2 hours shown to
-                            decrease vaginal colony counts and neonatal sepsis.<sup>1</sup></P>
-                    </ul>
-                </div>
-            </section>
-
-
-
-            <section class="accordian">
-                <button onclick="AccToggle('dononeedgbsan')" class="hg-accBtn">1 time positive GBS culture doesn't
-                    need antibiotics:<span id="dononeedgbsan_c" class="hg-NavLinkChevron"></span></button>
+                <button onclick="AccToggle('dononeedgbsan')" class="hg-accBtn">When positive GBS culture doesn't
+                    need antibiotics at delivery:<span id="dononeedgbsan_c" class="hg-NavLinkChevron"></span></button>
                 <div id="dononeedgbsan" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li>Prelabor intact menbrane c-section.<sup>1</sup></li>
@@ -375,23 +379,27 @@
                             </ul>
                         </li>
                     </ul>
+                    <P class="hg-accNote">5 week "screening accuracy window" based on early term screening studies and
+                        preterm data lacking<sup>1</sup></P>
                 </div>
             </section>
 
             <section class="accordian">
-                <button onclick="AccToggle('gbsplanptdr')" class="hg-accBtn">GBS and planned preterm delivery < 37 0/7 weeks:<span id="gbsplanptdr_c"
-                        class="hg-NavLinkChevron"></span></button>
+                <button onclick="AccToggle('gbsplanptdr')" class="hg-accBtn">GBS and planned preterm delivery < 37 0/7
+                        weeks:<span id="gbsplanptdr_c" class="hg-NavLinkChevron"></span></button>
                 <div id="gbsplanptdr" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li>2 options:<sup>1</sup>
-                        <ul>
-                                  <li>GBS culture within 5 weeks of planned delivery.<sup>1</sup></li>
-                                  <li>Empiric GBS antibiotic prophylaxis.<sup>1</sup></li>
-                        </ul>
+                            <ul>
+                                <li>GBS culture within 5 weeks of planned delivery.<sup>1</sup></li>
+                                <li>Empiric GBS antibiotic prophylaxis.<sup>1</sup></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </section>
+
+   
 
             <!--  <section class="accordian">
                 <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c" class="hg-NavLinkChevron"></span></button>
@@ -401,6 +409,9 @@
                     </ul>
                 </div>
             </section> -->
+
+
+<br>
 
             <section class="accordian">
                 <button onclick="AccToggle('gbsprevRefs')" class="hg-accBtn">References:<span id="gbsprevRefs_c"

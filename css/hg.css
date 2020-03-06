@@ -226,6 +226,14 @@ body{
   }
   
   /*Main Content--------------------------------------------------------------------------------------------------*/
+
+.hg-h2SectionTitle{
+  font-size: 1.17em;
+ /*  margin-top: 0.60em; */
+  color: Black;
+  /* background-color: #ddffdd; */
+}
+
   .hg-Content{
     margin-left:250px;
     padding-top:64px!important;
@@ -336,7 +344,7 @@ white-space: normal;  /*lets words wrap in accordian button*/
 text-align:left;
 color:black;
 background: white; 
-/* background:#f0f0f0; */
+background:#f0f0f0;
 display:block;
 border:none;
 width:100%;
@@ -344,7 +352,7 @@ font-size: 1.2em;
 font-weight: bold; 
 text-decoration: none;
 cursor:pointer;
-border-top: 1px solid#ccc ;
+/* border-top: 1px solid#ccc ; */
 
 }
 .hg-accBtn sup{
