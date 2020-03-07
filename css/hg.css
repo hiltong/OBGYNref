@@ -231,7 +231,7 @@ body{
   font-size: 1.17em;
  /*  margin-top: 0.60em; */
   color: Black;
-  /* background-color: #ddffdd; */
+  background-color:white;
 }
 
   .hg-Content{
@@ -343,7 +343,7 @@ margin: 0px 0px 0px 0px; /*seperates accordians so can see shadow*/
 white-space: normal;  /*lets words wrap in accordian button*/
 text-align:left;
 color:black;
-background: white; 
+/* background: white;  */
 background:#f0f0f0;
 display:block;
 border:none;
@@ -454,25 +454,23 @@ font-weight: normal;
         text-decoration: none;
       }
 
-      .hg-accOlRef{
-        margin-top: 16px;
-        margin-left: 16px;
-        margin-right: 0px;
-        padding: 0px;
-        font-size: 0.90em;
-        /* background: powderblue;       */
-      }
-      .hg-accOlRef a {
-        text-decoration: none;
-      }
+/* Formats The Related Topics: Accordian */
+.hg-accSectionRelTopics{margin-top: 0.60em;}
+
+/* Formats the References: Accordian */
+.hg-accSectionRef{margin-top: 0.60em;}
+.hg-accOlRef{margin-top: 16px; margin-left: 16px; margin-right: 0px; padding: 0px; font-size: 0.90em;}
+.hg-accOlRef a {text-decoration: none;}
 
 /*Adds the 'or' in an accordian list*/
 .hg-accOr{list-style-type: none; font-style: italic;}
 .hg-accOr::after{content: "or";}     
 
 /*Formats Note: at bottom of accordian list */
-.hg-accNote{margin-top: 0px;margin-bottom: 0px;}
+.hg-accNote{margin-top: 0px; margin-bottom: 0px;}
 .hg-accNote::before{content: "Note: "; font-weight: bold;}
+
+
 
 /*Formats ref contained in most commons list */
 .hg-accRefInList{margin-top: 0px;margin-bottom: 0px;}
