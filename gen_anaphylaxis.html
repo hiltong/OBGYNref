@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Nuggets</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Anaphylaxis Treatment In Adults">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Anaphylaxis Treatment In Adults</h1>
+
+            <!--   <h2 class="hg-h2SectionTitle">Category Header</h2> -->
+
+            <section class="accordian">
+                <button onclick="AccToggle('anaphydiag')" class="hg-accBtn">Diagnosis (clinical):<span id="anaphydiag_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="anaphydiag" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Cutaneous symptoms/signs most commom findings (10-20% no cutaneous finding): sudden onset of
+                            generalized urticaria, angioedema, flushing, pruritus.<sup>1</sup></li>
+                        <li>More emergent symptoms/signs: quickly worsening symptoms, respiratory distress, vomiting,
+                            abdominal pain, hypotension, dysrhythmia, chest pain, collapse.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('anaphyrxewd')" class="hg-accBtn">Immediate treatment (all simultaneous but
+                    immediate epinephrine most important):<span id="anaphyrxewd_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="anaphyrxewd" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Stop probable cause if possible.<sup>1</sup></li>
+                        <li>Call for help.<sup>1</sup></li>
+                        <li>Immediate intubation if airway obstruction developing from angioedema.<sup>1</sup>
+                            <ul>
+                                <li>Complete obstruction can occur with delay and require cricothyrotomy.<sup>1</sup>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>IM epinephrine (maximum dose 0.5 mg):<sup>1</sup>
+                            <ul>
+                                <li>No absolute contraindications with anaphylaxis, GIVE EARLY with mild symptoms before progresses.<sup>1</sup></li>
+                                <li>Decreases mast cell mediator release, treats airway obstruction and treats cardiovascular collapse.<sup>1</sup></li>
+                                <li>Patients 25-50 kg:<sup>1</sup>
+                                    <ul>
+                                        <li>0.3 mL (0.3 mg) of 1 mg/mL solution IM mid-outer thigh.<sup>1</sup></li>
+                                        <li class="hg-accOr" />
+                                        <li>0.3 mg by autoinjector<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Patients >50 kg:<sup>1</sup>
+                                    <ul>
+                                        <li>0.5 mL (0.5 mg) of 1 mg/mL solution IM mid-outer thigh.<sup>1</sup></li>
+                                        <li class="hg-accOr" />
+                                        <li>0.3 mg by autoinjector if drawing up causes delay.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>1.5-inch needle to penetrate subcutaneous tissue if obese.<sup>1</sup></li>
+                                <li>Repeat every 5-15 minutes as needed.<sup>1</sup></li>
+                                <li>Most respond 1-3 doses IM, if not prepare IV epinephrine for infusion.<sup>1</sup>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Recumbent position and elevate lower extremities.<sup>1</sup>
+                            <ul>
+                                <li>If pregnant LLD.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Oxygen nonrebreather mask at 15 liters/minute.<sup>1</sup></li>
+                        <li>Normal saline IV:<sup>1</sup>
+                            <ul>
+                                <li>125 ml/hour if normotensive.<sup>1</sup></li>
+                                <li class="hg-accOr" />
+                                <li>1-2 liter rapid bolus if hypotensive.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Albuterol if bronchospasm resistant to IM epinephrine<sup>1</sup>
+                            <ul>
+                                <li>Nebulizer 2.5 to 5 mg in 3 mL saline, repeat as needed.<sup>1</sup></li>
+                                <li class="hg-accOr" />
+                                <li>Metered dose inhaler 2-3 puffs, repeat as needed.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('anphyaddrx')" class="hg-accBtn">Additional treatment options:<span
+                        id="anphyaddrx_c" class="hg-NavLinkChevron"></span></button>
+                <div id="anphyaddrx" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>H1 antihistamine (for urticaria & pruritis)<sup>1</sup>
+                            <ul>
+                                <li>Cetirizine (Zyrtec) 10 mg IV.<sup>1</sup></li>
+                                <li class="hg-accOr" />
+                                <li>Diphenhydramine (Benadryl) 25-50 mg IV<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>H2 antihistamine:<sup>1</sup>
+                            <ul>
+                                <li>Ranitidine (Zantac) 50 mg IV.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Glucocorticoid: <sup>1</sup>
+                            <ul>
+                                <li>Methylprednisolone (solu-medrol) 125 mg IV.<sup>1</sup></li>
+                            </ul>
+
+                        </li>
+                        <li>Monitoring:<sup>1</sup>
+                            <ul>
+                                <li>Vital signs.<sup>1</sup></li>
+                                <li>Urine output.<sup>1</sup></li>
+                                <li>Pulse oximetry.<sup>1</sup></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('anphyrefrarx')" class="hg-accBtn">Refractory treatment:<span
+                        id="anphyrefrarx_c" class="hg-NavLinkChevron"></span></button>
+                <div id="anphyrefrarx" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Epinephrine continuous infusion by infusion pump if inadequate response IM epinephrine and
+                            IV saline.<sup>1</sup>
+                            <ul>
+                                <li>Titrate starting at 0.1 mcg/kg/minute.<sup>1</sup></li>
+                                <li class="hg-accOr" />
+                                <li>Non-weight-based dosing 2-10 mcg/minute if the weight uncertain.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Second vasopressor (addition to epinephrine) if needed by infusion pump.<sup>1</sup></li>
+                        <li>Glucagon IV:<sup>1</sup>
+                            <ul>
+                                <li>If on beta-blocker may not respond to epinphrine (has inotropic and chronotropic effect not mediated by beta-receptors).<sup>1</sup></li>
+                                <li>Glucagon 1-5 mg IV over 5 minutes followed by 5-15 mcg/minute
+                                    infusion.<sup>xxx</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--   <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                    </ul>
+                </div>
+            </section> -->
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('anaphyRefs')" class="hg-accBtn">References:<span id="anaphyRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="anaphyRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Campbell R, Kelso J. Anaphylaxis: Emergency treatment. In: Walls R, Randolph A, ed.
+                            <i>UpToDate.</i> Waltham, Mass.:
+                            UpToDate, 2020. https://www.uptodate.com/contents/anaphylaxis-emergency-treatment. Accessed
+                            March 21,2020.</li>
+
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
