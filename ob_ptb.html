@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Preterm Birth">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Preterm Birth</h1>
+
+           <!--  <h2 class="hg-h2SectionTitle">Category Header</h2>
+ -->
+            <section class="accordian">
+                <button onclick="AccToggle('ptbinus')" class="hg-accBtn">Incidence US:<span id="ptbinus_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ptbinus" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>10% all births.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('ptbRelLinks')" class="hg-accBtn">Related topics:<span id="ptbRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ptbRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('ptbRefs')" class="hg-accBtn">References:<span id="ptbRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ptbRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Prelabor rupture of membranes. ACOG Practice Bulletin No. 217. American College of Obstetricians and Gynecologists. Obstet Gynecol 2020;135:e80–97.</li>
+                        <!-- <li>Zacharias N. Perinatal mortality. In: Weisman L, ed. <i>UpToDate.</i> Waltham, Mass.:
+                            UpToDate, 2018. https://www.uptodate.com/contents/perinatal-mortality#H1. Accessed Febuary
+                            18,2020. </li> -->
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
