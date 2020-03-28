@@ -57,8 +57,7 @@ function AccToggle(accID) {
 }
 
 const BACKBUTTON = '&#8592;';
-// const TITLEHTML = "OB/GYN Nuggets<sup>r</sup>";
-// const TITLEHTML = "Pocket Ob/Gyn";
+// const TITLEHTML = "OB/GYN Referenced<sup>r</sup>";
 const TITLEHTML = "";
 // const HAMBURGER = '&#9776';
 const HAMBURGER = 'Menu';
