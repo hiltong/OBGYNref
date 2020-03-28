@@ -463,8 +463,8 @@ font-weight: normal;
 .hg-accOlRef a {text-decoration: none;}
 
 /*Adds the 'or' in an accordian list*/
-.hg-accOr{list-style-type: none; font-style: italic;}
-.hg-accOr::after{content: "or";}     
+.hg-accOr{list-style-type: none; font-style: italic; color: red; font-weight: bold;}
+.hg-accOr::after{content: "-or-";}     
 
 /*Formats Note: at bottom of accordian list */
 .hg-accNote{margin-top: 0px; margin-bottom: 0px;}
