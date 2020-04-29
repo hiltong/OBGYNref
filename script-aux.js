@@ -190,7 +190,7 @@ function CreateSideBar() {
   var aboutText = document.createTextNode("About");
   about.appendChild(aboutText);
   about.setAttribute("class", "hg-SideBarItem")
-  about.setAttribute("href", "about.html")
+  about.setAttribute("href", "index.html")
   sideBar.appendChild(about);
 
 
