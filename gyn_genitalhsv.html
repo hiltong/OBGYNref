@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Genital Herpes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Genital Herpes</h1>
+
+            <h2 class="hg-h2SectionTitle">General</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('genhsvdef')" class="hg-accBtn">Defintions:<span id="genhsvdef_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="genhsvdef" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Primary first-episode infection: HSV-1 or HSV-2 in lesions and no antibodies to either viral
+                            type in
+                            serum.<sup>1</sup></li>
+                        <li>Nonprimary first-episode: One viral type in lesions and antibodies to the other
+                            viral type in serum<sup>1</sup></li>
+                        <li>Recurrent infection: HSV-1 or HSV-2 in lesions and antibodies to the same viral type in
+                            serum.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('timerfeahsv')" class="hg-accBtn">Time frames:<span id="timerfeahsv_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="timerfeahsv" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Incubation 2-12 days after acquiring.<sup>1</sup></li>
+                        <li>Type-specific antibodies in 2–3 weeks.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Pregnancy</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('genhsvnewbe')" class="hg-accBtn">New 5/2020:<span id="genhsvnewbe_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="genhsvnewbe" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Consider offering c-section if primary or nonprimary first-episode in 3rd trimester secondary to possibility of prolonged viral shedding.<sup>1</sup></li>
+                        <li>Consider continuing treatment until delivery if primary or nonprimary first-episode in 3rd trimester.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('pregpercenthsv')" class="hg-accBtn">Pregnancy specifics:<span
+                        id="pregpercenthsv_c" class="hg-NavLinkChevron"></span></button>
+                <div id="pregpercenthsv" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>~2% seronegative women acquire HSV-1 or HSV-2 during pregnancy.<sup>1</sup></li>
+                        <li>~10% of HSV-2 seronegative wome have seropositive partners.<sup>1</sup></li>
+                        <li>New infections in pregnancy:<sup>1</sup>
+                            <ul>
+                                <li>Most asymptomatic.<sup>1</sup></li>
+                                <li>1/3 occur in each trimester.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Recurrent genital HSV:<sup>1</sup>
+                            <ul>
+                                <li>~75% have at least one recurrence in pregnancy.<sup>1</sup></li>
+                                <li>~14% have prodromal symptoms or recurrence at delivery.<sup>1</sup></li>
+                                <li>15% first-episode infections in pregnancy are recurrent infections.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('genhsvneonatdz')" class="hg-accBtn">Neonatal disease:<span
+                        id="genhsvneonatdz_c" class="hg-NavLinkChevron"></span></button>
+                <div id="genhsvneonatdz" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>~1/3 -1/2 secondary to HSV-1.<sup>1</sup></li>
+                        <li>Classified:<sup>1</sup>
+                            <ul>
+                                <li>25% disseminated disease (mortality 30%).<sup>1</sup></li>
+                                <li>30% CNS disease (mortality 4%).<sup>1</sup></li>
+                                <li>45% skin, eyes, mouth.<sup>1</sup></li>
+                                <li>~20% survivors long-term neurologic problems.<sup>1</sup></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('hsvsupther')" class="hg-accBtn">Treatment:<span id="hsvsupther_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="hsvsupther" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Primary or nonprimary first-episode:<sup>1</sup>
+                            <ul>
+                                <li>Acyclovir:<sup>1</sup>
+                                    <ul>
+                                        <li>400 mg po TID x 7-10 days.<sup>1</sup></li>
+                                        <li>Can extend longer than 10 days if lesions not healed.<sup>1</sup></li>
+                                        <li>Option to continue to delivery if occurs in 3rd trimester.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Valacyclovir:<sup>1</sup>
+                                    <ul>
+                                        <li>1 g po BID x 7-10 days.<sup>1</sup></li>
+                                        <li>Can extend longer than 10 days if lesions not healed.<sup>1</sup></li>
+                                        <li>Option to continue to delivery if occurs in 3rd trimester.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Symptomatic recurrent episode:<sup>1</sup>
+                            <ul>
+                                <li>Acyclovir:<sup>1</sup>
+                                    <ul>
+                                        <li>400 mg po TID x 5 days or 800 mg po BID x 5d days.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Valacyclovir:<sup>1</sup>
+                                    <ul>
+                                        <li>500 mg po BID x 3 days or 1 g po daily x 5 days.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Suppresion:<sup>1</sup>
+                            <ul>
+                                <li>Acyclovir:<sup>1</sup>
+                                    <ul>
+                                        <li>400 mg po TID starting at 36 weeks ubtil delivery.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Valacyclovir:<sup>1</sup>
+                                    <ul>
+                                        <li>500 mg po BID starting at 36 weeks ubtil delivery.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Severe disease:<sup>1</sup>
+                            <ul>
+                                <li>Acyclovir<sup>1</sup>
+                                    <ul>
+                                        <li>5-10 mg/kg IV every 8 hrs x 2-7 days and then po primary regimen to complete
+                                            10 days.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <P class="hg-accNote"> xxx<sup>xxx</sup></P> -->
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('hsvcser')" class="hg-accBtn">C-section:<span id="hsvcser_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="hsvcser" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>C-section indicated:<sup>xxx</sup>
+                            <ul>
+                                <li>Active genital lesions or prodromal symptoms.<sup>1</sup></li>
+                                <li>Can offer if primary or nonprimary first-episode genital HSV infection in 3rd
+                                    trimester secondary to possibility of prolonged viral shedding .<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>C-section not indicated:<sup>xxx</sup>
+                            <ul>
+                                <li>Nongenital lesions back, thigh, buttock (can cover with occlusive
+                                    dressing).<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--          <P class="hg-accNote"> xxx<sup>xxx</sup></P> -->
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('hsvppromaxs')" class="hg-accBtn">PPROM:<span id="hsvppromaxs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="hsvppromaxs" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                                <li>If expectant management antiviral therapy recommended.<sup>1</sup></li>
+                    </ul>
+                    <P class="hg-accNote"> xxx<sup>xxx</sup></P>
+                </div>
+            </section>
+
+
+
+            <!--  <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                    </ul>
+                </div>
+            </section> -->
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('genitalhsvRefs')" class="hg-accBtn">References:<span id="genitalhsvRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="genitalhsvRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Management of genital herpes in pregnancy. ACOG Practice Bulletin No. 220. American College
+                            of Obstetricians and Gynecologists. Obstet Gynecol 2020;135:e193–202.</li>
+                        <!--   <li>Zacharias N. Perinatal mortality. In: Weisman L, ed. <i>UpToDate.</i> Waltham, Mass.:
+                            UpToDate, 2018. https://www.uptodate.com/contents/perinatal-mortality#H1. Accessed Febuary
+                            18,2020. </li> -->
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
