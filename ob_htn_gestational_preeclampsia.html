@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Gestaional Hypertension & Preeclampsia">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Gestaional Hypertension & Preeclampsia</h1>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('sevepreecrity')" class="hg-accBtn">Classification:<span id="sevepreecrity_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="sevepreecrity" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Gestaional hypertension:<sup>1</sup>
+                            <ul>
+                                <li>Systolic BP &ge; 140 mm Hg or diastolic BP &ge; 90 mm Hg on two occasions at
+                                    least 4 hours apart after 20 weeks of gestation in a woman with a previously normal
+                                    blood pressure<sup>1</sup></li>
+                                <li>No proteinuria (if proteinuira use preeclampsia).<sup>1</sup></li>
+                                <li>No severe features (instead of gestational hypertension with severe features use
+                                    preeclampsia with severe features).<sup>1</sup></li>
+                                <P class="hg-accNote">50% develop proteinuria or severe features.<sup>1</sup></P>
+                            </ul>
+                        </li>
+                        <li>Preeclampsia without severe features:<sup>1</sup>
+                            <ul>
+                                <li>Systolic BP &ge; 140 mm Hg or diastolic BP &ge; 90 mm Hg on two occasions at
+                                    least 4 hours apart after 20 weeks of gestation in a woman with a previously normal
+                                    blood pressure<sup>1</sup></li>
+                                <li>Proteinuria:<sup>1</sup>
+                                    <ul>
+                                        <li>&ge; 300 mg on 24 hour urine <sup>1</sup></li>
+                                        <li>Protein/creatinine ratio &ge; 0.3<sup>1</sup></li>
+                                        <li>Dipstick 2+ (use only if other quantitative methods not
+                                            available)<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Preeclampsia with severe features:<sup>1</sup>
+                            <ul>
+
+                                <li>Systolic BP &ge; 160 or diastolic BP &ge; 110 on 2 occasions at least 4 hours apart
+                                    unless
+                                    BP treated before 4 hours.<sup>1</sup></li>
+                                <li>Platelet count < 100,000/microL.<sup>1</sup></li>
+                                <li>Elevated liver enzymes (AST & ALT) &ge; twice upper limit of normal or severe
+                                    persistent right
+                                    upper quadrant or epigastric pain unresponsive to medication and not accounted for
+                                    by
+                                    alternative diagnoses or both.<sup>1</sup></li>
+                                <li>Serum creatinine concentration > 1.1 mg/dL or a doubling of the serum creatinine in
+                                    absence of other renal disease.<sup>1</sup></li>
+                                <li>Pulmonary edema.<sup>1</sup></li>
+                                <li>New-onset headache unresponsive to medication (acetaminophen) and not accounted for
+                                    by other
+                                    diagnoses.<sup>1</sup></li>
+                                <li>Visual disturbances.<sup>1</sup></li>
+                            </ul>
+                            <P class="hg-accNote">Older criteria included proteinuria > 5 g/24 hours and fetal growth
+                                restriction.<sup>1</sup></P>
+                        </li>
+                        <li>HELP(hemolysis, elevated liver enzymes, low platelets)<sup>1</sup>
+                            <ul>
+                                <li>LDH &ge; 600 IU/L<sup>1</sup></li>
+                                <li>Platelet count < .,000/microL.<sup>1</sup></li>
+                                <li>Elevated liver enzymes (AST & ALT) &ge; twice upper limit of normal or severe
+                                    persistent right upper quadrant or epigastric pain unresponsive to medication and
+                                    not accounted for by alternative diagnoses or both.<sup>1</sup></li>
+                                <P class="hg-accNote">30% occurs postpartum.<sup>1</sup></P>
+                                <P class="hg-accNote">15% lack hypertension or proteinuira. Presenting
+                                    symptoms 90% cases are RUQ pain and malaise and 50% cases vomiting.<sup>1</sup></P>
+                            </ul>
+                        </li>
+                        <li>Eclampsia:<sup>1</sup>
+                            <ul>
+                                <li>78–83% of cases preceded by premonitory signs of cerebral irritation.<sup>1</sup>
+                                </li>
+                                <li>20–38% don not have classic signs of preeclmpsia.<sup>1</sup></li>
+                                <li>May occur if untreated in preeclampsia (1.9%) or severe preeclampsia
+                                    (3.2%).<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Amaurosis fugax (temporary blindness):<sup>1</sup>
+                            <ul>
+                                <li>May occur with preeclampsia or eclampsia.<sup>1</sup></li>
+                                <li>May last several hours to a week.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>PRES (Posterior reversible encephalopathy syndrome):<sup>1</sup>
+                            <ul>
+                                <li>May occur with preeclampsia or eclampsia.<sup>1</sup></li>
+                                <li>Headache, seizure, altered consciousness or confusion, or vision loss or
+                                    deficit.<sup>1</sup></li>
+                                <li>Diagnosis by MRI with vasogenic edema and hyperintensities in the posterior aspects
+                                    of the brain.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>RCVS (Reversible cerebral vasoconstriction syndrome):<sup>1</sup>
+                            <ul>
+                                <li>May be confused with preeclampsia or eclampsia.<sup>1</sup></li>
+                                <li>Reversible multifocal narrowing of the arteries of the brain with characterized by a
+                                    thunderclap headache and sometimes focal neurologic deficits or seizure.<sup>1</sup>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('gestpreehepch')" class="hg-accBtn">Hepatic changes:<span
+                        id="gestpreehepch_c" class="hg-NavLinkChevron"></span></button>
+                <div id="gestpreehepch" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>With preeclampsia aspartate aminotransferase (AST) higher than alanine aminotransferase
+                            (ALT) secondary to periportal necrosis.<sup>1</sup>
+                        </li>
+                        <li>With parenchymal liver disease ALT usually is higher than AST.<sup>1</sup></li>
+                        <li>LDH maybe elevated secondary to hepatic damage or hemolysis.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('pihdeltime')" class="hg-accBtn">Delivery timing:<span id="pihdeltime_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="pihdeltime" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>
+                            < 34 0/7 weeks <sup>1</sup>
+                                <ul>
+                                    <li>Maternal:<sup>1</sup>
+                                        <ul>
+                                            <li>Uncontrolled severe-range BP not responsive to medication.<sup>1</sup>
+                                            </li>
+                                            <li>Persistent headaches unresponsive to treatment.<sup>1</sup></li>
+                                            <li>Visual disturbances, motor deficit or altered sensorium.<sup>1</sup>
+                                            </li>
+                                            <li> Epigastric pain or right upper pain unresponsive to
+                                                analgesics.<sup>1</sup></li>
+                                            <li>Stroke.<sup>1</sup></li>
+                                            <li>Myocardial infarction.<sup>1</sup></li>
+                                            <li>Renal dysfunction (serum creatinine greater than 1.1 mg/dL or twice
+                                                baseline).<sup>1</sup></li>
+                                            <li>Pulmonary edema.<sup>1</sup></li>
+                                            <li>Suspected acute placental abruption or vaginal bleeding in the absence
+                                                of placenta previa.<sup>1</sup></li>
+                                            <li> HELLP syndrome.<sup>1</sup></li>
+                                            <li>Eclampsia.<sup>1</sup></li>
+                                        </ul>
+                                    </li>
+                                    <li>Fetus:<sup>1</sup>
+                                        <ul>
+                                            <li> Fetal death or fetus without expectation for survival.<sup>1</sup></li>
+                                            <li>Abnormal fetal testing.<sup>1</sup></li>
+                                            <li>Persistent reversed end-diastolic flow in the umbilical
+                                                artery.<sup>1</sup></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>34 0/7 weeks:<sup>1</sup>
+                            <ul>
+                                <li>Preeclampsia with severe features with stable maternal and fetal
+                                    condition<sup>1</sup></li>
+                                <li>Expectant management of stable preeclampsia with severe features can prolong
+                                    pregnancy by 1–2 weeks.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>37 0/7 weeks:<sup>1</sup>
+                            <ul>
+                                <li>Gestational hypertension or preeclampsia without severe features.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('maglevelsewe')" class="hg-accBtn">Magnesium sulfate levels:<span
+                        id="maglevelsewe_c" class="hg-NavLinkChevron"></span></button>
+                <div id="maglevelsewe" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Therapeutic: 5-9 mg/dl.<sup>1</sup></li>
+                        <li>Loss deep tendon reflexes: > 9 mg/dl.<sup>1</sup></li>
+                        <li>Respiratory depression: > 12 mg/dL.<sup>1</sup></li>
+                        <li>Cardiac arrest: > 30 mg/dl.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('magsultoxcorr')" class="hg-accBtn">Magnesium sulfate toxicity
+                    correction:<span id="magsultoxcorr_c" class="hg-NavLinkChevron"></span></button>
+                <div id="magsultoxcorr" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Calcium gluconate 10% solution, 10 ml intravenous over 3 minutes + intravenous furosemide to
+                            increase urinary excretion.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('magrefseiz')" class="hg-accBtn">Magnesium refractory seizures:<span id="magrefseiz_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="magrefseiz" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Sodium amobarbital (250 mg IV in 3 minutes).<sup>1</sup></li>
+                        <li>Thiopental.<sup>1</sup></li>
+                        <li>Phenytoin (1,250 mg IV at a rate of 50 mg/minute).<sup>1</sup></li>
+                        <li>Endotracheal intubation with assisted ventilation.<sup>1</sup></li>
+                        <li>Head imaging.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('preesevrwedRelLinks')" class="hg-accBtn">Related topics:<span
+                        id="preesevrwedRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="preesevrwedRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+
+                        <li><a href="ob_asa.html"> Low-Dose Aspirin</a></li>
+                        <li><a href="ob_htn_emergent_therapy.html">Hypertension, Obstetrical, Emergent Therapy</a></li>
+                        <li><a href="ob_htn_postpartum.html">Hypertension Postpartum</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('preesereRefs')" class="hg-accBtn">References:<span id="preesereRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="preesereRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Gestational hypertension and preeclampsia. ACOG Practice Bulletin No. 222. American College
+                            of Obstetricians and Gynecologists. Obstet Gynecol 2020;135:e237–60.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
