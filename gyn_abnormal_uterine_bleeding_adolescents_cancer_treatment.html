@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Abnormal Uterine Bleeding/Adolescents/Cancer Treatment">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Abnormal Uterine Bleeding/Adolescents/Cancer Treatment</h1>
+
+            <h2 class="hg-h2SectionTitle">General</h2>
+            <section class="accordian">
+                <button onclick="AccToggle('aubalcainco')" class="hg-accBtn">Initial considerations:<span
+                        id="aubalcainco_c" class="hg-NavLinkChevron"></span></button>
+                <div id="aubalcainco" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Risk thromboembolism (eg combined oral contraceptive contraindicated with bone marrow or
+                            stem cell transplant).<sup>1</sup></li>
+                        <li>Need for contraception.<sup>1</sup></li>
+                        <li>Emetogenic potential.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Acute Management</h2>
+            <section class="accordian">
+                <button onclick="AccToggle('aubaldoacprqw')" class="hg-accBtn">Acute progestin therapy:<span
+                        id="aubaldoacprqw_c" class="hg-NavLinkChevron"></span></button>
+                <div id="aubaldoacprqw" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Medroxyprogesterone acetate 60-80 mg orally BID until bleeding controlled and then progestin
+                            taper.<sup>1</sup></li>
+                        <li class="hg-accOr" />
+                        <li>Norethindrone acetate (Aygestin) 10-20 mg orally every 8 hours until bleeding controlled and
+                            then progestin taper.<sup>1</sup></li>
+                    </ul>
+                    <P class="hg-accNoteBlank"><span style="font-weight: bold;">Progestin taper:</span>
+                        Medroxyprogesterone acetate 10 mg orally every 4-6 hours as needed to
+                        manage bleeding.<sup>1</sup></P>
+                </div>
+            </section>
+            <section class="accordian">
+                <button onclick="AccToggle('aubacestrwf')" class="hg-accBtn">Acute estrogen therapy:<span
+                        id="aubacestrwf_c" class="hg-NavLinkChevron"></span></button>
+                <div id="aubacestrwf" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Continuous combined oral contraceptive taper. Monophasic 30-50 mcg ethinyl
+                            estradiol/norgestrel or levonorgestrel every 6-8 hours and taper as needed to manage
+                            bleeding. Skip placebos and take continuously.<sup>1</sup></li>
+                        <li class="hg-accOr" />
+                        <li>Premarin 25 mg IV every 4 hours to decrease bleeding then continuous combined oral
+                            contraceptive taper as above. Consider antiemetics.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="accordian">
+                <button onclick="AccToggle('aubactmensupab')" class="hg-accBtn">Menstrual suppression:<span
+                        id="aubactmensupab_c" class="hg-NavLinkChevron"></span></button>
+                <div id="aubactmensupab" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Leuprolide acetate with norethindrone acetate 5 mg daily add-back as below.<sup>1</sup></li>
+                        <li class="hg-accOr" />
+                        <li>Progestin-only therapy as below.<sup>1</sup></li>
+                        <li class="hg-accOr" />
+                        <li>Continuous combined oral contraceptive as below.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="accordian">
+                <button onclick="AccToggle('aubrefracref')" class="hg-accBtn">Refractory bleeding<span
+                        id="aubrefracref_c" class="hg-NavLinkChevron"></span></button>
+                <div id="aubrefracref" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Alternate acute management (Progestin | Estrogen).<sup>1</sup></li>
+                        <li>Possible pelvic ultrasound for endometrial thickness to guide treatment.<sup>1</sup></li>
+                        <li>Possible antifibrinolytics (oral or IV tranexamic acid).<sup>1</sup></li>
+                        <li>Possible intrauterine foley.<sup>1</sup></li>
+                        <li>Possible suction curettage with Levonorgestrel-releasing IUD.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Menstrual Suppression</h2>
+            <section class="accordian">
+                <button onclick="AccToggle('aubmsov')" class="hg-accBtn">Overview:<span id="aubmsov_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="aubmsov" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Use prophylactically or after acute management.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="accordian">
+                <button onclick="AccToggle('aubmsleac')" class="hg-accBtn">Leuprolide acetate (GnRH agonist):<span
+                        id="aubmsleac_c" class="hg-NavLinkChevron"></span></button>
+                <div id="aubmsleac" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Advantages:<sup>1</sup>
+                            <ul>
+                                <li>Best used for menstrual suppression. High rates of amenorrhea (up to
+                                    96%).<sup>1</sup></li>
+                                <li>Not prothrombotic.<sup>1</sup></li>
+                                <li>Possible chemotherapy protective effect on premature ovarian failure but no evidence
+                                    preserves fertility.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Disadvantages:<sup>1</sup>
+                            <ul>
+                                <li>Not contraception.<sup>1</sup></li>
+                                <li>Initial flare with AUB 1st 2-3 weeks. Norethindrone acetate 5 mg daily may decrease.
+                                    If severe can use acute management options.<sup>1</sup></li>
+                                <li>Low estrogen effects of vasomotor symptoms and bone loss. Decreased with concurrent
+                                    use of add-back therapy.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Regimens:<sup>1</sup>
+                            <ul>
+                                <li>3.75 mg IM monthly / 11.5 mg IM every 12 weeks / Subcutaneous form available if IM
+                                    hematoma concerns.<sup>1</sup></li>
+                                <li>Add-back: Norethindrone acetate 5 mg daily reasonable to start with onset of
+                                    therapy.<sup>1</sup></li>
+                                <li>Add-back: Norethindrone acetate 5 mg + conjugated equine estrogen 0.625 mg daily has
+                                    more benefits on bone density if not contraindicated.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+            <section class="accordian">
+                <button onclick="AccToggle('auborileswc')" class="hg-accBtn">Elagolix (Orilissa) (oral GnRH
+                    antagonist):<span id="auborileswc_c" class="hg-NavLinkChevron"></span></button>
+                <div id="auborileswc" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Oral therapy and amenorrhea rate like leuprolide acetate but no current guidance for use
+                            with cancer treatment.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="accordian">
+                <button onclick="AccToggle('aubprogontx')" class="hg-accBtn">Progestin-only therapy:<span
+                        id="aubprogontx_c" class="hg-NavLinkChevron"></span></button>
+                <div id="aubprogontx" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Medroxyprogesterone acetate:<sup>1</sup>
+                            <ul>
+                                <li>10–20 mg orally/day.<sup>1</sup></li>
+                                <li>Not contraception.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li class="hg-accOr" />
+                        <li>Norethindrone acetate (Aygestin):<sup>1</sup>
+                            <ul>
+                                <li>5-15 mg orally/day.<sup>1</sup></li>
+                                <li>Not contraception.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li class="hg-accOr" />
+                        <li>Drospirenone (Slynd):<sup>1</sup>
+                            <ul>
+                                <li>4 mg orally/day.<sup>1</sup></li>
+                                <li>Contraception but more unscheduled bleeding.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li class="hg-accOr" />
+                        <li>Norethindrone (Micronor, etc.):<sup>1</sup>
+                            <ul>
+                                <li>0.35 mg orally/day.<sup>1</sup></li>
+                                <li>Contraception but more unscheduled bleeding.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li class="hg-accOr" />
+                        <li>Depot Medroxyprogesterone Acetate IM:<sup>1</sup>
+                            <ul>
+                                <li>50-70% amenorrheic in 12-24 months but initially high break through bleeding
+                                    rate.<sup>1</sup></li>
+                                <li>Subcutaneous form available if IM hematoma concerns.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li class="hg-accOr" />
+                        <li>LARC:<sup>1</sup>
+                            <ul>
+                                <li>Levonorgestrel-releasing IUD:<sup>1</sup>
+                                    <ul>
+                                        <li>32% amenorrheic 3 months.<sup>1</sup></li>
+                                        <li>Can be used in immunosuppressed.<sup>1</sup></li>
+                                        <li>If pre-existing and bleeding can use progestin taper.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Etonogestrel single-rod implant:<sup>1</sup>
+                                    <ul>
+                                        <li>Irregular bleeding limits use for menstrual suppression.<sup>1</sup></li>
+                                        <li>If pre-existing and bleeding can use progestin taper.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                    </ul>
+                    <P class="hg-accNoteBlank"><span style="font-weight: bold;">Progestin taper:</span>
+                        Medroxyprogesterone acetate 10 mg orally every 4-6 hours as needed to
+                        manage bleeding.<sup>1</sup></P>
+                </div>
+            </section>
+            <section class="accordian">
+                <button onclick="AccToggle('aubccccaal')" class="hg-accBtn">Continuous combined oral contraceptive:<span id="aubccccaal_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="aubccccaal" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Emetogenic.<sup>1</sup></li>
+                        <li>Risk VTE (eg Bone marrow and stem cell transplants have increased risk hyperbilirubinemia and hepatic veno-occlusive disease).<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+	
+            
+            <!-- <section class="accordian">
+                    <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="xxx" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li><sup>xxx</sup>
+                                <ul>
+                                    <li><sup>xxx</sup></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section> -->
+
+            <!-- <section class="accordian">
+                    <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="xxx" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li><sup>xxx</sup>
+                                <ul>
+                                    <li><sup>xxx</sup></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section> -->
+
+            <!--   <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                    </ul>
+                </div>
+            </section> -->
+
+            <hr>
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('aubrefaldouRefs')" class="hg-accBtn">References:<span id="aubrefaldouRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="aubrefaldouRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Options for prevention and management of menstrual bleeding in adolescent patients
+                            undergoing cancer treatment. ACOG Committee Opinion No. 817. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e7–15.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+
+            <div class="hg-AddContent">
+                <p class="hg-AddSmall ">AD</p>
+                <p class="hg-AddLarge  ">AD</p>
+            </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

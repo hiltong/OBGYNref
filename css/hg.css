@@ -469,8 +469,8 @@ font-weight: normal;
 /*Formats Note: at bottom of accordian list */
 .hg-accNote{margin-top: 0px; margin-bottom: 0px;}
 .hg-accNote::before{content: "Note: "; font-weight: bold;}
-
-
+/* Blank Note */
+.hg-accNoteBlank{margin-top: 0px; margin-bottom: 0px;}
 
 /*Formats ref contained in most commons list */
 .hg-accRefInList{margin-top: 0px;margin-bottom: 0px;}
