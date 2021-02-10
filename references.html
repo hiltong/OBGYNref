@@ -1,114 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <meta charset="UTF-8">
+
 <title>OB/GYN Referenced</title>
-<meta name="theme-color" content="#000000"/>
-<meta name="description" content="References for the web app 'Ob/Gyn-Referenced'">
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="References">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/hg.css">
 
-    <body>
-        <!-- Navbar -->
-        <div class="w3-top">
-          <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()">☰</a>   
-            <span class="w3-bar-item"><b>Ob/Gyn-Referenced</b></span>
-            <a href="index.html"class="w3-bar-item w3-button  w3-hide-large w3-hide-small w3-hover-white">Home</a>
-            <a class="w3-bar-item w3-button w3-hide-large w3-hide-small w3-hover-red w3-red">References</a>
-            <a href="about.html" class="w3-bar-item w3-button w3-hide-large w3-hide-small w3-hover-white">About</a>
-          </div>
-        </div>  
+<body onload="SetUpPage()">
 
-        <!-- Sidebar -->
-        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-         <!--  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-            X
-          </a> -->
-          <h4 class="w3-bar-item"><b>Menu</b></h4>
-          <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Home</a>
-          <a class="w3-bar-item w3-button w3-hover-red w3-red" onclick=w3_close()>References</a>
-          <a class="w3-bar-item w3-button w3-hover-black" href="about.html">About</a>
-        </nav>
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
 
-        <!-- Overlay effect when opening sidebar on small screens -->
-        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-        
-        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-        <div class="w3-main" style="margin-left:250px">
-        
-          <div class="w3-row w3-padding-64">
-            <div class="w3-twothird w3-container">
-              <h1 class="w3-text-teal">References</h1>
-                <div class="w3-bar-block ">
-                    <button onclick="AccWork('Demo1')" class="w3-btn w3-block w3-black w3-left-align hg-acc">co (ACOG Committee Opinions)</button>
-                    <div id="Demo1" class="w3-container w3-hide">
-                        <dl>
-                            <dt>co 753</dt>
-                            <dd>Assessment and treatment of pregnant women with suspected or confirmed influenza. ACOG Committee Opinion No. 753. American College of Obstetricians and Gynecologists. Obstet Gynecol 2018;132:e169–73.</dd>
-                          </dl>
-                    </div>
-                    <button onclick="AccWork('Demo2')" class="w3-btn w3-block w3-black w3-left-align">pb (ACOG Practice Bulletins)</button>
-                    <div id="Demo2" class="w3-container w3-hide">
-                     <p>Test</p>
-                    </div>
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">References</h1>
+   
+            <section class="accordian">
+                <button onclick="AccToggle('acogcos')" class="hg-accBtn">ACOG Committee Opinions<span id="acogcos_c" class="hg-NavLinkChevron"></span></button>
+                <div id="acogcos" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Options for prevention and management of menstrual bleeding in adolescent patients
+                          undergoing cancer treatment. ACOG Committee Opinion No. 817. American College of
+                          Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e7–15.</li>
+                            <ul>
+                              <li><a href=" gyn_abnormal_uterine_bleeding_adolescents_cancer_treatment.html">Abnormal Uterine Bleeding/Adolescents/Cancer Treatment</a>          </li>
+                               
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            
-            </div>
-            <div class="w3-third w3-container">
-              <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-              <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-            </div>
-          </div>
+            </section>
+
+            <!-- <section class="accordian">
+                    <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
+                    <div id="xxx" class="hg-accDivMain">
+                        <ul class=hg-accUl>
+                            <li><sup>xxx</sup>
+                                <ul>
+                                    <li><sup>xxx</sup></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section> -->
          
-          <!-- <footer id="myFooter" class="w3-bottom">
-            <div class="w3-container w3-theme-l2 w3-padding-32">
-              <h4>Footer</h4>
-            </div>
-          </footer> -->
-        
-        <!-- END MAIN -->
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
         </div>
-      
-       <script defer src="script.js"></script>  
-       <script>
-        // Get the Sidebar
-        var mySidebar = document.getElementById("mySidebar");
-        
-        // Get the DIV with overlay effect
-        var overlayBg = document.getElementById("myOverlay");
-        
-        // Toggle between showing and hiding the sidebar, and add overlay effect
-        function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-                overlayBg.style.display = "none";
-            } else {
-                mySidebar.style.display = 'block';
-                overlayBg.style.display = "block";
-            }
-        }
-        
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
-            overlayBg.style.display = "none";
-        }
 
-         function AccWork(id) {
-            var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-              x.className += " w3-show";
-            } else { 
-              x.className = x.className.replace(" w3-show", "");
-            }
-          }
-      </script>   
+    </div>
 
-    </body>
-</html>
-        
- 
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>              

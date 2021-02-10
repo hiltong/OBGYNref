@@ -728,6 +728,30 @@ background-color: black;
     height: 0.4em;
 }
 
+/*Topics Page */
+.hg-topicsBody a {
+  color: blue;
+  display: block;
+  /* padding-top: 0.35em; */
+  /* padding-bottom: 0.35em; */
+  font-size: 1.2em;
+  /* margin-top: 0.5em; */
+  /* margin-bottom: 0.5em; */
+  margin-left: 10px;
+  margin-right: 0px;
+  font-weight: normal;
+  text-decoration-line: none;
+}
+
+.hg-topicsBody a:hover {
+  background: black;
+  color: white;
+}
+
+.hg-topicsBody a:active {
+  color: red;
+}
+
     @media (min-width:601px){.hg-InfoContent{width:66.66666%} .hg-AddContent{float: right; width:33.33333%;}}
     @media (max-width:600px){.hg-InfoContent{width:100%} .hg-AddContent{width: 100%; float: left;}}
 

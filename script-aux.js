@@ -186,6 +186,13 @@ function CreateSideBar() {
   // obGlossary.setAttribute("href", "sitemap.html")
   // sideBar.appendChild(obGlossary);
 
+  var globalRefernces = document.createElement("a");
+  var globalReferncesText = document.createTextNode("References");
+  globalRefernces.appendChild(globalReferncesText);
+  globalRefernces.setAttribute("class", "hg-SideBarItem")
+  globalRefernces.setAttribute("href", "references.html")
+  sideBar.appendChild(globalRefernces);
+
   var about = document.createElement("a");
   var aboutText = document.createTextNode("About");
   about.appendChild(aboutText);
