@@ -296,7 +296,15 @@ body{
   .hg-MainLink:active {
     color: red;
   }
-  /*Nav Link----------------------------------------------------------------------------------------------------*/
+
+/*Format Page---------------------------------------------------------------------------------------------------*/
+.hg-hrAboveSectionRefereces{
+  border-top: 1px dashed green;
+  border-radius: 5px;
+}
+
+
+/*Nav Link----------------------------------------------------------------------------------------------------*/
   .hg-NavLink{
     padding:10px 16px 10px 16px;
     margin: 6px 0px 0px 0px; /*seperates accordians so can see shadow*/
@@ -728,7 +736,7 @@ background-color: black;
     height: 0.4em;
 }
 
-/*Topics Page */
+/*Topics Page---------------------------------------------------------------------------------------------------------*/
 .hg-topicsBody a {
   color: blue;
   display: block;

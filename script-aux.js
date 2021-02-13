@@ -120,8 +120,20 @@ function SetUpPage() {
     iArray[0].innerHTML = ARROWRIGHT;
   }
 
+  FormatPage();
   CreateSideBar();
 }
+
+function FormatPage() {
+  var refsection = document.getElementsByClassName('accordian hg-accSectionRef')[0];
+  if (refsection != null) {
+    var hraboverefs = document.createElement("hr");
+    hraboverefs.setAttribute("class", "hg-hrAboveSectionRefereces")
+    refsection.prepend(hraboverefs);
+    /* alert("This is alert box!"); */
+  }
+}
+
 
 
 function CreateSideBar() {
@@ -150,7 +162,7 @@ function CreateSideBar() {
   // start.setAttribute("class", "hg-SideBarItem2")
   // start.setAttribute("href", "ob_index.html")
   // sideBar.appendChild(start);
- 
+
 
   // var glossaryHeader = document.createElement("p");
   // var glossaryHeaderText = document.createTextNode("Glossaries");
@@ -199,6 +211,9 @@ function CreateSideBar() {
   about.setAttribute("class", "hg-SideBarItem")
   about.setAttribute("href", "index.html")
   sideBar.appendChild(about);
+
+
+
 
 
 }
@@ -260,5 +275,5 @@ function AlgoBack(idhide, algobackstep) {
 
 /*Glossary-----------------------------------------------------------------------------------------------*/
 function ScrollToSection(section) {
-  document.getElementById(section).scrollIntoView({ block: "start", behavior:"auto" });
+  document.getElementById(section).scrollIntoView({ block: "start", behavior: "auto" });
 }
