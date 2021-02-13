@@ -228,9 +228,10 @@ body{
   /*Main Content--------------------------------------------------------------------------------------------------*/
 
 .hg-h2SectionTitle{
-  font-size: 1.17em;
+  font-weight: bold;
+  font-size: 1.19em;
  /*  margin-top: 0.60em; */
-  color: Black;
+  color: dodgerblue;
   background-color:white;
 }
 
@@ -351,13 +352,13 @@ margin: 0px 0px 0px 0px; /*seperates accordians so can see shadow*/
 white-space: normal;  /*lets words wrap in accordian button*/
 text-align:left;
 color:black;
-/* background: white;  */
-background:#f0f0f0;
+background: white; 
+/* background:#f0f0f0; */
 display:block;
 border:none;
 width:100%;
 font-size: 1.2em;
-font-weight: bold; 
+font-weight: normal; 
 text-decoration: none;
 cursor:pointer;
 /* border-top: 1px solid#ccc ; */
