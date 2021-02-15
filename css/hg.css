@@ -104,7 +104,7 @@ body{
     font-size: 1.5em;
     margin-bottom: 0.2em;
     color: Black;
-    font-weight: bold;
+    font-weight: normal;
     /* background-color: #00ffff; */
   }
   .hg-h2PageSubtitle{
@@ -124,7 +124,8 @@ body{
   .hg-SideBar{
     font-size:18px!important;
     color:#000 !important; 
-    background-color:#f0f0f0;
+    /* background-color:#f0f0f0; */
+    background-color:white;
     display:none;
     float:none;
     margin-left: 0px;
@@ -163,7 +164,8 @@ body{
 
   .hg-SideBarItem{
     margin-top: 2px;
-    color: blue;
+    /* color: blue; */
+    color: coral;
     text-decoration: none;
     display:block;
     padding:8px 16px;
@@ -358,17 +360,18 @@ padding:8px 16px 8px 4px;
 margin: 10px 0px 0px 0px; /*seperates accordians so can see shadow*/
 white-space: normal;  /*lets words wrap in accordian button*/
 text-align:left;
-color:black;
+color:dodgerblue;
 background: white; 
-/* background-image: linear-gradient(to right, white , rgb(235, 246, 250)); */
+/* background:green; */
+
 /* background:#f0f0f0; */
 display:block;
-border:none;
-/* border-top-width: 1px; */
-/* border-color: hotpink; */
-/* border-bottom-width: 0px; */
-/* border-left-width: 0px; */
-/* border-right-width: 0px; */
+/* border:none; */
+/* border-color: black; */
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-left: solid black 0.2px;
+border-right-width: 0px;
 width:100%;
 font-size: 1.2em;
 font-weight: normal; 
@@ -379,6 +382,7 @@ cursor:pointer;
 }
 .hg-accBtn sup{
 font-weight: normal;
+
 }
   
     /* .hg-accBtn:hover{ */
@@ -409,15 +413,21 @@ font-weight: normal;
     .hg-accDivMain{
         display:none;
         /* margin-top: -12px; */
-        margin-top: 0px;
+        margin-top: -10px;
         margin-bottom: 16px;
         color: darkslategray;
-        border-radius: 5px;
-        background: rgb(240, 252, 255);
-
+        /* border-radius: 5px;/ */
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        border-left: solid black 0.2px;
+        border-right-width: 0px;
+        /* background: rgb(240, 252, 255); */
+        background: white;
+        /* background:lightgoldenrodyellow; */
+        /* background-image: linear-gradient(to bottom, lightgoldenrodyellow , white); */
         padding-top: 1px;
         padding-left: 6px;
-        padding-bottom: 6px;
+        padding-bottom: 0px;
     }
     .hg-accRefNum{
       font-weight: normal;
@@ -496,7 +506,7 @@ font-weight: normal;
 .hg-accOlRef a {text-decoration: none;}
 
 /*Adds the 'or' in an accordian list*/
-.hg-accOr{list-style-type: none; font-style: italic; color: red; font-weight: bold;}
+.hg-accOr{list-style-type: none; font-style: italic; color: red; font-weight: normal;}
 .hg-accOr::after{content: "-or-";}     
 
 /*Formats Note: at bottom of accordian list */
