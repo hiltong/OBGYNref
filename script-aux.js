@@ -277,3 +277,8 @@ function AlgoBack(idhide, algobackstep) {
 function ScrollToSection(section) {
   document.getElementById(section).scrollIntoView({ block: "start", behavior: "auto" });
 }
+
+
+
+
+

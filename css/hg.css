@@ -16,6 +16,7 @@ html{
   /* margin-bottom: 30px; */
 }
 
+
 /* Word wrap all */
 body{
   word-wrap: break-word;
@@ -378,13 +379,16 @@ font-weight: normal;
 text-decoration: none;
 cursor:pointer;
 /* border-top: 1px solid#ccc ; */
-
 }
+
 .hg-accBtn sup{
 font-weight: normal;
-
 }
   
+
+
+
+
     /* .hg-accBtn:hover{ */
       /* color:white; */
       /* background:black; */
@@ -799,3 +803,13 @@ background-color: black;
     @media (max-width:600px){.hg-InfoContent{width:100%} .hg-AddContent{width: 100%; float: left;}}
 
    
+
+
+/* NEED TO CHECK AND SEE IF IOS SAFARI SUPPORTS focus-visable*/
+.hg-accBtn:focus {
+  outline: none;
+}
+.hg-accBtn:focus-visible {
+  /* outline: 3px solid blanchedalmond;  */
+  outline: 2px solid red; 
+}
