@@ -1,4 +1,3 @@
-.
 <!DOCTYPE html>
 <html lang="en-US">
 <meta charset="UTF-8">
@@ -23,86 +22,101 @@
 
     <nav class="hg-SideBar" id="mySidebar"></nav>
 
-    <div class="hg-OverLay" onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
 
     <div class="hg-Content">
 
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Gonorrhea</h1>
 
-
             <section class="accordian">
                 <button onclick="AccToggle('rxgcnonpreg')" class="hg-accBtn">Treatment uncomplicated gonrrhea of
-                    cervix/urethra/rectum - not pregnant:<span id="rxgcnonpreg_c"
-                        class="hg-NavLinkChevron"></span></button>
+                    cervix, urethra or rectum:<span id="rxgcnonpreg_c" class="hg-NavLinkChevron"></span></button>
                 <div id="rxgcnonpreg" class="hg-accDivMain">
                     <ul class="hg-accUl">
-                        <li>First line:
+                        <li>Recommended treatment:<sup>1</sup>
                             <ul>
-                                <li>Ceftriaxone 250 mg IM x 1 + Azithromycin 1 gm po x 1.<sup>1</sup></li>
-                                <li class="hg-accOr" />
-                                <li>Ceftriaxone 250 mg IM x 1 + Doxycycline 100 mg po BID x 7 days.<sup>1</sup></li>
-                            </ul>
-                        </li>
-                        <li>Second line:
-                            <ul>
-                                <li>Ceftriazone not available:<sup>1</sup>
+                                <li>&lt;150 kg(300 lb): Ceftriaxone 500 mg IM x 1.<sup>1</sup>
                                     <ul>
-                                        <li>Cefixime 400 mg po x 1 + Azithromycin 1 gm po x 1.<sup>1</sup></li>
-                                        <li class="hg-accOr" />
-                                        <li>Cefixime 400 mg po x 1 + Doxycycline 100 mg po BID x 7 days.<sup>1</sup>
+                                        <li>If chlamydia not excluded:<sup>1</sup>
+                                            <ul>
+                                                <li>Not pregnant: Doxycycline 100 mg orally BID x 7 days.<sup>1</sup>
+                                                </li>
+                                                <li>Pregnant: Azithromycin 1 g orally x 1.<sup>1</sup></li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                <li>Severe penicillin allergy:<sup>1</sup>
+                                <li>&ge;150 kg(300 lb): Ceftriaxone 1 g IM x 1.<sup>1</sup>
                                     <ul>
-                                        <li>Gemifloxacin 320 mg po x 1 + Azithromycin 2 gm po x 1.<sup>1</sup>
-                                            <li class="hg-accOr" />
-                                        <li>Gentamicin 240 mg IM x 1 + Azithromycin 2 gm po x 1.<sup>1</sup>
-                                            <li class="hg-accOr" />
-                                        <li>Gentamicin 240 mg IM x 1 + Doxycycline 100 mg po BID x 7
-                                            days.<sup>1</sup>
+                                        <li>If chlamydia not excluded:<sup>1</sup>
+                                            <ul>
+                                                <li>Not pregnant: Doxycycline 100 mg orally BID x 7 days.<sup>1</sup>
+                                                </li>
+                                                <li>Pregnant: Azithromycin 1 g orally x 1.<sup>1</sup></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>Alternative treatment:<sup>1</sup>
+                            <ul>
+                                <li>Gentamicin 240 mg IM x 1 <span style="color: red;">+</span> azithromycin 2 g orally
+                                    x 1<sup>1</sup></li>
+                                <li class="hg-accOr" />
+                                <li>Cefixime 800 mg orally x 1.<sup>1</sup>
+                                    <ul>
+                                        <li>If chlamydia not excluded:<sup>1</sup>
+                                            <ul>
+                                                <li>Not pregnant: Doxycycline 100 mg orally BID x 7 days.<sup>1</sup>
+                                                </li>
+                                                <li>Pregnant: Azithromycin 1 g orally x 1.<sup>1</sup></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                     </ul>
-                    <P class="hg-accNote">Use first line if history of rash if no history of IgE
+                    <!--  <P class="hg-accNote">Use first line if history of rash if no history of IgE
                         mediated &beta;-lactam allergy (anaphylaxis, Steevens-Johnson syndrome, toxic epidermal
-                        necrolysis).<sup>1</sup></P>
+                        necrolysis).<sup>1</sup></P> -->
                 </div>
             </section>
 
             <section class="accordian">
                 <button onclick="AccToggle('rxgcpreg')" class="hg-accBtn">Treatment uncomplicated gonrrhea of
-                    cervix/urethra/rectum - pregnant:<span id="rxgcpreg_c" class="hg-NavLinkChevron"></span></button>
+                    the pharynx:<span id="rxgcpreg_c" class="hg-NavLinkChevron"></span></button>
                 <div id="rxgcpreg" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>First line:
+                        <li>&lt;150 kg(300 lb): Ceftriaxone 500 mg IM x 1.<sup>1</sup>
                             <ul>
-                                <li>Ceftriaxone 250 mg IM + Azithromycin 1 gm po.<sup>1</sup></li>
-                            </ul>
-                        </li>
-                        <li>Second line:
-                            <ul>
-                                <li>Ceftriazone not available:<sup>1</sup>
+                                <li>If chlamydia found with pharyngeal testing:<sup>1</sup>
                                     <ul>
-                                        <li>Cefixime 400 mg po x 1 + Azithromycin 1 gm po x 1.<sup>1</sup></li>
-                                    </ul>
-                                </li>
-                                <li>Severe penicillin allergy:<sup>1</sup>
-                                    <ul>
-                                        <li>Gentamicin 240 mg IM x 1 + Azithromycin 2 gm po x 1.<sup>1</sup>
-                                            <li class="hg-accOr" />
-                                        <li>Azithromycin 2 gm po x 1 (needs test of cure 1 week).<sup>1</sup>
+                                        <li>Not pregnant: Doxycycline 100 mg orally BID x 7 days.<sup>1</sup>
+                                        </li>
+                                        <li>Pregnant: Azithromycin 1 g orally x 1.<sup>1</sup></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
+                        <li>&ge;150 kg(300 lb): Ceftriaxone 1 g IM x 1.<sup>1</sup>
+                            <ul>
+                                <li>If chlamydia found with pharyngeal testing:<sup>1</sup>
+                                    <ul>
+                                        <li>Not pregnant: Doxycycline 100 mg orally BID x 7 days.<sup>1</sup>
+                                        </li>
+                                        <li>Pregnant: Azithromycin 1 g orally x 1.<sup>1</sup></li>
+                                    </ul>
+                            </ul>
                     </ul>
-                    <P class="hg-accNote"> Use first line if history of rash if no history of IgE
-                        mediated &beta;-lactam allergy (anaphylaxis, Steevens-Johnson syndrome, toxic epidermal
-                        necrolysis).<sup>1</sup></P>
+                    </li>
+                    </ul>
+                    <P class="hg-accNote">No reliable alternative treatments for pharyngeal gonorrhea. If history of
+                        beta-lactam allergy assess severity and consider infectious disease consultation.<sup>1</sup>
+                    </P>
                 </div>
             </section>
 
@@ -111,21 +125,29 @@
                         class="hg-NavLinkChevron"></span></button>
                 <div id="sexpartgct" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>Test and presumptively treat sex partners in previous 60 days.<sup>1</sup></li>
-                        <li>Test and presumptively treat most recent  sex partner if none in previous 60 days.<sup>1</sup></li>
-                        <li>Expedited partner therapy with cefixime 400 mg po x 1 + azithromycin 1 gm po x 1 if legal and no other option to treat.<sup>1</sup></li>
+                        <!-- <li>Test and presumptively treat sex partners in previous 60 days.<sup>1</sup></li> -->
+                        <!-- <li>Test and presumptively treat most recent sex partner if none in previous 60 -->
+                        <!-- days.<sup>1</sup></li> -->
+                        <li>Expedited partner therapy with cefixime 800 mg orally x 1 if legal
+                            and no other option to treat.<sup>1</sup>
+                            <ul>
+                                <li>If chlamydia was not excluded: Doxycycline 100 mg orally BID x 7 days.<sup>1</sup>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </section>
 
-             <section class="accordian">
-                            <button onclick="AccToggle('avsexactgc')" class="hg-accBtn">Avoid sexual activity:<span id="avsexactgc_c" class="hg-NavLinkChevron"></span></button>
-                            <div id="avsexactgc" class="hg-accDivMain">
-                                <ul class=hg-accUl>
-                                    <li>7 days after patient and partner treated.<sup>1</sup></li>
-                                </ul>
-                            </div>
-                        </section>
+            <!--  <section class="accordian">
+                <button onclick="AccToggle('avsexactgc')" class="hg-accBtn">Avoid sexual activity:<span
+                        id="avsexactgc_c" class="hg-NavLinkChevron"></span></button>
+                <div id="avsexactgc" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>7 days after patient and partner treated.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section> -->
 
             <section class="accordian">
                 <button onclick="AccToggle('tortcgcrx')" class="hg-accBtn">Test of cure | Retest:<span id="tortcgcrx_c"
@@ -134,23 +156,21 @@
                     <ul class=hg-accUl>
                         <li>Test of cure for treatment failure:
                             <ul>
-                                <li>Not needed for uncomplicated gonrrhea of cervix/urethra/rectum treated with 1st or
-                                    2nd line regimen. Retest as abelow.<sup>1</sup></li>
-                                <li>1 week if Azithromycin 2 gm po x 1 used in pregnancy.<sup>1</sup></li>
-                                <li>14 days if pharyngeal gonorhhea treated with 2nd line regimen.<sup>1</sup></li>
+                                <li>Not needed for uncomplicated gonrrhea of cervix, urethra or rectum treated with
+                                    recommended or alternative regimens. Retest as as below.<sup>1</sup></li>
+                                <li>Pharyngeal gonorhhea retest 7-14 days after treatment.<sup>1</sup></li>
                             </ul>
                         </li>
                         <li>Retest for reinfection:
                             <ul>
-                                <li>Non-pregnant: 3 months.<sup>1</sup></li>
-                                <li>Pregnant: 3rd trimester.<sup>1</sup></li>
+                                <li>3 months.<sup>1</sup></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section class="accordian">
+            <!--  <section class="accordian">
                 <button onclick="AccToggle('postocgc')" class="hg-accBtn">Positive test of cure for gonorrhea:<span
                         id="postocgc_c" class="hg-NavLinkChevron"></span></button>
                 <div id="postocgc" class="hg-accDivMain">
@@ -159,9 +179,9 @@
                             NAAT &ge; 7 days after treatment and no sexual contact since treatment<sup>1</sup></li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="accordian">
+            <!-- <section class="accordian">
                 <button onclick="AccToggle('cheprxfailgc')" class="hg-accBtn">Cephalosporin treatment failure: <span
                         id="cheprxfailgc_c" class="hg-NavLinkChevron"></span></button>
                 <div id="cheprxfailgc" class="hg-accDivMain">
@@ -215,29 +235,28 @@
                     </ul>
                 </div>
             </section>
-
-            <!--  <section class="accordian">
-                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c" class="hg-NavLinkChevron"></span></button>
-                <div id="xxxRelLinks" class="hg-accDivMain">
-                    <ul class=hg-accUl>
-                        <li><a href="xxx.html">XXX</a></li>
-                    </ul>
-                </div>
-            </section> -->
+ -->
 
             <section class="accordian">
+                <button onclick="AccToggle('gchivdelh')" class="hg-accBtn">HIV infection:<span id="gchivdelh_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="gchivdelh" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Treat same as HIV negative.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian hg-accSectionRef">
                 <button onclick="AccToggle('stdgcRefs')" class="hg-accBtn">References:<span id="stdgcRefs_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="stdgcRefs" class="hg-accDivMain">
                     <ol class="hg-accOlRef">
-                        <li>Dual therapy for gonococcal infections. Committee Opinion No. 645. American College of
-                            Obstetricians and Gynecologists. Obstet Gynecol 2015;126:e95–9.</li>
+                        <li>2015 Sexually Transmitted Diseases Treatment Guidelines.
+                            https://www.cdc.gov/std/tg2015/default.htm</li>
                     </ol>
                 </div>
             </section>
-
-
-
 
         </main>
 
