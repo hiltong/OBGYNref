@@ -679,18 +679,18 @@ padding-left: 16px;
 }
 
 .hg-glossaryAZ button {
-    /* font-size: 1.2em; */
+    font-size: 1.2em;
     margin-right: 0.4em;
     margin-left: 0.4em;
     margin-bottom: 0.6em;
     /* padding: 0.2em 0.6em 0.2em 0.6em; */
-    color: blue;
-    /* border: none; */
-    border-width: 1px;
-    border-style: solid;
-    background: #f0f0f0;
-    /* background: WHITE; */
-    border-radius: 12%;
+    color: coral;
+    border: none;
+    /* border-width: 1px; */
+    /* border-style: solid; */
+    /* background: #f0f0f0; */
+    background: WHITE;
+    /* border-radius: 12%; */
     /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     width: 2em;
     height: 2em;
@@ -706,6 +706,8 @@ background-color: black;
 .hg-glossaryAZ button:active {
     color: red;
 }
+
+
 
 .hg-glossaryBody h2 {
     display: inline;
@@ -726,6 +728,11 @@ background-color: black;
     margin-right: 0px;
     font-weight: normal;
     text-decoration-line: none;
+    border-top-width: 0px;  
+  border-bottom-width: 0px;
+  border-left: solid black 0.2px;
+  border-right-width: 0px;
+  padding-left: 10px;
 }
 
 .hg-glossaryBody a:hover {
@@ -748,7 +755,7 @@ background-color: black;
     /* margin-left: 1.0em; */
     /* margin-top: -20px; */
     /* margin-bottom: 0.6em; */
-    color: blue;
+    color: coral;
     /* text-decoration: underline; */
     border: none;
     /* background: #f0f0f0; */
@@ -798,6 +805,13 @@ background-color: black;
 .hg-topicsBody a:active {
   color: red;
 }
+
+.hg-topicsBody ul {
+  border-top-width: 0px;  
+  border-bottom-width: 0px;
+  border-left: solid black 0.2px;
+  border-right-width: 0px;}
+
 
     @media (min-width:601px){.hg-InfoContent{width:66.66666%} .hg-AddContent{float: right; width:33.33333%;}}
     @media (max-width:600px){.hg-InfoContent{width:100%} .hg-AddContent{width: 100%; float: left;}}
