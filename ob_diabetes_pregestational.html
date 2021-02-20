@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Pregestational Diabetes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Pregestational Diabetes</h1>
+
+            <!-- <h2 class="hg-h2SectionTitle">Category Header</h2> -->
+
+            <section class="accordian">
+                <button onclick="AccToggle('pregesdmtimdel')" class="hg-accBtn">Timing of delivery:<span id="pregesdmtimdel_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="pregesdmtimdel" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Pregestaional diabetes uncomplicated and well controlled:<sup>1</sup>
+                            <ul>
+                                <li>39 0/7 - 39 6/7 weeks.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Pregestaional diabetes complicated, poor control or previous still birth:<sup>1</sup>
+                          <ul>
+                              <li>36 0/7 - 38 6/7 weeks.<sup>1</sup></li>
+                          </ul>
+                      </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('obpregestRelLinks')" class="hg-accBtn">Related topics:<span id="obpregestRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="obpregestRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_diabetes_gestational.html">Gestational Diabetes</a></li>
+                        <li><a href="ob_insulin.html">Insulin in Obstetrics</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('pregestdenRefs')" class="hg-accBtn">References:<span id="pregestdenRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="pregestdenRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Medically indicated late-preterm and early-term deliveries. ACOG Committee Opinion No. 818. American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e29–33.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
+
