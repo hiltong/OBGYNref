@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Chronic Hypertension in Pregnancy">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Chronic Hypertension in Pregnancy</h1>
+
+            <!-- <h2 class="hg-h2SectionTitle">Category Header</h2> -->
+
+            <section class="accordian">
+                <button onclick="AccToggle('obschrhtnwtd')" class="hg-accBtn">When to deliver:<span id="obschrhtnwtd_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="obschrhtnwtd" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Chronic hypertension not requiring medication:<sup>1,2</sup>
+                            <ul>
+                                <li>38 0/7 - 39 6/7 weeks.<sup>1,2</sup></li>
+                                <li>Preferably not past 39 0/7 weeks.<sup>1,2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Chronic hypertension controlled with medication:<sup>1,2</sup>
+                            <ul>
+                                <li>37 0/7 - 39 6/7 weeks.<sup>1,2</sup></li>
+                                <li>Preferably not past 39 0/7 weeks.<sup>1,2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Chronic hypertension difficult to control:<sup>1</sup>
+                            <ul>
+                                <li>36 0/7 - 37 6/7 weeks.<sup>1,2</sup></li>
+                            </ul>
+                        </li>
+
+                        <li>Chronic hypertension with superimposed preeclampsia without severe features:<sup>2</sup>
+                            <ul>
+                                <li>37 0/7 weeks.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Stable chronic hypertension with superimposed preeclampsia with severe
+                            features:<sup>1,2</sup>
+                            <ul>
+                                <li>34 0/7 weeks.<sup>1,2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Unstable chronic hypertension with superimposed preeclampsia with severe
+                            features:<sup>1,2</sup>
+                            <ul>
+                                <li>After stabilization of mother.<sup>1,2</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <!--    <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                    </ul>
+                </div>
+            </section> -->
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('obvchrhytnRefs')" class="hg-accBtn">References:<span id="obvchrhytnRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="obvchrhytnRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Medically indicated late-preterm and early-term deliveries. ACOG Committee Opinion No. 818.
+                            American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e29–33.</li>
+                        <li>Chronic hypertension in pregnancy. ACOG Practice Bulletin No. 203. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2019;133:e26–50.</li>                       
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
