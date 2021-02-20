@@ -716,6 +716,14 @@ background-color: black;
     font-size: 1.6em;
 }
 
+.hg-glossaryBody h3{
+  color:black;  
+  margin: 4px 0px 4px 20px; 
+  font-size: 1.2em;
+}
+
+
+
 .hg-glossaryBody a {
     color: blue;
     display: block;
@@ -735,6 +743,8 @@ background-color: black;
   padding-left: 10px;
 }
 
+
+
 .hg-glossaryBody a:hover {
     background: black;
     color: white;
@@ -742,6 +752,14 @@ background-color: black;
 
 .hg-glossaryBody a:active {
     color: red;
+}
+
+/* a.hg-glossaryBodyIndentedA {
+  margin-left: 20px;
+}
+ */
+.hg-glossaryBodySectionIndent{
+  margin-left: 10px;
 }
 
 .hg-glossaryBody button {
@@ -827,3 +845,6 @@ background-color: black;
   /* outline: 3px solid blanchedalmond;  */
   outline: 2px solid red; 
 }
+
+
+
