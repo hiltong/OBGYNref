@@ -718,11 +718,9 @@ background-color: black;
 
 .hg-glossaryBody h3{
   color:black;  
-  margin: 4px 0px 4px 20px; 
+  margin: 4px 0px 4px 12px; 
   font-size: 1.2em;
 }
-
-
 
 .hg-glossaryBody a {
     color: blue;
@@ -732,7 +730,7 @@ background-color: black;
     font-size: 1.2em;
     /* margin-top: 0.5em; */
     /* margin-bottom: 0.5em; */
-    margin-left: 10px;
+    margin-left: 8px;
     margin-right: 0px;
     font-weight: normal;
     text-decoration-line: none;
@@ -741,6 +739,7 @@ background-color: black;
   border-left: solid black 0.2px;
   border-right-width: 0px;
   padding-left: 10px;
+  /* background-color: greenyellow; */
 }
 
 
