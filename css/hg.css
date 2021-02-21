@@ -364,7 +364,6 @@ text-align:left;
 color:dodgerblue;
 background: white; 
 /* background:green; */
-
 /* background:#f0f0f0; */
 display:block;
 /* border:none; */
@@ -417,7 +416,7 @@ font-weight: normal;
         /* margin-top: -12px; */
         margin-top: -10px;
         margin-bottom: 16px;
-        color: darkslategray;
+        /* color: darkslategray; */
         /* border-radius: 5px;/ */
         border-top-width: 0px;
         border-bottom-width: 0px;
@@ -442,29 +441,53 @@ font-weight: normal;
 
 
     .hg-accUl{
-      /* background: olivedrab;  */
+    /* background: olivedrab;  */
     /* padding-top: 6px;
     padding-right: 0px;
     padding-bottom: 6px;
     padding-left: 0px; */
-        padding: 0px;
+    /* font-weight: bold; */
+    padding: 0px;
+    /* color: red; */
+  
+    /* font-size: 1.1em; */
+    font-size: 1.1rem;
     }
+
     .hg-accUl li{
       margin-left: 16px; 
       /* background: red; */
+      /* color:red; */
+      /* color:black; */
+      /* font-size: 1.1em; */
+      color:rgba(0, 0, 0, 0.90);
+      
     }
     .hg-accUl li ul{
       padding: 0px;
       /* background: plum; */
+       /* font-size: 0.9em; */
+       font-size: 1.0rem;
     }
-    .hg-accUl li ol{
-      padding: 0px;
-      /* background: plum; */
-    }
+    
       .hg-accUl li ul li{
         margin-left: 16px; 
         /* background: plum; */
+        /* color:purple; */
+        /* color:rgb(0, 0, 0); */
+
+        /* font-size: 0.96em; */
       }
+      .hg-accUl li ul li ul li{
+        margin-left: 16px; 
+        /* background: plum; */
+        /* color:red; */
+        color:rgba(0, 0, 0, 0.70);
+
+        /* font-size: 0.8em; */
+        font-size: 0.86rem;
+      }
+
       .hg-accUl a{
         /* background: pink;  */
         text-decoration: none;
@@ -476,6 +499,11 @@ font-weight: normal;
         margin-left: 26px;
         margin-right: 0px;
         padding: 0px;
+      }
+
+      .hg-accUl li ol{
+        padding: 0px;
+        /* background: plum; */
       }
 
       .hg-accUl li + ol{
