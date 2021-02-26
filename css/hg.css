@@ -474,7 +474,7 @@ font-weight: normal;
         margin-left: 16px; 
         /* background: plum; */
         /* color:purple; */
-        /* color:rgb(0, 0, 0); */
+        color:rgb(0, 0, 0);
 
         /* font-size: 0.96em; */
       }
@@ -538,8 +538,8 @@ font-weight: normal;
 .hg-accOlRef a {text-decoration: none;}
 
 /*Adds the 'or' in an accordian list*/
-.hg-accOr{list-style-type: none; font-style: italic; color: red; font-weight: normal;}
-.hg-accOr::after{content: "-or-";}     
+.hg-accOr{list-style-type: none; font-style: italic;font-weight: normal;}
+.hg-accOr::after{content: "-or-"; color: red;}     
 
 /*Formats Note: at bottom of accordian list */
 .hg-accNote{margin-top: 0px; margin-bottom: 0px;}
