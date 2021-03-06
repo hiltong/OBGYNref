@@ -124,7 +124,8 @@ body{
   /*Side Bar---------------------------------------------------------------------------------------------------*/
   .hg-SideBar{
     font-size:18px!important;
-    color:#000 !important; 
+    /* color:#000 !important;  */
+    color: dodgerblue;
     /* background-color:#f0f0f0; */
     background-color:white;
     display:none;
@@ -476,17 +477,17 @@ font-weight: normal;
         /* color:purple; */
         color:rgb(0, 0, 0);
 
-        /* font-size: 0.96em; */
+        font-size: 0.99rem;
       }
       .hg-accUl li ul li ul li{
         margin-left: 16px; 
-        /* background: plum; */
+        /* background: red; */
         /* color:red; */
-        color:rgba(0, 0, 0, 0.70);
+        color:rgba(0, 0, 0, 0.90);
 
         /* font-size: 0.8em; */
-        font-size: 0.86rem;
-      }
+        font-size: 0.96rem;
+      }6
 
       .hg-accUl a{
         /* background: pink;  */
