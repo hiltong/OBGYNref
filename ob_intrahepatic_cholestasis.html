@@ -29,32 +29,271 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Intrahepatic Cholestasis of Pregnancy</h1>
 
-            <!-- Entities:  https://www.w3schools.com/html/html_entities.asp -->
-
             <!-- <h2 class="hg-h2SectionTitle">Category Header</h2> -->
 
             <section class="accordian">
-                <button onclick="AccToggle('timdleintrhep')" class="hg-accBtn">Timing of delivery:<span id="timdleintrhep_c"
+                <button onclick="AccToggle('ichetio')" class="hg-accBtn">Etiology:<span id="ichetio_c"
                         class="hg-NavLinkChevron"></span></button>
-                <div id="timdleintrhep" class="hg-accDivMain">
+                <div id="ichetio" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>Total bile acids &lt; 100 micromol/L<sup>1</sup>
+                        <li>Probably genetic susceptibly interacting with environmental and hormonal
+                            influences.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ichrff')" class="hg-accBtn">Risk factors for:<span id="ichrff_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ichrff" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Previous intrahepatic cholestasis of pregnancy.<sup>2</sup>
                             <ul>
-                                <li>36 0/7 - 39 0/7 weeks.<sup>1</sup></li>
+                                <li>Maybe as high as 90%.<sup>2</sup></li>
                             </ul>
                         </li>
-                        <li>Total bile acids &ge; 100 micromol/L<sup>1</sup>
+                        <li>Hepatobiliary disease (hepatitis, nonalcoholic liver cirrhosis, gallstones and cholecystitis
+                            and nonalcoholic pancreatitis).<sup></sup></li>
+                        <li>Advanced maternal age.<sup>2</sup></li>
+                        <li>Multiple gestations.<sup>2</sup></li>
+                        <li>Familial.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ichsas')" class="hg-accBtn">Diagnosis:<span id="ichsas_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ichsas" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Pruritus;
                             <ul>
-                                <li>36 0/7 weeks.<sup>1</sup></li>
+                                <li>New-onset in second half of pregnancy.<sup>2</sup></li>
+                                <li>Can be generalized but predominately palms and soles.<sup>2</sup></li>
+                                <li>Worse at night.<sup>2</sup></li>
+                                <li>No rash but can have excoriations from scratching.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Elevated total serum bile acids:
+                            <ul>
+                                <li>&gt;10 μmol/L.<sup>2</sup></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </section>
 
+            <section class="accordian">
+                <button onclick="AccToggle('ichlabse')" class="hg-accBtn">Labs:<span id="ichlabse_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ichlabse" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Labs to order if suspected:
+                            <ul>
+                                <li>Serum total bile acid (random).<sup>2</sup></li>
+                                <li>Liver transaminase levels (sometimes elevated but not needed for
+                                    diagnosis).<sup>2</sup></li>
+                                <li> Hepatitis C if risk factors.<sup>2</sup></li>
+                            </ul>
 
-<!-- 
-            <section class="accordian hg-accSectionRelTopics">
+                        </li>
+                        <li>Repeat labs:
+                            <ul>
+                                <li>Don’t need weekly total bile acid testing but can increase rapidly near term so in
+                                    severe disease may help plan delivery.<sup>2</sup></li>
+                                <li>Pruritus can occur several weeks before increase serum bile acid so if labs are
+                                    normal and suspicious should repeat labs.<sup>2</sup></li>
+                            </ul>
+
+                        </li>
+                        <li>Other causes of increased bile acids:
+                            <ul>
+                                <li>Drug-induced cholestasis (trimethoprim-sulfamethoxazole, phenothiazines,
+                                    ampicillin),
+                                    Primary sclerosing cholangitis (associated with inflammatory bowel disease),
+                                    Bacterial, fungal, and viral infections (eg, Ebstein-Barr virus and
+                                    cytomegalovirus),
+                                    Primary biliary cholangitis,
+                                    Obstructive bile duct lesion,
+                                    Liver tumor,
+                                    Hepatic amyloidosis,
+                                    Lymphoma and solid organ malignancies,
+                                    Hepatic sarcoidosis,
+                                    Autoimmune hepatitis,
+                                    Idiopathic adulthood ductopenia.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ichrskw')" class="hg-accBtn">Risks:<span id="ichrskw_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ichrskw" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Maternal:
+                            <ul>
+                                <li>Possibly preeclampsia.<sup>2</sup>
+                                    <ul>
+                                        <li>Especially with total bile acid levels of ≥40 μmol/L. Usually occurred 2-4
+                                            weeks after intrahepatic cholestasis diagnosesed and proteinuria was first
+                                            finding.<sup>2</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Possibly risk for later hepatobiliary diseases (e.g. chronic hepatitis, hepatitis C,
+                                    cirrhosis , and cholangitis).<sup>2</sup></li>
+
+                            </ul>
+                        </li>
+                        <li>Fetal:
+                            <ul>
+                                <li>Preterm delivery (spontaneous and iatrogenic).<sup>2</sup>
+                                    <ul>
+                                        <li>Bile acids seem to activate myometrial oxytocin receptors.<sup>2</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Meconium-stained amniotic fluid.<sup>2</sup></li>
+                                <li>Stillbirth.<sup>2</sup>
+                                    <ul>
+                                        <li>Maybe secondary to bile acids causing a fetal arrhythmia or vasospasm of the
+                                            placental chorionic
+                                            surface vessels.<sup>2</sup></li>
+                                        <li>Risks seem related to total bile acid level:<sup>2</sup>
+                                            <ul>
+                                                <li>&gt;10 μmol/L is usually diagnosis level.<sup>2</sup></li>
+                                                <li>&ge;40 μmol/L has sometimes been a cutoff for risk but may be some
+                                                    risk at lower levels.<sup>2</sup></li>
+                                                <li>&ge;100 μmol/L highest risk level.<sup>2</sup></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ichrxks')" class="hg-accBtn">Treatment:<span id="ichrxks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ichrxks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Ursodeoxycholic acid (Ursodiol) first-line:<sup>2</sup>
+                            <ul>
+                                <li>Improves pruritus in 1-2 weeks.<sup>2</sup></li>
+                                <li>Improves lab abnormalities in 3-4 weeks<sup>2</sup></li>
+                                <li>Up to 25% have mild nausea and dizziness.<sup>2</sup></li>
+                                <li>Uncertain if improves perinatal outcomes<sup>2</sup></li>
+                                <li>No known fetal effects.<sup>2</sup></li>
+                                <li>Dosing:
+                                    <ul>
+                                        <li>Starting dose 10–15 mg/kg per day divided into 2 or 3 daily doses.
+                                            <ul>
+                                                <li>Commonly 300 mg BID or TID or 500 mg BID.<sup>2</sup></li>
+                                            </ul>
+                                        </li>
+                                        <li>Titrate to max dose of 21 mg/kg per day if no improvement.<sup>2</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Alternatives:
+                            <ul>
+                                <li>S-adenosyl-methionine.<sup>2</sup></li>
+                                <li>Cholestyramine.<sup>2</sup></li>
+                                <li>Rifampin.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('anfesurich')" class="hg-accBtn">Antenatal fetal surveillance:<span
+                        id="anfesurich_c" class="hg-NavLinkChevron"></span></button>
+                <div id="anfesurich" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li> Start when delivery would be done if abnormal.<sup>2</sup>
+                            <ul>
+                                <li>Questioned if antepartum fetal testing useful because the cause of stillbirth
+                                    possibly a sudden event rather
+                                    than placental insufficiency. When occurs stillbirth usually not associated with
+                                    fetal growth restriction,
+                                    oligohydramnios, or abnormal placental histology (other than meconium
+                                    staining).<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Need continuous fetal monitoring during labor.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('timdleintrhep')" class="hg-accBtn">Timing of delivery:<span
+                        id="timdleintrhep_c" class="hg-NavLinkChevron"></span></button>
+                <div id="timdleintrhep" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li> “Risk-stratification based on patient-specific factors, including the total bile acid
+                            levels, in a shared decision-making model.”<sup>2</sup>
+                            <ul>
+                                <li>Offer 36 0/7 - 39 0/7 weeks if total bile acid levels of &lt;100 μmol/
+                                    <sup>1,2</sup>
+                                    <ul>
+                                        <li>Total bile acid levels of &lt;40 μmol/L consider later range.<sup>2</sup>
+                                        </li>
+                                        <li>Total bile acid levels of ≥40 μmol/L consider earlier range.<sup>2</sup>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Offer 36 0/7 weeks if total bile acid levels of &ge;100 μmol/L<sup>1,2</sup></li>
+                                <li>Consider 34 - 36 week if total bile acid levels &ge;100 μmol/L and:<sup>2</sup>
+                                    <ul>
+                                        <li>Severe maternal pruritus not relieved with medication.<sup>2</sup></li>
+                                        <li class="hg-accOr" />
+                                        <li>Previous stillbirth &lt; 36 weeks due to intrahepatic
+                                            cholestasis.<sup>2</sup></li>
+                                        <li class="hg-accOr" />
+                                        <li>Worsening hepatic function with preexisting or acute hepatic
+                                            disease.<sup>2</sup></li>
+                                    </ul>
+
+                                </li>
+                                <li>Antenatal corticosteroids if delivery before 37 0/7 weeks (if not previously
+                                    given)<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Suspected intrahepatic cholestasis 37 to 38 weeks and bile acid results not
+                            available:<sup>2</sup>
+                            <ul>
+                                <li> Decision to deliver should be based on
+                                    shared decision making with patient. Decision easier if elevated transaminase or
+                                    intrahepatic
+                                    cholestasis in a previous pregnancy. Don’t deliver &lt;37 weeks of gestation with
+                                    suspected
+                                    intrahepatic
+                                    cholestasis without elevated bile acids.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ppichwm')" class="hg-accBtn">Postpartum:<span id="ppichwm_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ppichwm" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Repeat liver function tests if symptoms don't resolve.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <!-- <section class="accordian hg-accSectionRelTopics">
                 <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="xxxRelLinks" class="hg-accDivMain">
@@ -62,16 +301,22 @@
                         <li><a href="xxx.html">XXX</a></li>
                     </ul>
                 </div>
-            </section> -->
+                </section> -->
 
 
             <section class="accordian hg-accSectionRef">
-                <button onclick="AccToggle('inhepchopregRefs')" class="hg-accBtn">References:<span id="inhepchopregRefs_c"
-                        class="hg-NavLinkChevron"></span></button>
+                <button onclick="AccToggle('inhepchopregRefs')" class="hg-accBtn">References:<span
+                        id="inhepchopregRefs_c" class="hg-NavLinkChevron"></span></button>
                 <div id="inhepchopregRefs" class="hg-accDivMain">
                     <ol class="hg-accOlRef">
-                        <li>Medically indicated late-preterm and early-term deliveries. ACOG Committee Opinion No. 818. American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e29–33.</li>
-                       <!--  <li>Zacharias N. Perinatal mortality. In: Weisman L, ed. <i>UpToDate.</i> Waltham, Mass.:
+                        <li>Medically indicated late-preterm and early-term deliveries. ACOG Committee Opinion No.
+                            818.
+                            American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e29–33.
+                        </li>
+                        <li>Society for Maternal-Fetal Medicine. SMFM Consult Series #53: Intrahepatic cholestasis
+                            of
+                            pregnancy. Am J Obstet Gynecol 2021.</li>
+                        <!--  <li>Zacharias N. Perinatal mortality. In: Weisman L, ed. <i>UpToDate.</i> Waltham, Mass.:
                             UpToDate, 2018. https://www.uptodate.com/contents/perinatal-mortality#H1. Accessed Febuary
                             18,2020. </li> -->
                     </ol>
@@ -94,4 +339,3 @@
 </body>
 
 </html>
-
