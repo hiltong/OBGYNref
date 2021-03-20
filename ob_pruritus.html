@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Pruritus in Pregnancy">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Pruritus in Pregnancy</h1>
+
+            <!-- Entities:  https://www.w3schools.com/html/html_entities.asp -->
+
+            <!-- <h2 class="hg-h2SectionTitle">Category Header</h2> -->
+
+            <section class="accordian">
+                <button onclick="AccToggle('pruriobprv')" class="hg-accBtn">Prevalence:<span id="pruriobprv_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="pruriobprv" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>~ 23% of pregnancies.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('prutddx')" class="hg-accBtn">Differential diagnosis:<span id="prutddx_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="prutddx" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>No pathologic cause most common.<sup>1</sup></li>
+                        <li>Pathologic causes:
+                            <ul>
+                                <li>Atopic eruption of pregnancy:<sup>1</sup>
+                                    <ul>
+                                        <li>Most common.<sup>1</sup></li>
+                                        <li>Eczematous rash on the face, eyelids, neck, antecubital and popliteal
+                                            fossae, trunk, and extremities. <sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Polymorphic eruption of pregnancy.<sup>1</sup>
+                                    <ul>
+                                        <li>Most common dermatosis of pregnancy:<sup>1</sup></li>
+                                        <li>Pruritic urticarial papules and plaques on the abdomen and proximal
+                                            thighs.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li><a href="ob_intrahepatic_cholestasis.html">Intrahepatic Cholestasis of
+                                        Pregnancy:</a><sup>1</sup>
+                                    <ul>
+                                        <li>Generalized but predominantly affects the palms and the soles of the
+                                            feet.<sup>1</sup></li>
+                                        <li>Worse at night.<sup>1</sup></li>
+                                        <li>Not associated with a rash.<sup>1</sup></li>
+                                        <li>Elevated bile acids and liver function tests.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Pemphigoid gestationis:<sup>1</sup>
+                                    <ul>
+                                        <li>Rare.<sup>1</sup></li>
+                                        <li>Vesicles and bullae.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('rpeiwithraob')" class="hg-accBtn">Pruritus without a rash:<span id="rpeiwithraob_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="rpeiwithraob" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_intrahepatic_cholestasis.html">Intrahepatic Cholestasis of
+                            Pregnancy:</a><sup>1</sup></li>
+                        <li>Other: (chronic renal failure, hypothyroidism, hyperthyroidism, liver disease, malabsorption,parasitosis or helminthosi, HIV, Hodgkin disease, leukemia, Non-Hodgkin lymphoma, polycythemia rubra vera, tumors (paraneoplastic), drugs [hydrochlorothiazide, opioids, etc.], multiple sclerosis,psychiatric disease [anxiety, depression, obsessive compulsive disorder].)<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('proerobRelLinks')" class="hg-accBtn">Related topics:<span
+                        id="proerobRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="proerobRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_intrahepatic_cholestasis.html">Intrahepatic Cholestasis of Pregnancy</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('pruriobRefs')" class="hg-accBtn">References:<span id="pruriobRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="pruriobRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Society for Maternal-Fetal Medicine. SMFM Consult Series #53: Intrahepatic cholestasis
+                            of pregnancy. Am J Obstet Gynecol 2021.</li>
+                        <!--  <li>Zacharias N. Perinatal mortality. In: Weisman L, ed. <i>UpToDate.</i> Waltham, Mass.:
+                            UpToDate, 2018. https://www.uptodate.com/contents/perinatal-mortality#H1. Accessed Febuary
+                            18,2020. </li> -->
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
