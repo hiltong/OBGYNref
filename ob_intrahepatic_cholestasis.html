@@ -32,13 +32,26 @@
             <!-- <h2 class="hg-h2SectionTitle">Category Header</h2> -->
 
             <section class="accordian">
-                <button onclick="AccToggle('ichetio')" class="hg-accBtn">Etiology:<span id="ichetio_c"
+                <button onclick="AccToggle('ichetio')" class="hg-accBtn">Overview:<span id="ichetio_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="ichetio" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li>Incidence probably 0.2-6% of pregnancies.<sup>3</sup></li>
-                        <li>Decrease clearance of bile acids and bilirubin, probably secondary to genetic susceptibly,
-                            from elevated estrogen and progesterone levels.<sup>3</sup></li>
+                        <li>Also has been called "pruritus gravidarum".<sup>5</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ichpathy')" class="hg-accBtn">Pathogenesis:<span id="ichpathy_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ichpathy" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Decrease clearance of bile acids resulting in elevated bile acids, probably secondary to
+                            genetic susceptibly (some have ABCB4 gene mutation which encodes bile transporter proteins),
+                            from high estrogen and progesterone levels. <sup>5</sup></li>
+                        <li>Hepatis C infection can be contributing
+                            factor.<sup>5</sup></li>
                     </ul>
                 </div>
             </section>
@@ -56,30 +69,41 @@
                         <li>Hepatobiliary disease (hepatitis, nonalcoholic liver cirrhosis, gallstones and cholecystitis
                             and nonalcoholic pancreatitis).<sup></sup></li>
                         <li>Advanced maternal age.<sup>2</sup></li>
-                        <li>Multiple gestations.<sup>2</sup></li>
+                        <li>Multiple gestations (possibly secondary to higher hormonal levels).<sup>5</sup></li>
                         <li>IVF.<sup>3</sup></li>
-                        <li>Hepatits C.<sup>3</sup></li>
+                        <li>Hepatitis C.<sup>3</sup></li>
                         <li>Familial (sex-limited autosomal dominant).<sup>3</sup></li>
+                        <li>Ethnicity (more common South America and Araucanian Indian)<sup>5</sup></li>
                     </ul>
                 </div>
             </section>
 
             <section class="accordian">
-                <button onclick="AccToggle('ichsas')" class="hg-accBtn">Diagnosis:<span id="ichsas_c"
+                <button onclick="AccToggle('ichsas')" class="hg-accBtn">Lesions:<span id="ichsas_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="ichsas" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>Pruritus;
+                        <li>Onset:
                             <ul>
                                 <li>Usually after 28 weeks, rare before.<sup>4</sup></li>
-                                <li>Can be generalized but mostly palms and soles.<sup>2</sup></li>
                                 <li>Worse at night.<sup>2</sup></li>
-                                <li>No rash but can have excoriations from scratching.<sup>2</sup></li>
                             </ul>
                         </li>
-                        <li>Elevated total serum bile acids:
+                        <li>Location:
                             <ul>
-                                <li>10-14 μmol/L usual normal.<sup>2,4</sup></li>
+                                <li>Starts palms and soles but can be generalized (commonly extensor surfaces of the
+                                    extremities, buttocks, and abdomen.).<sup>2,5</sup></li>
+                            </ul>
+                        </li>
+                        <li>Rash
+                            <ul>
+                                <li>No rash but can have excoriations from scratching.<sup>2</sup></li>
+                                <li>10% have jaundice (usually only with severe cases).<sup>5</sup></li>
+                            </ul>
+                        </li>
+                        <li>Course:
+                            <ul>
+                                <li>Persists until delivery and then usually resolves in days.<sup>5</sup></li>
                             </ul>
                         </li>
                     </ul>
@@ -93,7 +117,11 @@
                     <ul class=hg-accUl>
                         <li>Labs to order if suspected:
                             <ul>
-                                <li>Serum total bile acid (random).<sup>2</sup></li>
+                                <li>Serum total bile acid (random).<sup>2</sup>
+                                    <ul>
+                                        <li>10-14 μmol/L usually normal.<sup>2,4</sup></li>
+                                    </ul>
+                                </li>
                                 <li>Liver function tests:
                                     <ul>
                                         <li>Liver transaminase levels maybe normal or elevated, usually &lt; 300
@@ -137,16 +165,17 @@
             </section>
 
             <section class="accordian">
-                <button onclick="AccToggle('ichrskw')" class="hg-accBtn">Risks to pregnancy:<span id="ichrskw_c"
+                <button onclick="AccToggle('ichrskw')" class="hg-accBtn">Risks:<span id="ichrskw_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="ichrskw" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li>Maternal:
                             <ul>
+                                <li>Steatorrhea and vitamin K deficiency with increase risk intrapartum and postpartum hemorrhage possible withs severe cases.<sup>5</sup></li>
                                 <li>Possibly preeclampsia.<sup>2</sup>
                                     <ul>
                                         <li>Especially with total bile acid levels of ≥40 μmol/L. Usually occurred 2-4
-                                            weeks after intrahepatic cholestasis diagnosesed and proteinuria was first
+                                            weeks after intrahepatic cholestasis diagnosed  and proteinuria was first
                                             finding.<sup>2</sup></li>
                                     </ul>
                                 </li>
@@ -157,26 +186,25 @@
                         </li>
                         <li>Fetal:
                             <ul>
-                                <li>Preterm delivery (spontaneous and iatrogenic).<sup>2</sup>
+                                <li>Preterm delivery (spontaneous and iatrogenic):<sup>2</sup>
                                     <ul>
                                         <li>Bile acids seem to activate myometrial oxytocin receptors.<sup>2</sup></li>
                                     </ul>
                                 </li>
                                 <li>Meconium-stained amniotic fluid.<sup>2</sup></li>
-                                <li>Stillbirth.<sup>2</sup>
-                                    <ul>
+                                <li>Stillbirth:<sup>5</sup>
+                                    <ul> 
                                         <li>Maybe secondary to bile acids causing a fetal arrhythmia or vasospasm of the
                                             placental chorionic surface vessels.<sup>2</sup></li>
-                                        <li>Risks seem related to total bile acid level:<sup>2</sup>
+                                        <li>Risks seem to correlate with total bile acid level:<sup>2</sup>
                                             <ul>
-                                                <li>10-14 μmol/L usual normal.<sup>2,4</sup></li>
+                                                <li>10 μmol/L usual normal.<sup>2,4</sup></li>
                                                 <li>&ge;40 μmol/L has sometimes been a cutoff for risk but may be some
                                                     risk at lower levels.<sup>2</sup></li>
                                                 <li>&ge;100 μmol/L highest risk level.<sup>2</sup></li>
                                             </ul>
                                         </li>
                                     </ul>
-
                                 </li>
                             </ul>
                         </li>
@@ -199,7 +227,7 @@
                                 <li>Diphenhydramine.<sup>2</sup></li>
                                 <li>Hydroxyzine.<sup>2</sup></li>
                             </ul>
-                        </li>                       
+                        </li>
                         <li>Ursodeoxycholic acid (Ursodiol) first-line:<sup>2</sup>
                             <ul>
                                 <li>Improves pruritus in 1-2 weeks.<sup>2</sup></li>
@@ -249,7 +277,7 @@
                     <ul class=hg-accUl>
                         <li> Start when delivery would be done if abnormal.<sup>2</sup>
                             <ul>
-                                <li>Antepartum fetal testing may not predict stillbirth beacause possibly a sudden event
+                                <li>Antepartum fetal testing may not predict stillbirth because possibly a sudden event
                                     and not placental insufficiency. When occurs stillbirth usually not associated with
                                     fetal growth restriction, oligohydramnios, or abnormal placental histology (other
                                     than meconium staining).<sup>2</sup></li>
@@ -347,6 +375,7 @@
                             of pregnancy. Am J Obstet Gynecol 2021.</li>
                         <li>PROLOG: Obstetrics, Eighth Edition. Question 46.</li>
                         <li>PROLOG: Obstetrics, Eighth Edition. Question 136.</li>
+                        <li>Common Dermatologic Conditions, Clinical Updates in Women's Health Care, January 2018</li>
                         <!--  <li>Zacharias N. Perinatal mortality. In: Weisman L, ed. <i>UpToDate.</i> Waltham, Mass.:
                             UpToDate, 2018. https://www.uptodate.com/contents/perinatal-mortality#H1. Accessed Febuary
                             18,2020. </li> -->
