@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Cerclage">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Cerclage</h1>
+
+            <!-- <h2 class="hg-h2SectionTitle">Category Header</h2> -->
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('cerdindif')" class="hg-accBtn">Indications:<span id="cerdindif_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="cerdindif" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>History-indciated:
+                            <ul>
+                                <li>One or more 2nd trimester pregnancy loss secondary to painless dilatation <strong>in absence of labor or
+                                    abruption</strong> .<sup>1</sup></li>
+                                             <P class="hg-accNote">In past was 3 prior pregnancy losses.<sup>1</sup></P>
+                                <li class="hg-accOr" />
+                                <li>Prior cerclage for painless dilatation in 2nd trimester.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Exam-indicated:
+                            <ul>
+                                <li>Painless dilatation in 2nd trimester.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li><a href="ob_preterm_birth_prevention.html">Ultrasound-indicated:</a></li>
+                    </ul>
+                </div>
+            </section>i
+
+
+            <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('cerclkeRelLinks')" class="hg-accBtn">Related topics:<span
+                        id="cerclkeRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="cerclkeRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_preterm_birth_prevention.html">Preterm Birth Prevention</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('cerclkeRefs')" class="hg-accBtn">References:<span id="cerclkeRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="cerclkeRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">                   
+                        <li>PROLOG: Obstetrics, Eighth Edition. Questions 172-175.</li>
+                        <!--  <li>Zacharias N. Perinatal mortality. In: Weisman L, ed. <i>UpToDate.</i> Waltham, Mass.:
+                            UpToDate, 2018. https://www.uptodate.com/contents/perinatal-mortality#H1. Accessed Febuary
+                            18,2020. </li> -->
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

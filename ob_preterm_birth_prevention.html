@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Preterm Birth Prevention">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Preterm Birth Prevention</h1>
+
+
+            <!-- <h2 class="hg-h2SectionTitle">Category Header</h2> -->
+
+            <section class="accordian">
+                <button onclick="AccToggle('tvptrwd')" class="hg-accBtn">Transvaginal ultrasound cervical length
+                    technique:<span id="tvptrwd_c" class="hg-NavLinkChevron"></span></button>
+                <div id="tvptrwd" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Interobserver variation of 5–10%. <sup>1</sup></li>
+                        <li>Probe in anterior fornix with an empty bladder.<sup>1</sup></li>
+                        <li>Shortest of 3 measurements taken between internal os and external os. <sup>1</sup></li>
+                        <li>Cervical funneling does not increases risk further with a shortened cervical
+                            length.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('xxx')" class="hg-accBtn">Prior spontaneous preterm
+                    <strong>singleton</strong> birth:<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
+                <div id="xxx" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Singleton gestation:<sup>1</sup>
+                            <ul>
+                                <li>Progesterone supplementation starting at 16–24 weeks:<sup>1</sup>
+                                    <ul>
+                                        <li>Vaginal.<sup>2</sup></li>
+                                        <li class="hg-accOr" />
+                                        <li>Intramuscular (17-hydroxyprogesterone caproate).<sup>2</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Cervical length every 2 weeks starting at 16 weeks until 23 weeks.<sup>1</sup>
+                                    <ul>
+                                        <li>Cervical length 25 mm to 29 mm cervical length every week. <sup>1</sup>
+                                        </li>
+                                        <li>Cervical length &lt; 25 mm at &lt; 24 weeks <strong>and</strong> prior
+                                            spontaneous preterm birth was &lt; 34 weeks:<sup>1</sup>
+                                            <ul>
+                                                <li>Cerclage:<sup>1</sup>
+                                                    <ul>
+                                                        <li>30% decrease preterm birth &lt; 35 weeks.<sup>1</sup></li>
+                                                        <li>36% decrease composite perinatal mortality and
+                                                            morbidity.<sup>1</sup></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Multiple gestation:<sup>1</sup>
+                            <ul>
+                                <li>No intervention:<sup>1</sup>
+                                    <ul>
+                                        <li>Progesterone does not decrease risk of preterm birth.<sup>1</sup></li>
+                                        <li>Cerclage may increase risk of preterm birth.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('nporptbwx')" class="hg-accBtn">No prior spontaneous preterm birth:<span
+                        id="nporptbwx_c" class="hg-NavLinkChevron"></span></button>
+                <div id="nporptbwx" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Incidental cervical length &le; 20 mm at &le; 24 weeks:<sup>1</sup>
+                            <ul>
+                                <li>Singleton gestation:<sup>1</sup>
+                                    <ul>
+                                        <li>Vaginal progesterone.<sup>1</sup>
+                                            <ul>
+                                                <li>Vaginal micronized progesterone 200 mg daily.<sup>1</sup></li>
+                                                <li class="hg-accOr" />
+                                                <li>Vaginal progesterone gel 90 mg daily.<sup>1</sup></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Multiple gestation:<sup>1</sup>
+                                    <ul>
+                                        <li>No intervention.<sup>1</sup></li>
+                                        <li>Progesterone does not decrease risk of preterm birth.<sup>1</sup></li>
+                                        <li>Cerclage may increase risk of preterm birth.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('prevptbRelLinks')" class="hg-accBtn">Related topics:<span
+                        id="prevptbRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="prevptbRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_cerclage.html">Cerclage</a></li>
+                        <li><a href="ob_preterm_birth.html">Preterm Birth</a></li>
+                        <li><a href="ob_preterm_labor.html">Preterm Labor</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('prevptbrRefs')" class="hg-accBtn">References:<span id="prevptbrRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="prevptbrRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Prediction and prevention of preterm birth. Practice Bulletin No. 130. American College
+                            of Obstetricians and Gynecologists. Obstet Gynecol 2012;120:964–73.</li>
+                        <li>Clinical Guidance for the Integration of the Findings of the EPPPIC Meta-Analysis: Evaluating Progestogens for Preventing Preterm Birth International Collaborative. Practice Advisory. March 2021.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Preterm Birth">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Preterm Birth</h1>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ptbimpj')" class="hg-accBtn">Importance:<span id="ptbimpj_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ptbimpj" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Leading cause of <a href="ob_definitions.html">neonatal mortality</a> in the United
+                            States.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ptbinus')" class="hg-accBtn">Incidence US:<span id="ptbinus_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ptbinus" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>10% all births.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ptbertio')" class="hg-accBtn">Etiology:<span id="ptbertio_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ptbertio" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Spontaneous preterm birth:
+                            <ul>
+                                <li>Preterm labor (50% of preterm births).<sup>2</sup></li>
+                                <li>Preterm spontaneous rupture of membranes.<sup>2</sup></li>
+                                <li>Cervical insufficiency.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Indicated preterm delivery:
+                            <ul>
+                                <li>Maternal indications.<sup>2</sup></li>
+                                <li>Fetal indications.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('ptdbirf')" class="hg-accBtn">Risk factors spontaneous preterm birth:<span
+                        id="ptdbirf_c" class="hg-NavLinkChevron"></span></button>
+                <div id="ptdbirf" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Previous preterm birth:<sup>3</sup>
+                            <ul>
+                                <li>Increases 1.5 to 2 fold.<sup>3</sup></li>
+                                <li>Increases with the number of previous preterm births and decreasing gestational age
+                                    at delivery. <sup>3</sup></li>
+                                <li>Increases with previous preterm twin birth and decreasing gestational age at
+                                    delivery (40% if previous twin birth &lt; 30 weeks).<sup>3</sup></li>
+                                <li>Decreases if previous preterm birth followed by term delivery. <sup>3</sup></li>
+                            </ul>
+                        </li>
+                        <li>Short cervical length by transvaginal ultrasound:<sup>3</sup>
+                            <ul>
+                                <li>&lt; 25 mm before 24 weeks.<sup>3</sup></li>
+                                <li>The shorter the cervical length the greater the risk.<sup>3</sup></li>
+                            </ul>
+                        </li>
+                        <li>Others:<sup>3</sup>
+                            <ul>
+                                <li>Low maternal prepregnancy weight (BMI < 19.8)<sup>3</sup></li>
+                                <li>Short interpregnancy interval (lowest risk when 18-23 months). <sup>3</sup></li>
+                                <li>Smoking.<sup>3</sup></li>
+                                <li>Substance abuse.<sup>3</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('ptbRelLinks')" class="hg-accBtn">Related topics:<span id="ptbRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ptbRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_preterm_birth_prevention.html">Preterm Birth Prevention</a></li>
+                        <li><a href="ob_preterm_labor.html">Preterm Labor</a></li>
+                        <li><a href="ob_gbs.html">Newborn Early Onset GBS Disease Prevention</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('ptbRefs')" class="hg-accBtn">References:<span id="ptbRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ptbRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Prelabor rupture of membranes. ACOG Practice Bulletin No. 217. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2020;135:e80–97.</li>
+                        <li>Prediction and prevention of preterm birth. Practice Bulletin No. 130. American College
+                            of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2012;120:964–73.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
