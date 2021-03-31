@@ -32,20 +32,79 @@
             <h2 class="hg-h2SectionTitle">General</h2>
 
             <section class="accordian">
-                <button onclick="AccToggle('genhsvdef')" class="hg-accBtn">Defintions:<span id="genhsvdef_c"
+                <button onclick="AccToggle('hsvgeninc')" class="hg-accBtn">Incidence USA:<span id="hsvgeninc_c"
                         class="hg-NavLinkChevron"></span></button>
-                <div id="genhsvdef" class="hg-accDivMain">
+                <div id="hsvgeninc" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>Primary first-episode infection: HSV-1 or HSV-2 in lesions and no antibodies to either viral
-                            type in
-                            serum.<sup>1</sup></li>
-                        <li>Nonprimary first-episode: One viral type in lesions and antibodies to the other
-                            viral type in serum<sup>1</sup></li>
-                        <li>Recurrent infection: HSV-1 or HSV-2 in lesions and antibodies to the same viral type in
-                            serum.<sup>1</sup></li>
+                        <li>~21% women HSV-2 seropositive (would be higher if included genital
+                            HSV-1).<sup>1</sup></li>
+                        <li>Only 5–15% patients recognize being infected.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('genhsvdef')" class="hg-accBtn">3 episode defintions:<span id="genhsvdef_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="genhsvdef" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Primary first-episode infection:
+                            <ul>
+                                <li>HSV-1 or HSV-2 in lesions and no antibodies to either viral type in
+                                    serum.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Nonprimary first-episode:
+                            <ul>
+                                <li>One viral type in lesions and antibodies to the other viral type in
+                                    serum<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Recurrent infection (reactivation of viral replication):
+                            <ul>
+                                <li>HSV-1 or HSV-2 in lesions and antibodies to the same viral type in
+                                    serum.<sup>1</sup>
+                                    <ul>
+                                        <li>Recurrent ulcerations.<sup>1</sup></li>
+                                        <li class="hg-accOr" />
+                                        <li>Subclinical asymptomatic shedding.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('hsvvirut')" class="hg-accBtn">The virus:<span id="hsvvirut_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="hsvvirut" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Double-stranded DNA virus:<sup>1</sup>
+                            <ul>
+                                <li>HSV-1 (Glycoprotein G1 in lipid bilayer envelope):<sup>1</sup>
+                                    <ul>
+                                        <li>Causes orolabial HSV.<sup>1</sup>
+                                        <li>Increasing common cause of genital HSV particularly in young
+                                            women.<sup>1</sup>
+                                    </ul>
+                                </li>
+                                <li> HSV-2 (Glycoprotein G2 in lipid bilayer envelope):<sup>1</sup>
+                                    <ul>
+                                        <li>Uncommon to cause orolabial HSV.<sup>i</sup></li>
+                                        <li>Usually just causes genital infection.<sup>1</sup>
+                                        <li>Causes most genital HSV.<sup>1</sup>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
 
             <section class="accordian">
                 <button onclick="AccToggle('timerfeahsv')" class="hg-accBtn">Time frames:<span id="timerfeahsv_c"
@@ -53,10 +112,55 @@
                 <div id="timerfeahsv" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li>Incubation 2-12 days after acquiring.<sup>1</sup></li>
-                        <li>Type-specific antibodies in 2–3 weeks.<sup>1</sup></li>
+                        <li>Type-specific antibodies develop in 2–3 weeks and persist indefinitely.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('hsvtesttyp')" class="hg-accBtn">2 types of testing:<span id="hsvtesttyp_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="hsvtesttyp" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Viral detection methods:<sup>1</sup>
+                            <ul>
+                                <li>Viral culture:
+                                    <ul>
+                                        <li>Low sensitivity:
+                                            <ul>
+                                                <li>80% positive primary lesions.<sup>1</sup></li>
+                                                <li>40% positive with recurrent lesions.<sup>1</sup></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Polymerase chain reaction detection HSV antigens:
+                                    <ul>
+                                        <li>3-5 more sensitive than culture.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Antibody detection methods:<sup>1</sup>
+                        <ul>
+                            <li>HSV-2 antibodies:
+                                <ul>
+                                    <li>Genital HSV-2 infection <sup>1</sup></li>
+                                </ul>
+                            </li>
+                            <li>HSV-1 antibodies:
+                                <ul>
+                                    <li>Orolabial HSV-1 infection or genital HSV-1 infection.<sup>1</sup></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
 
             <h2 class="hg-h2SectionTitle">Pregnancy</h2>
 
@@ -65,32 +169,39 @@
                         class="hg-NavLinkChevron"></span></button>
                 <div id="genhsvnewbe" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>Consider offering c-section if primary or nonprimary first-episode in 3rd trimester secondary to possibility of prolonged viral shedding.<sup>1</sup></li>
-                        <li>Consider continuing treatment until delivery if primary or nonprimary first-episode in 3rd trimester.<sup>1</sup></li>
+                        <li>Consider offering c-section if primary or nonprimary first-episode in 3rd trimester
+                            secondary to possibility of prolonged viral shedding.<sup>1</sup></li>
+                        <li>Consider continuing treatment until delivery if primary or nonprimary first-episode in 3rd
+                            trimester.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('newhsvpregf')" class="hg-accBtn">New infections in pregnancy:<span
+                        id="newhsvpregf_c" class="hg-NavLinkChevron"></span></button>
+                <div id="newhsvpregf" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>~10% of HSV-2 seronegative wome are at risk secondary to HSV-2 seropositive
+                            partners.<sup>1</sup></li>
+                        <li>~2% seronegative women acquire HSV-1 or HSV-2 during pregnancy.<sup>1</sup></li>
+                        <li>Most new infections are asymptomatic.<sup>1</sup></li>
+                        <li>1/3 new infections occur in each trimester.<sup>1</sup></li>
+                        <li>15% first-episode infections in pregnancy are recurrent infections.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
 
             <section class="accordian">
-                <button onclick="AccToggle('pregpercenthsv')" class="hg-accBtn">Pregnancy specifics:<span
+                <button onclick="AccToggle('pregpercenthsv')" class="hg-accBtn">Recurrent infections in pregnancy:<span
                         id="pregpercenthsv_c" class="hg-NavLinkChevron"></span></button>
                 <div id="pregpercenthsv" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>~2% seronegative women acquire HSV-1 or HSV-2 during pregnancy.<sup>1</sup></li>
-                        <li>~10% of HSV-2 seronegative wome have seropositive partners.<sup>1</sup></li>
-                        <li>New infections in pregnancy:<sup>1</sup>
-                            <ul>
-                                <li>Most asymptomatic.<sup>1</sup></li>
-                                <li>1/3 occur in each trimester.<sup>1</sup></li>
-                            </ul>
-                        </li>
-                        <li>Recurrent genital HSV:<sup>1</sup>
-                            <ul>
-                                <li>~75% have at least one recurrence in pregnancy.<sup>1</sup></li>
-                                <li>~14% have prodromal symptoms or recurrence at delivery.<sup>1</sup></li>
-                                <li>15% first-episode infections in pregnancy are recurrent infections.<sup>1</sup></li>
-                            </ul>
-                        </li>
+                        <li>~75% have at least one recurrence in pregnancy.<sup>1</sup></li>
+                        <li>~14% have prodromal symptoms or recurrence at delivery.<sup>1</sup></li>
+
+
                     </ul>
                 </div>
             </section>
@@ -106,10 +217,9 @@
                                 <li>25% disseminated disease (mortality 30%).<sup>1</sup></li>
                                 <li>30% CNS disease (mortality 4%).<sup>1</sup></li>
                                 <li>45% skin, eyes, mouth.<sup>1</sup></li>
-                                <li>~20% survivors long-term neurologic problems.<sup>1</sup></li>
                             </ul>
                         </li>
-
+                        <li>~20% survivors long-term neurologic problems.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
@@ -208,7 +318,7 @@
                         class="hg-NavLinkChevron"></span></button>
                 <div id="hsvppromaxs" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                                <li>If expectant management antiviral therapy recommended.<sup>1</sup></li>
+                        <li>If expectant management antiviral therapy recommended.<sup>1</sup></li>
                     </ul>
                     <P class="hg-accNote"> xxx<sup>xxx</sup></P>
                 </div>
