@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Uterine Leiomyomas">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Uterine Leiomyomas</h1>
+
+
+            <h2 class="hg-h2SectionTitle">Background</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('figleisuc')" class="hg-accBtn">FIGO leiomyoma subclassification:<span
+                        id="figleisuc_c" class="hg-NavLinkChevron"></span></button>
+                <div id="figleisuc" class="hg-accDivMain">
+                    <img src="gyn_uterine_leiomyomas_classification.jpg" alt="Uterine leiomyomas subclassification."
+                        class="hg-responsiveImage">
+                    <P class=" hg-accNoteBlank">Source: Munro M.G., Critchley H.O., Broder M.S., Fraser I.S. The FIGO
+                        Classification System (“PALM-COEIN”) for causes of abnormal uterine bleeding in non-gravid women
+                        in the reproductive years, including guidelines for clinical investigation. Int J Gynaecol
+                        Obstet. 2011; 113: 3-13</P>
+                    <P class="hg-accNote">Describes relationship of leiomyoma to endometrial and serosal
+                        surfaces.<sup>1</sup></P>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('lieoutsymplk')" class="hg-accBtn">Symptoms:<span id="lieoutsymplk_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="lieoutsymplk" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Bleeding symptoms (AUB-L)<sup>1</sup>
+                        </li>
+                        <li>Bulk symptoms:
+                            <ul>
+                                <li>Pelvic pressure, frequency of urination, constipation.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Treatment</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('medrxbldsw')" class="hg-accBtn">Medical treatment for bleeding
+                    symptoms.<span id="medrxbldsw_c" class="hg-NavLinkChevron"></span></button>
+                <div id="medrxbldsw" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Oral Gonadotropin-Releasing Hormone Antagonists With Hormonal Add-Back Therapy:<sup>1</sup>
+                            <ul>
+                                <li>Oriahnn:<sup>1</sup>
+                                    <ul>
+                                        <li>Twice daily:
+                                            <ul>
+                                                <li>Elagolix 300 mg, estradiol 1 mg and norethindrone acetate 0.5 mg
+                                                    capsule in the morning.</li>
+                                                <li>Elagolix 300 mg capsule in the evening.</li>
+                                            </ul>
+                                        </li>
+                                        <li>Approved for AUB-L for up to 24 months.</li>
+                                        <li>Use non-hormonal contraception during treatment and for one week after
+                                            discontinuing.</li>
+                                    </ul>
+                                    <P class="hg-accNote">Elagolix (Orilissa)</P>
+                                </li>
+                                <li>Myfembree:<sup>1</sup>
+                                    <ul>
+                                        <li>Once daily:
+                                            <ul>
+                                                <li>Relugolix 40 mg, 1 mg estradiol and 0.5 mg norethindrone acetate
+                                                    once daily </li>
+                                            </ul>
+                                        </li>
+                                        <li>Approved for AUB-L for up to 24 months.</li>
+                                        <li>May help bulk symptoms as well.</li>
+                                        <li>Use non-hormonal contraception during treatment and for one week after
+                                            discontinuing.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>52-mg LNG-IUD levonorgestrel-releasing intrauterine devices.<sup>1</sup></li>
+                        <li>Combined hormonal contraceptives, progestin-only pills and depot medroxyprogesterone
+                            acetate.<sup>1</sup></li>
+                        <li>Tranexamic acid.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('medrxbothy')" class="hg-accBtn">Medical treatment for bleeding and bulk
+                    symptoms.<span id="medrxbothy_c" class="hg-NavLinkChevron"></span></button>
+                <div id="medrxbothy" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Gonadotropin-releasing hormone (leuprolide acetate) agonists with or without add-back
+                            hormonal
+                            therapy.<sup>1</sup>
+                            <ul>
+                                <li>3.75 mg IM monthly / 11.5 mg IM every 12 weeks / Subcutaneous form available if IM
+                                    hematoma concerns.<sup>2</sup></li>
+                                <li>Use non-hormonal contraception during treatment.</li>
+                                <li>Common add-back regimen:
+                                    <ul>
+                                        <li>Oral conjugated estrogen 0.625 mg and norethindrone acetate 2.5–5.0 mg
+                                            daily.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Duration of use limits:
+                                    <ul>
+                                        <li>Short term treatment to bridge to other treatments.<sup>1</sup></li>
+                                        <li>6 months without add-back therapy.<sup>1</sup></li>
+                                        <li>12 months with add-back therapy.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('leioauypr')" class="hg-accBtn">Procedures:<span id="leioauypr_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="leioauypr" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><sup>xxx</sup>
+                            <ul>
+                                <li><sup>xxx</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('leiowdcRelLinks')" class="hg-accBtn">Related topics:<span
+                        id="leiowdcRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="leiowdcRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="gyn_abnormal_uterine_bleeding_classification.html">Abnormal Uterine Bleeding
+                                Classification</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('utleijyRefs')" class="hg-accBtn">References:<span id="utleijyRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="utleijyRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Management of symptomatic uterine leiomyomas. ACOG Practice Bulletin No. 228. American
+                            College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e100–15.</li>
+                        18,2020.</li>
+                        <li>Options for prevention and management of menstrual bleeding in adolescent patients
+                            undergoing cancer treatment. ACOG Committee Opinion No. 817. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e7–15.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

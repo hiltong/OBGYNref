@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Abnormal Uterine Bleeding Classification">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Abnormal Uterine Bleeding Classification</h1>
+
+            <!-- 
+            <h2 class="hg-h2SectionTitle">Category Header</h2> -->
+
+            <section class="accordian">
+                <button onclick="AccToggle('palmcoeinfe')" class="hg-accBtn">PALM–COEIN:<span id="palmcoeinfe_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="palmcoeinfe" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Bleeding Patterns:
+                            <ul>
+                                <li>Heavy menstrual bleeding, instead of menorrhagia (AUB/HMB)<sup>1</sup></li>
+                                <li>Intermenstrual bleeding, instead of metrorrhagia (AUB/IMB)<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Etiologies:
+                            <ul>
+                                <li>Related to uterine structural abnormalities (PALM):<sup>1</sup>
+                                    <ul>
+                                        <li><b>P</b>olyp (AUB-P)<sup>1</sup></li>
+                                        <li><b>A</b>denomyosis (AUB-A)<sup>1</sup></li>
+                                        <li><b>L</b>eiomyoma (AUB-L)<sup>1</sup>
+                                            <ul>
+                                                <li>Submucosal leiomyoma (AUB-LSM)<sup>1</sup></li>
+                                                <li>Other leiomyoma (AUB-LO)<sup>1</sup></li>
+                                            </ul>
+                                        </li>
+                                        <li><b>M</b>alignancy and hyperplasia (AUB-M)<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Unrelated to uterine structural abnormalities (COEIN):<sup>xxx</sup>
+                                    <ul>
+                                        <li><b>C</b>oagulopathy (AUB-C)<sup>1</sup></li>
+                                        <li><b>O</b>vulatory dysfunction (AUB-O)<sup>1</sup></li>
+                                        <li><b>E</b>ndometrial (AUB-E)<sup>1</sup></li>
+                                        <li><b>I</b>atrogenic (AUB-I)<sup>1</sup></li>
+                                        <li><b>N</b>ot yet classified (AUB-N)<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <P class="hg-accNote">Pertains to nonpregnant reproductive age women.<sup>1</sup></P>
+                </div>
+            </section>
+
+
+
+            <!--    <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK501922/" target="_blank">Drugs and Lactation Database (LactMed) [Internet].</a><sup>4</sup></li>
+                    </ul>
+                </div>
+            </section>
+ -->
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('aubclassdRefs')" class="hg-accBtn">References:<span id="aubclassdRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="aubclassdRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Management of acute abnormal uterine bleeding in nonpregnant reproductive-aged women.
+                            Committee Opinion No. 557. American College of Obstetricians and Gynecologists. Obstet
+                            Gynecol 2013; 121:891–6.</li>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
