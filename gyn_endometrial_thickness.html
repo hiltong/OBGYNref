@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Endometrial thickness">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Endometrial thickness (transvaginal ultrasound)</h1>
+
+             <section class="accordian">
+                            <button onclick="AccToggle('techendothis')" class="hg-accBtn">Technique:<span id="techendothis_c" class="hg-NavLinkChevron"></span></button>
+                            <div id="techendothis" class="hg-accDivMain">
+                                <ul class=hg-accUl>
+                                    <li>Distance between echogenic borders perpendicular to longitudinal plane at thickest portion.<sup>1</sup></li>
+                                    <li>Do not include endometrial fluid in measurement.<sup>1</sup></li>
+                                </ul>
+                            </div>
+                        </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('indiendyt')" class="hg-accBtn">Two indications for:<span id="indiendyt_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="indiendyt" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Initial evaluation postmenopausal bleeding.<sup>1</sup></li>
+                        <li>Endometrial sampling with insufficient tissue for diagnosis or unable to perform biopsy.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('notinfoendth')" class="hg-accBtn">Not indicated for:<span id="notinfoendth_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="notinfoendth" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Routine endometrial cancer screening without postmenopausal bleeding.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('enthcri')" class="hg-accBtn">Endometrial thickness cutoff:<span
+                        id="enthcri_c" class="hg-NavLinkChevron"></span></button>
+                <div id="enthcri" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>&leq; 4 mm.<sup>1</sup>
+                            <ul>
+                                <li>&gt; 99% negative predictive valve for endometrial cancer.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('unatoifenth')" class="hg-accBtn">If unable to identify endometrial echo and
+                    postmenopausal bleeding:<span id="unatoifenth_c" class="hg-NavLinkChevron"></span></button>
+                <div id="unatoifenth" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Need further assessment.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('rcperblth')" class="hg-accBtn">Persistent/recurrent bleeding with thin
+                    endometrium:<span id="rcperblth_c" class="hg-NavLinkChevron"></span></button>
+                <div id="rcperblth" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Further assessment as rare cases endometrial cancer, especially type II, can have thin
+                            endometrium.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('incthenad')" class="hg-accBtn">Incidentally discovered thickened endometrium (including suspected polyp)
+                    without postmenopausal bleeding:<span id="incthenad_c" class="hg-NavLinkChevron"></span></button>
+                <div id="incthenad" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Routine assessment not indicated but review of patient's risk factors is.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- 
+            <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK501922/" target="_blank">Drugs and Lactation
+                                Database (LactMed) [Internet].</a><sup>4</sup></li>
+                    </ul>
+                </div>
+            </section> -->
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('enthiurRefs')" class="hg-accBtn">References:<span id="enthiurRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="enthiurRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>The role of transvaginal ultrasonography in evaluating the endometrium of women with
+                            postmenopausal bleeding. ACOG Committee Opinion No. 734. American College of Obstetricians
+                            and
+                            Gynecologists. Obstet Gynecol 2018;131:e124–9.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
