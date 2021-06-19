@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="xxx">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Obesity/Pregnancy</h1>
+
+            <h2 class="hg-h2SectionTitle">BMI</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bmiclass')" class="hg-accBtn">BMI calculation:<span id="bmiclass_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="bmiclass" class="hg-accDivMain">
+                    <p>Weight in kilograms divided by height in meters squared (kg/m2).</p>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bmicalc')" class="hg-accBtn">WHO BMI categories:<span id="bmicalc_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="bmicalc" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Underweight
+                            <ul>
+                                <li>BMI &lt; 18.5</li>
+                            </ul>
+                        </li>
+                        <li>Normal weight
+                            <ul>
+                                <li>BMI 18.5 - 24.9</li>
+                            </ul>
+                        </li>
+                        <li>Overweight
+                            <ul>
+                                <li>BMI 25.0 - 29.9</li>
+                            </ul>
+                        </li>
+                        <li>Obesity class I
+                            <ul>
+                                <li>BMI 30.0 - 34.9</li>
+                            </ul>
+                        </li>
+                        <li>Obesity class II
+                            <ul>
+                                <li>BMI 35.0 - 39.9</li>
+                            </ul>
+                        </li>
+                        <li>Obesity class III
+                            <ul>
+                                <li>BMI &ge; 40</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('uspvtsobrecf')" class="hg-accBtn">U.S. Preventive Services Task Force
+                    recommends:<span id="uspvtsobrecf_c" class="hg-NavLinkChevron"></span></button>
+                <div id="uspvtsobrecf" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>All adults &ge; 18 years of age and &ge; BMI 30 offered/referred for interventions for
+                            weight loss management (nonpregnant).<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <h2 class="hg-h2SectionTitle">Pregnancy</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('iomwtgrek')" class="hg-accBtn">IOM weight recommendations:<span
+                        id="iomwtgrek_c" class="hg-NavLinkChevron"></span></button>
+                <div id="iomwtgrek" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Underweight (BMI &lt; 18.5):
+                            <ul>
+                                <li>Total weight gain: 28-40 lb<sup>1</sup></li>
+                                <li>2nd & 3rd trimester weight gain/week*: 1 (1-1.3) lb/wk
+                                    <sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Normal weight (BMI 18.5-24.9):
+                            <ul>
+                                <li>Total weight gain: 25-35 lb<sup>1</sup></li>
+                                <li>2nd & 3rd trimester weight gain/week*: 1 (0.8-1)lb/wk
+                                    <sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Overweight (BMI 25-29.9):
+                            <ul>
+                                <li>Total weight gain: 15-25 lb<sup>1</sup></li>
+                                <li>2nd & 3rd trimester weight gain/week*: 0.6 (0.5-0.7) lb/wk
+                                    <sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>All obesity classes (BMI &ge; 30):
+                            <ul>
+                                <li>Total weight gain: 11-20 lb<sup>1</sup></li>
+                                <li>2nd & 3rd trimester weight gain/week*: 0.5 (0.4-0.6)lb/wk
+                                    <sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <P class="hg-accNoteBlan">*Assuming 1.1-4.4 lb gain 1st trimester.<sup>1</sup></P>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('bmiindrisk')" class="hg-accBtn">Interventions by prepregnancy BMI:<span id="bmiindrisk_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="bmiindrisk" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>30.0-34.9 (Class I obesity)
+                            <ul>
+                                <li>Low-dose aspirin if another moderate risk factor* or a high risk
+                                    factor**.<sup>2</sup></li>
+                                <li>Early glucose tolerance screening.<sup>1</sup></li>
+                                <li>Pneumatic compression device thromboprophylaxis before & after cesarean
+                                    delivery.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>35.0 - 39.9 (Class II obesity)
+                            <ul>
+                                <li>Low-dose aspirin if another moderate risk factor* or a high risk
+                                    factor**.<sup>2</sup></li>
+                                <li>Early glucose tolerance screening.<sup>1</sup></li>
+                                <li>Pneumatic compression device thromboprophylaxis before & after cesarean
+                                    delivery.<sup>1</sup></li>
+                                <li>Antenatal fetal surveillance 37 0/7 weeks.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>&ge; 40 (Class III obesity)
+                            <ul>
+                                <li>Low-dose aspirin if another moderate risk factor* or a high risk
+                                    factor**.<sup>2</sup></li>
+                                <li>Early glucose tolerance screening.<sup>1</sup></li>
+                                <li>Pneumatic compression device thromboprophylaxis before & after cesarean
+                                    delivery.<sup>1</sup></li>
+                                <li>Antenatal fetal surveillance 34 0/7 weeks.<sup>1</sup></li>
+                                <li>Weight based enoxaparin (Lovenox) 0.5 mg/kg every 12 hours starting 12 hours after
+                                    cesarean
+                                    delivery.<sup>1</sup></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <P class="hg-accNoteBlank"></P>*Moderate risk factors: Nulliparity, obesity, family history of
+                    preeclampsia (mother or sister), sociodemographic characteristics (African American race, low
+                    socioeconomic status), age 35 years or older, personal history factors (eg, low birthweight or small
+                    for
+                    gestational age, previous adverse pregnancy outcome, more than 10-year pregnancy
+                    interval).<sup>2</sup></P>
+                    <P class="hg-accNoteBlank"></P>**High risk factors: History of preeclampsia, multifetal gestation,
+                    chronic hypertension, type 1 or 2 diabetes, renal disease, autoimmune disease (systemic lupus
+                    erythematosus, antiphospholipid syndrome).<sup>2</sup></P>
+                </div>
+            </section>
+
+
+
+            <!--  <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK501922/" target="_blank">Drugs and Lactation Database (LactMed) [Internet].</a><sup>4</sup></li>
+                    </ul>
+                </div>
+            </section> -->
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('xxxRefs')" class="hg-accBtn">References:<span id="xxxRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Obesity in pregnancy. ACOG Practice Bulletin No. 230. American College of Obstetricians and
+                            Gynecologists. Obstet Gynecol 2021;137:e128–44.</li>
+                        <li>Low-dose aspirin use during pregnancy. ACOG Committee Opinion No. 743. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2018;132:e44–52.</li>
+                        <!--  <li>Zacharias N. Perinatal mortality. In: Weisman L, ed. <i>UpToDate.</i> Waltham, Mass.:
+                            UpToDate, 2018. https://www.uptodate.com/contents/perinatal-mortality#H1. Accessed Febuary
+                            18,2020. </li> -->
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
