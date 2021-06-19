@@ -29,33 +29,73 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Multifetal Gestations</h1>
 
-            <!-- Entities:  https://www.w3schools.com/html/html_entities.asp -->
 
-            <!-- <h2 class="hg-h2SectionTitle">Category Header</h2> -->
+            <h2 class="hg-h2SectionTitle">Overview</h2>
+
+           
 
             <section class="accordian">
-                <button onclick="AccToggle('multigestimdekl')" class="hg-accBtn">Timing of delivery:<span id="multigestimdekl_c"
-                        class="hg-NavLinkChevron"></span></button>
-                <div id="multigestimdekl" class="hg-accDivMain">
+                <button onclick="AccToggle('peproasad')" class="hg-accBtn">Preeclampsia prophylaxis recommended:<span
+                        id="peproasad_c" class="hg-NavLinkChevron"></span></button>
+                <div id="peproasad" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li>Dichorionic-diamniotic twins:<sup>1</sup>
+                        <li>Low-dose aspirin starting 12-28 weeks until delivery.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('multinorec')" class="hg-accBtn">Preterm delivery prophylaxis not
+                    recommended:<span id="multinorec_c" class="hg-NavLinkChevron"></span></button>
+                <div id="multinorec" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Any tocolytic agent.<sup>2</sup></li>
+                        <li>Progesterone.<sup>2</sup></li>
+                        <li>Cerclage.<sup>2</sup></li>
+                        <li>Pessary.<sup>2</sup></li>
+                        <li>Bedrest, hospitalization.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('ptlmulrgesd')" class="hg-accBtn">Preterm labor:<span id="ptlmulrgesd_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ptlmulrgesd" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Antenatal corticosteroids &lt; 34 weeks (34 - 36 6/7 weeks not studied). <sup>2,3</sup></li>
+                        <li>Magnesium sulfate neuroprotection &lt; 32 weeks.<sup>2</sup></li>
+                        <li>Tocolysis &le; 48 hours:<sup>2</sup>
                             <ul>
-                                <li>38 0/7 - 38 6/7 weeks.<sup>1</sup></li>                           
+                                <li>Calcium channel blockers.<sup>2</sup></li>
+                                <li class="hg-accOr" />
+                                <li>NAIDs.<sup>2</sup></li>
                             </ul>
                         </li>
-                        <li>Monochorionic-diamniotic twins:<sup>1</sup>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('dfgmgjjq')" class="hg-accBtn">Discordant fetal growth:<span id="dfgmgjjq_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="dfgmgjjq" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Definition:
                             <ul>
-                                <li>34 0/7 - 37 6/7 weeks.<sup>1</sup></li>                           
+                                <li>20% difference EFW.<sup>2</sup></li>
                             </ul>
                         </li>
-                        <li>Monochorionic-monoamniotic twins:<sup>1</sup>
+                        <li>Calculate growth discordance ratio:
                             <ul>
-                                <li>32 0/7 - 34 0/7 weeks.<sup>1</sup></li>                           
+                                <li>Difference in weight of fetuses divided by weight of largest fetus.<sup>2</sup></li>
                             </ul>
                         </li>
-                        <li>Triplets and higher order:<sup>1</sup>
+                        <li>Risk factor if::
                             <ul>
-                                <li>Individualize,<sup>1</sup></li>                           
+                                <li>Fetal growth restriction in one fetus.<sup>2</sup></li>
                             </ul>
                         </li>
                     </ul>
@@ -63,7 +103,155 @@
             </section>
 
 
-<!-- 
+            <h2 class="hg-h2SectionTitle">Dichorionic twins</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('mulrdiafse')" class="hg-accBtn">Antenatal fetal surveillance:<span
+                        id="mulrdiafse_c" class="hg-NavLinkChevron"></span></button>
+                <div id="mulrdiafse" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Ultrasound:
+                            <ul>
+                                <li>Anatomy scan 18-22 weeks.<sup>2</sup></li>
+                                <li>Growth ultrasound every 4 weeks after 20 weeks.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Antenatal fetal surveillance:
+                            <ul>
+                                <li>Uncomplicated start at 36 0/7 weeks.<sup>2</sup></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('multigestimdekl1')" class="hg-accBtn">Timing of delivery:<span
+                        id="multigestimdekl1_c" class="hg-NavLinkChevron"></span></button>
+                <div id="multigestimdekl1" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Dichorionic-diamniotic twins:<sup>1</sup>
+                            <ul>
+                                <li>38 0/7 - 38 6/7 weeks.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Monochorionic-diamniotic twins</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('monchrouswe')" class="hg-accBtn">Antenatal fetal surveillance:<span
+                        id="monchrouswe_c" class="hg-NavLinkChevron"></span></button>
+                <div id="monchrouswe" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Ultrasound:
+                            <ul>
+                                <li>Anatomy scan 18-22 weeks.<sup>2</sup></li>
+                                <li>Fetal echocardiogram 18-22 weeks.<sup>2</sup></li>
+                                <li>Moniter for TTTS every 2 weeks starting at 16 weeks.<sup>2</sup>
+                                    <ul>
+                                        <li>10-15% risk of twin-to-twin transfusion
+                                            syndrome. Diagnosed by MVP < 2 cm in one sac and> 8 cm in other sac.</2>
+                                                <sup>2</sup></li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Antenatal fetal surveillance:
+                            <ul>
+                                <li>Start at 32 weeks.<sup>2</sup></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('multigestimdekl2')" class="hg-accBtn">Timing of delivery:<span
+                        id="multigestimdekl2_c" class="hg-NavLinkChevron"></span></button>
+                <div id="multigestimdekl2" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Monochorionic-diamniotic twins:<sup>1</sup>
+                            <ul>
+                                <li>34 0/7 - 37 6/7 weeks.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Monochorionic-monoamniotic twins</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('mulrdiafsemm')" class="hg-accBtn">Antenatal fetal surveillance:<span
+                        id="mulrdiafsemm_c" class="hg-NavLinkChevron"></span></button>
+                <div id="mulrdiafsemm" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Ultrasound:
+                            <ul>
+                                <li>Anatomy scan 18-22 weeks.<sup>2</sup></li>
+                                <li>Fetal echocardiogram 18-22 weeks.<sup>2</sup></li>
+                                <li>Moniter for TTTS every 2 weeks starting at 16 weeks.<sup>2</sup>
+                                    <ul>
+                                        <li>10-15% risk of twin-to-twin transfusion
+                                            syndrome. Diagnosed by MVP < 2 cm in one sac and > 8 cm in other sac.</2>
+                                                <sup>2</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Antenatal fetal surveillance:
+                            <ul>
+                                <li>Individualize: Some hospitalize at 24-28 weeks with daily fetal
+                                    surveillnace.<sup>2</sup></li>
+                            </ul>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('multigestimdekl3')" class="hg-accBtn">Timing of delivery:<span
+                        id="multigestimdekl3_c" class="hg-NavLinkChevron"></span></button>
+                <div id="multigestimdekl3" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Monochorionic-monoamniotic twins:<sup>1</sup>
+                            <ul>
+                                <li>32 0/7 - 34 0/7 weeks.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Triplets & higher order</h2>
+
+
+            <section class="accordian">
+                <button onclick="AccToggle('multigestimdekl4')" class="hg-accBtn">Timing of delivery:<span
+                        id="multigestimdekl4_c" class="hg-NavLinkChevron"></span></button>
+                <div id="multigestimdekl4" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Triplets and higher order:<sup>1</sup>
+                            <ul>
+                                <li>Individualize.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 
             <section class="accordian hg-accSectionRelTopics">
                 <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
                         class="hg-NavLinkChevron"></span></button>
@@ -80,7 +268,13 @@
                         class="hg-NavLinkChevron"></span></button>
                 <div id="multfetgesRefs" class="hg-accDivMain">
                     <ol class="hg-accOlRef">
-                        <li>Medically indicated late-preterm and early-term deliveries. ACOG Committee Opinion No. 818. American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e29–33.</li>                   
+                        <li>Medically indicated late-preterm and early-term deliveries. ACOG Committee Opinion No. 818.
+                            American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e29–33.</li>
+                        <li>Multifetal gestations: twin, triplet, and higher-order multifetal pregnancies. ACOG Practice
+                            Bulletin No. 231. American College of Obstetricians and Gynecologists. Obstet Gynecol
+                            2021;137:e145–62.</li>
+                        <li>Antenatal corticosteroid therapy for fetal maturation. Committee Opinion No. 713. American
+                            College of Obstetricians and Gynecologists. Obstet Gynecol 2017;130:e102–9.</li>
                     </ol>
                 </div>
             </section>
@@ -101,4 +295,3 @@
 </body>
 
 </html>
-
