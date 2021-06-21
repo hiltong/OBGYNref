@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Antenatal Fetal Surveillance">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Antenatal Fetal Surveillance</h1>
+
+            <!-- Entities:  https://www.w3schools.com/html/html_entities.asp -->
+
+            <h2 class="hg-h2SectionTitle">Amniotic fluid volume</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('AFITechnique')" class="hg-accBtn">Amniotic fluid index (AFI) technique:<span
+                        id="AFITechnique_c" class="hg-NavLinkChevron"></span></button>
+                <div id="AFITechnique" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Divide uterus into 4 qudrants and add deepest vertical pocket in each quadrant
+                            together.<sup>2</sup>
+                        </li>
+                        <li>Width of pocket must be &ge; 1 cm.<sup>2</sup></li>
+                        <li>Normal 5-23 cm.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('SDPTechnique')" class="hg-accBtn">Maximum vertical pocket (MVP)
+                    technique:<span id="SDPTechnique_c" class="hg-NavLinkChevron"></span></button>
+                <div id="SDPTechnique" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Deepest vertical pocket of fluid free of cord and fetal parts.<sup>2</sup></li>
+                        <li>Width of pocket must be &ge; 1 cm.<sup>2</sup></li>
+                        <li>Normal 2-7 cm.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('Usedvp')" class="hg-accBtn">MVP recommended over AFI for:<span id="Usedvp_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="Usedvp" class="hg-accDivMain">
+                    <ol class=hg-accOl>
+                        <li>BPP.<sup>1</sup></li>
+                        <li>Diagnosis of oligohydraminos.<sup>1</sup></li>
+                        <li>Multiple gestations.<sup>2</sup></li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('USOligo')" class="hg-accBtn">Oligohydraminos crieria:<span id="USOligo_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="USOligo" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>AFI &le; 5 cm.<sup>1</sup></li>
+                        <li>MVP &le; 2 cm. <sup>1</sup></li>
+                        <li>MVP recommended as less unnecessary interventions.<sup>1</sup></li>
+                        <li>Use only MVP with multiple gestations.<sup>2</sup>
+                            <ul>
+                                <li>Twin-twin transfusion syndrome diagnosed by MVP < 2 cm in one sac and> 8 cm in other
+                                        sac.
+                                        <sup>3</sup></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('USpoly')" class="hg-accBtn">Polyhydraminos criteria:<span id="USpoly_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="USpoly" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>AFI &ge; 24 cm.<sup>2</sup></li>
+                        <li>MVP &ge; 8 cm. <sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Nonstress test (NST)</h2>
+
+            <h2 class="hg-h2SectionTitle">Contraction stress test (CST)</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('adeqcst')" class="hg-accBtn">Adequate contraction pattern:<span
+                        id="adeqcst_c" class="hg-NavLinkChevron"></span></button>
+                <div id="adeqcst" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>&ge; 3 contractions, at least 40 seconds long, in 10 minutes.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('adeqcstre')" class="hg-accBtn">Results of CST:<span id="adeqcstre_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="adeqcstre" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Negative:
+                            <ul>
+                                <li>No late or significant variable decelerations.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Positive:
+                            <ul>
+                                <li>Late decelerations with &ge; 50% of contractions (even &lt; 3 contractions in 10
+                                    minutes).<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Equivocal–suspicious:
+                            <ul>
+                                <li>Intermittent late or significant variable decelerations.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Equivocal:
+                            <ul>
+                                <li>Decelerations with contractions more frequent than every 2 minutes or longer than 90
+                                    seconds.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Unsatisfactory:
+                            <ul>
+                                <li>&lt; 3 contractions in 10 minutes or tracing uninterpretable.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <h2 class="hg-h2SectionTitle">Biophysical profile (BPP)</h2>
+            <h2 class="hg-h2SectionTitle">Modified biophysical profile</h2>
+            <h2 class="hg-h2SectionTitle">Umbilical artery doppler velocimetry</h2>
+
+
+             <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('anfeutyfoRelLinks')" class="hg-accBtn">Related topics:<span id="anfeutyfoRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="anfeutyfoRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_oligohydramnios.html">Oligohydraminos</a></li>
+                        <li><a href="ob_polyhydramnios.html">Polyhydramnios</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('anfetjaswRefs')" class="hg-accBtn">References:<span id="anfetjaswRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="anfetjaswRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Antepartum fetal surveillance. ACOG Practice Bulletin No. 229. American College of
+                            Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e116–27.</li>
+                        <li>Ultrasound in pregnancy. Practice Bulletin No. 175. American College of Obstetricians and
+                            Gynecologists.
+                            Obstet Gynecol 2016;128:e241–56.</li>
+                        <li>Multifetal gestations: twin, triplet, and higher-order multifetal pregnancies. ACOG Practice
+                            Bulletin No. 231. American College of Obstetricians and Gynecologists. Obstet Gynecol
+                            2021;137:e145–62.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
