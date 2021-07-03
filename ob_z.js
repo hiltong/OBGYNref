@@ -108,9 +108,19 @@ function remove() {
     };
 }
 
+var synth = window.speechSynthesis;
 function speak() {
     // alert("talk");
-    var synth = window.speechSynthesis;
-    var utterThis = new SpeechSynthesisUtterance("talking");
+    // var synth = window.speechSynthesis;
+    var utterThis = new SpeechSynthesisUtterance("How about we say this now? This is quite a long sentence to say.");
     synth.speak(utterThis);
+    // alert("talk");
+}
+
+function pause(){
+    synth.pause(); 
+}
+
+function resume(){
+    synth.resume();
 }
