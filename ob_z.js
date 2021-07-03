@@ -41,7 +41,7 @@ request.onupgradeneeded = function (event) {
     }
 }
 
-function initiate(){
+function initiate() {
     alert("initiate");
 }
 
@@ -106,4 +106,11 @@ function remove() {
     request.onsuccess = function (event) {
         alert("Kenny's entry has been removed from your database.");
     };
+}
+
+function speak() {
+    // alert("talk");
+    var synth = window.speechSynthesis;
+    var utterThis = new SpeechSynthesisUtterance("talking");
+    synth.speak(utterThis);
 }
