@@ -14,7 +14,7 @@
    
   </script> -->
   
-<body onload="SetUpPage()">
+<body onload="SetUpPage()"  ">
 
     <header id="MyHeader" class="hg-NavBar">
         <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
@@ -40,9 +40,10 @@
                 <button onclick="DeleteDatabase()" style="display: block;">Delete Database</button>
                 <button onclick="ReadDatabase()" style="display: block;">Read Database</button>
 
-                <button onclick="speak()" style="display: block; margin-top: 12px;">Speak</button>
-                <button onclick="pause()" style="display: block;">Pause</button>
-                <button onclick="resume()" style="display: block;">Resume</button>
+                <button id="speak" onclick="speak()" style="display: block; margin-top: 12px;" diabled>Speak</button>
+                <button id="pause" onclick="pause()" style="display: block; margin-top: 12px;" disabled>Pause</button>
+                <button id="resume" onclick="resume()" style="display: block; margin-top: 12px;"disabled>Resume</button>
+                <button id="stop" onclick="stop()" style="display: block; margin-top: 12px;"disabled>Stop</button>
             </div>
 
 

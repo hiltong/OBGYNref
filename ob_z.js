@@ -108,19 +108,75 @@ function remove() {
     };
 }
 
+
+//---------------------------------------------SPEECH TO TEXT
+
+// const speakButton;
 var synth = window.speechSynthesis;
+
+if ('speechSynthesis' in window) {
+    synth.cancel();
+    // alert("reload");
+    document.getElementById("speak").disabled = false;
+    if(synth.speaking){ /* stop narration */
+        /* for safari */
+        // alert("reload2");
+        synth.cancel();
+
+    }
+} else {
+    document.getElementById("speak").disabled = true;
+    alert("Text to sppech not supported on this browser");
+}
+
+
+
 function speak() {
-    // alert("talk");
-    // var synth = window.speechSynthesis;
+    // alert("talk3");
+    document.getElementById("speak").disabled = true;
+    document.getElementById("pause").disabled = false;
+    document.getElementById("resume").disabled = true;
+    document.getElementById("stop").disabled = false;
+    var synth = window.speechSynthesis;
     var utterThis = new SpeechSynthesisUtterance("How about we say this now? This is quite a long sentence to say.");
     synth.speak(utterThis);
-    // alert("talk");
+
+    utterThis.onend = function () {
+        document.getElementById("speak").disabled = false;
+        document.getElementById("pause").disabled = true;
+        document.getElementById("stop").disabled = true;
+        document.getElementById("resume").disabled = true;
+    }
+
 }
 
-function pause(){
-    synth.pause(); 
+function pause() {
+    if (synth.speaking && !synth.paused) {
+        synth.pause();
+        document.getElementById("pause").disabled = true;
+        document.getElementById("resume").disabled = false;
+        document.getElementById("stop").disabled = false;
+    }
+
+    // synth.pause(); 
+    //   alert("pause");
 }
 
-function resume(){
+function resume() {
     synth.resume();
+    document.getElementById("pause").disabled = false;
+    document.getElementById("resume").disabled = true;
+    document.getElementById("stop").disabled = false;
+}
+
+function stop() {
+    if (synth.speaking) {
+        /* for safari */
+        // flag = false; https://www.alebalweb-blog.com/85-text-to-speech-player-with-buttons-play-pause-stop-and-voice-choice.html
+        synth.cancel();
+        document.getElementById("pause").disabled = true;
+        document.getElementById("resume").disabled = true;
+        document.getElementById("stop").disabled = true;
+
+    }
 }
