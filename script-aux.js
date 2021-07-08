@@ -125,13 +125,18 @@ function SetUpPage() {
 }
 
 function FormatPage() {
-  var refsection = document.getElementsByClassName('accordian hg-accSectionRef')[0];
+  var reltopicssection = document.getElementsByClassName('accordian hg-accSectionRelTopics')[0];
+  if (reltopicssection != null) {
+    var hrabovereltop = document.createElement("hr");
+    hrabovereltop.setAttribute("class", "hg-hrAboveSectionRelatedTopics")
+    reltopicssection.prepend(hrabovereltop);
+  } 
+ /*  var refsection = document.getElementsByClassName('accordian hg-accSectionRef')[0];
   if (refsection != null) {
     var hraboverefs = document.createElement("hr");
     hraboverefs.setAttribute("class", "hg-hrAboveSectionRefereces")
     refsection.prepend(hraboverefs);
-    /* alert("This is alert box!"); */
-  }
+  }  */
 }
 
 
