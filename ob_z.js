@@ -139,6 +139,7 @@ function speak() {
     document.getElementById("stop").disabled = false;
     var synth = window.speechSynthesis;
     var utterThis = new SpeechSynthesisUtterance("How about we say this now? This is quite a long sentence to say.");
+    synth.resume();    //https://stackoverflow.com/questions/58953882/resuming-a-paused-speech-using-speechsynthesis-resume-on-chrome-android-doesn
     synth.speak(utterThis);
 
     utterThis.onend = function () {
