@@ -29,7 +29,68 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Antenatal Fetal Surveillance</h1>
 
-            <!-- Entities:  https://www.w3schools.com/html/html_entities.asp -->
+            <h2 class="hg-h2SectionTitle">Backgound</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('crfanfsev')" class="hg-accBtn">Conditions recommended for:<span
+                        id="crfanfsev_c" class="hg-NavLinkChevron"></span></button>
+                <div id="crfanfsev" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Frequency of stillbirth &gt; 0.8/1000 (BPP and modified BPP false negative rate) and
+                            relative risk of stillbirth &gt; 2.<sup>4</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('wtianfdswj')" class="hg-accBtn">When to initiate:<span id="wtianfdswj_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="wtianfdswj" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>32 weeks or later for most conditions.<sup>4</sup></li>
+                        <li>Earlier if very high risk and delivery would be considered.<sup>4</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('wtdisanfeo')" class="hg-accBtn">When to discontinue:<span id="wtdisanfeo_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="wtdisanfeo" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Consider delivery at 39 weeks.<sup>4</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('fnranelw')" class="hg-accBtn">False negative rates (incidence of stillbirth
+                    corrected for lethal anomalies and unpredictable causes within 1 week of normal test):<span
+                        id="fnranelw_c" class="hg-NavLinkChevron"></span></button>
+                <div id="fnranelw" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>NST 1.9/1000 (negative predictive value 99.8%).<sup>1</sup></li>
+                        <li>BPP and modified BPP 0.8/1000 (negative predictive value 99.9%).<sup>1</sup></li>
+                        <li>CST 0.3/1000 (negative predictive value 99.9%).<sup>1</sup></li>
+                        <li>Umbilical artery doppler velocimetry similar data not available.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('statisanfslj')" class="hg-accBtn">Statistics of antenatal feta
+                    surveillance:<span id="statisanfslj_c" class="hg-NavLinkChevron"></span></button>
+                <div id="statisanfslj" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Low false negative rates (incidence of stillbirth corrected for lethal anomalies and
+                            unpredictable causes within 1 week of normal test).<sup>4</sup></li>
+                        <li>High false positive rates (abnormal test with normal fetus).<sup>4</sup></li>
+                        <li>Low positive predictive valve (risk of stillbirth after an abnormal test).<sup>4</sup></li>
+                        <P class="hg-accNote">High false positive rates and low positive predictive valve reason
+                            especially at lower GA follow an abnormal test with another test.<sup>4</sup></P>
+                    </ul>
+                </div>
+            </section>
 
             <h2 class="hg-h2SectionTitle">Amniotic fluid volume</h2>
 
@@ -77,7 +138,7 @@
                 <div id="USOligo" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li>AFI &le; 5 cm.<sup>1</sup></li>
-                        <li>MVP &le; 2 cm. <sup>1</sup></li>
+                        <li>MVP &lt; 2 cm. <sup>1</sup></li>
                         <li>MVP recommended as less unnecessary interventions.<sup>1</sup></li>
                         <li>Use only MVP with multiple gestations.<sup>2</sup>
                             <ul>
@@ -175,6 +236,17 @@
 
                         </li>
 
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('nstgarelh')" class="hg-accBtn">NST and GA:<span id="nstgarelh_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="nstgarelh" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>24-28 weeks: 50% normal fetuses NST nonreactive.<sup>1</sup></li>
+                        <li>28-32 weeks: 15% normal fetuses NST nonreactive.<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
@@ -280,11 +352,19 @@
                         <li>6:
                             <ul>
                                 <li>Equivocal.<sup>1</sup></li>
+                                <li>If 6/10:
+                                    <ul>
+                                        <li>&ge; 37 weeks consider delivery.<sup>1</sup></li>
+                                        <li>&lt; 37 weeks repeat BPP in 24 hours.<sup>1</sup></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li>&le; 4:
                             <ul>
                                 <li>Abnormal.<sup>1</sup></li>
+                                <li>Usually indicates delivery needed though may need to individualize &lt; 32
+                                    weeks.<sup>1</sup></li>
                             </ul>
                         </li>
                         <P class="hg-accNote">Oligohydraminos always requires evaluation.<sup>1</sup></P>
@@ -345,7 +425,7 @@
                 <div id="anfeutyfoRelLinks" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li><a href="ob_oligohydramnios.html">Oligohydraminos</a></li>
-                        <li><a href="ob_polyhydramnios.html">Polyhydramnios</a></li>
+                        <li><a href="ob_stillbirths.html">Stillbirths</a></li>
                     </ul>
                 </div>
             </section>
@@ -364,6 +444,8 @@
                         <li>Multifetal gestations: twin, triplet, and higher-order multifetal pregnancies. ACOG Practice
                             Bulletin No. 231. American College of Obstetricians and Gynecologists. Obstet Gynecol
                             2021;137:e145–62.</li>
+                        <li>Indications for outpatient antenatal fetal surveillance. ACOG Committee Opinion No. 828.
+                            American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e177–97.</li>
                     </ol>
                 </div>
             </section>
