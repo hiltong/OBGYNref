@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Stillbirths">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Stillbirths</h1>
+
+            <!-- Entities:  https://www.w3schools.com/html/html_entities.asp -->
+
+            <h2 class="hg-h2SectionTitle">Background</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('sbrwaty')" class="hg-accBtn">Stillbirth rates:<span id="sbrwaty_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="sbrwaty" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>After 20 weeks US 2013:
+                            <ul>
+                                <li>5.96/1000<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Per GA births without anomalies:
+                            <ul>
+                                <li>37 weeks 0.21/1000.<sup>1</sup></li>
+                                <li>38 weeks 0.27/1000.<sup>1</sup></li>
+                                <li>39 weeks 0.35/1000.<sup>1</sup></li>
+                                <li>40 weeks 0.42/1000.<sup>1</sup></li>
+                                <li>41 weeks 0.61/1000.<sup>1</sup></li>
+                                <li>42 weeks 1.08/1000.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('stlbirthdRelLinks')" class="hg-accBtn">Related topics:<span
+                        id="stlbirthdRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="stlbirthdRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="ob_antenatal_fetal_surveillance.html">Antenatal Fetal Surveillance</a> </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('sbfebcRefs')" class="hg-accBtn">References:<span id="sbfebcRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="sbfebcRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Indications for outpatient antenatal fetal surveillance. ACOG Committee Opinion No. 828.
+                            American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e177–97.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
