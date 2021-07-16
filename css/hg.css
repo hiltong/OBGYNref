@@ -307,17 +307,17 @@ body{
   }
 
 /*Format Page---------------------------------------------------------------------------------------------------*/
-.hg-hrAboveSectionRelatedTopics{
-  margin-top: 80px;
-  border-top: 0px ; 
+/* .hg-hrAboveSectionRelatedTopics{ */
+  /* margin-top: 80px; */
+  /* border-top: 0px ;  */
   /* border-top: 1px double black; */
   /* border-radius: 5px; */
-}
+/* } */
 
-.hg-hrAboveSectionRefereces{
+/* .hg-hrAboveSectionRefereces{
   border-top: 1px dashed black;
   border-radius: 5px;
-}
+} */
 
 
 /*Nav Link----------------------------------------------------------------------------------------------------*/
@@ -541,8 +541,9 @@ font-weight: normal;
         text-decoration: none;
       }
 
+
 /* Formats The Related Topics: Accordian */
-.hg-accSectionRelTopics{margin-top: 0.60em;}
+.hg-accSectionRelTopics{margin-top: 0.960em; }
 .hg-accSectionRelTopics a {
   color:lightcoral}
 
@@ -550,6 +551,8 @@ font-weight: normal;
 .hg-accSectionRef{margin-top: 0.60em;}
 .hg-accOlRef{margin-top: 16px; margin-left: 16px; margin-right: 0px; padding: 0px; font-size: 0.90em;}
 .hg-accOlRef a {text-decoration: none;}
+
+
 
 /*Adds the 'or' in an accordian list*/
 .hg-accOr{list-style-type: none; font-style: italic;font-weight: normal;}
