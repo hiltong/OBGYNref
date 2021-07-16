@@ -83,10 +83,13 @@ function readAll() {
     };
 }
 
+
+var idKenny = "Kenny";
 function add() {
     var request = db.transaction(["employee"], "readwrite")
         .objectStore("employee")
-        .put({ id: "Kenny", name: "Kenny", age: 19, email: "kenny@planet.org" });
+        // .put({ id: "Kenny", name: "Kenny", age: 19, email: "kenny@planet.org" });
+        .put({ id: idKenny, name: "Kenny", age: 19, email: "kenny@planet.org" });
 
     request.onsuccess = function (event) {
         alert("Kenny has been added to your database.");
