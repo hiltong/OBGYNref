@@ -37,8 +37,12 @@
                 <button onclick="readAll()" style="display: block;">Read All</button>
                 <button onclick="remove()" style="display: block;">Remove Item</button>
                 <button onclick="add()" style="display: block;">Add Item</button>
-                <button onclick="DeleteDatabase()" style="display: block;">Delete Database</button>
+                <button onclick="deleteDatabase()" style="display: block;">Delete Database</button>
                 <button onclick="ReadDatabase()" style="display: block;">Read Database</button>
+
+                <input type="radio" name="vendor" value="0" onclick="handleClick(this);" style=" margin-top: 12px;"> Yes
+                <input type="radio" name="vendor" value="1" onclick="handleClick(this);" > No
+                <input type="text" name="text" id="txtComments" style="display: none;" >
 
                 <button id="speak" onclick="speak()" style="display: block; margin-top: 12px;" diabled>Speak</button>
                 <button id="pause" onclick="pause()" style="display: block; margin-top: 12px;" disabled>Pause</button>

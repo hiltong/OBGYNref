@@ -19,6 +19,12 @@ const employeeData = [
     { id: "00-01", name: "gopal", age: 35, email: "gopal@tutorialspoint.com" },
     { id: "00-02", name: "prasad", age: 32, email: "prasad@tutorialspoint.com" }
 ];
+
+const questionsData = [
+    { id: "age35", status: "checked", text: "35 or older" },
+    { id: "bmi30", status: "", text: "BMI over 30" }
+];
+
 var db;
 var request = window.indexedDB.open("newDatabase", 1);
 
@@ -32,6 +38,7 @@ request.onsuccess = function (event) {
 };
 
 request.onupgradeneeded = function (event) {
+    alert("upgrade");
     var db = event.target.result;
     var objectStore = db.createObjectStore("employee", { keyPath: "id" });
     // var objectStore = db.createObjectStore("employee", { keyPath: "name" });
@@ -39,6 +46,15 @@ request.onupgradeneeded = function (event) {
     for (var i in employeeData) {
         objectStore.add(employeeData[i]);
     }
+
+    ////////////////////////
+    var objectstore_questions = db.createObjectStore("questions", { keyPath: "id" });
+    for (var ii in questionsData) {
+        alert(questionsData[ii]);
+        objectstore_questions.add(questionsData[ii]);
+        alert("www");
+    }
+
 }
 
 function initiate() {
@@ -50,10 +66,7 @@ function read() {
     var objectStore = transaction.objectStore("employee");
     // var request = objectStore.get("00-03");
     var request = objectStore.get("Kenny");
-
-
     // var request = objectStore.get("Kenny");
-
     request.onerror = function (event) {
         alert("Unable to retrieve daa from database!");
     };
@@ -66,6 +79,22 @@ function read() {
             alert("Kenny couldn't be found in your database!");
         }
     };
+
+
+    var transaction2 = db.transaction(["questions"]);
+    var objectStore2 = transaction2.objectStore("questions");
+    var request2 = objectStore2.get("age35");
+    request2.onerror = function (event) {
+        alert("Unable to retrieve questions from database!");
+    };
+    request2.onsuccess = function (event) {
+        if (request2.result) {
+            alert("Question: " + request2.result.id + ", Status: " + request2.result.status + ", Text: " + request2.result.text);
+        } else {
+            alert("Question couldn't be found in your database!");
+        }
+    };
+    //  alert("the end");
 }
 
 function readAll() {
@@ -79,6 +108,23 @@ function readAll() {
             cursor.continue();
         } else {
             alert("No more entries!");
+        }
+    };
+
+
+    // var transaction2 = db.transaction(["questions"]);
+    // var objectStore2 = transaction2.objectStore("questions");
+    var objectStore2 = db.transaction("questions").objectStore("questions");
+    objectStore2.openCursor().onsuccess = function (event) {
+
+        var cursor2 = event.target.result;
+        // alert("herey");
+        if (cursor2) {
+            // alert("herey2");
+            alert("Question: " + cursor2.key + ", Status: " + cursor2.value.status + ", Text: " + cursor2.value.text);
+            cursor2.continue();
+        } else {
+            alert("No more questions!");
         }
     };
 }
@@ -106,9 +152,60 @@ function remove() {
         // .delete("00-03");
         .delete("Kenny");
 
+
     request.onsuccess = function (event) {
         alert("Kenny's entry has been removed from your database.");
     };
+}
+
+// var DBDeleteRequest
+function deleteDatabase() {
+    db.close();
+    var DBDeleteRequest = window.indexedDB.deleteDatabase("newDatabase");
+    alert("delete database");
+
+    DBDeleteRequest.onerror = function (event) {
+        alert("Error deleting database.");
+    };
+    DBDeleteRequest.onsuccess = function (event) {
+        alert("Database deleted successfully");
+    };
+    DBDeleteRequest.onblocked = function () {
+        console.log("Couldn't delete database due to the operation being blocked");
+    };
+
+}
+
+function handleClick(myRadio) {
+    var selectedValue = myRadio.value;
+    if (selectedValue == 0) {
+        document.getElementById("txtComments").style.display = "";
+        //Show textbox
+        var request = db.transaction(["questions"], "readwrite")
+            .objectStore("questions")
+            .put({ id: "age35", status: "checked", text: "over 35" });
+        request.onsuccess = function (event) {
+            alert("Yes has been added to your database.");
+        };
+
+        request.onerror = function (event) {
+            alert("Unable to add Yes to your database! ");
+        }
+    }
+    else {
+        document.getElementById("txtComments").style.display = 'none';
+        //Hide textbox.
+        var request = db.transaction(["questions"], "readwrite")
+        .objectStore("questions")
+        .put({ id: "age35", status: "unchecked", text: "under 35" });
+    request.onsuccess = function (event) {
+        alert("No has been added to your database.");
+    };
+
+    request.onerror = function (event) {
+        alert("Unable to add No to your database! ");
+    }
+    }
 }
 
 
@@ -121,7 +218,7 @@ if ('speechSynthesis' in window) {
     synth.cancel();
     // alert("reload");
     document.getElementById("speak").disabled = false;
-    if(synth.speaking){ /* stop narration */
+    if (synth.speaking) { /* stop narration */
         /* for safari */
         // alert("reload2");
         synth.cancel();
