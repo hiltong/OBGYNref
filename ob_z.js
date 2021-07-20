@@ -29,7 +29,7 @@ var db;
 var request = window.indexedDB.open("newDatabase", 1);
 
 request.onerror = function (event) {
-    alert("error: ");
+    alert("error opening newDatabase");
 };
 
 request.onsuccess = function (event) {
@@ -62,7 +62,8 @@ function initiate() {
 }
 
 function read() {
-    var transaction = db.transaction(["employee"]);
+    // var transaction = db.transaction(["employee"]);
+    var transaction = db.transaction("employee", "readonly");
     var objectStore = transaction.objectStore("employee");
     // var request = objectStore.get("00-03");
     var request = objectStore.get("Kenny");
@@ -81,7 +82,8 @@ function read() {
     };
 
 
-    var transaction2 = db.transaction(["questions"]);
+    // var transaction2 = db.transaction(["questions"]);
+    var transaction2 = db.transaction("questions", "readonly");
     var objectStore2 = transaction2.objectStore("questions");
     var request2 = objectStore2.get("age35");
     request2.onerror = function (event) {
@@ -98,7 +100,7 @@ function read() {
 }
 
 function readAll() {
-    var objectStore = db.transaction("employee").objectStore("employee");
+    var objectStore = db.transaction("employee", "readonly").objectStore("employee");
 
     objectStore.openCursor().onsuccess = function (event) {
         var cursor = event.target.result;
@@ -114,7 +116,7 @@ function readAll() {
 
     // var transaction2 = db.transaction(["questions"]);
     // var objectStore2 = transaction2.objectStore("questions");
-    var objectStore2 = db.transaction("questions").objectStore("questions");
+    var objectStore2 = db.transaction("questions","readonly").objectStore("questions");
     objectStore2.openCursor().onsuccess = function (event) {
 
         var cursor2 = event.target.result;
@@ -132,7 +134,8 @@ function readAll() {
 
 var idKenny = "Kenny";
 function add() {
-    var request = db.transaction(["employee"], "readwrite")
+    // var request = db.transaction(["employee"], "readwrite")
+    var request = db.transaction("employee", "readwrite")
         .objectStore("employee")
         // .put({ id: "Kenny", name: "Kenny", age: 19, email: "kenny@planet.org" });
         .put({ id: idKenny, name: "Kenny", age: 19, email: "kenny@planet.org" });
@@ -147,7 +150,8 @@ function add() {
 }
 
 function remove() {
-    var request = db.transaction(["employee"], "readwrite")
+    // var request = db.transaction(["employee"], "readwrite")
+    var request = db.transaction("employee", "readwrite")
         .objectStore("employee")
         // .delete("00-03");
         .delete("Kenny");
@@ -181,7 +185,7 @@ function handleClick(myRadio) {
     if (selectedValue == 0) {
         document.getElementById("txtComments").style.display = "";
         //Show textbox
-        var request = db.transaction(["questions"], "readwrite")
+        var request = db.transaction("questions", "readwrite")
             .objectStore("questions")
             .put({ id: "age35", status: "checked", text: "over 35" });
         request.onsuccess = function (event) {
@@ -195,7 +199,7 @@ function handleClick(myRadio) {
     else {
         document.getElementById("txtComments").style.display = 'none';
         //Hide textbox.
-        var request = db.transaction(["questions"], "readwrite")
+        var request = db.transaction("questions", "readwrite")
         .objectStore("questions")
         .put({ id: "age35", status: "unchecked", text: "under 35" });
     request.onsuccess = function (event) {
