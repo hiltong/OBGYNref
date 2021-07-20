@@ -22,14 +22,14 @@ const employeeData = [
 
 const questionsData = [
     { id: "age35", status: "checked", text: "35 or older" },
-    { id: "bmi30", status: "", text: "BMI over 30" }
+    { id: "bmi30", status: "checked", text: "BMI over 30" }
 ];
 
 var db;
 var request = window.indexedDB.open("newDatabase", 1);
 
 request.onerror = function (event) {
-    alert("error opening newDatabase");
+    alert("Error opening newDatabase. Please allow this web app to use IndexedDB!");
 };
 
 request.onsuccess = function (event) {
@@ -49,20 +49,34 @@ request.onupgradeneeded = function (event) {
 
     ////////////////////////
     var objectstore_questions = db.createObjectStore("questions", { keyPath: "id" });
+    objectstore_questions.createIndex('id', 'id', {unique: true }); //redundant for id since it is keypath
+    objectstore_questions.createIndex("status", "status", { unique: false }); 
+
+
     for (var ii in questionsData) {
-        alert(questionsData[ii]);
+        // alert(questionsData[ii]);
         objectstore_questions.add(questionsData[ii]);
-        alert("www");
+        // alert("www");
     }
 
+
+
+ /*  let index = objectstore_questions.createIndex('id', 'id', {
+        unique: true   
+    }); */
+   
+
+
+    alert("upgrade done");
 }
 
 function initiate() {
     alert("initiate");
 }
 
+// getQuestion
 function read() {
-    // var transaction = db.transaction(["employee"]);
+    // var transaction = db.transaction(["employee"]);  // [] list of stores transaction will span
     var transaction = db.transaction("employee", "readonly");
     var objectStore = transaction.objectStore("employee");
     // var request = objectStore.get("00-03");
@@ -99,6 +113,43 @@ function read() {
     //  alert("the end");
 }
 
+function getQuestionByKey(key) {
+    alert(key);
+    var transaction = db.transaction("questions", "readonly");
+    var objectStore = transaction.objectStore("questions");
+    var request = objectStore.get(key);
+    
+    request.onsuccess = (event) => {
+        if (request.result){
+            alert(key);
+            alert(request.result.id + "  " + request.result.status + "  " + request.result.text);
+        } else{
+            alert("Question Key couldn't be found in your database!");
+        }
+       
+    };
+
+    request.onerror = (event) => {
+        alert(event.target.errorCode);
+    }
+}
+
+function getQuestionById(id) {
+    alert(id);
+    var transaction = db.transaction("questions", "readonly");
+    var objectStore = transaction.objectStore("questions");
+    var index = objectStore.index('id');
+    var query = index.get(id);
+
+    query.onsuccess = (event) => {
+        alert(query.result.id + "  " + query.result.status + "  " + query.result.text);
+    };
+
+    query.onerror = (event) => {
+        alert(event.target.errorCode);
+    }
+}
+
 function readAll() {
     var objectStore = db.transaction("employee", "readonly").objectStore("employee");
 
@@ -116,7 +167,7 @@ function readAll() {
 
     // var transaction2 = db.transaction(["questions"]);
     // var objectStore2 = transaction2.objectStore("questions");
-    var objectStore2 = db.transaction("questions","readonly").objectStore("questions");
+    var objectStore2 = db.transaction("questions", "readonly").objectStore("questions");
     objectStore2.openCursor().onsuccess = function (event) {
 
         var cursor2 = event.target.result;
@@ -128,6 +179,23 @@ function readAll() {
         } else {
             alert("No more questions!");
         }
+    };
+}
+
+function readCheckedQuestions() {
+//    alert("started");
+    var singleKeyRange = IDBKeyRange.only("checked");
+    var objectStore = db.transaction("questions", "readonly").objectStore("questions");
+    var index = objectStore.index("status");
+    index.openCursor(singleKeyRange).onsuccess = function (event) {
+        var cursor = event.target.result;
+        // alert("checked");
+     if (cursor){
+        alert("Key " + cursor.value.id + "    Status:  " + cursor.value.status + "   Text:  " + cursor.value.text);
+        cursor.continue();
+     } 
+
+
     };
 }
 
@@ -166,7 +234,7 @@ function remove() {
 function deleteDatabase() {
     db.close();
     var DBDeleteRequest = window.indexedDB.deleteDatabase("newDatabase");
-    alert("delete database");
+    // alert("delete database");
 
     DBDeleteRequest.onerror = function (event) {
         alert("Error deleting database.");
@@ -200,15 +268,15 @@ function handleClick(myRadio) {
         document.getElementById("txtComments").style.display = 'none';
         //Hide textbox.
         var request = db.transaction("questions", "readwrite")
-        .objectStore("questions")
-        .put({ id: "age35", status: "unchecked", text: "under 35" });
-    request.onsuccess = function (event) {
-        alert("No has been added to your database.");
-    };
+            .objectStore("questions")
+            .put({ id: "age35", status: "unchecked", text: "under 35" });
+        request.onsuccess = function (event) {
+            alert("No has been added to your database.");
+        };
 
-    request.onerror = function (event) {
-        alert("Unable to add No to your database! ");
-    }
+        request.onerror = function (event) {
+            alert("Unable to add No to your database! ");
+        }
     }
 }
 
