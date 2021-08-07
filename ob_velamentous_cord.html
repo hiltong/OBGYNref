@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Velamentous Cord Insertion">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Velamentous Cord Insertion</h1>
+
+            <!-- Entities:  https://www.w3schools.com/html/html_entities.asp -->
+
+            <h2 class="hg-h2SectionTitle">Management</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('afgwbvelcord')" class="hg-accBtn">Initiate antenatal fetal surveillance:<span id="afgwbvelcord_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="afgwbvelcord" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>36 0/7 weeks, weekly.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Etc.</h2>
+
+        <!--     <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK501922/" target="_blank">Drugs and Lactation Database (LactMed) [Internet].</a><sup>4</sup></li>
+                    </ul>
+                </div>
+            </section>
+ -->
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('velcordRefs')" class="hg-accBtn">References:<span id="velcordRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="velcordRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Indications for outpatient antenatal fetal surveillance. ACOG Committee Opinion No. 828. American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e177–97.</li>                    
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
+
