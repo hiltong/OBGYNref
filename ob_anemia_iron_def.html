@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Iron Deficiency Anemia in Pregnancy">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Iron Deficiency Anemia in Pregnancy</h1>
+
+            <!-- Entities:  https://www.w3schools.com/html/html_entities.asp -->
+
+            <h2 class="hg-h2SectionTitle">Background</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('alevinprek')" class="hg-accBtn">Anemia levels in pregnancy:<span
+                        id="alevinprek_c" class="hg-NavLinkChevron"></span></button>
+                <div id="alevinprek" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>1st trimester:
+                            <ul>
+                                <li>Hgb &lt; 11 g/dl or Hct &lt; 33%.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>2nd trimester:
+                            <ul>
+                                <li>Hgb &lt; 10.5 g/dl or Hct &lt; 32%.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>3rd trimester:
+                            <ul>
+                                <li>Hgb &lt; 11 g/dl or Hct &lt; 33%.</11><sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('dxskirdefa')" class="hg-accBtn">Diagnosis iron deficient anemia:<span
+                        id="dxskirdefa_c" class="hg-NavLinkChevron"></span></button>
+                <div id="dxskirdefa" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Presumptive.<sup>1</sup></li>
+                        <li>Serum ferritin &lt; 30 mcg/L:
+                            <ul>
+                                <li>Highest sensitivity & specificity. <sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('dxdxskirdefa')" class="hg-accBtn">Lab tests differential anemias:<span
+                        id="dxdxskirdefa_c" class="hg-NavLinkChevron"></span></button>
+                <div id="dxdxskirdefa" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Iron deficiency anemia:
+                            <ul>
+                                <li>Iron level: Decreased.<sup>1</sup></li>
+                                <li>TBIC: Increased.<sup>1</sup></li>
+                                <li>Iron level: Decreased.<sup>1</sup></li>
+                                <li>Transferrin saturation (Serum iron/TBIC ratio): &lt; 18%.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Thalassemia:
+                            <ul>
+                                <li>Iron level: Normal.<sup>1</sup></li>
+                                <li>TBIC: Normal.<sup>1</sup></li>
+                                <li>Iron level: Normal.<sup>1</sup></li>
+                                <li>Transferrin saturation (Serum iron/TBIC ratio): Normal.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Anemia of chronic disease:
+                            <ul>
+                                <li>Iron level: Decreased.<sup>1</sup></li>
+                                <li>TBIC: Decreased.<sup>1</sup></li>
+                                <li>Iron level: Increased.<sup>1</sup></li>
+                                <li>Transferrin saturation (Serum iron/TBIC ratio): &gt; 18%.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Management</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('allirdefjhwpt')" class="hg-accBtn">All patients in 1st trimester:<span
+                        id="allirdefjhwpt_c" class="hg-NavLinkChevron"></span></button>
+                <div id="allirdefjhwpt" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Prenatal vitamin containing iron to meet needs of pregnancy.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('irotypirem')" class="hg-accBtn">Iron deficiency anemia:<span
+                        id="irotypirem_c" class="hg-NavLinkChevron"></span></button>
+                <div id="irotypirem" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Iron supplementation in addition to prenatal vitamins.<sup>1</sup>
+                            <ul>
+                                <li>Oral iron:
+                                    <ul>
+                                        <li>Consider once daily and every other day as may increase absorption and
+                                            decrease side effects.<sup>2</sup></li>
+                                        <li>Sustained release (e.g. SlowFe) or enteric coated may be poorly
+                                            absorbed.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Intravenous iron <b>after 1st trimester</b> & postpartum:
+                                    <ul>
+                                        <li>If don't tolerate oral iron as no GI side effects.<sup>1</sup></li>
+                                        <li>If poor response to oral iron as more effective.<sup>1</sup></li>
+                                        <li>If severe anemia later in pregnancy as more rapid correction.<sup>1</sup></li>
+                                        <li>If anatomic conditions such as some bariatric surgeries (e.g. Roux-en-Y bypass)
+                                            or some medical conditions such as inflammatory bowel disease that interfere
+                                            with oral iron absorption.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>                         
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('ivironsfj')" class="hg-accBtn">Intravenous irons:<span id="ivironsfj_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ivironsfj" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Iron sucrose (Venofer):
+                            <ul>
+                                <li>Most history of use in pregnancy.<sup>2</sup></li>
+                                <li>Requires multiple doses (e.g. 200 mg x 5 over 14 days).<sup>4</sup></li>
+                            </ul>
+                        </li>
+                        <li>Ferric carboxymaltose (Injectafer):
+                            <ul>
+                                <li>1-2 doses (750 mg q week x 1-2).<sup>3</sup></li>
+                                <li>Can cause hypophosphatemia but clinically significant hypophosphatemia not reported
+                                    in pregnancy.<sup>2</sup></li>
+                            </ul>
+                        </li>
+
+                       
+                    </ul>
+                    <P class="hg-accNote">All seem equally effective and have a similar safety profile.<sup>2</sup></P>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('irdeftrnsaw')" class="hg-accBtn">Transfusion for fetal indications:<span
+                        id="irdeftrnsaw_c" class="hg-NavLinkChevron"></span></button>
+                <div id="irdeftrnsaw" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Hgb &lt; 6 g/dl.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <h2 class="hg-h2SectionTitle">Etc.</h2>
+
+            <!--  <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK501922/" target="_blank">Drugs and Lactation Database (LactMed) [Internet].</a><sup>4</sup></li>
+                    </ul>
+                </div>
+            </section> -->
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('idefanpregRefs')" class="hg-accBtn">References:<span id="idefanpregRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="idefanpregRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Anemia in Pregnancy. ACOG Practice Bulletin No. 233. American College of Obstetricians and
+                            Gynecologists. Obstet Gynecol 2021;138:e55–64.</li>
+                        <li>UpToDate: Anemia in pregnancy. Authors:Michael Auerbach, MD, FACPHelain J Landy, MDSection
+                            Editor:Lynn L Simpson, MDDeputy Editors:Jennifer S Tirnauer, MDVanessa A Barss, MD, FACOG
+                        </li>
+                        <li>https://injectaferhcp.com</li>
+                        <li>https://www.venofer.com/dosing</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
