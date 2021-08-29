@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Osteoporosis">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Osteoporosis</h1>
+
+            <!-- Entities:  https://www.w3schools.com/html/html_entities.asp -->
+
+            <h2 class="hg-h2SectionTitle">Background</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('incosteopkj')" class="hg-accBtn">Incidence:<span id="incosteopkj_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="incosteopkj" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>In U.S. women over 50 one out of two will develop osteoportic fracture.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('rfostweohg')" class="hg-accBtn">Risk factors:<span id="rfostweohg_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="rfostweohg" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Intrinsec:
+                            <ul>
+                                <li>Age.<sup>1</sup></li>
+                                <li>BMI &lt; 20 or weight &lt: 127 lb.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Habits:
+                            <ul>
+                                <li>Smoking.<sup>1</sup></li>
+                                <li>&gt; 3 drinks a day.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Family history:
+                            <ul>
+                                <li>Parent with hip or spine fracture.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Conditions:
+                            <ul>
+                                <li>HIV, anorexia nervosa, diabetes mellitus (type 1 and type 2), gastric bypass,
+                                    hyperparathyroidism, hypocalcemia, premature menopause , primary ovarian
+                                    insufficiency, renal impairment, rheumatoid arthritis, Turner’s syndrome, vitamin D
+                                    deficiency.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Medications:
+                            <ul>
+                                <li>Antiepileptic drugs, antiretroviral drugs, aromatase inhibitors, chemotherapy, DMPA,
+                                    glucocorticoids, gonadotropin-releasing hormone agonists and antagonists,
+                                    heparin.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('osrteorda')" class="hg-accBtn">Recommended daily allowances (RDA):<span
+                        id="osrteorda_c" class="hg-NavLinkChevron"></span></button>
+                <div id="osrteorda" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Calcium RDA:
+                            <ul>
+                                <li>1,000 mg/day 19-50 years of age.<sup>1</sup></li>
+                                <li>1,200 mg/day &gt: 50 years of age.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Vitamin D RDA:
+                            <ul>
+                                <li>600 international units/day to age 70 years of age<sup>1</sup></li>
+                                <li>800 international units/day &gt: 70 years of age.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+     
+
+            <section class="accordian">
+                <button onclick="AccToggle('osteofraxw')" class="hg-accBtn">FRAX risk assessment tool:<span
+                        id="osteofraxw_c" class="hg-NavLinkChevron"></span></button>
+                <div id="osteofraxw" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Used in adults &ge; 40 years of age with or without a femoral neck BMD score to estimate the
+                            10-year risk of hip fracture and the 10-year probability of a major
+                            osteoporotic fracture (clinical spine, forearm, hip, or shoulder fracture) .<sup>1</sup>
+                        </li>
+                        <li>Used to:
+                            <ul>
+                                <li>Determine the need for BMD testing in postmenopausal patients &lt; 65 years of age 
+                                    with at least on of the risk factors.<sup>1</sup></li>
+                                <li>Determine the need for treatment with a T-score between −1.0 and −2.5.<sup>1</sup></li>
+                                <li><a href="https://www.sheffield.ac.uk/FRAX/" target="_blank">FRAX Fracture Risk Assessment Tool</a></li>                               
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian">
+                <button onclick="AccToggle('dxbmdscoew')" class="hg-accBtn">DXA BMD scores:<span id="dxbmdscoew_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="dxbmdscoew" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>T-score:
+                            <ul>
+                                <li>Compares a BMD measurement with the peak mean BMD in a healthy, young-adult (non-age
+                                    adjusted) caucasian (non-race adjusted) female
+                                    reference population.<sup>1</sup></li>
+                                <li>Expressed as the number of standard deviations from the mean BMD.<sup>1</sup></li>
+                                <li>Used to diagnose osteoporosis in the postmenopausal women.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Z-score:
+                            <ul>
+                                <li>Compares a BMD measurement with the mean BMD of a reference population of the same
+                                    sex, age, and ethnicity.<sup>1</sup></li>
+                                <li>Expressed as the number of standard deviations from the mean BMD.<sup>1</sup></li>
+                                <li>Used to access premenopausal women who may be at risk of secondary osteoporosis
+                                    (eg, medications or conditions).<sup>1</sup></li>
+                                <li>Z-score &le; −2.0 abnormal.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Screening</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('wtswbnmd')" class="hg-accBtn">Who to screen with BMD:<span id="wtswbnmd_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="wtswbnmd" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Postmenopausal patients &ge; 65 years of age<sup>1</sup></li>
+                        <li>&lt; 65 years and at increased risk of osteoporosis by a formal clinical risk assessment
+                            tool (eg, FRAX).<sup>1</sup>
+                        <ul>
+                            <li>Order of evaluation:
+                                <ul>
+                                    <li>1st: FRAX if &lt 65 years old and at least one risk factor.<sup>1</sup></li>
+                                    <li>2nd: BMD if 10-year FRAX risk of major osteoporotic fracture &gt; 8.4% (equal to the risk of a 65-year-old low-risk white woman).<sup>1</sup></li>
+                                </ul>
+                            </li>
+                                 
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            
+
+            <h2 class="hg-h2SectionTitle">Diagnosis</h2>
+
+            <section class="accordian">
+                <button onclick="AccToggle('osteodiagcritwew')" class="hg-accBtn">Diagnostic criteria for
+                    osteopotosis:<span id="osteodiagcritwew_c" class="hg-NavLinkChevron"></span></button>
+                <div id="osteodiagcritwew" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Previous fragility fracture (includes asymptomatic vertebral fracture).<sup>1</sup></li>
+                        <li>T-score &le; −2.5.<sup>1</sup>
+                            <ul>
+                                <li>Femoral neck and lumbar spine most accurate.<sup>1</sup></li>
+                                <li>Distal 1/3 radius if can't use above (eg, bilateral hip replacements and
+                                    lumbar spine surgery).<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li> T-score between –1.0 and –2.5 and FRAX with 3% 10-year risk of hip fracture or 20% 10-year
+                            risk of major osteoporotic fracture (clinical spine, forearm, hip, or shoulder
+                            fracture).<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="hg-h2SectionTitle">Etc.</h2>
+
+            <!--   <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK501922/" target="_blank">Drugs and Lactation Database (LactMed) [Internet].</a><sup>4</sup></li>
+                    </ul>
+                </div>
+            </section> -->
+
+
+            <section class="accordian hg-accSectionRef">
+                <button onclick="AccToggle('sosteojRefs')" class="hg-accBtn">References:<span id="sosteojRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="sosteojRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Osteoporosis Prevention, Screening, and Diagnosis. Clinical Practice Guideline No. 1.
+                            American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;138:494–506.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
