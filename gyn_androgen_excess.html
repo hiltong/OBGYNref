@@ -29,38 +29,91 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Androgen Excess</h1>
 
-            <section class="accordian">
-                    <button onclick="AccToggle('androddx')" class="hg-accBtn">Differential diagnosis<span id="androddx_c" class="hg-NavLinkChevron"></span></button>
-                    <div id="androddx" class="hg-accDivMain">
-                        <ul class=hg-accUl>
-                                <li>Physiologic hyperandrogenism of puberty<sup>1</sup></li>
-                                <li>Idiopathic hyperandrogenism<sup>1</sup></li>
-                                <li>PCOS<sup>1</sup></li>
-                                <li>Nonclassic congenital adrenal hyperplasia<sup>1</sup></li>
-                                <li>Androgen-secreting tumors<sup>1</sup></li>
-                                <li>Hypothyroidism<sup>1</sup></li>
-                                <li>Cushing disease<sup>1</sup></li>
-                                <li>Severe hyperprolactinemia<sup>1</sup></li>
-                                <li>Anabolic steroids<sup>1</sup></li>
-                        </ul>
-                    </div>
-                </section>
+            <button onclick="document.location='#DDX'">HTML Tutorial</button>
 
-            <section class="accordian">
-                <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c" class="hg-NavLinkChevron"></span></button>
-                <div id="xxx" class="hg-accDivMain">
+            <a href="#DDX">Differential diagnosis</a>
+
+            <ul class=hg-accUl id="TOC">
+                <li  ><a href="#DDX" target="_self">Differential diagnosis</a></li>
+                <li ><a href="#labass" >Laboratory assessment:</a>
+                    <ul onclick="AccToggle('labasshaw')">
+                        <li onclick="AccToggleTOC('labasshaw')"><a href="#testolab"   >Free/Total testosterone</a></li>
+                        <li onclick="AccToggleTOC('labasshaw')"><a href="#hydroxyprolab" >17 alpha-hydroxyprogesterone</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <section class="accordian" id="DDX">
+                <button onclick="AccToggle('androddx')" class="hg-accBtn">Differential diagnosis:<span id="androddx_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="androddx" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                      <li></li>
+                        <li>Physiologic hyperandrogenism of puberty<sup>1</sup></li>
+                        <li>Idiopathic hyperandrogenism<sup>1</sup></li>
+                        <li>PCOS<sup>1</sup></li>
+                        <li>Nonclassic congenital adrenal hyperplasia<sup>1</sup></li>
+                        <li>Androgen-secreting tumors<sup>1</sup></li>
+                        <li>Hypothyroidism<sup>1</sup></li>
+                        <li>Cushing disease<sup>1</sup></li>
+                        <li>Severe hyperprolactinemia<sup>1</sup></li>
+                        <li>Anabolic steroids<sup>1</sup></li>
                     </ul>
                 </div>
             </section>
+
+            <section class="accordian" id="labass">
+                <button onclick="AccToggle('labasshaw')" class="hg-accBtn">Laboratory assessment:<span id="labasshaw_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="labasshaw" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li id="testolab">Free/Total testosterone:
+                            <ul>
+                                <li>Elevated free/total testosterone > normal adult female values key feature of biochemical hyperandrogenism.<sup>1</sup></li>
+                                <li>Total testosterone > 200 ng/dL (2 ng/ml) suggestive of a virilizing ovarian tumor: <sup>1</sup>
+                                <ul>
+                                    <li>Obtain transvaginal ultrasound of ovaries<sup></sup>1</li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="hydroxyprolab">17 alpha-hydroxyprogesterone:
+                            <ul>
+                                <li>Most accurate if obtained fasting morning during the follicular phase.<sup>2</sup></li>
+                                <li>Morning fasting > 200 ng/dL(2ng/ml) or random > 4 ng/ml is suggestive of nonclassical congenital adrenal hyperplasia due to 21 hydroxylase deficiency: <sup>2</sup>
+                                <ul>
+                                    <li>Obtain corticotropin(ACTH) stimulation test<sup></sup>2</li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            
+            
+            
+
+
+<!-- 
+            <section class="accordian">
+                <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxx" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><sup></sup></li>
+                    </ul>
+                </div>
+            </section> -->
 
             <section class="accordian">
                 <button onclick="AccToggle('androexRefs')" class="hg-accBtn">References:<span id="androexRefs_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="androexRefs" class="hg-accDivMain">
                     <ol class="hg-accOlRef">
-                        <li>Screening and management of the hyperandrogenic adolescent. ACOG Committee Opinion No. 789. American College of Obstetricians and Gynecologists. Obstet Gynecol 2019;134:e106-14.</li>
+                        <li>Screening and management of the hyperandrogenic adolescent. ACOG Committee Opinion No. 789.
+                            American College of Obstetricians and Gynecologists. Obstet Gynecol 2019;134:e106-14.</li>
                     </ol>
                 </div>
             </section>

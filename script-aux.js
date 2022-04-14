@@ -56,6 +56,23 @@ function AccToggle(accID) {
   var data = sessionStorage.getItem(accID);
 }
 
+function AccToggleTOC(accID) {
+  var chevronId = accID + "_c";
+  var x = document.getElementById(accID);
+  var chevron = document.getElementById(chevronId);
+
+
+  if (x.style.display != "block") {
+    chevron.innerHTML = ARROWUP;
+   x.style.display = "block";
+   sessionStorage.setItem(accID, 'block')
+  }
+  var data = sessionStorage.getItem(accID);
+}
+
+
+
+
 const BACKBUTTON = '&#8592;';
 // const TITLEHTML = "OB/GYN Referenced<sup>r</sup>";
 const TITLEHTML = "";
