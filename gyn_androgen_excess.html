@@ -29,19 +29,14 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Androgen Excess</h1>
 
-            <button onclick="document.location='#DDX'">HTML Tutorial</button>
-
-            <a href="#DDX">Differential diagnosis</a>
-
-            <ul class=hg-accUl id="TOC">
-                <li  ><a href="#DDX" target="_self">Differential diagnosis</a></li>
-                <li ><a href="#labass" >Laboratory assessment:</a>
+            <ul class=hg-accUl id="TOC" style = "cursor:pointer">
+                <li  onclick=" AccToggleTOC('androddx'); ScrollToSection2('DDX');" ><a>Differential diagnosis</a></li>
+                <li onclick="AccToggleTOC('labasshaw'); ScrollToSection2('labass'); " ><a>Laboratory assessment:</a>
                     <ul onclick="AccToggle('labasshaw')">
-                        <li onclick="AccToggleTOC('labasshaw')"><a href="#testolab"   >Free/Total testosterone</a></li>
-                        <li onclick="AccToggleTOC('labasshaw')"><a href="#hydroxyprolab" >17 alpha-hydroxyprogesterone</a></li>
+                        <li onclick="AccToggleTOC('labasshaw')"><a >Free/Total testosterone</a></li>
+                        <li onclick="AccToggleTOC('labasshaw')"><a >17 alpha-hydroxyprogesterone</a></li>
                     </ul>
                 </li>
-
             </ul>
 
             <section class="accordian" id="DDX">
@@ -90,9 +85,7 @@
                     </ul>
                 </div>
             </section>
-            
-            
-            
+           
             
 
 
