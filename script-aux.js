@@ -64,8 +64,8 @@ function AccToggleTOC(accID) {
 
   if (x.style.display != "block") {
     chevron.innerHTML = ARROWUP;
-   x.style.display = "block";
-   sessionStorage.setItem(accID, 'block')
+    x.style.display = "block";
+    sessionStorage.setItem(accID, 'block')
   }
   var data = sessionStorage.getItem(accID);
 }
@@ -142,18 +142,18 @@ function SetUpPage() {
 }
 
 // function FormatPage() {
- /*  var reltopicssection = document.getElementsByClassName('accordian hg-accSectionRelTopics')[0];
-  if (reltopicssection != null) {
-    var hrabovereltop = document.createElement("hr");
-    hrabovereltop.setAttribute("class", "hg-hrAboveSectionRelatedTopics")
-    reltopicssection.prepend(hrabovereltop);
-  }  */
- /*  var refsection = document.getElementsByClassName('accordian hg-accSectionRef')[0];
-  if (refsection != null) {
-    var hraboverefs = document.createElement("hr");
-    hraboverefs.setAttribute("class", "hg-hrAboveSectionRefereces")
-    refsection.prepend(hraboverefs);
-  }  */
+/*  var reltopicssection = document.getElementsByClassName('accordian hg-accSectionRelTopics')[0];
+ if (reltopicssection != null) {
+   var hrabovereltop = document.createElement("hr");
+   hrabovereltop.setAttribute("class", "hg-hrAboveSectionRelatedTopics")
+   reltopicssection.prepend(hrabovereltop);
+ }  */
+/*  var refsection = document.getElementsByClassName('accordian hg-accSectionRef')[0];
+ if (refsection != null) {
+   var hraboverefs = document.createElement("hr");
+   hraboverefs.setAttribute("class", "hg-hrAboveSectionRefereces")
+   refsection.prepend(hraboverefs);
+ }  */
 // }
 
 
@@ -304,7 +304,20 @@ function ScrollToSection2(section) {
   document.getElementById(section).scrollIntoView({ block: "center", behavior: "smooth" });
 }
 
+function ScrollToSection3(section) {
+  var element = document.getElementById(section);
+var headerOffset = 50;
+var elementPosition = element.getBoundingClientRect().top;
+  // alert(elementPosition);
+var offsetPosition = elementPosition - headerOffset;
+// alert(offsetPosition);
+window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+});   
 
+
+}
 
 
 
