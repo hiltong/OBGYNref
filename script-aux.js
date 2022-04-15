@@ -234,9 +234,14 @@ function CreateSideBar() {
   about.setAttribute("href", "index.html")
   sideBar.appendChild(about);
 
-
-
-
+  
+  var upBtn = document.createElement("button");
+  var upBtnText = document.createTextNode("Top");
+  upBtn.appendChild(upBtnText);
+  upBtn.setAttribute("id", "upBtn")
+  upBtn.setAttribute("class", "hg-upBtn")
+  upBtn.setAttribute("onclick", "topFunction()");
+  document.body.appendChild(upBtn);
 
 }
 
@@ -300,11 +305,9 @@ function ScrollToSection(section) {
   document.getElementById(section).scrollIntoView({ block: "start", behavior: "smooth" });
 }
 
-function ScrollToSection2(section) {
-  document.getElementById(section).scrollIntoView({ block: "center", behavior: "smooth" });
-}
 
-function ScrollToSection3(section) {
+
+function ScrollToAccSection(section) {
   var element = document.getElementById(section);
 var headerOffset = 50;
 var elementPosition = element.getBoundingClientRect().top;
@@ -315,9 +318,24 @@ window.scrollTo({
     top: offsetPosition,
     behavior: "smooth"
 });   
-
-
 }
 
 
+// When the user scrolls down 20px from the top of the document, show the top button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  // alert('here');
+  var mybutton = document.getElementById('upBtn');
+  // alert(mybutton);
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
+// When the user clicks on the top button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

@@ -879,7 +879,29 @@ background-color: black;
     @media (max-width:600px){.hg-InfoContent{width:100%} .hg-AddContent{width: 100%; float: left;}}
 
    
+/* ------------------UpBtn */
+.hg-upBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  opacity: 0.3;
+  
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  
+}
 
+.hg-upBtn:hover {
+  background-color: #555;
+}
 
 /* NEED TO CHECK AND SEE IF IOS SAFARI SUPPORTS focus-visable*/
 .hg-accBtn:focus {
