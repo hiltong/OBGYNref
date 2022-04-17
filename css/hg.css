@@ -126,8 +126,9 @@ body{
   .hg-SideBar{
     font-size:18px!important;
     /* color:#000 !important;  */
-    color: dodgerblue;
+    color: rgb(36, 42, 49);
     /* background-color:#f0f0f0; */
+
     background-color:white;
     display:none;
     float:none;
@@ -154,7 +155,7 @@ body{
     padding-right: 16px;
     /* padding:8px 16px; */
     text-align:left;
-    /* font-weight: bold; */
+    font-weight: bold;
   }
 
   .hg-SideBar h5{
@@ -168,7 +169,8 @@ body{
   .hg-SideBarItem{
     margin-top: 2px;
     /* color: blue; */
-    color: lightcoral;
+    /* color: lightcoral; */
+    color: dodgerblue;
     text-decoration: none;
     display:block;
     padding:8px 16px;
@@ -367,6 +369,18 @@ body{
   max-width: 100%;
   height: auto;
 }
+
+/* TOC ------------------------------------------------------------------ */
+.hg-TOC {
+  padding-left: 22px;
+}
+
+.hg-TOC a{
+  font-size: 1.1rem;
+  color:dodgerblue;
+}
+
+
 /*Accordian-------------------------------------------------------------------------------------------------------------*/
 
 
@@ -375,7 +389,8 @@ padding:8px 16px 8px 4px;
 margin: 10px 0px 0px 0px; /*seperates accordians so can see shadow*/
 white-space: normal;  /*lets words wrap in accordian button*/
 text-align:left;
-color:dodgerblue;
+/* color:dodgerblue; */
+color:black;
 background: white; 
 /* background:green; */
 /* background:#f0f0f0; */
@@ -389,7 +404,7 @@ border-left: solid white 0.2px;
 border-right-width: 0px;
 width:100%;
 font-size: 1.2em;
-font-weight: normal; 
+font-weight: bold; 
 text-decoration: none;
 cursor:pointer;
 /* border-top: 1px solid#ccc ; */
@@ -455,6 +470,7 @@ font-weight: normal;
     }
 
 
+/* Accordian lists ----------------------------------------------------------*/
     .hg-accUl{
     /* background: olivedrab;  */
     /* padding-top: 6px;
@@ -899,20 +915,29 @@ background-color: black;
   /* border-radius: 10px; Rounded corners */
   /* font-size: 18px; Increase font size */
   font: bold 20px monospace;   
-  opacity: 100%;
-  /* transition: opacity 5s; */
+  /* opacity: 100%; */
   color: #fff;
-    background-color: #ef476f;
+  background-color: #ef476f;
 }
 
-.hg-upBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
+/* .hg-upBtn:hover {
+  background-color: #555; 
+} */
 
-/* .hidden {
+/* .hg-upBtnShow {
+  opacity: 100%;
+  transition: opacity 1s, transform 0.5s;   
+  background-color: green;
+} */
+
+/* .hg-upBtnHidden {
+  background-color: blue;
   opacity: 0%;
-}
- */
+  transition: opacity 1s, transform 0.5s;
+  /* display: none; */
+  cursor:default;
+} */
+
 
 /* NEED TO CHECK AND SEE IF IOS SAFARI SUPPORTS focus-visable----------------------------------------------------------------------------*/
 .hg-accBtn:focus {

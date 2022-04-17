@@ -313,32 +313,34 @@ function ScrollToSection(section) {
 function ScrollToAccSection(section) {
   var element = document.getElementById(section);
   //offset so can see top of section after scroll to it//
-var headerOffset = 50;   
-var elementPosition = element.getBoundingClientRect().top;
+  var headerOffset = 50;
+  var elementPosition = element.getBoundingClientRect().top;
   // alert(elementPosition);
-var offsetPosition = elementPosition - headerOffset;
-// alert(offsetPosition);
-window.scrollTo({
+  var offsetPosition = elementPosition - headerOffset;
+  // alert(offsetPosition);
+  window.scrollTo({
     top: offsetPosition,
     behavior: "smooth"
-});   
+  });
 }
 
 /* Go to "TOP" button -------------------------------------------------*/
 // When the user scrolls down 20px from the top of the document, show the top button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
   // alert('here');
   var mybutton = document.getElementById('upBtn');
   // alert(mybutton);
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
-    // mybutton.classList.remove("hidden");
-    // mybutton.classList.remove("hidden");
+    // mybutton.classList.remove("hg-upBtnHidden");
+    // mybutton.classList.add("hg-upBtnShow");
+
   } else {
     mybutton.style.display = "none";
-    // mybutton.classList.add("hidden");
-    // mybutton.classList.remove("hidden");
+    // mybutton.classList.remove("hg-upBtnShow");
+    // mybutton.classList.add("hg-upBtnHidden");
+
   }
 }
 
@@ -346,5 +348,5 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE     and Opera
- 
+
 }
