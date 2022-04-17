@@ -234,12 +234,15 @@ function CreateSideBar() {
   about.setAttribute("href", "index.html")
   sideBar.appendChild(about);
 
-  
+  // Go to Top button
   var upBtn = document.createElement("button");
-  var upBtnText = document.createTextNode("Top");
-  upBtn.appendChild(upBtnText);
+  // var upBtnText = document.createTextNode( "Top");
+  // upBtn.appendChild(upBtnText);
+  upBtn.innerHTML = "&uarr;";
   upBtn.setAttribute("id", "upBtn")
-  upBtn.setAttribute("class", "hg-upBtn")
+  // upBtn.setAttribute("class", "hg-upBtn")
+  upBtn.classList.add("hg-upBtn");
+  // upBtn.classList.add("hidden");
   upBtn.setAttribute("onclick", "topFunction()");
   document.body.appendChild(upBtn);
 
@@ -306,10 +309,11 @@ function ScrollToSection(section) {
 }
 
 
-
+/* Scroll from TOC------------------------------------------------------------------------------ */
 function ScrollToAccSection(section) {
   var element = document.getElementById(section);
-var headerOffset = 50;
+  //offset so can see top of section after scroll to it//
+var headerOffset = 50;   
 var elementPosition = element.getBoundingClientRect().top;
   // alert(elementPosition);
 var offsetPosition = elementPosition - headerOffset;
@@ -320,7 +324,7 @@ window.scrollTo({
 });   
 }
 
-
+/* Go to "TOP" button -------------------------------------------------*/
 // When the user scrolls down 20px from the top of the document, show the top button
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
@@ -329,13 +333,18 @@ function scrollFunction() {
   // alert(mybutton);
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+    // mybutton.classList.remove("hidden");
+    // mybutton.classList.remove("hidden");
   } else {
     mybutton.style.display = "none";
+    // mybutton.classList.add("hidden");
+    // mybutton.classList.remove("hidden");
   }
 }
 
 // When the user clicks on the top button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE     and Opera
+ 
 }
