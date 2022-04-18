@@ -494,10 +494,15 @@ font-weight: normal;
       color:rgba(0, 0, 0, 0.90);
       
     }
+
+  
+
+
     .hg-accUl li ul{
       padding: 0px;
       /* background: plum; */
        /* font-size: 0.9em; */
+
        font-size: 1.0rem;
     }
     
@@ -509,6 +514,11 @@ font-weight: normal;
 
         font-size: 0.99rem;
       }
+
+      .hg-accUl li ul li::marker {
+        color: rgb(115, 156, 53);
+    }
+
       .hg-accUl li ul li ul li{
         margin-left: 16px; 
         /* background: red; */
@@ -950,6 +960,7 @@ background-color: black;
 
 
 /* Text arrows and operators ------------------------------*/
+
 /* li down/right arrow           class="hg-liDownRightArrow"                    */
 .hg-liDownRightArrow{
   list-style: none;
@@ -958,9 +969,15 @@ background-color: black;
   color: #ef476f;
   font-weight: bold;
   font-size: larger;
-  content: "\21AA";
-  margin-bottom: 20px;
+  content: "\21AA"" ";
 }
+/* Action text        <span class="hg-actionTextColor"></span>       */
+.hg-actionTextColor {
+  /* color: green; */
+  color: #ef476f;
+  /* background-color: indianred; */
+}
+
 
 
 /* Right arrow       <span class="hg-spanArrowRight"/>                                       */
