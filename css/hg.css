@@ -950,6 +950,7 @@ background-color: black;
 
 
 /* Text arrows and operators ------------------------------*/
+/* li down/right arrow           class="hg-liDownRightArrow"                    */
 .hg-liDownRightArrow{
   list-style: none;
 }
@@ -961,7 +962,16 @@ background-color: black;
   margin-bottom: 20px;
 }
 
-.hg-arrowSpan{
-  color: #ef476f;
+
+/* Right arrow       <span class="hg-spanArrowRight"/>                                       */
+.hg-spanArrowRight::before{
   font-weight: bold;
+  color: #ef476f;
+  content: "\279E";
+}
+/* >          <span class="hg-spanGT"/>                    */
+.hg-spanGT::before{
+  font-weight: bold;
+  color: #ef476f;
+  content: "\003E";
 }
