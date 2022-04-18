@@ -37,7 +37,10 @@
                         <li onclick="AccToggleTOC('labasshaw')"><a >17 alpha-hydroxyprogesterone</a></li>
                     </ul>
                 </li>
+                <li  onclick=" AccToggleTOC('androexRefs'); ScrollToAccSection('andexrefhg');" ><a>References</a></li>
             </ul>
+
+           
 
             <section class="accordian" id="DDX">
                 <button onclick="AccToggle('androddx')" class="hg-accBtn">Differential diagnosis:<span id="androddx_c"
@@ -64,10 +67,10 @@
                     <ul class=hg-accUl>
                         <li id="testolab">Free/Total testosterone:
                             <ul>
-                                <li>Elevated free/total testosterone > normal adult female values key feature of biochemical hyperandrogenism.<sup>1</sup></li>
-                                <li>Total testosterone > 200 ng/dL (2 ng/ml) suggestive of a virilizing ovarian tumor: <sup>1</sup>
+                                <li>Free/total testosterone <span class="hg-arrowSpan"> &gt;</span> normal adult female values <span class="hg-arrowSpan">&#10142;</span> biochemical hyperandrogenism.<sup>1</sup></li>
+                                <li>Total testosterone <span class="hg-arrowSpan"> &gt;</span> 200 ng/dL (2 ng/ml) <span class="hg-arrowSpan">&#10142;</span> possibilty of virilizing ovarian tumor: <sup>1</sup>
                                 <ul>
-                                    <li>Obtain transvaginal ultrasound of ovaries<sup></sup>1</li>
+                                    <li class="hg-liDownRightArrow" >Obtain transvaginal ultrasound of ovaries.<sup>1</sup></li>
                                 </ul>
                                 </li>
                             </ul>
@@ -100,7 +103,7 @@
                 </div>
             </section> -->
 
-            <section class="accordian">
+            <section class="accordian" id="andexrefhg">
                 <button onclick="AccToggle('androexRefs')" class="hg-accBtn">References:<span id="androexRefs_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="androexRefs" class="hg-accDivMain">

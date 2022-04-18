@@ -746,7 +746,7 @@ padding-left: 16px;
     margin-left: 0.4em;
     margin-bottom: 0.6em;
     /* padding: 0.2em 0.6em 0.2em 0.6em; */
-    color: lightcoral;
+    color: dodgerblue;
     border: none;
     /* border-width: 1px; */
     /* border-style: solid; */
@@ -785,7 +785,7 @@ background-color: black;
 }
 
 .hg-glossaryBody a {
-    color: lightcoral;
+    color: dodgerblue;
     display: block;
     /* padding-top: 0.35em; */
     /* padding-bottom: 0.35em; */
@@ -949,4 +949,19 @@ background-color: black;
 }
 
 
+/* Text arrows and operators ------------------------------*/
+.hg-liDownRightArrow{
+  list-style: none;
+}
+.hg-liDownRightArrow::before{
+  color: #ef476f;
+  font-weight: bold;
+  font-size: larger;
+  content: "\21AA";
+  margin-bottom: 20px;
+}
 
+.hg-arrowSpan{
+  color: #ef476f;
+  font-weight: bold;
+}
