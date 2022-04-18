@@ -515,9 +515,9 @@ font-weight: normal;
         font-size: 0.99rem;
       }
 
-      .hg-accUl li ul li::marker {
+      /* .hg-accUl li ul li::marker {
         color: rgb(115, 156, 53);
-    }
+    } */
 
       .hg-accUl li ul li ul li{
         margin-left: 16px; 
