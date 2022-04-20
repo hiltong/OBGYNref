@@ -29,18 +29,19 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Androgen Excess</h1>
 
-            <ul class="hg-TOC" id="TOC" style = "cursor:pointer">
-                <li  onclick=" AccToggleTOC('androddx'); ScrollToAccSection('DDX');" ><a>Differential diagnosis</a></li>
-                <li onclick="AccToggleTOC('labasshaw'); ScrollToAccSection('labass'); " ><a>Laboratory assessment:</a>
+            <ul class="hg-TOC" id="TOC" style="cursor:pointer">
+                <li onclick=" AccToggleTOC('androddx'); ScrollToAccSection('DDX');"><a>Differential diagnosis</a></li>
+                <li onclick="AccToggleTOC('labasshaw'); ScrollToAccSection('labass'); "><a>Laboratory assessment:</a>
                     <ul onclick="AccToggle('labasshaw')">
-                        <li onclick="AccToggleTOC('labasshaw')"><a >Free/Total testosterone</a></li>
-                        <li onclick="AccToggleTOC('labasshaw')"><a >17 alpha-hydroxyprogesterone</a></li>
+                        <li onclick="AccToggleTOC('labasshaw')"><a>Free/Total testosterone</a></li>
+                        <li onclick="AccToggleTOC('labasshaw')"><a>17 alpha-hydroxyprogesterone</a></li>
+                        <li onclick="AccToggleTOC('labasshaw')"><a>Dehydroepiandrosterone sulfate (DHEAS)</a></li>
                     </ul>
                 </li>
-                <li  onclick=" AccToggleTOC('androexRefs'); ScrollToAccSection('andexrefhg');" ><a>References</a></li>
+                <li onclick=" AccToggleTOC('androexRefs'); ScrollToAccSection('andexrefhg');"><a>References</a></li>
             </ul>
 
-           
+
 
             <section class="accordian" id="DDX">
                 <button onclick="AccToggle('androddx')" class="hg-accBtn">Differential diagnosis:<span id="androddx_c"
@@ -65,34 +66,56 @@
                         class="hg-NavLinkChevron"></span></button>
                 <div id="labasshaw" class="hg-accDivMain">
                     <ul class=hg-accUl>
-                        <li id="testolab">Free/Total testosterone:
+                        <li id="testolab" ><b><i>Free/Total testosterone:</i></b>
                             <ul>
-                                <li>Free/total testosterone <span class="hg-spanGT"/> normal adult female values <span class="hg-spanArrowRight"/> biochemical hyperandrogenism.<sup>1</sup></li>
-                                <li>Total testosterone <span class="hg-spanGT"/> 200 ng/dL (2 ng/ml) <span class="hg-spanArrowRight"/> possibilty of virilizing ovarian tumor: <sup>1</sup>
-                                <ul>
-                                    <li class="hg-liDownRightArrow" ><span class="hg-actionTextColor">Obtain transvaginal ultrasound of ovaries.</span><sup>1</sup></li>
-                                </ul>
+                                <li>Free/total testosterone <span class="hg-spanGT" /> normal adult female values <span
+                                        class="hg-spanArrowRight" /> biochemical hyperandrogenism.<sup>1</sup></li>
+                                <li>Total testosterone <span class="hg-spanGT" /> 200 ng/dL (2 ng/ml) <span
+                                        class="hg-spanArrowRight" /> possibilty of virilizing ovarian tumor:
+                                    <sup>1</sup>
+                                    <ul>
+                                        <li class="hg-liDownRightArrow"><span class="hg-actionTextColor">Obtain
+                                                transvaginal ultrasound of ovaries.</span><sup>1</sup></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li id="hydroxyprolab">17 alpha-hydroxyprogesterone:
+                        <li id="hydroxyprolab"><b><i>17 alpha-hydroxyprogesterone:</i></b>
                             <ul>
                                 <li>Most accurate obtained fasting morning during follicular phase.<sup>2</sup></li>
-                                <li>Morning fasting <span class="hg-spanGT"/> 200 ng/dL (2ng/ml) or random <span class="hg-spanGT"/> 4 ng/ml <span class="hg-spanArrowRight"/> possibility of nonclassical congenital adrenal hyperplasia due to 21 hydroxylase deficiency: <sup>2</sup>
-                                <ul>
-                                    <li class="hg-liDownRightArrow"><span class="hg-actionTextColor">Obtain corticotropin(ACTH) stimulation test.</span><sup>2</sup></li>
-                                </ul>
+                                <li>Morning fasting <span class="hg-spanGT" /> 200 ng/dL (2ng/ml) or random <span
+                                        class="hg-spanGT" /> 4 ng/ml <span class="hg-spanArrowRight" /> possibility of
+                                    nonclassical congenital adrenal hyperplasia due to 21 hydroxylase deficiency:
+                                    <sup>2</sup>
+                                    <ul>
+                                        <li class="hg-liDownRightArrow"><span class="hg-actionTextColor">Obtain
+                                                corticotropin(ACTH) stimulation test.</span><sup>2</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li id="hydroxyprolab"><b><i>Dehydroepiandrosterone sulfate (DHEAS):</i></b>
+                            <ul>
+                                <li>Questionable usefulness in hirsutism. Most useful with rapid virilization to rule
+                                    out adrenal tumor.<sup>2</sup></li>
+                                <li>DHEAS <span class="hg-spanGT" /> 700 mcg/dl <span class="hg-spanArrowRight" />
+                                    possibility of adrenal tumor:<sup>1</sup>
+                                    <ul>
+                                        <li class="hg-liDownRightArrow"><span class="hg-actionTextColor">Obtain CT scan
+                                                of adrenal glands.</span><sup>1</sup></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </section>
-           
-            
 
 
-<!-- 
+
+
+            <!-- 
             <section class="accordian">
                 <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c"
                         class="hg-NavLinkChevron"></span></button>
@@ -110,6 +133,7 @@
                     <ol class="hg-accOlRef">
                         <li>Screening and management of the hyperandrogenic adolescent. ACOG Committee Opinion No. 789.
                             American College of Obstetricians and Gynecologists. Obstet Gynecol 2019;134:e106-14.</li>
+                        <li>Polycystic ovary syndrome. ACOG Practice Bulletin No. 194. American College of Obstetricians and Gynecologists. Obstet Gynecol 2018;131:e157–71.</li>
                     </ol>
                 </div>
             </section>
