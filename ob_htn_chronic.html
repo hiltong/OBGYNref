@@ -29,10 +29,34 @@
         <main class="hg-InfoContent">
             <h1 class="hg-h1PageTitle">Chronic Hypertension in Pregnancy</h1>
 
-            <h2 class="hg-h2SectionTitle">Management</h2>
+            <!-- <h2 class="hg-h2SectionTitle">Management</h2> -->
 
-            <section class="accordian">
-                <button onclick="AccToggle('chrhyninanfs')" class="hg-accBtn">Antenatal fetal surveillance:<span
+
+            <ul class="hg-TOC" id="TOC" style="cursor:pointer">
+                <!-- <li onclick=" AccToggleTOC('androddx'); ScrollToAccSection('DDX');"><a>Differential diagnosis</a></li> -->
+                <li onclick="AccToggleTOC('labasshaw')">Management
+                    <ul onclick="AccToggle('labasshaw')">
+                        <li onclick="AccToggleTOC('chrhtninititrx'); ScrollToAccSection('chrhtninitjerpy');"><a>Initiate/titrate medical therapy </a></li>
+                        <li onclick="AccToggleTOC('chrhyninanfs'); ScrollToAccSection('chrhtnpreganfs');"><a>Antenatal fetal surveillance</a></li>
+                        <li onclick="AccToggleTOC('obschrhtnwtd'); ScrollToAccSection('chrhtnpegwtdel');"><a>When to deliver</a></li>
+                    </ul>
+                </li>
+                <li onclick=" AccToggleTOC('obvchrhytnRefs'); ScrollToAccSection('chrhtnpregef');"><a>References</a>
+                </li>
+            </ul>
+
+            <section class="accordian" id="chrhtninitjerpy">
+                <button onclick="AccToggle('chrhtninititrx')" class="hg-accBtn">Initiate/titrate medcial therapy<span id="chrhtninititrx_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="chrhtninititrx" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>140/90.<sup>4</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="chrhtnpreganfs">
+                <button onclick="AccToggle('chrhyninanfs')" class="hg-accBtn">Antenatal fetal surveillance<span
                         id="chrhyninanfs_c" class="hg-NavLinkChevron"></span></button>
                 <div id="chrhyninanfs" class="hg-accDivMain">
                     <ul class=hg-accUl>
@@ -49,8 +73,8 @@
                 </div>
             </section>
 
-            <section class="accordian">
-                <button onclick="AccToggle('obschrhtnwtd')" class="hg-accBtn">When to deliver:<span id="obschrhtnwtd_c"
+            <section class="accordian" id="chrhtnpegwtdel">
+                <button onclick="AccToggle('obschrhtnwtd')" class="hg-accBtn">When to deliver<span id="obschrhtnwtd_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="obschrhtnwtd" class="hg-accDivMain">
                     <ul class=hg-accUl>
@@ -93,7 +117,7 @@
                 </div>
             </section>
 
-            <h2 class="hg-h2SectionTitle">Etc.</h2>
+            <!-- <h2 class="hg-h2SectionTitle">Etc.</h2> -->
 
             <!--    <section class="accordian hg-accSectionRelTopics">
                 <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
@@ -106,16 +130,19 @@
             </section> -->
 
 
-            <section class="accordian hg-accSectionRef">
-                <button onclick="AccToggle('obvchrhytnRefs')" class="hg-accBtn">References:<span id="obvchrhytnRefs_c"
+            <section class="accordian hg-accSectionRef" id="chrhtnpregef">
+                <button onclick="AccToggle('obvchrhytnRefs')" class="hg-accBtn">References<span id="obvchrhytnRefs_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="obvchrhytnRefs" class="hg-accDivMain">
                     <ol class="hg-accOlRef">
-                        <li>Medically indicated late-preterm and early-term deliveries. ACOG Committee Opinion No. 831. American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;138:e35–9.</li>
+                        <li>Medically indicated late-preterm and early-term deliveries. ACOG Committee Opinion No. 831.
+                            American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;138:e35–9.</li>
                         <li>Chronic hypertension in pregnancy. ACOG Practice Bulletin No. 203. American College of
                             Obstetricians and Gynecologists. Obstet Gynecol 2019;133:e26–50.</li>
                         <li>Indications for outpatient antenatal fetal surveillance. ACOG Committee Opinion No. 828.
                             American College of Obstetricians and Gynecologists. Obstet Gynecol 2021;137:e177–97.</li>
+                        <li>Clinical Guidance for the Integration of the Findings of the Chronic Hypertension and
+                            Pregnancy (CHAP) Study, Practice Advisory April 2022</li>
                     </ol>
                 </div>
             </section>
