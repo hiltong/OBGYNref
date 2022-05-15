@@ -1,4 +1,14 @@
-html,body,h1,h2,h3,h4,h5,h6 {font-family:  Arial, Helvetica, sans-serif;}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* .w3-sidebar {
   z-index: 3;
   width: 250px;
@@ -7,11 +17,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family:  Arial, Helvetica, sans-serif;}
   height: inherit;
 } */
 
-a{color: coral}
+a {
+  color: coral
+}
 
 
 
-html{
+html {
   padding-bottom: 30px;
   /* margin-bottom: 30px; */
   scroll-behavior: smooth;
@@ -19,302 +31,347 @@ html{
 
 
 /* Word wrap all */
-body{
+body {
   word-wrap: break-word;
   margin-bottom: 200px;
 }
 
 /*Nav Bar*/
-.hg-NavBar{
+.hg-NavBar {
   background: black;
   /* background: #f0f0f0; */
-  position:fixed;
-  width:100%;
-  z-index:1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   min-height: 42px;
   /* height: 44px; */
 }
+
 /*Nav Bar Title*/
-.hg-NavBarTitle{
-  padding:8px 16px;
-  float:left;
-  font: size 18px;;
+.hg-NavBarTitle {
+  padding: 8px 16px;
+  float: left;
+  font: size 18px;
+  ;
   color: white;
 }
+
 /*Back Button---------------------------------------------------------------------------------------------------------*/
-.hg-BackButton{
+.hg-BackButton {
   background: black;
   /* background: #f0f0f0; */
   /* color: white; */
   color: white;
-  font-size:18px;
-  float:left;
-  padding:8px 16px;
-  text-decoration:none;
+  font-size: 18px;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
   border: none;
   height: 100%;
 }
-.hg-BackButton:active{
+
+.hg-BackButton:active {
   background: white;
   color: black;
 }
+
 /* .hg-BackButton:focus{
   background: white;
   color: black;
 } */
 
 @media all and (display-mode: browser) {
-    .hg-BackButton {
-      display: none /*Hides BackButton when in browser*/
-    }
-    /* #myHmBgBtn{
+  .hg-BackButton {
+    display: none
+      /*Hides BackButton when in browser*/
+  }
+
+  /* #myHmBgBtn{
       display: none
     } */
+}
+
+@media all and (display-mode: standalone) {
+  .hg-BackButton {
+    display: block;
+    /*Shows BackButton when in pwa*/
   }
-  @media all and (display-mode: standalone) {
-    .hg-BackButton {
-      display: block; /*Shows BackButton when in pwa*/
-    }
-    /* #myHmBgBtn{
+
+  /* #myHmBgBtn{
       display: block; 
     } */
-  }
-  /*Hamburger Button*/
-  .hg-HamBtn{
-    background: black;
-    /* background: #f0f0f0; */
-    color: white;
-    /* color: black; */
-    font-size:18px;
-    float:right;
-    padding:8px 16px;
-    text-decoration:none;
-    border: none;
-  }
-  .hg-HamBtn:active{
-    background: white;
-    color: black;
-  }
-  /* .hg-HamBtn:focus{
+}
+
+/*Hamburger Button*/
+.hg-HamBtn {
+  background: black;
+  /* background: #f0f0f0; */
+  color: white;
+  /* color: black; */
+  font-size: 18px;
+  float: right;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: none;
+}
+
+.hg-HamBtn:active {
+  background: white;
+  color: black;
+}
+
+/* .hg-HamBtn:focus{
     background: white;
     color: black;
   } */
-  
 
-  /* Title--------------------------------------------------------------------------- */
-  .hg-h1PageTitle{
-    font-size: 1.5em;
-    margin-bottom: 0.2em;
-    color: Black;
-    font-weight: normal;
-    /* background-color: #00ffff; */
-  }
-  .hg-h2PageSubtitle{
-      font-size: 1.17em;
-      margin-top: 0.10em;
-      color: Black;
-      /* background-color: #ddffdd; */
-  }
-  .hg-h3PageSubtitle{
-    font-size: 1.00em;
-    margin-top: 0.10em;
-    /* color: #009688; */
-    /* background-color: #ddffdd; */
-  }
-  
-  /*Side Bar---------------------------------------------------------------------------------------------------*/
-  .hg-SideBar{
-    font-size:18px!important;
-    /* color:#000 !important;  */
-    color: rgb(36, 42, 49);
-    /* background-color:#f0f0f0; */
 
-    background-color:white;
-    display:none;
-    float:none;
-    margin-left: 0px;
-    margin-left: 0px;
-    outline:0;
-    /* height:100%; */
-    position:fixed!important;
-    top: 0;
-    overflow:auto;
-    z-index: 3;
-    width: 250px;
-    top: 44px;
-    bottom: 0;
-    height: inherit;
-    animation: animateleft 0.4s;
-  }
-  @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+/* Title--------------------------------------------------------------------------- */
+.hg-h1PageTitle {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+  color: Black;
+  font-weight: normal;
+  /* background-color: #00ffff; */
+}
 
-  .hg-SideBar h4{
-    padding-top: 8px;
-    padding-bottom: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
-    /* padding:8px 16px; */
-    text-align:left;
-    font-weight: bold;
+.hg-h2PageSubtitle {
+  font-size: 1.17em;
+  margin-top: 0.10em;
+  color: Black;
+  /* background-color: #ddffdd; */
+}
+
+.hg-h3PageSubtitle {
+  font-size: 1.00em;
+  margin-top: 0.10em;
+  /* color: #009688; */
+  /* background-color: #ddffdd; */
+}
+
+/*Side Bar---------------------------------------------------------------------------------------------------*/
+.hg-SideBar {
+  font-size: 18px !important;
+  /* color:#000 !important;  */
+  color: rgb(36, 42, 49);
+  /* background-color:#f0f0f0; */
+
+  background-color: white;
+  display: none;
+  float: none;
+  margin-left: 0px;
+  margin-left: 0px;
+  outline: 0;
+  /* height:100%; */
+  position: fixed !important;
+  top: 0;
+  overflow: auto;
+  z-index: 3;
+  width: 250px;
+  top: 44px;
+  bottom: 0;
+  height: inherit;
+  animation: animateleft 0.4s;
+}
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0
   }
 
-  .hg-SideBar h5{
-    margin-top: 2px;
-    display:block;
-    padding:0px 16px;
-    /* width:100%; 
+  to {
+    left: 0;
+    opacity: 1
+  }
+}
+
+.hg-SideBar h4 {
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* padding:8px 16px; */
+  text-align: left;
+  font-weight: bold;
+}
+
+.hg-SideBar h5 {
+  margin-top: 2px;
+  display: block;
+  padding: 0px 16px;
+  /* width:100%; 
     /* text-align:left; */
-  }
+}
 
-  .hg-SideBarItem{
-    margin-top: 2px;
-    /* color: blue; */
-    /* color: lightcoral; */
-    color: dodgerblue;
-    text-decoration: none;
-    display:block;
-    padding:8px 16px;
-    /* width:100%; 
+.hg-SideBarItem {
+  margin-top: 2px;
+  /* color: blue; */
+  /* color: lightcoral; */
+  color: dodgerblue;
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+  /* width:100%; 
     /* text-align:left; */
-  }
-  .hg-SideBarItem:hover{
-    /* color:darkblue; */
-    color: white;
-    background-color:black;
-  }
-  .hg-SideBarItem:active{
-    color: red;
-  }
-  .hg-SideBarItemSelected{
-    margin-top: 2px;
-    color: white;
-    background: black;
-    text-decoration: none;
-    display:block;
-    padding:8px 16px;
-    /* width:100%; */
-    /* text-align:left; */
-  }
+}
 
-  .hg-SideBarItem2{
-    margin-top: 2px;
-    margin-left: 12px;
-    color: blue;
-    text-decoration: none;
-    display:block;
-    padding:8px 16px;
-    /* width:100%; 
+.hg-SideBarItem:hover {
+  /* color:darkblue; */
+  color: white;
+  background-color: black;
+}
+
+.hg-SideBarItem:active {
+  color: red;
+}
+
+.hg-SideBarItemSelected {
+  margin-top: 2px;
+  color: white;
+  background: black;
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+  /* width:100%; */
+  /* text-align:left; */
+}
+
+.hg-SideBarItem2 {
+  margin-top: 2px;
+  margin-left: 12px;
+  color: blue;
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+  /* width:100%; 
     /* text-align:left; */
-  }
-  .hg-SideBarItem2:hover{
-    color: white;
-    background-color:black;
-  }
-  .hg-SideBarItem2:active{
-    color: red;
-  }
-.hg-SideBarSubHeader{
-  color:black; 
+}
+
+.hg-SideBarItem2:hover {
+  color: white;
+  background-color: black;
+}
+
+.hg-SideBarItem2:active {
+  color: red;
+}
+
+.hg-SideBarSubHeader {
+  color: black;
   margin-left: 14px;
-  margin-top: 12px; 
+  margin-top: 12px;
   margin-bottom: 8px;
 }
 
 
-  /*OverLay---------------------------------------------------------------------------------------------*/
-  .hg-OverLay{
-    position:fixed;
-    display:none;
-    width:100%;height:100%;
-    top:0;left:0;right:0;bottom:0;
-    background-color:rgba(0,0,0,0.5);
-    cursor:pointer;
-    z-index:2;
-  }
-  
-  /*Main Content--------------------------------------------------------------------------------------------------*/
+/*OverLay---------------------------------------------------------------------------------------------*/
+.hg-OverLay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 2;
+}
 
-.hg-h2SectionTitle{
+/*Main Content--------------------------------------------------------------------------------------------------*/
+
+.hg-h2SectionTitle {
   font-weight: bold;
   font-size: 1.19em;
- /*  margin-top: 0.60em; */
+  /*  margin-top: 0.60em; */
   color: dodgerblue;
-  background-color:white;
+  background-color: white;
 
   /* border-style: solid; */
   /* border-top: lightblue; */
   border-bottom: 1px solid dodgerblue;
 }
 
-  .hg-Content{
-    margin-left:250px;
-    padding-top:64px!important;
-    padding-bottom:64px!important;
-    transition:margin-left .4s;
-  }
-  .hg-InfoContent{
-    padding:0.01em 16px;
-    float:left;
-    /* width:100%; */
-  }
-  .hg-AddContent{
-    padding:0.01em 16px;
-    /* width:33.33333%; */
-    display: inline-block
-  }
-  .hg-AddSmall{
-    border:1px solid #ccc!important;
-    padding:32px 24px!important;
-    text-align:center!important;
-  }
-  .hg-AddLarge{
-    border:1px solid #ccc!important;
-    padding:64px 24px!important;
-    text-align:center!important
-  }
-  /* Index Pages---------------------------------------------------------------------------------------- */
+.hg-Content {
+  margin-left: 250px;
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+  transition: margin-left .4s;
+}
 
-  .hg-IndexPageDiv h2{
-    font-size: 1.3em;
-    display: block;
-  }
-  .hg-IndexPageDiv a{
-   text-decoration: none;
-   display: block;
-   padding-left: 4px; 
-   padding-top: 6px;
-   padding-bottom: 6px;
-  }
-  .hg-IndexPageDiv a:active{
-    color: white;
-    background: black;
-  }
+.hg-InfoContent {
+  padding: 0.01em 16px;
+  float: left;
+  /* width:100%; */
+}
 
-  .hg-MainLink {
-    color: blue;
-    display: block;
-    padding-top: 0.35em;
-    padding-bottom: 0.35em;
-    font-size: 1.0em;
-    margin-left: 0px;
-    margin-right: 0px;
-    font-weight:normal;
-    text-decoration: none;
-  }
-  .hg-MainLink:hover {
-    background:black;
-    color: white;
-  }
-  .hg-MainLink:active {
-    color: red;
-  }
+.hg-AddContent {
+  padding: 0.01em 16px;
+  /* width:33.33333%; */
+  display: inline-block
+}
+
+.hg-AddSmall {
+  border: 1px solid #ccc !important;
+  padding: 32px 24px !important;
+  text-align: center !important;
+}
+
+.hg-AddLarge {
+  border: 1px solid #ccc !important;
+  padding: 64px 24px !important;
+  text-align: center !important
+}
+
+/* Index Pages---------------------------------------------------------------------------------------- */
+
+.hg-IndexPageDiv h2 {
+  font-size: 1.3em;
+  display: block;
+}
+
+.hg-IndexPageDiv a {
+  text-decoration: none;
+  display: block;
+  padding-left: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.hg-IndexPageDiv a:active {
+  color: white;
+  background: black;
+}
+
+.hg-MainLink {
+  color: blue;
+  display: block;
+  padding-top: 0.35em;
+  padding-bottom: 0.35em;
+  font-size: 1.0em;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.hg-MainLink:hover {
+  background: black;
+  color: white;
+}
+
+.hg-MainLink:active {
+  color: red;
+}
 
 /*Format Page---------------------------------------------------------------------------------------------------*/
 /* .hg-hrAboveSectionRelatedTopics{ */
-  /* margin-top: 80px; */
-  /* border-top: 0px ;  */
-  /* border-top: 1px double black; */
-  /* border-radius: 5px; */
+/* margin-top: 80px; */
+/* border-top: 0px ;  */
+/* border-top: 1px double black; */
+/* border-radius: 5px; */
 /* } */
 
 /* .hg-hrAboveSectionRefereces{
@@ -324,45 +381,49 @@ body{
 
 
 /*Nav Link----------------------------------------------------------------------------------------------------*/
-  .hg-NavLink{
-    padding:10px 16px 10px 16px;
-    margin: 6px 0px 0px 0px; /*seperates accordians so can see shadow*/
-    white-space: normal;  /*lets words wrap in accordian button*/
-    text-align:left;
-    color :black;
-    background:#f0f0f0 ;
-    display:block;
-    border:none;
-    /* width:100%; */
-    width:auto;
-    font-size: 18px;  
-    /* font-size: 1.2em; */
-    text-decoration: none;
-    cursor:pointer;
-    /* height: 50px; */
-  }
+.hg-NavLink {
+  padding: 10px 16px 10px 16px;
+  margin: 6px 0px 0px 0px;
+  /*seperates accordians so can see shadow*/
+  white-space: normal;
+  /*lets words wrap in accordian button*/
+  text-align: left;
+  color: black;
+  background: #f0f0f0;
+  display: block;
+  border: none;
+  /* width:100%; */
+  width: auto;
+  font-size: 18px;
+  /* font-size: 1.2em; */
+  text-decoration: none;
+  cursor: pointer;
+  /* height: 50px; */
+}
 
-  .hg-NavLinkSub1{
-    /* margin-left: 24px; */
-    background:#f0f0f0 ;
-    width: 50%;
-  }
+.hg-NavLinkSub1 {
+  /* margin-left: 24px; */
+  background: #f0f0f0;
+  width: 50%;
+}
 
-  .hg-NavLink:hover{
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
-  }
-  .hg-NavLinkChevron{
-    float:right;  
-    font-size: 18px;  
-    margin:0px; 
-    color: lightcoral;
-  }
-  .hg-NavLinkChevronRt{
-    float:right;  
-    font-size: 18px;  
-    margin:0px; 
-    color:black;
-  }
+.hg-NavLink:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.hg-NavLinkChevron {
+  float: right;
+  font-size: 18px;
+  margin: 0px;
+  color: lightcoral;
+}
+
+.hg-NavLinkChevronRt {
+  float: right;
+  font-size: 18px;
+  margin: 0px;
+  color: black;
+}
 
 /* Images--------------------------------------------------------------------------------------- */
 .hg-responsiveImage {
@@ -375,438 +436,507 @@ body{
   padding-left: 22px;
 }
 
-.hg-TOC a{
+.hg-TOC a {
   font-size: 1.1rem;
-  color:dodgerblue;
+  color: dodgerblue;
 }
 
 
 /*Accordian-------------------------------------------------------------------------------------------------------------*/
 
 
-.hg-accBtn{
-padding:8px 16px 8px 4px;
-margin: 10px 0px 0px 0px; /*seperates accordians so can see shadow*/
-white-space: normal;  /*lets words wrap in accordian button*/
-text-align:left;
-/* color:dodgerblue; */
-color:black;
-background: white; 
-/* background:green; */
-/* background:#f0f0f0; */
-display:block;
-/* border:none; */
-/* border-color: black; */
-border-top-width: 0px;
-border-bottom-width: 0px;
-/* border-left: solid black 0.2px; */
-border-left: solid white 0.2px;
-border-right-width: 0px;
-width:100%;
-font-size: 1.2em;
-font-weight: bold; 
-text-decoration: none;
-cursor:pointer;
-/* border-top: 1px solid#ccc ; */
+.hg-accBtn {
+  padding: 8px 16px 8px 4px;
+  margin: 10px 0px 0px 0px;
+  /*seperates accordians so can see shadow*/
+  white-space: normal;
+  /*lets words wrap in accordian button*/
+  text-align: left;
+  /* color:dodgerblue; */
+  color: black;
+  background: white;
+  /* background:green; */
+  /* background:#f0f0f0; */
+  display: block;
+  /* border:none; */
+  /* border-color: black; */
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  /* border-left: solid black 0.2px; */
+  border-left: solid white 0.2px;
+  border-right-width: 0px;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  /* border-top: 1px solid#ccc ; */
 }
 
-.hg-accBtn sup{
-font-weight: normal;
+.hg-accBtn sup {
+  font-weight: normal;
 }
-  
 
 
-    /* .hg-accBtn:hover{ */
-      /* color:white; */
-      /* background:black; */
-      /* border: 1px solid #2492ff ; */
-      /* margin:-1px; */
-      /* margin-left: -1px; */
-      /* margin-bottom: -1px; */
-      /* margin-top: -1px; */
-    /* }  */
 
-    /* .hg-accBtn:active{ */
-      /* color:red; */
-      /* background: white;  */
-      /* color:white; */
-      /* background:black; */
-    /* } */
-    /* .hg-accBtn:focus{
+/* .hg-accBtn:hover{ */
+/* color:white; */
+/* background:black; */
+/* border: 1px solid #2492ff ; */
+/* margin:-1px; */
+/* margin-left: -1px; */
+/* margin-bottom: -1px; */
+/* margin-top: -1px; */
+/* }  */
+
+/* .hg-accBtn:active{ */
+/* color:red; */
+/* background: white;  */
+/* color:white; */
+/* background:black; */
+/* } */
+/* .hg-accBtn:focus{
       color:black;
       background: white; 
     } */
 
 
-    /* .hg-NavLinkChevron:hover{
+/* .hg-NavLinkChevron:hover{
       color:white;
     } */
-    .hg-accDivMain{
-        display:none;
-        /* margin-top: -12px; */
-        margin-top: -10px;
-        margin-bottom: 16px;
-        /* color: darkslategray; */
-        /* border-radius: 5px;/ */
-        border-top-width: 0px;
-        border-bottom-width: 0px;
-        /* border-left: solid black 0.2px; */
-        border-right-width: 0px;
-        /* background: rgb(240, 252, 255); */
-        background: white;
-        /* background:lightgoldenrodyellow; */
-        /* background-image: linear-gradient(to bottom, lightgoldenrodyellow , white); */
-        padding-top: 1px;
-        padding-left: 6px;
-        padding-bottom: 0px;
-    }
-    .hg-accRefNum{
-      font-weight: normal;
-      font-size: 0.7em;
-    }
+.hg-accDivMain {
+  display: none;
+  /* margin-top: -12px; */
+  margin-top: -10px;
+  margin-bottom: 16px;
+  /* color: darkslategray; */
+  /* border-radius: 5px;/ */
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  /* border-left: solid black 0.2px; */
+  border-right-width: 0px;
+  /* background: rgb(240, 252, 255); */
+  background: white;
+  /* background:lightgoldenrodyellow; */
+  /* background-image: linear-gradient(to bottom, lightgoldenrodyellow , white); */
+  padding-top: 1px;
+  padding-left: 6px;
+  padding-bottom: 0px;
+}
 
-    .hg-accDivMain p{
-      margin-left: 4px;
-    }
+.hg-accRefNum {
+  font-weight: normal;
+  font-size: 0.7em;
+}
+
+.hg-accDivMain p {
+  margin-left: 4px;
+}
 
 
 /* Accordian lists ----------------------------------------------------------*/
-    .hg-accUl{
-    /* background: olivedrab;  */
-    /* padding-top: 6px;
+.hg-accUl {
+  /* background: olivedrab;  */
+  /* padding-top: 6px;
     padding-right: 0px;
     padding-bottom: 6px;
     padding-left: 0px; */
-    /* font-weight: bold; */
-    padding: 0px;
-    /* color: red; */
-  
-    /* font-size: 1.1em; */
-    font-size: 1.1rem;
-    }
+  /* font-weight: bold; */
+  padding: 0px;
+  /* color: red; */
 
-    .hg-accUl li{
-      margin-left: 16px; 
-      /* background: red; */
-      /* color:red; */
-      /* color:black; */
-      /* font-size: 1.1em; */
-      color:rgba(0, 0, 0, 0.90);
-      
-    }
+  /* font-size: 1.1em; */
+  font-size: 1.1rem;
+}
 
-  
+.hg-accUl li {
+  margin-left: 16px;
+  /* background: red; */
+  /* color:red; */
+  /* color:black; */
+  /* font-size: 1.1em; */
+  color: rgba(0, 0, 0, 0.90);
+
+}
 
 
-    .hg-accUl li ul{
-      padding: 0px;
-      /* background: plum; */
-       /* font-size: 0.9em; */
 
-       font-size: 1.0rem;
-    }
-    
-      .hg-accUl li ul li{
-        margin-left: 16px; 
-        /* background: plum; */
-        /* color:purple; */
-        color:rgb(0, 0, 0);
 
-        font-size: 0.99rem;
-      }
+.hg-accUl li ul {
+  padding: 0px;
+  /* background: plum; */
+  /* font-size: 0.9em; */
 
-      /* .hg-accUl li ul li::marker {
+  font-size: 1.0rem;
+}
+
+.hg-accUl li ul li {
+  margin-left: 16px;
+  /* background: plum; */
+  /* color:purple; */
+  color: rgb(0, 0, 0);
+
+  font-size: 0.99rem;
+}
+
+/* .hg-accUl li ul li::marker {
         color: rgb(115, 156, 53);
     } */
 
-      .hg-accUl li ul li ul li{
-        margin-left: 16px; 
-        /* background: red; */
-        /* color:red; */
-        color:rgba(0, 0, 0, 0.90);
+.hg-accUl li ul li ul li {
+  margin-left: 16px;
+  /* background: red; */
+  /* color:red; */
+  color: rgba(0, 0, 0, 0.90);
 
-        /* font-size: 0.8em; */
-        font-size: 0.96rem;
-      }
+  /* font-size: 0.8em; */
+  font-size: 0.96rem;
+}
 
-      .hg-accUl a{
-        /* background: pink;  */
-        text-decoration: none;
-      }
-     
-   
+.hg-accUl a {
+  /* background: pink;  */
+  text-decoration: none;
+}
 
-      .hg-accOl{
-        margin-left: 26px;
-        margin-right: 0px;
-        padding: 0px;
-      }
 
-      .hg-accUl li ol{
-        padding: 0px;
-        /* background: plum; */
-      }
 
-      .hg-accUl li + ol{
-        margin-left: 16px;
-        margin-right: 0px;
-        padding: 0px;
-        /* background: powderblue; */
-      }
+.hg-accOl {
+  margin-left: 26px;
+  margin-right: 0px;
+  padding: 0px;
+}
 
-      
+.hg-accUl li ol {
+  padding: 0px;
+  /* background: plum; */
+}
 
-      /* .hg-accDivMain ol li{
+.hg-accUl li+ol {
+  margin-left: 16px;
+  margin-right: 0px;
+  padding: 0px;
+  /* background: powderblue; */
+}
+
+
+
+/* .hg-accDivMain ol li{
           background: plum;
   
       } */
 
 
-      .hg-accAalone{
-        margin-left: 16px;
-        color: teal;
-        text-decoration: none;
-      }
+.hg-accAalone {
+  margin-left: 16px;
+  color: teal;
+  text-decoration: none;
+}
 
 
 /* Formats The Related Topics: Accordian */
-.hg-accSectionRelTopics{margin-top: 0.960em; }
+.hg-accSectionRelTopics {
+  margin-top: 0.960em;
+}
+
 .hg-accSectionRelTopics a {
-  color:lightcoral}
+  color: lightcoral
+}
 
 /* Formats the References: Accordian */
-.hg-accSectionRef{margin-top: 0.60em;}
-.hg-accOlRef{margin-top: 16px; margin-left: 16px; margin-right: 0px; padding: 0px; font-size: 0.90em;}
-.hg-accOlRef a {text-decoration: none;}
+.hg-accSectionRef {
+  margin-top: 0.60em;
+}
 
+.hg-accOlRef {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 0px;
+  padding: 0px;
+  font-size: 0.90em;
+}
+
+.hg-accOlRef a {
+  text-decoration: none;
+}
+
+
+/*Adds the 'and' in an accordian list*/
+.hg-accAnd {
+  list-style-type: none;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.hg-accAnd::after {
+  content: "-and-";
+  color: red;
+}
 
 
 /*Adds the 'or' in an accordian list*/
-.hg-accOr{list-style-type: none; font-style: italic;font-weight: normal;}
-.hg-accOr::after{content: "-or-"; color: red;}     
+.hg-accOr {
+  list-style-type: none;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.hg-accOr::after {
+  content: "-or-";
+  color: red;
+}
+
+
+
 
 /*Formats Note: at bottom of accordian list */
-.hg-accNote{margin-top: 0px; margin-bottom: 0px;}
-.hg-accNote::before{content: "Note: "; font-weight: bold;}
+.hg-accNote {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.hg-accNote::before {
+  content: "Note: ";
+  font-weight: bold;
+}
+
 /* Blank Note */
-.hg-accNoteBlank{margin-top: 0px; margin-bottom: 0px;}
+.hg-accNoteBlank {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 /*Formats ref contained in most commons list */
-.hg-accRefInList{margin-top: 0px;margin-bottom: 0px;}
-.hg-accRefInList::before{content: "Ref: "; font-weight: bold;}
+.hg-accRefInList {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.hg-accRefInList::before {
+  content: "Ref: ";
+  font-weight: bold;
+}
 
 /*Algorithm------------------------------------------------------------------------------------------------------*/
-  /*Main div*/
-    .hg-algoDivMain{
-      /* margin-top: -16px; */
-      margin-bottom: 16px;
-      /* padding-top: 24px; */
-      padding-left: 12px;
-      padding-right: 12px;
-      padding-bottom: 12px;
-      display: none;
-      /* background: lightblue */
-      /* background: lightcyan; */
-      /* border-radius: 24px; */
-      /* border: 1px solid #ccc; */
-      /* position: relative; */
-  }
+/*Main div*/
+.hg-algoDivMain {
+  /* margin-top: -16px; */
+  margin-bottom: 16px;
+  /* padding-top: 24px; */
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  display: none;
+  /* background: lightblue */
+  /* background: lightcyan; */
+  /* border-radius: 24px; */
+  /* border: 1px solid #ccc; */
+  /* position: relative; */
+}
+
 /*Straight border div*/
-.hg-algoDivStrBorder{
-margin-top: 0px;
-margin-bottom: 16px;
-margin-left: auto ;
-margin-right: auto ;
-padding-left: 16px;
-padding-right: 16px;
-border: 1px solid black; 
-background: lightpink;
+.hg-algoDivStrBorder {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid black;
+  background: lightpink;
 }
 
 /*Rounded border div*/
-.hg-algoDivRdBorder{
-margin-top: 0px;
-margin-bottom: 16px;
-margin-left: auto ;
-margin-right: auto ;
-padding-left: 16px;
-padding-right: 16px;
-border: 1px solid black;
-background: lightcyan;
-border-radius: 8px;
+.hg-algoDivRdBorder {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid black;
+  background: lightcyan;
+  border-radius: 8px;
 }
 
- /*No border div*/
-  .hg-algoDivNoBorder{
-    margin-top: 0px;
-    margin-bottom: 24px;
-    margin-left: auto ;
-    margin-right: auto ;
-    padding-left: 16px;
-    padding-right: 16px;
-    text-align:center;
-  }
+/*No border div*/
+.hg-algoDivNoBorder {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
 
-.hg_algoCenterHorizDiv{
-display: flex;              /* establish flex container */
-flex-direction: column;     /* stack flex items vertically */
-/* justify-content: center;    center items vertically, in this case */
-align-items: center;        /* center items horizontally, in this case */
-/* background-color: pink; */
+.hg_algoCenterHorizDiv {
+  display: flex;
+  /* establish flex container */
+  flex-direction: column;
+  /* stack flex items vertically */
+  /* justify-content: center;    center items vertically, in this case */
+  align-items: center;
+  /* center items horizontally, in this case */
+  /* background-color: pink; */
 }
 
 /*h3*/
-.hg-algoh3{
-text-align:center;
-/* margin: 6px; */
-font-size: 1.10em;
-font-weight: bold;
+.hg-algoh3 {
+  text-align: center;
+  /* margin: 6px; */
+  font-size: 1.10em;
+  font-weight: bold;
 }
-.hg-algoh3 sup{
+
+.hg-algoh3 sup {
   font-weight: normal;
 
 }
 
 /*Algo status*/
-.hg-pAlgoStatus{
-/* margin:0px 0px 12px 0px; */
-/* background: red; */
-color:red;
+.hg-pAlgoStatus {
+  /* margin:0px 0px 12px 0px; */
+  /* background: red; */
+  color: red;
 }
 
 /*Up button*/
-  .hg-algoBtnUp{
-    padding:8px 16px;
-    width: 50px;
-    background: lightgoldenrodyellow;
-    margin-bottom: 16px;
-    margin-left: auto ;
-    margin-right: auto ;
-    font-size: 1.2em;
-    border:none;
-    cursor:pointer;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-  /*Down Arrow p*/
-  .hg-algoParaDn{
-    color: black;
-    font-size: 1.2em;
-  }
-.hg-algoBtnA{
-/* border: 1px solid #ccc; */
-padding:8px 16px;
-font-size: 1.1em;
-margin-bottom: 16px;
-display:block;
-width:100%;
-text-align:center;
-margin-left: auto ;
-margin-right: auto ;
-white-space: normal;  /*lets words wrap in accordian button*/
-background: lightgoldenrodyellow;
-color:black;
-border:none;
-cursor:pointer;
-box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+.hg-algoBtnUp {
+  padding: 8px 16px;
+  width: 50px;
+  background: lightgoldenrodyellow;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-  
+
+/*Down Arrow p*/
+.hg-algoParaDn {
+  color: black;
+  font-size: 1.2em;
+}
+
+.hg-algoBtnA {
+  /* border: 1px solid #ccc; */
+  padding: 8px 16px;
+  font-size: 1.1em;
+  margin-bottom: 16px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: normal;
+  /*lets words wrap in accordian button*/
+  background: lightgoldenrodyellow;
+  color: black;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*UL*/
-.hg-algoUl{
-margin-top: 0px;
-margin-left: 12px;
-margin-right: 4px;
-padding: 0px;
-/* background: orange; */
-}
-.hg-algoUl li ul{
-margin-left: 0px; 
-padding-left: 16px; 
-/* background: plum; */
+.hg-algoUl {
+  margin-top: 0px;
+  margin-left: 12px;
+  margin-right: 4px;
+  padding: 0px;
+  /* background: orange; */
 }
 
-    
-   
-  
+.hg-algoUl li ul {
+  margin-left: 0px;
+  padding-left: 16px;
+  /* background: plum; */
+}
+
+
+
+
 /*Refresh button*/
-    .hg-algoRfBtn{
-      /* border: 1px solid #ccc; */
-      /* border-radius:50%; */
-      /* background: lightgoldenrodyellow; */
-      /* background: lightpink; */
-      /* background:#f0f0f0; */
-      font-size: 0.8em;
-      color: red;
-      margin-left: 16px;
-      margin-bottom: 16px;
-      box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
-    }
+.hg-algoRfBtn {
+  /* border: 1px solid #ccc; */
+  /* border-radius:50%; */
+  /* background: lightgoldenrodyellow; */
+  /* background: lightpink; */
+  /* background:#f0f0f0; */
+  font-size: 0.8em;
+  color: red;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
 
 
 
 
-    
+
 /*Glossary---------------------------------------------------------------------------------------------------------------*/
-  .hg-glossaryAZ {
+.hg-glossaryAZ {
   font-size: 1.2em;
 }
 
 .hg-glossaryAZ button {
-    font-size: 1.2em;
-    margin-right: 0.4em;
-    margin-left: 0.4em;
-    margin-bottom: 0.6em;
-    /* padding: 0.2em 0.6em 0.2em 0.6em; */
-    color: dodgerblue;
-    border: none;
-    /* border-width: 1px; */
-    /* border-style: solid; */
-    /* background: #f0f0f0; */
-    background: WHITE;
-    /* border-radius: 12%; */
-    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    width: 2em;
-    height: 2em;
-    cursor: pointer;
-    text-decoration: none;
+  font-size: 1.2em;
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+  margin-bottom: 0.6em;
+  /* padding: 0.2em 0.6em 0.2em 0.6em; */
+  color: dodgerblue;
+  border: none;
+  /* border-width: 1px; */
+  /* border-style: solid; */
+  /* background: #f0f0f0; */
+  background: WHITE;
+  /* border-radius: 12%; */
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .hg-glossaryAZ button:hover {
-color: white;
-background-color: black;
+  color: white;
+  background-color: black;
 }
 
 .hg-glossaryAZ button:active {
-    color: red;
+  color: red;
 }
 
 
 
 .hg-glossaryBody h2 {
-    display: inline;
-    /* padding-bottom: 0px; */
-    /* background: pink; */
-    font-size: 1.6em;
+  display: inline;
+  /* padding-bottom: 0px; */
+  /* background: pink; */
+  font-size: 1.6em;
 }
 
-.hg-glossaryBody h3{
-  color:black;  
-  margin: 4px 0px 4px 12px; 
+.hg-glossaryBody h3 {
+  color: black;
+  margin: 4px 0px 4px 12px;
   font-size: 1.2em;
 }
 
 .hg-glossaryBody a {
-    color: dodgerblue;
-    display: block;
-    /* padding-top: 0.35em; */
-    /* padding-bottom: 0.35em; */
-    font-size: 1.2em;
-    /* margin-top: 0.5em; */
-    /* margin-bottom: 0.5em; */
-    margin-left: 8px;
-    margin-right: 0px;
-    font-weight: normal;
-    text-decoration-line: none;
-    border-top-width: 0px;  
+  color: dodgerblue;
+  display: block;
+  /* padding-top: 0.35em; */
+  /* padding-bottom: 0.35em; */
+  font-size: 1.2em;
+  /* margin-top: 0.5em; */
+  /* margin-bottom: 0.5em; */
+  margin-left: 8px;
+  margin-right: 0px;
+  font-weight: normal;
+  text-decoration-line: none;
+  border-top-width: 0px;
   border-bottom-width: 0px;
   border-left: solid black 0.2px;
   border-right-width: 0px;
@@ -817,58 +947,58 @@ background-color: black;
 
 
 .hg-glossaryBody a:hover {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 .hg-glossaryBody a:active {
-    color: red;
+  color: red;
 }
 
 /* a.hg-glossaryBodyIndentedA {
   margin-left: 20px;
 }
  */
-.hg-glossaryBodySectionIndent{
+.hg-glossaryBodySectionIndent {
   margin-left: 10px;
 }
 
 .hg-glossaryBody button {
-    vertical-align: top;
-    margin-left: 30px;
-    display: inline;
-    font-size: 1.2em;
-    /* font-size: 1.6em; */
-    /* margin-top: 1em; */
-    /* margin-right: 0.6em; */
-    /* margin-left: 1.0em; */
-    /* margin-top: -20px; */
-    /* margin-bottom: 0.6em; */
-    color: lightcoral;
-    /* text-decoration: underline; */
-    border: none;
-    /* background: #f0f0f0; */
-    background: white;
-    /* border-radius: 6%; */
-    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    /* width: 3em; */
-    /* height: 2em; */
-    cursor: pointer;
-    /* height:30px; */
+  vertical-align: top;
+  margin-left: 30px;
+  display: inline;
+  font-size: 1.2em;
+  /* font-size: 1.6em; */
+  /* margin-top: 1em; */
+  /* margin-right: 0.6em; */
+  /* margin-left: 1.0em; */
+  /* margin-top: -20px; */
+  /* margin-bottom: 0.6em; */
+  color: lightcoral;
+  /* text-decoration: underline; */
+  border: none;
+  /* background: #f0f0f0; */
+  background: white;
+  /* border-radius: 6%; */
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* width: 3em; */
+  /* height: 2em; */
+  cursor: pointer;
+  /* height:30px; */
 }
 
 .hg-glossaryBody button:hover {
-    /* color:red; */
-    color: white;
-    background-color: black;
+  /* color:red; */
+  color: white;
+  background-color: black;
 }
 
 .hg-glossaryBody button:active {
-    color: red;
+  color: red;
 }
 
 .hg-pTag {
-    height: 0.4em;
+  height: 0.4em;
 }
 
 /*Topics Page---------------------------------------------------------------------------------------------------------*/
@@ -896,35 +1026,65 @@ background-color: black;
 }
 
 .hg-topicsBody ul {
-  border-top-width: 0px;  
+  border-top-width: 0px;
   border-bottom-width: 0px;
   border-left: solid black 0.2px;
-  border-right-width: 0px;}
+  border-right-width: 0px;
+}
 
 
-    @media (min-width:601px){.hg-InfoContent{width:66.66666%} .hg-AddContent{float: right; width:33.33333%;}}
-    @media (max-width:600px){.hg-InfoContent{width:100%} .hg-AddContent{width: 100%; float: left;}}
+@media (min-width:601px) {
+  .hg-InfoContent {
+    width: 66.66666%
+  }
 
-   
+  .hg-AddContent {
+    float: right;
+    width: 33.33333%;
+  }
+}
+
+@media (max-width:600px) {
+  .hg-InfoContent {
+    width: 100%
+  }
+
+  .hg-AddContent {
+    width: 100%;
+    float: left;
+  }
+}
+
+
 /* ------------------Go to Top button */
 .hg-upBtn {
   width: 40px;
-    height: 40px;
-    border-radius: 50%; 
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
+  height: 40px;
+  border-radius: 50%;
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: red;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
   /* padding: 15px; Some padding */
   /* border-radius: 10px; Rounded corners */
   /* font-size: 18px; Increase font size */
-  font: bold 20px monospace;   
+  font: bold 20px monospace;
   /* opacity: 100%; */
   color: #fff;
   background-color: #ef476f;
@@ -945,32 +1105,36 @@ background-color: black;
   opacity: 0%;
   transition: opacity 1s, transform 0.5s;
   /* display: none; */
-  cursor:default;
-} */
+cursor:default;
+}
 
+*/
 
 /* NEED TO CHECK AND SEE IF IOS SAFARI SUPPORTS focus-visable----------------------------------------------------------------------------*/
 .hg-accBtn:focus {
   outline: none;
 }
+
 .hg-accBtn:focus-visible {
   /* outline: 3px solid blanchedalmond;  */
-  outline: 2px solid red; 
+  outline: 2px solid red;
 }
 
 
 /* Text arrows and operators ------------------------------*/
 
 /* li down/right arrow           class="hg-liDownRightArrow"                    */
-.hg-liDownRightArrow{
+.hg-liDownRightArrow {
   list-style: none;
 }
-.hg-liDownRightArrow::before{
+
+.hg-liDownRightArrow::before {
   color: #ef476f;
   font-weight: bold;
   font-size: larger;
-  content: "\21AA"" ";
+  content: "\21AA";
 }
+
 /* Action text        <span class="hg-actionTextColor"></span>       */
 .hg-actionTextColor {
   /* color: green; */
@@ -981,14 +1145,41 @@ background-color: black;
 
 
 /* Right arrow       <span class="hg-spanArrowRight"/>                                       */
-.hg-spanArrowRight::before{
+.hg-spanArrowRight::before {
   font-weight: bold;
   color: #ef476f;
   content: "\279E";
 }
+
 /* >          <span class="hg-spanGT"/>                    */
-.hg-spanGT::before{
+.hg-spanGT::before {
   font-weight: bold;
   color: #ef476f;
   content: "\003E";
+}
+
+
+/*----- li Symbol for web, HTML -> &#127760; */
+.hg-li-websymbol {
+  list-style: none;
+}
+.hg-li-websymbol::before {
+  font-weight: bold;
+  /* font-size: larger; */
+  content: "\1F310  ";
+  margin-left: -22px;
+}
+
+/*----- li Symbol for document */
+.hg-li-documentsymbol {
+  list-style: none;
+}
+.hg-li-documentsymbol::before {
+  /* color: blueviolet; */
+  /* color: #ef476f; */
+  color: #89CFF0;
+  font-weight: bold;
+  font-size: larger;
+  content: "\1F5CE   ";
+  margin-left: -18px;
 }

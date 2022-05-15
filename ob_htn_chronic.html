@@ -20,6 +20,12 @@
         <span id="titbar" class="hg-NavBarTitle"></span>
     </header>
 
+    <style>
+      
+
+      
+    </style>
+
     <nav class="hg-SideBar" id="mySidebar"></nav>
 
     <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
@@ -36,9 +42,12 @@
                 <!-- <li onclick=" AccToggleTOC('androddx'); ScrollToAccSection('DDX');"><a>Differential diagnosis</a></li> -->
                 <li onclick="AccToggleTOC('labasshaw')">Management
                     <ul onclick="AccToggle('labasshaw')">
-                        <li onclick="AccToggleTOC('chrhtninititrx'); ScrollToAccSection('chrhtninitjerpy');"><a>Initiate/titrate medical therapy </a></li>
-                        <li onclick="AccToggleTOC('chrhyninanfs'); ScrollToAccSection('chrhtnpreganfs');"><a>Antenatal fetal surveillance</a></li>
-                        <li onclick="AccToggleTOC('obschrhtnwtd'); ScrollToAccSection('chrhtnpegwtdel');"><a>When to deliver</a></li>
+                        <li onclick="AccToggleTOC('chrhtninititrx'); ScrollToAccSection('chrhtninitjerpy');" class="hg-li-documentsymbol">
+                            <a>Initiate/titrate medical therapy</a></li>
+                        <li onclick="AccToggleTOC('chrhyninanfs'); ScrollToAccSection('chrhtnpreganfs');"><a
+                                >Antenatal fetal surveillance</a></li>
+                        <li onclick="AccToggleTOC('obschrhtnwtd'); ScrollToAccSection('chrhtnpegwtdel');" class="hg-li-websymbol"><a>When to
+                                deliver</a></li>
                     </ul>
                 </li>
                 <li onclick=" AccToggleTOC('obvchrhytnRefs'); ScrollToAccSection('chrhtnpregef');"><a>References</a>
@@ -46,8 +55,8 @@
             </ul>
 
             <section class="accordian" id="chrhtninitjerpy">
-                <button onclick="AccToggle('chrhtninititrx')" class="hg-accBtn">Initiate/titrate medcial therapy<span id="chrhtninititrx_c"
-                        class="hg-NavLinkChevron"></span></button>
+                <button onclick="AccToggle('chrhtninititrx')" class="hg-accBtn">Initiate/titrate medcial therapy<span
+                        id="chrhtninititrx_c" class="hg-NavLinkChevron"></span></button>
                 <div id="chrhtninititrx" class="hg-accDivMain">
                     <ul class=hg-accUl>
                         <li>140/90.<sup>4</sup></li>
@@ -64,7 +73,7 @@
                         <li>Initiate antenatal fetal surveillance:
                             <ul>
                                 <li>Controlled on medications: 32 0/7 weeks, 1x/weekly.<sup>3</sup></li>
-                                <li>Poor control or other risk factors: at diagnosis, individualize
+                                <li  >Poor control or other risk factors: at diagnosis, individualize
                                     frequency.<sup>3</sup></li>
                             </ul>
                         </li>

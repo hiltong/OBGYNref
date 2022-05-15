@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="xxx">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">COVID-19 in Obstetrics</h1>
+
+            <ul class="hg-TOC" id="TOC" style="cursor:pointer">
+                <li onclick=" AccToggleTOC('obcovidpax'); ScrollToAccSection('obcovidpaxsec');"><a>PAXLOVID</a></li>
+                <!--  <li onclick="AccToggleTOC('XXX'); ScrollToAccSection('XXX'); "><a>XXX:</a>
+                    <ul onclick="AccToggle('XXX')">
+                        <li onclick="AccToggleTOC('XXX')"><a>XXX</a></li>
+                        <li onclick="AccToggleTOC('XXX')"><a>XXX</a></li>
+                        <li onclick="AccToggleTOC('XXX')"><a>XXX</a></li>
+                    </ul>
+                </li> -->
+                <li onclick=" AccToggleTOC('covid19obRefs'); ScrollToAccSection('covidrefsec');"><a>References</a></li>
+            </ul>
+
+            <!-- <h2 class="hg-h2SectionTitle">Category Header</h2> -->
+
+            <section class="accordian" id="obcovidpaxsec">
+                <button onclick="AccToggle('obcovidpax')" class="hg-accBtn">PAXLOVID<span id="obcovidpax_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="obcovidpax" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Includes:
+                            <ul>
+                                <li>Nirmatrelvir (SARS-CoV-2 main protease inhibitor).<sup>1</sup></li>
+                                <li class="hg-accAnd" />
+                                <li>Ritonavir (HIV-1 protease inhibitor and CYP3A inhibitor).<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Indications:
+                            <ul>
+                                <li>Outpatient mild to moderate COVID-19 infection at high risk of clinical progression
+                                    (12 years of age and older weighing at least 40 kg).<sup>1,2</sup>
+                                    <ul>
+                                        <li>Pregnancy as only risk factor<sup>1</sup>
+                                            <ul>
+                                                <li>Especially additional risk factors (e.g., body mass index >25,
+                                                    chronic kidney disease, diabetes mellitus, cardiovascular
+                                                    disease).<sup>1</sup></li>
+                                            </ul>
+                                        </li>
+                                        <li>Breast feeding with one or more risk factors.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>Treatment:
+                            <ul>
+                                <li>Initiate as soon as possible after diagnosis of COVID-19 and within 5 days of
+                                    symptom onset.<sup>1</sup></li>
+                                <li>Orally with or without food.<sup>1</sup></li>
+                                <li>300 mg of nirmatrelvir (two 150 mg tablets) with 100 mg of ritonavir (one 100 mg
+                                    tablet), with all three tablets taken together twice daily for 5 days.<sup>1</sup>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Common OB drug interactions:
+                            <ul>
+                                <li>Contraindicated:
+                                    <ul>
+                                        <li>Methylergonovine.<sup>2</sup></li>
+                                        <li>Oral midazolam (Versed).<sup>2</sup></li>
+                                    </ul>
+                                </li>
+                                <li>Caution as increases drug levels (monitor and may need to decrease dose):
+                                    <ul>
+                                        <li>Nifedipine.<sup>2</sup></li>
+                                        <li>Fentanyl.<sup>2</sup></li>
+                                        <li>IV midazolam (Versed).<sup>2</sup></li>
+                                        <li>Betamethasone.<sup>2</sup></li>
+                                    </ul>                           
+                                </li>
+                                <li>Caution as decreases drug levels:
+                                    <ul>
+                                        <li>Ethinyl estradiol (nonhormonal contraception for 5 days of use and until one menses after stopping).<sup>2</sup></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://www.fda.gov/media/155050/download" target="_blank">&#127760; EUA Fact Sheet
+                                    Revised: 14 April 2022</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <P class="hg-accNote"> xxx<sup>xxx</sup></P> -->
+                </div>
+            </section>
+
+            <!-- <h2 class="hg-h2SectionTitle">Etc.</h2> -->
+
+            <!--   <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK501922/" target="_blank">Drugs and Lactation Database (LactMed) [Internet].</a><sup>4</sup></li>
+                    </ul>
+                </div>
+            </section> -->
+
+
+            <section class="accordian hg-accSectionRef" id="covidrefsec">
+                <button onclick="AccToggle('covid19obRefs')" class="hg-accBtn">References:<span id="covid19obRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="covid19obRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>American College of Obstetricians and Gynecologists. COVID-19 FAQs for
+                            obstetricians-gynecologists, obstetrics. Washington, DC: ACOG; 2020. Available at:
+                            https://www.acog.org/clinical-information/physician-faqs/covid-19-faqs-for-ob-gyns-obstetrics.
+                            Retrieved [May 2022].</li>
+                        <li><a href="https://www.fda.gov/media/155050/download" target="_blank">&#127760; EUA Fact Sheet
+                                Revised: 14 April 2022</a></li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
