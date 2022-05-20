@@ -34,6 +34,7 @@ html {
 body {
   word-wrap: break-word;
   margin-bottom: 200px;
+  background-color: #f3f3f3;
 }
 
 /*Nav Bar*/
@@ -287,8 +288,8 @@ body {
   font-size: 1.19em;
   /*  margin-top: 0.60em; */
   color: dodgerblue;
-  background-color: white;
-
+  /* background-color: white; */
+  background-color: #f3f3f3;
   /* border-style: solid; */
   /* border-top: lightblue; */
   border-bottom: 1px solid dodgerblue;
@@ -454,7 +455,8 @@ body {
   text-align: left;
   /* color:dodgerblue; */
   color: black;
-  background: white;
+  /* background: white; */
+  background-color: #f3f3f3;
   /* background:green; */
   /* background:#f0f0f0; */
   display: block;
@@ -463,7 +465,8 @@ body {
   border-top-width: 0px;
   border-bottom-width: 0px;
   /* border-left: solid black 0.2px; */
-  border-left: solid white 0.2px;
+  /* border-left: solid white 0.2px; */
+   border-left: #f3f3f3   0.2px;;
   border-right-width: 0px;
   width: 100%;
   font-size: 1.2em;
@@ -516,7 +519,8 @@ body {
   /* border-left: solid black 0.2px; */
   border-right-width: 0px;
   /* background: rgb(240, 252, 255); */
-  background: white;
+  /* background: white; */
+  background-color: #f3f3f3;
   /* background:lightgoldenrodyellow; */
   /* background-image: linear-gradient(to bottom, lightgoldenrodyellow , white); */
   padding-top: 1px;
