@@ -1,4 +1,4 @@
-var CURRENT_CACHE = '2022-06-14 1800';
+var CURRENT_CACHE = '2022-06-14 1805';
 
 // INSTALL
 self.addEventListener('install', (event) => {
