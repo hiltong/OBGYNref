@@ -440,6 +440,7 @@ body {
 .hg-TOC a {
   font-size: 1.1rem;
   color: dodgerblue;
+  text-decoration:none;
 }
 
 
