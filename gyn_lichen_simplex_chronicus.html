@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Lichen Simplex Chronicus">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Lichen Simplex Chronicus</h1>
+
+            <ul class="hg-TOC" id="TOC" style="cursor:pointer">
+                <li onclick=" AccToggleTOC('lschrdef'); ScrollToAccSection('lschrdefsec');"><a>Definition</a></li>
+                <li onclick=" AccToggleTOC('lscchretio'); ScrollToAccSection('lscchretiosec');"><a>Etiology</a></li>
+                <li>Diagnosis
+                    <ul>
+                        <li onclick=" AccToggleTOC('lschrsxs'); ScrollToAccSection('lschrsxssec');"><a>Symptoms</a></li>
+                        <li onclick=" AccToggleTOC('lschrsigns'); ScrollToAccSection('lschrsignssec');"><a>Signs</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>Treatment:
+                    <ul>
+                        <li onclick="AccToggleTOC('vuselfcare'); ScrollToAccSection('vuselfcare');"><a>Vulva self
+                                care</a></li>
+                        <li onclick="AccToggleTOC('lschrprur')" ; ScrollToAccSection('lschrprursec');><a>Control
+                                pruritis and scratching</a></li>
+                        <li onclick="AccToggleTOC('lschrrx'); ScrollToAccSection('lschrrxsec');"><a>Treat inflammation with topical steroid
+                                ointment</a></li>
+                    </ul>
+                </li>
+                <li onclick=" AccToggleTOC('lschrRefs'); ScrollToAccSection('lshchrorefsec');"><a>References</a></li>
+            </ul>
+
+
+            <section class="accordian" id="lschrdefsec">
+                <button onclick="AccToggle('lschrdef')" class="hg-accBtn">Definition<span id="lschrdef_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="lschrdef" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Nonscarring chronic pruritic inflammatory disease of the vulva.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="lscchretiosec">
+                <button onclick="AccToggle('lscchretio')" class="hg-accBtn">Etiology<span id="lscchretio_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="lscchretio" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Primary condition.<sup>1</sup></li>
+                        <li class="hg-accOr" />
+                        <li>Secondary complication from other pruritic condition:<sup>1</sup>
+                            <ul>
+                                <li>Environmental factors such as heat, sweating, irritation from clothing or
+                                    products.<sup>1</sup></li>
+                                <li>Dermatologic conditions such as candidiasis, contact dermatitis, lichen
+                                    sclerosus.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="lschrsxssec">
+                <button onclick="AccToggle('lschrsxs')" class="hg-accBtn">Symptoms<span id="lschrsxs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="lschrsxs" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Chronic pruritis and scratching.<sup>1</sup></li>
+                        <li>Usually in evening/night interfering with sleep.<sup>1</sup></li>
+                        <li>Usually occurs mid adult life and later.<sup>1</sup></li>
+                        <li>75% have or close family have a history of seasonal allergies, asthma, or childhood
+                            eczema.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="lschrsignssec">
+                <button onclick="AccToggle('lschrsigns')" class="hg-accBtn">Signs<span id="lschrsigns_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="lschrsigns" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Erythematous, scaling, or lichenified plaques. <sup>1</sup></li>
+                        <li>If long duration thick, leathery, “bark-like” skin.<sup>1</sup></li>
+                        <li>Excoriations often present.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="vuselfcaresec">
+                <button onclick="AccToggle('vuselfcare')" class="hg-accBtn">Vulva self care<span id="vuselfcare_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="vuselfcare" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Avoid vulvar irritants and allergens.<sup>1</sup></li>
+                        <li>Use mild soaps, but avoid use on the vulva.<sup>1</sup></li>
+                        <li>Cleanse the vulva with water only.<sup>1</sup></li>
+                        <li>Gently pat the vulva dry after bathing.<sup>1</sup></li>
+                        <li>Apply preservative-free, unscented or fragrance-free emollient to hold moisture in the skin
+                            and improve barrier function.<sup>1</sup></li>
+                        <li>Use Peri-Care bottle to rinse after urination.<sup>1</sup></li>
+                        <li>Use 100% cotton, unscented or fragrance-free menstrual pads.<sup>1</sup></li>
+                        <li>Use adequate lubrication for intercourse (unscented or fragrance-free silicone-based
+                            lubricants recommended).
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="lschrprursec">
+                <button onclick="AccToggle('lschrprur')" class="hg-accBtn">Control pruritis and scratching<span
+                        id="lschrprur_c" class="hg-NavLinkChevron"></span></button>
+                <div id="lschrprur" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Daytime:
+                            <ul>
+                                <li>Nonsedating antihistamines (cetirizine (Zyrtec), Loratadine (Claritin)).<sup>1</sup>
+                                </li>
+                                <li>SSRIs (fluoxetine, paroxetine, sertraline, or citalopram).<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Nighttime:
+                            <ul>
+                                <li>Sedating antihistamine (Hydroxyzine).<sup>1</sup></li>
+                                <li>TCAs (Doxepin, Amitriptyline (Elavil)).<sup>xxx</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="lschrrxsec">
+                <button onclick="AccToggle('lschrrx')" class="hg-accBtn">Treat inflammation with topical steroid ointment<span id="lschrrx_c" class="hg-NavLinkChevron"></span></button>
+                <div id="lschrrx" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>High Potency:
+                            <ul>
+                                <li>Betamethasone dipropionate 0.05%<sup>1</sup></li>
+                                <li>Clobetasol propionate 0.05%<sup>1</sup></li>
+                                <li>Halobetasol propionate 0.05%<sup>1</sup></li>
+                                <li>Fluocinonide 0.05%<sup>1</sup></li>
+                                <li>Triamcinolone acetonide 0.5%<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Medium Potency:
+                            <ul>
+                                <li>Desoximetasone 0.05%<sup>1</sup></li>
+                                <li>Hydrocortisone butyrate 0.1%<sup>1</sup></li>
+                                <li>Hydrocortisone valerate 0.2%<sup>1</sup></li>
+                                <li>Mometasone furoate 0.1%<sup>1</sup></li>
+                                <li>Triamcinolone acetonide 0.025%, 0.1%<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Low Potency:
+                            <ul>
+                                <li>Desonide 0.05%<sup>1</sup></li>
+                                <li>Hydrocortisone 1%, 2.5%<sup>1</sup></li>
+                            </ul>
+                        </li>
+                      
+                    </ul>
+                    <P class="hg-accNote">Use high or medium potency.<sup>1</sup></P>
+                    <P class="hg-accNote">Ointment preferred.<sup>1</sup></P>
+                    <P class="hg-accNote">Avoid topical antipruritic medications as can cause allergic contact dermatitis.<sup>1</sup></P>
+                </div>
+            </section>
+
+
+            <!--  <section class="accordian hg-accSectionRelTopics">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="xxxRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="xxx.html">XXX</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK501922/" target="_blank">Drugs and Lactation Database (LactMed) [Internet].</a><sup>4</sup></li>
+                    </ul>
+                </div>
+            </section> -->
+
+
+            <section class="accordian hg-accSectionRef" id="lshchrorefsec">
+                <button onclick="AccToggle('lschrRefs')" class="hg-accBtn">References<span id="lschrRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="lschrRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>Diagnosis and management of vulvar skin disorders. ACOG Practice Bulletin No. 224. American
+                            College of Obstetricians and Gynecologists. Obstet Gynecol 2020;136:e1–14.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
