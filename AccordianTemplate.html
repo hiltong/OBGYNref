@@ -38,12 +38,13 @@
                         <li onclick="AccToggleTOC('XXX')"><a>XXX</a></li>
                     </ul>
                 </li>
+                <li onclick=" AccToggleTOC('XXX'); ScrollToAccSection('XXX');"><a>Related topics</a></li>
                 <li onclick=" AccToggleTOC('XXX'); ScrollToAccSection('XXX');"><a>References</a></li>
             </ul>
 
             <h2 class="hg-h2SectionTitle">Category Header</h2>
 
-            <section class="accordian">
+            <section class="accordian" id="xxxsec">
                 <button onclick="AccToggle('xxx')" class="hg-accBtn">xxx<span id="xxx_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="xxx" class="hg-accDivMain">
@@ -62,8 +63,8 @@
 
             <h2 class="hg-h2SectionTitle">Etc.</h2>
 
-            <section class="accordian hg-accSectionRelTopics">
-                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics:<span id="xxxRelLinks_c"
+            <section class="accordian hg-accSectionRelTopics" id="xxxsec">
+                <button onclick="AccToggle('xxxRelLinks')" class="hg-accBtn">Related topics<span id="xxxRelLinks_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="xxxRelLinks" class="hg-accDivMain">
                     <ul class=hg-accUl>
@@ -74,8 +75,8 @@
             </section>
 
 
-            <section class="accordian hg-accSectionRef">
-                <button onclick="AccToggle('xxxRefs')" class="hg-accBtn">References:<span id="xxxRefs_c"
+            <section class="accordian hg-accSectionRef" id="xxxsec">
+                <button onclick="AccToggle('xxxRefs')" class="hg-accBtn">References<span id="xxxRefs_c"
                         class="hg-NavLinkChevron"></span></button>
                 <div id="xxxRefs" class="hg-accDivMain">
                     <ol class="hg-accOlRef">

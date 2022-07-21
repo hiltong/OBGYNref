@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Intrauterine Insemination">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Intrauterine Insemination</h1>
+
+            <ul class="hg-TOC" id="TOC" style="cursor:pointer">
+                <li onclick=" AccToggleTOC('iuiminreq'); ScrollToAccSection('iuiminreqsec');"><a>Minimum requirements
+                        for IUI</a></li>
+                <li onclick=" AccToggleTOC('iuiindi'); ScrollToAccSection('iuiindisec');"><a>Indications for IUI</a>
+                </li>
+                <li onclick=" AccToggleTOC('spemspeciui'); ScrollToAccSection('spemspeciuisec');"><a>Semen sample
+                        adequacy</a>
+                </li>
+                <li onclick=" AccToggleTOC('iuitime'); ScrollToAccSection('iuitimespec');"><a>IUI timing</a></li>
+
+                <!-- <li onclick=" AccToggleTOC('XXX'); ScrollToAccSection('XXX');"><a>XXX</a></li> -->
+
+                <li onclick=" AccToggleTOC('iuinumcycles'); ScrollToAccSection('iuinumcyclesec');"><a>Number of IUI
+                        cycles to perform</a></li>
+                <li onclick=" AccToggleTOC('iuiproto'); ScrollToAccSection('iuiprotosec');"><a>Sample protocal</a></li>
+                <li onclick=" AccToggleTOC('iuiRelLinks'); ScrollToAccSection('iuiRelLinkssec');"><a>Related topics</a>
+                </li>
+                <li onclick=" AccToggleTOC('iuiRefs'); ScrollToAccSection('iuiRefssec');"><a>References</a></li>
+            </ul>
+
+
+            <section class="accordian" id="iuiminreqsec">
+                <button onclick="AccToggle('iuiminreq')" class="hg-accBtn">Minimum requirements for IUI<span
+                        id="iuiminreq_c" class="hg-NavLinkChevron"></span></button>
+                <div id="iuiminreq" class="hg-accDivMain">
+                    <ol class=hg-accUl>
+                        <li>Ovulation during IUI cycle.<sup>1</sup></li>
+                        <li>At least one functional fallopian tube.<sup>1</sup></li>
+                        <li>Adequate number of motile sperm.<sup>1</sup></li>
+                        <li>No genital tract infection.<sup>1</sup></li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="accordian" id="iuiindisec">
+                <button onclick="AccToggle('iuiindi')" class="hg-accBtn">Indications for IUI<span id="iuiindi_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="iuiindi" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Stimulated cycles:
+                            <ul>
+                                <li>Unexplained infertility. <sup>1</sup></li>
+                                <li>Mild male factor infertility.<sup>1</sup></li>
+                                <li>Minimal or mild endometriosis (Stage I/II) and &lt; 35.<sup>1</sup></li>
+                                <li>Cervical factor infertility.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Unstimulated cycles:
+                            <ul>
+                                <li>Absence of fertility issues (eg, same-sex couples).<sup>1</sup></li>
+                                <li>Discordant for sexually transmitted disease.<sup>1</sup></li>
+                                <li>Sexual dysfunction (eg, severe vaginismus, ejaculatory dysfunction, retrograde
+                                    ejaculation).<sup>1</sup></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <P class="hg-accNote">Usually used prior to proceeding to IVF with these indciations.<sup>1</sup>
+                    </P>
+                </div>
+            </section>
+
+
+            <section class="accordian" id="spemspeciuisec">
+                <button onclick="AccToggle('spemspeciui')" class="hg-accBtn">Semen sample adequacy<span
+                        id="spemspeciui_c" class="hg-NavLinkChevron"></span></button>
+                <div id="spemspeciui" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Colllection:
+                            <ul>
+                                <li>By masturbation <b>with no lubricants</b> in the morning after 2-3 days of
+                                    abstinence.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Sample adequacy:
+                            <ul>
+                                <li>Post-wash total motile sperm count = ejaculate volume x sperm conc x
+                                    motility.<sup>2</sup></li>
+                                <li>Controversial minimum post-wash total motile sperm count for IUI:
+                                    <ul>
+                                        <li>&gt; 5 million:
+                                            <ul>
+                                                <li>Associated with higher pregnancy rates.<sup>1</sup></li>
+                                                <li>Superovulation with IUI pregnancy rate per cycle ~5-8%.<sup>2</sup>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>&lt; 5 million:
+                                            <ul>
+                                                <li>Superovulation with IUI pregnancy rate per cycle &lt;
+                                                    1%.<sup>2</sup></li>
+                                                <li>Consider urological evaluation and/or IVF/ICSI.<sup>1</sup></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="iuitimesec">
+                <button onclick="AccToggle('iuitime')" class="hg-accBtn">IUI timing<span id="iuitime_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="iuitime" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Timing IUI based on:
+                            <ul>
+                                <li>LH surge detected in serum ~ 36 hours before ovulation and in urine ~ 24 hours
+                                    before ovulation.<sup>1</sup></li>
+                                <li>Oocyte can be fertilized up to 24 hours after ovulation.<sup>1</sup></li>
+                                <li>Sperm best at fertilization up to 48 hours. <sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Unstimulated cycle timing:
+                            <ul>
+                                <li>OTC urine ovulation predictor kit.<sup>1</sup></li>
+                                <li>After LH surge found in first morning specimen perform IUI next day.<sup>1</sup>
+                                    <ul>
+                                        <li>Pregnancy rates reported higher with urinary LH surge monitoring verses hCG
+                                            trigger to time IUI in natural cycles.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>Stimulated cycle timing:
+                        <li>
+                            <ul>
+                                <li>OTC urine ovulation predictor kit.<sup>1</sup></li>
+                                <li>After LH surge found in first morning specimen perform IUI next day.<sup>1</sup>
+                                    <ul>
+                                        <li>Pregnancy rates reported higher with urinary LH surge monitoring verses hCG
+                                            trigger to time IUI with clomiphene citrate.<sup>1</sup></li>
+                                        <li>Ultrasound Follicle monitoring and hCG triggering increases visits and
+                                            cost.<sup>1</sup></li>
+                                        <li>If hCG trigger used urine and serum pregnancy test may be positive up to 12
+                                            days after hCG trigger.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian" id="iuinumcyclesec">
+                <button onclick="AccToggle('iuinumcycles')" class="hg-accBtn">Number of IUI cycles to perform<span
+                        id="iuinumcycles_c" class="hg-NavLinkChevron"></span></button>
+                <div id="iuinumcycles" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Pregnancy rates lower after the third IUI cycle.<sup>1</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="iuiprotosec">
+                <button onclick="AccToggle('iuiproto')" class="hg-accBtn">Sample protocal<span id="iuiproto_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="iuiproto" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Clomiphene citrate:
+                            <ul>
+                                <li>Standard first-line treatment.<sup>1</sup></li>
+                                <li>Clomiphene citrate 100 mg x 5 days beginning on cycle day 3-5.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Letrozole:
+                            <ul>
+                                <li>Letrozole 5 mg x 5 days beginning on cycle day 3-5 day.<sup>1</sup></li>
+                                <li>Less data with Letrozole and IUI but suggest pregnancy rates same as clomiphene
+                                    citrate with IUI in unexplained infertility.<sup>1</sup></li>
+                                <li>Letrozole without IUI has been shown to be superior to clomiphene in treating
+                                    anovulation in patients with PCOS. <sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Timing:
+                            <ul>
+                                <li>Start urine LH testing on cycle day 10 to 12.<sup>1</sup></li>
+                                <li>After LH surge found in first morning specimen perform single IUI next
+                                    day.<sup>1</sup>
+                                    <ul>
+                                        <li>Double IUI of uncertain value in studies and increases visits and
+                                            cost.<sup>1</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian hg-accSectionRelTopics" id="iuiRelLinkssec">
+                <button onclick="AccToggle('iuiRelLinks')" class="hg-accBtn">Related topics<span id="iuiRelLinks_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="iuiRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="gyn_unexplained_infertility.html">Unexplained Infertility</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRef" id="iuiRefssec">
+                <button onclick="AccToggle('iuiRefs')" class="hg-accBtn">References<span id="iuiRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="iuiRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>UpToDate. Procedure for intrauterine insemination (IUI) using processed sperm. Author:
+                            Elizabeth S Ginsburg, MD. Section Editor: Robert L Barbieri, MD. Deputy Editor: Kristen
+                            Eckler, MD, FACOG. Retrieved 7/2022</li>
+                        <li>PROLOG: Reproductive Endocrinology and Infertility, Eighth Edition, Question 108</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

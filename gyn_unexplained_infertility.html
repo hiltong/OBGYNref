@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Unexplained Infertility">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Unexplained Infertility</h1>
+
+            <ul class="hg-TOC" id="TOC" style="cursor:pointer">
+                <li onclick=" AccToggleTOC('unexpinfrxopt'); ScrollToAccSection('unexpinfrxoptsec');"><a>Management
+                        Options</a></li>
+                <li onclick=" AccToggleTOC('unexpinfRelLinks'); ScrollToAccSection('secunexpinfRelLinks');"><a>Related Topics</a></li>
+                <!--  <li onclick="AccToggleTOC('XXX'); ScrollToAccSection('XXX'); "><a>XXX:</a>
+                    <ul onclick="AccToggle('XXX')">
+                        <li onclick="AccToggleTOC('XXX')"><a>XXX</a></li>
+                        <li onclick="AccToggleTOC('XXX')"><a>XXX</a></li>
+                        <li onclick="AccToggleTOC('XXX')"><a>XXX</a></li>
+                    </ul>
+                </li> -->
+                <li onclick=" AccToggleTOC('unexpinfref'); ScrollToAccSection('unexpinfrefsec');"><a>References</a></li>
+            </ul>
+
+
+
+            <section class="accordian" id="unexpinfrxoptsec">
+                <button onclick="AccToggle('unexpinfrxopt')" class="hg-accBtn">Management Options<span
+                        id="unexpinfrxopt_c" class="hg-NavLinkChevron"></span></button>
+                <div id="unexpinfrxopt" class="hg-accDivMain">
+                    <ol class=hg-accUl>
+                        <li>Expectant management as subfertile not sterile.<sup>1</sup></li>
+                        <li>Superovulation with oral or injectable medications.<sup>1</sup>
+                            <ul>
+                                <li>Little benefit clomiphene citrate alone vs expectant management.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>Superovulation with oral or injectable gonadotrophins and <a href="gyn_iui.html">intrauterine insemination</a>.<sup>1</sup>
+                            <ul>
+                                <li>Clomiphene citrate and IUI monthly fecundity 9.5% vs baseline 2-4%.<sup>1</sup></li>
+                                <li>After 3 unsuccessful rounds IVF more cost effective than gonadotrophins + IUI
+                                    1injectable gonadotrophins and lower risk of complications.<sup>1</sup></li>
+                                <li>Letrozole and IUI less studied but should have similar rates.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                        <li>IVF.<sup>1</sup>
+                            <ul>
+                                <li>Highest pregnancy rate especially if female &lt; 35.<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+
+
+            <section class="accordian hg-accSectionRelTopics" id="secunexpinfRelLinks">
+                <button onclick="AccToggle('unexpinfRelLinks')" class="hg-accBtn">Related Topics:<span
+                        id="unexpinfRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="unexpinfRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="gyn_iui.html">Intrauterine Insemination</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRef" id="unexpinfrefsec">
+                <button onclick="AccToggle('unexpinfref')" class="hg-accBtn">References<span id="unexpinfref_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="unexpinfref" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>PROLOG: Reproductive Endocrinology and Infertility, Eighth Edition, Question 112</li>
+
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>

@@ -2,7 +2,7 @@
 	"acCordian1": {
 		"prefix": "acCordian1",
 		"body": [
-		  " <section class=\"accordian\">",
+		  " <section class=\"accordian\" id=\"xxx\">",
 		  "                <button onclick=\"AccToggle('xxx')\" class=\"hg-accBtn\">xxx<span id=\"xxx_c\" class=\"hg-NavLinkChevron\"></span></button>",
 		  "                <div id=\"xxx\" class=\"hg-accDivMain\">",
 		  "                    <ul class=hg-accUl>",
