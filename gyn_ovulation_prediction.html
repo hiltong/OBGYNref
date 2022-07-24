@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="UTF-8">
+
+<title>OB/GYN Referenced</title>
+<meta name="theme-color" content="#000000" />
+<meta name="description" content="Ovulation Prediction">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/hg.css">
+
+
+<body onload="SetUpPage()">
+
+    <header id="MyHeader" class="hg-NavBar">
+        <a id="bkbtn" class="hg-BackButton" href="javascript:void(0)" onclick="goBack()"></a>
+        <a id="hmbrgbtn" class="hg-HamBtn" href="javascript:void(0)" onclick="SideBarOpen()"></a>
+        <span id="titbar" class="hg-NavBarTitle"></span>
+    </header>
+
+    <nav class="hg-SideBar" id="mySidebar"></nav>
+
+    <div class="hg-OverLay  " onclick="SideBarClose()" title="close side menu" id="myOverlay"></div>
+
+    <div class="hg-Content">
+
+        <main class="hg-InfoContent">
+            <h1 class="hg-h1PageTitle">Ovulation Prediction</h1>
+
+            <ul class="hg-TOC" id="TOC" style="cursor:pointer">
+                <li onclick=" AccToggleTOC('ovulpredimenchart'); ScrollToAccSection('ovulpredimenchartsec');">
+                    <a>Menstrual chart</a>
+                </li>
+                <li onclick=" AccToggleTOC('bbtovulpredic'); ScrollToAccSection('bbtovulpredicsec');"><a>BBT</a></li>
+                <li onclick="AccToggleTOC('midlutp4oviulpre'); ScrollToAccSection('midlutp4oviulpresec'); "><a>Serum
+                        progesterone in "suspected" midluteal phase</a></li>
+                <li onclick="AccToggleTOC('uriovulpredlit'); ScrollToAccSection('uriovulpredlitsec'); "><a>Urinary
+                        ovulation predictor kits</a></li>
+
+
+
+
+                <li onclick=" AccToggleTOC('ovulprefidRelLinks'); ScrollToAccSection('ovulprefidRelLinkssec');">
+                    <a>Related topics</a>
+                </li>
+                <li onclick=" AccToggleTOC('ovulpredicRefs'); ScrollToAccSection('ovulpredicRefssec');">
+                    <a>References</a>
+                </li>
+            </ul>
+
+
+            <section class="accordian" id="ovulpredimenchartsec">
+                <button onclick="AccToggle('ovulpredimenchart')" class="hg-accBtn">Menstrual chart<span
+                        id="ovulpredimenchart_c" class="hg-NavLinkChevron"></span></button>
+                <div id="ovulpredimenchart" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Regular 25 - 35 day cycles, especially if molimina symptoms, usually ovulatory.<sup>2</sup>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="bbtovulpredicsec">
+                <button onclick="AccToggle('bbtovulpredic')" class="hg-accBtn">BBT<span id="bbtovulpredic_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="bbtovulpredic" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Basal temperature increases 0.3-0.5 degrees after ovulation.<sup>1</sup>
+                            <ul>
+                                <li>Secondary to progesterone effect on hypothalamus to increase body
+                                    temperature.<sup>2</sup></li>
+                            </ul>
+                        </li>
+                        <li>Temperature rise begins 1-2 days after the LH surge and lasts at least 10 days. Fall in
+                            temperature indicator of near onset of menses.<sup>2</sup></li>
+                        <li>Retrospectively identifies ovulation but occurs too late to time intercourse or
+                            procedures.<sup>2</sup></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="midlutp4oviulpresec">
+                <button onclick="AccToggle('midlutp4oviulpre')" class="hg-accBtn">Serum progesterone in "suspected"
+                    midluteal phase<span id="midlutp4oviulpre_c" class="hg-NavLinkChevron"></span></button>
+                <div id="midlutp4oviulpre" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Mid-luteal phase = 18 - 24 days after onset of menses or 7 days before next menses
+                            expected.<sup>2</sup></li>
+                        <li>Normal mid-luteal phase progesterone levels 6 - 25 ng/ml.<sup>2</sup>
+                            <ul>
+                                <li>Presumed ovulatory if > 3 ng/ml.<sup>1</sup></li>
+                                <li>Variability in single progesterone levels as progesterone levels increase with LH
+                                    pulsations that occur after ovulation.<sup>2</sup>
+                                    <ul>
+                                        <li>Single low progesterone may not be abnormal as could be between LH pulses,
+                                            consider repeating in 2-3 days.<sup>2</sup></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordian" id="uriovulpredlitsec">
+                <button onclick="AccToggle('uriovulpredlit')" class="hg-accBtn">Urinary ovulation predictor kits<span
+                        id="uriovulpredlit_c" class="hg-NavLinkChevron"></span></button>
+                <div id="uriovulpredlit" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li>Physiology:
+                            <ul>
+                                <li>LH surge occurs ~ 36 hours before ovulation and lasts ~ 48 hours.<sup>2</sup>
+                                    <ul>
+                                        <li>Serum LH surge detected ~ 36 hours before ovulation.<sup>2</sup></li>
+                                        <li>Urine LH surge detected ~ 24 hours before ovulation (i.e., ~ 12 hours after
+                                            serum LH surge detected).<sup>2</sup></li>
+                                    </ul>
+                                </li>
+                                <P class="hg-accNote">Oocyte can be fertilized up to 24 hours after
+                                    ovulation.<sup>3</sup></P>
+                                <P class="hg-accNote">Sperm most capable of fertilization up to 48 hours after enter
+                                    female genital tract.<sup>3</sup></P>
+                            </ul>
+                        </li>
+                        <li>Kits detect urinary LH 24-36 hours before ovulation, what patient sees:<sup>1</sup>
+                            <ul>
+                                        <li>Negative test.<sup>1</sup></li>
+                                        <li>Positive test for 1-2 days during ovulatory period.<sup>1</sup></li>
+                                        <li>Negative test when LH returns to baseline.<sup>1</sup></li>
+                                        <li>If does not conceive menses occurs 12-16 days after ovulation.<sup>1</sup></li> 
+                            </ul>
+                        </li>
+                        </li>
+                        <li>False positives with urinary ovulation predictor kits:
+                            <ul>
+                                <li>PCOS can have tonically elevated LH concentrations resulting in positive LH kits with anovulatory bleeding (i.e., kits positive too many days long and positive too close to bleeding).<sup>1</sup></li>
+                                <li>Primary ovarian insufficiency & menopause.<sup>2</sup></li>
+                                <li>Fertility medications.<sup>1</sup></li>
+                                <li>Pregnancy (LH similar to hCG).<sup>1</sup></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRelTopics" id="ovulprefidRelLinkssec">
+                <button onclick="AccToggle('ovulprefidRelLinks')" class="hg-accBtn">Related topics<span
+                        id="ovulprefidRelLinks_c" class="hg-NavLinkChevron"></span></button>
+                <div id="ovulprefidRelLinks" class="hg-accDivMain">
+                    <ul class=hg-accUl>
+                        <li><a href="gyn_iui.html">Intrauterine Insemination</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="accordian hg-accSectionRef" id="ovulpredicRefssec">
+                <button onclick="AccToggle('ovulpredicRefs')" class="hg-accBtn">References<span id="ovulpredicRefs_c"
+                        class="hg-NavLinkChevron"></span></button>
+                <div id="ovulpredicRefs" class="hg-accDivMain">
+                    <ol class="hg-accOlRef">
+                        <li>PROLOG: Reproductive Endocrinology and Infertility, Eighth Edition, Question 58.</li>
+                        <li>Evaluation of the menstrual cycle and timing of ovulation. Author: Corrine K Welt, MD
+                            Section Editors: Robert L Barbieri, MD, William F Crowley, Jr, MD Deputy Editor: Kathryn A
+                            Martin, MD. Retrieved 7/2022.</li>
+                        <li>UpToDate. Procedure for intrauterine insemination (IUI) using processed sperm. Author:
+                            Elizabeth S Ginsburg, MD. Section Editor: Robert L Barbieri, MD. Deputy Editor: Kristen
+                            Eckler, MD, FACOG. Retrieved 7/2022.</li>
+                    </ol>
+                </div>
+            </section>
+
+
+        </main>
+
+        <div class="hg-AddContent">
+            <p class="hg-AddSmall ">AD</p>
+            <p class="hg-AddLarge  ">AD</p>
+        </div>
+
+    </div>
+
+    <script defer src="script.js"></script>
+    <script defer src="script-aux.js"></script>
+
+</body>
+
+</html>
